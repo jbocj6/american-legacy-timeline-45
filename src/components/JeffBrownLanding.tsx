@@ -155,55 +155,61 @@ const JeffBrownLanding = () => {
             <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">Restoring constitutional governance and ending political persecution</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="reform-card reform-card-red">
-              <div className="reform-icon">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
+          <div className="reform-cards-container">
+            {/* Top row - 3 cards */}
+            <div className="reform-row reform-row-top">
+              <div className="reform-card reform-card-red">
+                <div className="reform-icon">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                </div>
+                <h3 className="reform-title">Justice System Reform</h3>
+                <p className="reform-description">End weaponized prosecutions and restore impartial justice for all Americans</p>
               </div>
-              <h3 className="reform-title">Justice System Reform</h3>
-              <p className="reform-description">End weaponized prosecutions and restore impartial justice for all Americans</p>
+
+              <div className="reform-card reform-card-blue">
+                <div className="reform-icon">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
+                <h3 className="reform-title">Media Accountability</h3>
+                <p className="reform-description">Combat misinformation campaigns and restore honest journalism</p>
+              </div>
+
+              <div className="reform-card reform-card-red">
+                <div className="reform-icon">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <h3 className="reform-title">Government Transparency</h3>
+                <p className="reform-description">Release all suppressed January 6th evidence and government communications</p>
+              </div>
             </div>
 
-            <div className="reform-card reform-card-blue">
-              <div className="reform-icon">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
+            {/* Bottom row - 2 cards, centered */}
+            <div className="reform-row reform-row-bottom">
+              <div className="reform-card reform-card-blue">
+                <div className="reform-icon">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="reform-title">Election Integrity</h3>
+                <p className="reform-description">Address constitutional violations and ensure secure, transparent elections</p>
               </div>
-              <h3 className="reform-title">Media Accountability</h3>
-              <p className="reform-description">Combat misinformation campaigns and restore honest journalism</p>
-            </div>
 
-            <div className="reform-card reform-card-red">
-              <div className="reform-icon">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+              <div className="reform-card reform-card-red">
+                <div className="reform-icon">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="reform-title">Federal Agency Reform</h3>
+                <p className="reform-description">Prevent weaponization of federal agencies against American citizens</p>
               </div>
-              <h3 className="reform-title">Government Transparency</h3>
-              <p className="reform-description">Release all suppressed January 6th evidence and government communications</p>
-            </div>
-
-            <div className="reform-card reform-card-blue">
-              <div className="reform-icon">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="reform-title">Election Integrity</h3>
-              <p className="reform-description">Address constitutional violations and ensure secure, transparent elections</p>
-            </div>
-
-            <div className="reform-card reform-card-red">
-              <div className="reform-icon">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="reform-title">Federal Agency Reform</h3>
-              <p className="reform-description">Prevent weaponization of federal agencies against American citizens</p>
             </div>
           </div>
         </div>

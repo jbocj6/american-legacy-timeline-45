@@ -483,6 +483,27 @@ All colors MUST be HSL.
     pointer-events: none;
   }
 
+  .reform-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .reform-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .reform-row-top {
+    /* Top row with 3 cards */
+  }
+
+  .reform-row-bottom {
+    /* Bottom row with 2 cards, naturally centered */
+  }
+
   .reform-card {
     background: hsl(var(--card));
     padding: 2rem;
@@ -496,6 +517,16 @@ All colors MUST be HSL.
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: reformCardFadeIn 0.8s ease-out forwards;
     text-align: center;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    .reform-card {
+      width: auto;
+      min-width: 280px;
+    }
   }
 
   .reform-card:nth-child(1) { animation-delay: 0.1s; }
