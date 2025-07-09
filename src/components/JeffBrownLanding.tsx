@@ -58,21 +58,10 @@ const JeffBrownLanding = () => {
 
     timelineItems.forEach(item => timelineObserver.observe(item));
 
-    // Parallax effect for hero background
-    const handleScroll = () => {
-      const scrolled = window.pageYOffset;
-      const hero = document.querySelector('.hero') as HTMLElement;
-      if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
 
     return () => {
       observer.disconnect();
       timelineObserver.disconnect();
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
