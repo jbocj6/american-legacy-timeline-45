@@ -573,7 +573,6 @@ All colors MUST be HSL.
     color: hsl(var(--foreground));
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
-    white-space: nowrap;
     text-align: center;
   }
 
