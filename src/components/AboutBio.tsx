@@ -34,7 +34,7 @@ const AboutBio = () => {
   }, []);
 
   return (
-    <section className="bg-background py-24 px-8 mt-20">
+    <section className="bg-background py-24 px-8 mt-20 section-with-bottom-gradient">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Professional headshot placeholder */}
