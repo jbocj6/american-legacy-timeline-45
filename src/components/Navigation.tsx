@@ -5,11 +5,11 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'PLATFORM', href: '#timeline' },
-    { name: 'NEWS', href: '#biography' },
-    { name: 'EVENTS', href: '#legacy' },
-    { name: 'GET INVOLVED', href: '#documents' },
-    { name: 'MY STORY', href: '#about' },
+    { name: 'PLATFORM', href: '#issues' },
+    { name: 'NEWS', href: '#news' },
+    { name: 'EVENTS', href: '#events' },
+    { name: 'GET INVOLVED', href: '#get-involved' },
+    { name: 'MY STORY', href: '#timeline' },
   ];
 
   return (

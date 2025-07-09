@@ -1,5 +1,10 @@
 import { useEffect, useRef } from 'react';
 import Navigation from './Navigation';
+import AboutBio from './AboutBio';
+import IssuesCards from './IssuesCards';
+import NewsPress from './NewsPress';
+import GetInvolvedHub from './GetInvolvedHub';
+import EnhancedDonation from './EnhancedDonation';
 
 const JeffBrownLanding = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -75,32 +80,38 @@ const JeffBrownLanding = () => {
     {
       year: "2017-2020",
       title: "The Patriot",
-      description: "Constitutional conservative fighting for American values and the rule of law. Defending traditional principles against progressive overreach.",
+      description: "Constitutional conservative fighting for American values and the rule of law. Defending traditional principles against progressive overreach and government expansion.",
       image: "/lovable-uploads/6723ba9d-0cb5-45f5-994e-61d8099a7c8a.png",
     },
     {
       year: "January 6, 2021", 
       title: "The Stand",
-      description: "Participated in peaceful protest at the Capitol. Exercised First Amendment rights in support of election integrity and constitutional governance.",
+      description: "Participated in peaceful protest at the Capitol. Exercised First Amendment rights in support of election integrity and constitutional governance, standing with millions of Americans who demanded transparency.",
       image: "/lovable-uploads/ca5fe2f6-c779-4681-a048-51e116c95850.png",
     },
     {
       year: "2021-2024",
       title: "The Persecution", 
-      description: "Prosecuted by weaponized justice system. Faced politically motivated charges for exercising constitutional rights and defending democracy.",
+      description: "Faced politically motivated prosecution by a weaponized justice system. Experienced firsthand how federal agencies target conservative Americans for exercising constitutional rights.",
       image: "/lovable-uploads/9bcbbf87-78c1-4886-974a-a70b2693bed9.png",
     },
     {
       year: "January 20, 2025",
       title: "The Vindication",
-      description: "Presidential pardon restores justice and constitutional order. Truth prevails over political persecution and lawfare tactics.",
+      description: "Presidential pardon restores justice and constitutional order. Historic moment proves that truth prevails over political persecution and government overreach.",
       image: "/lovable-uploads/7fc79b02-bbe0-4a83-b9ac-b3ad6d4432b8.png",
     },
     {
-      year: "2025",
-      title: "The Future",
-      description: "Fighting for America First policies, constitutional governance, and the restoration of our nation's founding principles.",
+      year: "2025-2028",
+      title: "The Movement",
+      description: "Building a nationwide conservative coalition to restore constitutional governance, election integrity, and traditional American values across all levels of government.",
       image: "/lovable-uploads/a5f6b7c0-3d2d-4b86-97be-9c275654d4ca.png",
+    },
+    {
+      year: "2028+",
+      title: "The Victory",
+      description: "Long-term vision for conservative governance: Limited government, constitutional rights, economic freedom, and America First policies that put working families first.",
+      image: "/lovable-uploads/6723ba9d-0cb5-45f5-994e-61d8099a7c8a.png",
     }
   ];
 
@@ -124,7 +135,7 @@ const JeffBrownLanding = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>JEFF BROWN</h1>
-          <p className="subtitle font-mono uppercase tracking-widest">AMERICAN PATRIOT • JANUARY 6th • JUSTICE SERVED</p>
+          <p className="subtitle font-mono uppercase tracking-widest">CONSERVATIVE LEADER • PROVEN RESULTS • AMERICA FIRST</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <button className="donate-button">
               DONATE NOW
@@ -143,6 +154,9 @@ const JeffBrownLanding = () => {
           </div>
         </div>
       </section>
+
+      {/* About/Bio Section */}
+      <AboutBio />
 
       {/* Reforms Needed Section */}
       <section className="reforms-section">
@@ -206,8 +220,11 @@ const JeffBrownLanding = () => {
         </div>
       </section>
 
+      {/* Key Issues Cards */}
+      <IssuesCards />
+
       {/* Timeline Section */}
-      <section className="timeline-section max-w-6xl mx-auto py-24 px-5 relative" ref={timelineRef}>
+      <section id="timeline" className="timeline-section max-w-6xl mx-auto py-24 px-5 relative" ref={timelineRef}>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-mono font-900 text-foreground tracking-widest mb-4">MISSION BRIEF</h2>
           <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">A patriot's journey through persecution to vindication</p>
@@ -235,8 +252,17 @@ const JeffBrownLanding = () => {
       {/* Pardoned Stamp */}
       <div className="pardoned-stamp" id="pardonedStamp">
         PARDONED<br />
-        <span style={{ fontSize: '1.5rem' }}>2024</span>
+        <span style={{ fontSize: '1.5rem' }}>2025</span>
       </div>
+
+      {/* News & Press Section */}
+      <NewsPress />
+
+      {/* Enhanced Donation Section */}
+      <EnhancedDonation />
+
+      {/* Get Involved Hub */}
+      <GetInvolvedHub />
 
       {/* Policy Platform Section */}
       <section className="bg-secondary py-24 px-8">
@@ -279,7 +305,7 @@ const JeffBrownLanding = () => {
         <div className="text-sm font-mono tracking-widest mb-4">
           TEXT <strong>JBJ6</strong> TO <strong>66055</strong>
         </div>
-        <p className="mt-10 opacity-70 font-inter">© 2025 Jeff Brown J6 Campaign • Paid for by Patriots for Justice</p>
+        <p className="mt-10 opacity-70 font-inter">© 2025 Jeff Brown for Congress • Paid for by Jeff Brown for Congress Committee • Not authorized by any candidate or candidate's committee</p>
       </footer>
     </div>
   );
