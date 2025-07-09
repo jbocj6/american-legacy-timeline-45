@@ -49,11 +49,26 @@ const NewsPress = () => {
               className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                {index === 0 ? (
+                  <div className="relative w-full h-full bg-black">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-primary/80 rounded-full p-4 hover:bg-primary transition-colors cursor-pointer">
+                        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 rounded text-xs font-mono">
+                      LIVE
+                    </div>
+                  </div>
+                ) : (
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                )}
                 <div className="absolute top-4 left-4">
                   <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
                     {item.category}
@@ -76,7 +91,7 @@ const NewsPress = () => {
                 </p>
                 
                 <button className="flex items-center text-accent font-inter font-medium hover:text-accent/80 transition-colors">
-                  Read Full Article
+                  {index === 0 ? 'Watch Video' : 'Read Full Article'}
                   <ExternalLink className="w-4 h-4 ml-2" />
                 </button>
               </div>

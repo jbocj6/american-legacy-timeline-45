@@ -1,13 +1,45 @@
 import { Shield, Star, Users } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 const AboutBio = () => {
+  const imageRef = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target === imageRef.current) {
+              entry.target.classList.add('animate-slide-in-left');
+            }
+            if (entry.target === cardsRef.current) {
+              const cards = entry.target.querySelectorAll('.achievement-card');
+              cards.forEach((card, index) => {
+                setTimeout(() => {
+                  card.classList.add('animate-highlight-glow');
+                }, index * 200);
+              });
+            }
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (imageRef.current) observer.observe(imageRef.current);
+    if (cardsRef.current) observer.observe(cardsRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="bg-background py-24 px-8">
+    <section className="bg-background py-24 px-8 mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Professional headshot placeholder */}
           <div className="order-2 lg:order-1">
-            <div className="relative">
+            <div className="relative" ref={imageRef}>
               <div className="w-full h-96 bg-gradient-to-br from-secondary to-primary rounded-lg shadow-xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/d78a7ad7-78ed-43b8-8e74-213b83340d79.png" 
@@ -37,8 +69,8 @@ const AboutBio = () => {
               </p>
 
               {/* Key accomplishments */}
-              <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                <div className="flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
+              <div className="grid sm:grid-cols-2 gap-4 mt-8" ref={cardsRef}>
+                <div className="achievement-card flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
                   <Shield className="w-6 h-6 text-accent" />
                   <div>
                     <h4 className="font-space font-semibold text-foreground">Constitutional Defender</h4>
@@ -46,7 +78,7 @@ const AboutBio = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
+                <div className="achievement-card flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
                   <Users className="w-6 h-6 text-accent" />
                   <div>
                     <h4 className="font-space font-semibold text-foreground">Community Leader</h4>

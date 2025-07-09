@@ -667,3 +667,38 @@ All colors MUST be HSL.
     font-size: 1.5rem;
   }
 }
+
+/* Enhanced Animations */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes highlight-glow {
+  0% {
+    box-shadow: 0 0 0 hsl(var(--accent) / 0);
+    border-color: hsl(var(--border));
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.3);
+    border-color: hsl(var(--accent));
+  }
+  100% {
+    box-shadow: 0 0 0 hsl(var(--accent) / 0);
+    border-color: hsl(var(--border));
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+.animate-highlight-glow {
+  animation: highlight-glow 1.5s ease-in-out;
+}
