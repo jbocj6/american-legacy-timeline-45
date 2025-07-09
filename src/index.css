@@ -145,7 +145,6 @@ All colors MUST be HSL.
     font-weight: 900;
     margin-bottom: 1.5rem;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: hsl(var(--primary-foreground));
     text-shadow: 0 0 30px hsl(var(--accent) / 0.8);
     animation: heroTitleReveal 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
