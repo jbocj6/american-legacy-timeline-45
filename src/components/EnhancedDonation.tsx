@@ -221,7 +221,7 @@ const EnhancedDonation = () => {
                 SECURE DONATION
               </button>
               <p className="text-sm text-muted-foreground mt-3">
-                Secure donation processed by ActBlue • SSL encrypted
+                Secure donation processed by WinRed • SSL encrypted
               </p>
             </div>
           </form>
