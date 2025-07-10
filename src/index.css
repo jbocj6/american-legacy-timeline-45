@@ -120,7 +120,7 @@ All colors MUST be HSL.
 @layer components {
   .hero {
     height: 100vh;
-    background: var(--gradient-hero), url('/lovable-uploads/d78a7ad7-78ed-43b8-8e74-213b83340d79.png');
+    background: var(--gradient-hero), url('/lovable-uploads/usa-flag-waving.gif');
     background-size: cover;
     background-position: center;
     display: flex;
