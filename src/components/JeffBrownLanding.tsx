@@ -69,38 +69,38 @@ const JeffBrownLanding = () => {
     {
       year: "2017-2020",
       title: "The Patriot",
-      description: "Constitutional conservative fighting for American values and the rule of law. Defending traditional principles against progressive overreach and government expansion.",
-      image: "/lovable-uploads/6723ba9d-0cb5-45f5-994e-61d8099a7c8a.png",
+      description: "Constitutional conservative fighting for American values",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
     },
     {
       year: "January 6, 2021", 
       title: "The Stand",
-      description: "Participated in peaceful protest at the Capitol. Exercised First Amendment rights in support of election integrity and constitutional governance, standing with millions of Americans who demanded transparency.",
-      image: "/lovable-uploads/ca5fe2f6-c779-4681-a048-51e116c95850.png",
+      description: "Exercised First Amendment rights at the Capitol",
+      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop",
     },
     {
       year: "2021-2024",
       title: "The Persecution", 
-      description: "Faced politically motivated prosecution by a weaponized justice system. Experienced firsthand how federal agencies target conservative Americans for exercising constitutional rights.",
-      image: "/lovable-uploads/9bcbbf87-78c1-4886-974a-a70b2693bed9.png",
+      description: "Faced politically motivated prosecution",
+      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=400&h=300&fit=crop",
     },
     {
       year: "January 20, 2025",
       title: "The Vindication",
-      description: "Presidential pardon restores justice and constitutional order. Historic moment proves that truth prevails over political persecution and government overreach.",
-      image: "/lovable-uploads/7fc79b02-bbe0-4a83-b9ac-b3ad6d4432b8.png",
+      description: "Presidential pardon restores justice",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
     },
     {
       year: "2025-2028",
       title: "The Movement",
-      description: "Building a nationwide conservative coalition to restore constitutional governance, election integrity, and traditional American values across all levels of government.",
-      image: "/lovable-uploads/a5f6b7c0-3d2d-4b86-97be-9c275654d4ca.png",
+      description: "Building conservative coalition nationwide",
+      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop",
     },
     {
       year: "2028+",
       title: "The Victory",
-      description: "Long-term vision for conservative governance: Limited government, constitutional rights, economic freedom, and America First policies that put working families first.",
-      image: "/lovable-uploads/6723ba9d-0cb5-45f5-994e-61d8099a7c8a.png",
+      description: "America First policies for working families",
+      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=400&h=300&fit=crop",
     }
   ];
 
@@ -219,29 +219,40 @@ const JeffBrownLanding = () => {
       <IssuesCards />
 
       {/* Timeline Section */}
-      <section id="timeline" className="timeline-section max-w-6xl mx-auto py-24 px-5 relative" ref={timelineRef}>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-mono font-900 text-foreground tracking-widest mb-4">MISSION BRIEF</h2>
-          <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">A patriot's journey through persecution to vindication</p>
-        </div>
-        
-        <div className="timeline-line"></div>
-
-        {timelineEvents.map((event, index) => (
-          <div key={event.year} className="timeline-item">
-            <div className="timeline-point"></div>
-            <div className="timeline-content">
-              <div className="timeline-date">{event.year}</div>
-              <img 
-                src={event.image} 
-                alt={event.title} 
-                className="timeline-image"
-              />
-              <h3 className="timeline-title">{event.title}</h3>
-              <p className="timeline-text">{event.description}</p>
+      <section id="timeline" className="py-16 px-8 bg-secondary/20" ref={timelineRef}>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-mono font-900 text-foreground tracking-widest mb-4">MISSION BRIEF</h2>
+            <p className="text-lg font-inter text-muted-foreground">A patriot's journey through persecution to vindication</p>
+          </div>
+          
+          <div className="relative">
+            {/* Horizontal timeline line */}
+            <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary hidden md:block"></div>
+            
+            {/* Timeline items in horizontal grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {timelineEvents.map((event, index) => (
+                <div key={event.year} className="timeline-item flex flex-col items-center text-center">
+                  {/* Timeline point */}
+                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg mb-4 relative z-10"></div>
+                  
+                  {/* Content */}
+                  <div className="bg-card rounded-lg p-4 border border-border shadow-lg hover:shadow-xl transition-shadow">
+                    <img 
+                      src={event.image} 
+                      alt={event.title} 
+                      className="w-full h-24 object-cover rounded mb-3"
+                    />
+                    <div className="text-xs font-mono text-accent mb-2 font-bold">{event.year}</div>
+                    <h3 className="text-sm font-space font-semibold text-foreground mb-2">{event.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-tight">{event.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
+        </div>
       </section>
 
       {/* Pardoned Stamp */}

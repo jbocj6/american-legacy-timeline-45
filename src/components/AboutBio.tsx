@@ -41,11 +41,16 @@ const AboutBio = () => {
           <div className="order-2 lg:order-1">
             <div className="relative" ref={imageRef}>
               <div className="w-full h-96 bg-gradient-to-br from-secondary to-primary rounded-lg shadow-xl overflow-hidden">
-                <img 
-                  src="/lovable-uploads/d78a7ad7-78ed-43b8-8e74-213b83340d79.png" 
-                  alt="Jeff Brown - Professional headshot" 
-                  className="w-full h-full object-cover"
-                />
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/Xxh9Da_EJB4?autoplay=0&controls=1&rel=0" 
+                  title="America - YouTube Video"
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-4 rounded-lg shadow-lg">
                 <Star className="w-8 h-8" />
