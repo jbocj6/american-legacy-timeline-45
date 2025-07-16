@@ -34,7 +34,7 @@ const AboutBio = () => {
   }, []);
 
   return (
-    <section className="bg-background py-24 px-8 mt-20 section-with-bottom-gradient">
+    <section className="py-24 px-8 mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Professional headshot placeholder */}
@@ -75,7 +75,7 @@ const AboutBio = () => {
 
               {/* Key accomplishments */}
               <div className="grid sm:grid-cols-2 gap-4 mt-8" ref={cardsRef}>
-                <div className="achievement-card flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
+                <div className="achievement-card flex items-center space-x-3 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Shield className="w-6 h-6 text-accent" />
                   <div>
                     <h4 className="font-space font-semibold text-foreground">Constitutional Defender</h4>
@@ -83,7 +83,7 @@ const AboutBio = () => {
                   </div>
                 </div>
                 
-                <div className="achievement-card flex items-center space-x-3 p-4 bg-card rounded-lg border border-border">
+                <div className="achievement-card flex items-center space-x-3 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Users className="w-6 h-6 text-accent" />
                   <div>
                     <h4 className="font-space font-semibold text-foreground">Community Leader</h4>

@@ -41,7 +41,7 @@ const IssuesCards = () => {
   ];
 
   return (
-    <section id="issues" className="bg-muted py-24 px-8 section-with-top-gradient">
+    <section id="issues" className="py-24 px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-space font-bold text-foreground mb-4">America First Priorities</h2>
