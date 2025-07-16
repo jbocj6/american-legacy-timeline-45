@@ -229,13 +229,7 @@ const JeffBrownLanding = () => {
       <IssuesCards />
 
       {/* Timeline Section */}
-      <section id="timeline" className="py-24 px-8 bg-gradient-to-b from-background via-secondary/10 to-background relative overflow-hidden" ref={timelineRef}>
-        {/* Floating particles background */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-accent/30 rounded-full animate-pulse" style={{animationDelay: '0s'}}></div>
-          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary/40 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-accent/20 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-        </div>
+      <section id="timeline" className="py-24 px-8 bg-gradient-to-b from-background via-secondary/10 to-background relative" ref={timelineRef}>
         
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-16">
@@ -252,10 +246,7 @@ const JeffBrownLanding = () => {
                 {/* Glowing border effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 blur-xl -z-10 animate-pulse"></div>
               </h2>
-              {/* Star decorations */}
-              <div className="absolute -top-4 -left-4 text-accent animate-bounce" style={{animationDelay: '0s'}}>⭐</div>
-              <div className="absolute -top-4 -right-4 text-primary animate-bounce" style={{animationDelay: '1s'}}>⭐</div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 text-accent animate-bounce" style={{animationDelay: '2s'}}>⭐</div>
+              {/* Star decorations - removed to prevent floating elements */}
             </div>
             <p className="text-xl font-inter text-muted-foreground animate-fade-in" style={{animationDelay: '1s'}}>
               A patriot's journey through persecution to vindication
