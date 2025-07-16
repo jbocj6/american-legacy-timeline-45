@@ -62,7 +62,7 @@ const EnhancedDonation = () => {
   };
 
   return (
-    <section className="bg-muted py-24 px-8">
+    <section id="support-mission" className="bg-muted py-24 px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-space font-bold text-foreground mb-4">Support Our Mission</h2>

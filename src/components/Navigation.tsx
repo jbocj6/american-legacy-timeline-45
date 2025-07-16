@@ -43,7 +43,10 @@ const Navigation = () => {
 
             {/* Donate Button */}
             <div className="hidden md:block">
-              <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest">
+              <button 
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest"
+                onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Donate
               </button>
             </div>
@@ -74,7 +77,10 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest">
+              <button 
+                className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest"
+                onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Donate
               </button>
             </div>

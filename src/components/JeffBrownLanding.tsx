@@ -117,7 +117,10 @@ const JeffBrownLanding = () => {
           <h1>Jeff Brown</h1>
           <p className="subtitle font-mono uppercase tracking-widest">CONSERVATIVE LEADER • PROVEN RESULTS • AMERICA FIRST</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-            <button className="donate-button">
+            <button 
+              className="donate-button"
+              onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               DONATE NOW
             </button>
             <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>
@@ -220,7 +223,10 @@ const JeffBrownLanding = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="donate-button mr-4">SUPPORT REFORM</button>
+            <button 
+              className="donate-button mr-4"
+              onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+            >SUPPORT REFORM</button>
             <button className="donate-button bg-transparent border-2 border-destructive text-destructive hover:bg-destructive hover:text-white shadow-[0_0_20px_hsl(var(--destructive)/0.2)]">
               LEARN MORE
             </button>
@@ -399,7 +405,10 @@ const JeffBrownLanding = () => {
           </div>
 
           <div className="text-center">
-            <button className="donate-button mr-4">SUPPORT THE MOVEMENT</button>
+            <button 
+              className="donate-button mr-4"
+              onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+            >SUPPORT THE MOVEMENT</button>
             <button className="donate-button bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
               JOIN THE FIGHT
             </button>

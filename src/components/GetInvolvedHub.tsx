@@ -193,7 +193,10 @@ const GetInvolvedHub = () => {
               <p className="text-muted-foreground font-inter mb-4">
                 Your financial support helps us reach more voters and spread our conservative message.
               </p>
-              <button className="donate-button">DONATE NOW</button>
+              <button 
+                className="donate-button"
+                onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
+              >DONATE NOW</button>
             </div>
 
             <div className="bg-card p-6 rounded-lg border border-border">
