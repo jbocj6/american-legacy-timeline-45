@@ -142,69 +142,82 @@ const JeffBrownLanding = () => {
       <BookSection />
 
       {/* Reforms Needed Section */}
-      <section className="reforms-section">
-        <div className="max-w-6xl mx-auto py-24 px-8">
+      <section className="bg-gradient-to-br from-destructive/5 to-primary/10 py-24 px-8">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-mono font-900 text-foreground tracking-widest mb-4">REFORMS NEEDED</h2>
-            <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">Restoring constitutional governance and ending political persecution</p>
+            <div className="inline-flex items-center gap-3 mb-6">
+              <svg className="w-8 h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+              </svg>
+              <span className="text-sm font-space uppercase tracking-widest text-destructive font-bold">
+                Critical Reforms
+              </span>
+            </div>
+            <h2 className="text-5xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent">
+              Reforms Needed
+            </h2>
+            <p className="text-xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Restoring constitutional governance and ending political persecution
+            </p>
           </div>
-          
-          <div className="reform-cards-container">
-            {/* Top row - 3 cards */}
-            <div className="reform-row reform-row-top">
-              <div className="reform-card reform-card-red">
-                <div className="reform-icon">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                  </svg>
-                </div>
-                <h3 className="reform-title">Justice System Reform</h3>
-                <p className="reform-description">End weaponized prosecutions and restore impartial justice for all Americans</p>
-              </div>
 
-              <div className="reform-card reform-card-red">
-                <div className="reform-icon">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                  </svg>
-                </div>
-                <h3 className="reform-title">Media Accountability</h3>
-                <p className="reform-description">Combat misinformation campaigns and restore honest journalism</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div className="bg-card border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
               </div>
-
-              <div className="reform-card reform-card-red">
-                <div className="reform-icon">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-                <h3 className="reform-title">Government Transparency</h3>
-                <p className="reform-description">Release all suppressed January 6th evidence and government communications</p>
-              </div>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Justice System Reform</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">End weaponized prosecutions and restore impartial justice for all Americans</p>
             </div>
 
-            {/* Bottom row - 2 cards, centered */}
-            <div className="reform-row reform-row-bottom">
-              <div className="reform-card reform-card-red">
-                <div className="reform-icon">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="reform-title">Election Integrity</h3>
-                <p className="reform-description">Address constitutional violations and ensure secure, transparent elections</p>
+            <div className="bg-card border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
               </div>
-
-              <div className="reform-card reform-card-red">
-                <div className="reform-icon">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <h3 className="reform-title">Federal Agency Reform</h3>
-                <p className="reform-description">Prevent weaponization of federal agencies against American citizens</p>
-              </div>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Media Accountability</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Combat misinformation campaigns and restore honest journalism</p>
             </div>
+
+            <div className="bg-card border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Government Transparency</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Release all suppressed January 6th evidence and government communications</p>
+            </div>
+
+            <div className="bg-card border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 md:col-span-1 lg:col-span-1">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Election Integrity</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Address constitutional violations and ensure secure, transparent elections</p>
+            </div>
+
+            <div className="bg-card border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 md:col-span-1 lg:col-span-2">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Federal Agency Reform</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Prevent weaponization of federal agencies against American citizens and restore constitutional boundaries</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <button className="donate-button mr-4">SUPPORT REFORM</button>
+            <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.2)'}}>
+              LEARN MORE
+            </button>
           </div>
         </div>
       </section>
@@ -315,26 +328,62 @@ const JeffBrownLanding = () => {
       <GetInvolvedHub />
 
       {/* Policy Platform Section */}
-      <section className="bg-secondary py-24 px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-mono font-900 text-secondary-foreground tracking-widest mb-8">AMERICA FIRST AGENDA</h2>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-card p-6 rounded border border-border">
-              <h3 className="text-xl font-space font-600 text-foreground mb-4">Constitutional Rights</h3>
-              <p className="text-muted-foreground font-inter">Defending First and Second Amendment freedoms against government overreach.</p>
+      <section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-24 px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              <span className="text-sm font-space uppercase tracking-widest text-primary font-bold">
+                Policy Platform
+              </span>
             </div>
-            <div className="bg-card p-6 rounded border border-border">
-              <h3 className="text-xl font-space font-600 text-foreground mb-4">Election Integrity</h3>
-              <p className="text-muted-foreground font-inter">Ensuring secure, transparent elections and restoring trust in our democratic process.</p>
+            <h2 className="text-5xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              America First Agenda
+            </h2>
+            <p className="text-xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Constitutional principles and conservative values for a stronger America
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-card border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.586-3.586a2 2 0 00-2.828 0l-3 3a2 2 0 002.828 2.828l.106-.106a2 2 0 002.828-2.828l-3-3z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Constitutional Rights</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Defending First and Second Amendment freedoms against government overreach and protecting individual liberties.</p>
             </div>
-            <div className="bg-card p-6 rounded border border-border">
-              <h3 className="text-xl font-space font-600 text-foreground mb-4">Economic Freedom</h3>
-              <p className="text-muted-foreground font-inter">Reducing government regulation and empowering American workers and businesses.</p>
+
+            <div className="bg-card border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Election Integrity</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Ensuring secure, transparent elections and restoring trust in our democratic process through accountability.</p>
+            </div>
+
+            <div className="bg-card border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Economic Freedom</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Reducing government regulation and empowering American workers and businesses to thrive and prosper.</p>
             </div>
           </div>
-          <div className="mt-12">
+
+          <div className="text-center">
             <button className="donate-button mr-4">SUPPORT THE MOVEMENT</button>
-            <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>JOIN THE FIGHT</button>
+            <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--primary))', boxShadow: '0 0 20px hsl(var(--primary) / 0.2)'}}>
+              JOIN THE FIGHT
+            </button>
           </div>
         </div>
       </section>
