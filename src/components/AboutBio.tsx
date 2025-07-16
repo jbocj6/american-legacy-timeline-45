@@ -52,7 +52,7 @@ const AboutBio = () => {
                   className="w-full h-full"
                 ></iframe>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-4 rounded-lg shadow-lg z-10">
                 <Star className="w-8 h-8" />
               </div>
             </div>
