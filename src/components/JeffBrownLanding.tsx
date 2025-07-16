@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Navigation from './Navigation';
 import AboutBio from './AboutBio';
+import BookSection from './BookSection';
 import IssuesCards from './IssuesCards';
 import NewsPress from './NewsPress';
 import GetInvolvedHub from './GetInvolvedHub';
@@ -136,6 +137,9 @@ const JeffBrownLanding = () => {
 
       {/* About/Bio Section */}
       <AboutBio />
+
+      {/* Book Section */}
+      <BookSection />
 
       {/* Reforms Needed Section */}
       <section className="reforms-section">
