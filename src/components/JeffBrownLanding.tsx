@@ -396,6 +396,19 @@ const JeffBrownLanding = () => {
 
       {/* Footer */}
       <footer className="relative py-20 text-center overflow-hidden">
+        {/* Lightning Animation Background */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Lightning bolts */}
+          <div className="lightning-bolt lightning-bolt-1"></div>
+          <div className="lightning-bolt lightning-bolt-2"></div>
+          <div className="lightning-bolt lightning-bolt-3"></div>
+          
+          {/* Electric particles */}
+          <div className="electric-particle electric-particle-1"></div>
+          <div className="electric-particle electric-particle-2"></div>
+          <div className="electric-particle electric-particle-3"></div>
+          <div className="electric-particle electric-particle-4"></div>
+        </div>
         {/* Flag background with blue filter */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
