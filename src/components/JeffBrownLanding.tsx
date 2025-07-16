@@ -395,22 +395,61 @@ const JeffBrownLanding = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary py-16 text-center text-secondary-foreground">
-        <div className="text-6xl mb-5">🇺🇸</div>
-        <h3 className="text-2xl mb-4 font-mono font-700 tracking-widest uppercase">AMERICAN PATRIOT COALITION</h3>
-        <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <a href="#" className="cta-button" onClick={handleCTAClick}>
-            SCHEDULE A CALL
-          </a>
-          <a href="#" className="cta-button" onClick={handleCTAClick}>
-            RESOURCES
-          </a>
+      <footer className="relative py-20 text-center overflow-hidden">
+        {/* Flag background with blue filter */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `var(--gradient-hero), url('/lovable-uploads/usa-flag-waving.gif')`
+          }}
+        ></div>
+        
+        {/* Content overlay */}
+        <div className="relative z-10 text-white">
+          <div className="text-6xl mb-5 animate-bounce">🇺🇸</div>
+          <h3 className="text-2xl mb-4 font-mono font-700 tracking-widest uppercase">AMERICAN PATRIOT COALITION</h3>
+          <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a href="#" className="cta-button" onClick={handleCTAClick}>
+              SCHEDULE A CALL
+            </a>
+            <a href="#" className="cta-button" onClick={handleCTAClick}>
+              RESOURCES
+            </a>
+          </div>
+          
+          {/* Enhanced Text Message Section */}
+          <div className="relative mb-8">
+            {/* Animated background glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-xl blur-xl animate-pulse"></div>
+            
+            {/* Main text message container */}
+            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/50 rounded-xl p-8 max-w-2xl mx-auto">
+              <div className="animate-pulse">
+                <div className="text-sm font-mono uppercase tracking-wider text-accent/80 mb-2">
+                  🇺🇸 Join the Movement 🇺🇸
+                </div>
+                <div className="text-4xl md:text-5xl font-mono font-bold tracking-widest animate-bounce" style={{animationDelay: '0.5s'}}>
+                  TEXT <span className="text-accent animate-pulse" style={{animationDelay: '1s'}}>JBJ6</span> TO <span className="text-accent animate-pulse" style={{animationDelay: '1.5s'}}>66055</span>
+                </div>
+                <div className="text-lg font-mono uppercase tracking-widest text-white/80 mt-4 animate-fade-in" style={{animationDelay: '2s'}}>
+                  Stand with Constitutional Patriots
+                </div>
+              </div>
+              
+              {/* Floating stars animation */}
+              <div className="absolute -top-2 -left-2 text-accent animate-bounce" style={{animationDelay: '0s'}}>⭐</div>
+              <div className="absolute -top-2 -right-2 text-primary animate-bounce" style={{animationDelay: '1s'}}>⭐</div>
+              <div className="absolute -bottom-2 left-1/4 text-accent animate-bounce" style={{animationDelay: '2s'}}>⭐</div>
+              <div className="absolute -bottom-2 right-1/4 text-primary animate-bounce" style={{animationDelay: '3s'}}>⭐</div>
+            </div>
+          </div>
+          
+          <p className="mt-10 opacity-70 font-inter max-w-4xl mx-auto">
+            © 2025 Jeff Brown for Congress • Paid for by Jeff Brown for Congress Committee • Not authorized by any candidate or candidate's committee
+          </p>
         </div>
-        <div className="text-sm font-mono tracking-widest mb-4">
-          TEXT <strong>JBJ6</strong> TO <strong>66055</strong>
-        </div>
-        <p className="mt-10 opacity-70 font-inter">© 2025 Jeff Brown for Congress • Paid for by Jeff Brown for Congress Committee • Not authorized by any candidate or candidate's committee</p>
       </footer>
     </div>
   );
