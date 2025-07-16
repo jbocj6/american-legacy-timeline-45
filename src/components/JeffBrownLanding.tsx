@@ -230,10 +230,10 @@ const JeffBrownLanding = () => {
 
       {/* Timeline Section */}
       <section id="timeline" className="py-24 px-8 bg-gradient-to-b from-background via-secondary/10 to-background relative" ref={timelineRef}>
-        
-        <div className="max-w-7xl mx-auto relative">
-          <div className="text-center mb-16">
-            {/* Enhanced animated title */}
+        <div className="max-w-6xl mx-auto relative">
+          {/* Header */}
+          <div className="text-center mb-20">
+            {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
               <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative">
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
@@ -243,73 +243,94 @@ const JeffBrownLanding = () => {
                 <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent animate-pulse" style={{animationDelay: '0.5s'}}>
                   BRIEF
                 </span>
-                {/* Glowing border effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 blur-xl -z-10 animate-pulse"></div>
               </h2>
-              {/* Star decorations - removed to prevent floating elements */}
-            </div>
-            <p className="text-xl font-inter text-muted-foreground animate-fade-in" style={{animationDelay: '1s'}}>
-              A patriot's journey through persecution to vindication
-            </p>
-          </div>
-          
-          <div className="relative">
-            {/* Enhanced horizontal timeline line with gradient */}
-            <div className="absolute top-20 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary via-accent to-transparent rounded-full hidden md:block shadow-lg">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 rounded-full animate-pulse"></div>
             </div>
             
-            {/* Timeline items with staggered animations */}
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {/* Animated typewriter subtitle */}
+            <div className="overflow-hidden">
+              <p className="text-2xl font-inter text-muted-foreground animate-fade-in inline-block" 
+                 style={{
+                   animationDelay: '1.2s',
+                   borderRight: '2px solid',
+                   whiteSpace: 'nowrap',
+                   animation: 'fade-in 0.5s ease-out 1.2s both, typewriter 3s steps(40, end) 1.2s both, blink-caret 0.75s step-end infinite 1.2s'
+                 }}>
+                A patriot's journey through persecution to vindication
+              </p>
+            </div>
+          </div>
+
+          {/* Vertical Timeline */}
+          <div className="relative">
+            {/* Central vertical line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
+            
+            {/* Timeline items */}
+            <div className="space-y-16">
               {timelineEvents.map((event, index) => (
                 <div 
-                  key={event.year} 
-                  className="timeline-item flex flex-col items-center text-center animate-fade-in hover-scale group"
-                  style={{animationDelay: `${index * 0.2 + 1.5}s`}}
+                  key={event.year}
+                  className={`timeline-item relative flex items-center animate-fade-in ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                  style={{animationDelay: `${index * 0.3 + 1.8}s`}}
                 >
-                  {/* Enhanced timeline point with pulse effect */}
-                  <div className="relative mb-6">
-                    <div className="w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl relative z-10 group-hover:scale-125 transition-transform duration-300">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
-                    </div>
-                    {/* Year label floating above */}
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-mono text-accent font-bold bg-background/80 px-2 py-1 rounded border border-accent/30 backdrop-blur-sm">
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden md:block hover:scale-125 transition-transform duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
+                  </div>
+                  
+                  {/* Date */}
+                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
+                    <div className="text-6xl md:text-8xl font-mono font-black text-primary/20 leading-none mb-2">
                       {event.year}
                     </div>
                   </div>
                   
-                  {/* Enhanced content card */}
-                  <div className="bg-card/90 backdrop-blur-sm rounded-xl p-5 border border-border/50 shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:border-accent/50 group-hover:bg-card transform group-hover:-translate-y-2 relative overflow-hidden">
-                    {/* Card glow effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    
-                    <div className="relative z-10">
-                      <img 
-                        src={event.image} 
-                        alt={event.title} 
-                        className="w-full h-28 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <h3 className="text-base font-space font-bold text-foreground mb-3 group-hover:text-accent transition-colors duration-300">
-                        {event.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
-                        {event.description}
-                      </p>
+                  {/* Content card */}
+                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'}`}>
+                    <div className="bg-card border border-border/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
+                      {/* Card connector line */}
+                      <div className={`absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden md:block ${
+                        index % 2 === 0 ? '-left-8' : '-right-8'
+                      }`}></div>
+                      
+                      {/* Card glow effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                      
+                      <div className="relative z-10">
+                        <img 
+                          src={event.image} 
+                          alt={event.title} 
+                          className="w-full h-48 object-cover rounded-xl mb-6 transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <h3 className="text-2xl font-space font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                          {event.title}
+                        </h3>
+                        <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                          {event.description}
+                        </p>
+                      </div>
                     </div>
-                    
-                    {/* Corner accent */}
-                    <div className="absolute top-0 right-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-accent/20 group-hover:border-t-accent/40 transition-colors duration-300"></div>
                   </div>
                 </div>
               ))}
             </div>
-            
-            {/* Success badge floating animation */}
-            <div className="absolute -bottom-8 right-8 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 backdrop-blur-sm animate-bounce hidden lg:block" style={{animationDelay: '3s'}}>
-              <span className="text-accent font-mono text-sm font-bold">🇺🇸 AMERICAN PATRIOT</span>
-            </div>
           </div>
         </div>
+        
+        {/* Add custom keyframes for typewriter effect */}
+        <style>{`
+          @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+          }
+          @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: hsl(var(--accent)); }
+          }
+        `}</style>
       </section>
 
       {/* News & Press Section */}
