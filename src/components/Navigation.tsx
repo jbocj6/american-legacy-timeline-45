@@ -34,7 +34,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 px-4 py-3 rounded-lg text-lg font-inter font-light uppercase tracking-widest transition-all duration-200 hover:scale-105"
+                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 hover:scale-105"
                 >
                   {item.name}
                 </a>
@@ -68,7 +68,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-normal uppercase tracking-widest transition-all duration-200"
+                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
