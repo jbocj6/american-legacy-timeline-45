@@ -36,8 +36,11 @@ const BookSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-primary/5 to-accent/10 py-24 px-8">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-24 px-8 overflow-hidden">
+      {/* Background gradient layer */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5 -z-10"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
             <Book className="w-8 h-8 text-accent" />
@@ -88,7 +91,7 @@ const BookSection = () => {
           {/* Excerpts */}
           <div className="space-y-6">
             {bookExcerpts.map((excerpt, index) => (
-              <Card key={index} className="border-l-4 border-l-accent hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="bg-background/80 backdrop-blur-sm border-l-4 border-l-accent hover:shadow-lg transition-all duration-300 hover:bg-background/90">
                 <CardContent className="p-6">
                   <h4 className="font-space font-semibold text-foreground mb-3">{excerpt.title}</h4>
                   <p className="text-muted-foreground italic leading-relaxed">&ldquo;{excerpt.excerpt}&rdquo;</p>
