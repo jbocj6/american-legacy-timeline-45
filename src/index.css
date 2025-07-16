@@ -134,7 +134,8 @@ All colors MUST be HSL.
   /* Seamless Background System */
   .seamless-background {
     background: var(--gradient-seamless);
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
   }
   .hero {
     height: 100vh;
