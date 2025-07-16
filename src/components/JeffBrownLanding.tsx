@@ -420,29 +420,23 @@ const JeffBrownLanding = () => {
           </div>
           
           {/* Enhanced Text Message Section */}
-          <div className="relative mb-8">
+          <div className="relative mb-8 max-w-3xl mx-auto">
             {/* Animated background glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-xl blur-xl animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-xl blur-lg animate-pulse" style={{animationDuration: '3s'}}></div>
             
             {/* Main text message container */}
-            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/50 rounded-xl p-8 max-w-2xl mx-auto">
-              <div className="animate-pulse">
-                <div className="text-sm font-mono uppercase tracking-wider text-accent/80 mb-2">
+            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/40 rounded-xl p-8 mx-4">
+              <div className="text-center">
+                <div className="text-sm font-mono uppercase tracking-wider text-accent/80 mb-3">
                   🇺🇸 Join the Movement 🇺🇸
                 </div>
-                <div className="text-4xl md:text-5xl font-mono font-bold tracking-widest animate-bounce" style={{animationDelay: '0.5s'}}>
-                  TEXT <span className="text-accent animate-pulse" style={{animationDelay: '1s'}}>JBJ6</span> TO <span className="text-accent animate-pulse" style={{animationDelay: '1.5s'}}>66055</span>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold tracking-wide leading-tight">
+                  TEXT <span className="text-accent">JBJ6</span> TO <span className="text-accent">66055</span>
                 </div>
-                <div className="text-lg font-mono uppercase tracking-widest text-white/80 mt-4 animate-fade-in" style={{animationDelay: '2s'}}>
+                <div className="text-base md:text-lg font-mono uppercase tracking-widest text-white/80 mt-4">
                   Stand with Constitutional Patriots
                 </div>
               </div>
-              
-              {/* Floating stars animation */}
-              <div className="absolute -top-2 -left-2 text-accent animate-bounce" style={{animationDelay: '0s'}}>⭐</div>
-              <div className="absolute -top-2 -right-2 text-primary animate-bounce" style={{animationDelay: '1s'}}>⭐</div>
-              <div className="absolute -bottom-2 left-1/4 text-accent animate-bounce" style={{animationDelay: '2s'}}>⭐</div>
-              <div className="absolute -bottom-2 right-1/4 text-primary animate-bounce" style={{animationDelay: '3s'}}>⭐</div>
             </div>
           </div>
           
