@@ -104,9 +104,6 @@ const JeffBrownLanding = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Seamless Background Container */}
-      <div className="seamless-background">
-      
       {/* Campaign Banner */}
       <div className="campaign-banner">
         <div className="max-w-4xl mx-auto">
@@ -114,7 +111,7 @@ const JeffBrownLanding = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section - Outside seamless background */}
       <section className="hero">
         <div className="hero-content">
           <h1>Jeff Brown</h1>
@@ -137,6 +134,9 @@ const JeffBrownLanding = () => {
           </div>
         </div>
       </section>
+
+      {/* Seamless Background Container - Content sections only */}
+      <div className="seamless-background">
 
       {/* About/Bio Section */}
       <AboutBio />
