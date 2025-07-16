@@ -219,37 +219,93 @@ const JeffBrownLanding = () => {
       <IssuesCards />
 
       {/* Timeline Section */}
-      <section id="timeline" className="py-16 px-8 bg-secondary/20" ref={timelineRef}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-mono font-900 text-foreground tracking-widest mb-4">MISSION BRIEF</h2>
-            <p className="text-lg font-inter text-muted-foreground">A patriot's journey through persecution to vindication</p>
+      <section id="timeline" className="py-24 px-8 bg-gradient-to-b from-background via-secondary/10 to-background relative overflow-hidden" ref={timelineRef}>
+        {/* Floating particles background */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-accent/30 rounded-full animate-pulse" style={{animationDelay: '0s'}}></div>
+          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary/40 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-accent/20 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-16">
+            {/* Enhanced animated title */}
+            <div className="relative inline-block">
+              <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative">
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
+                  MISSION
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent animate-pulse" style={{animationDelay: '0.5s'}}>
+                  BRIEF
+                </span>
+                {/* Glowing border effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 blur-xl -z-10 animate-pulse"></div>
+              </h2>
+              {/* Star decorations */}
+              <div className="absolute -top-4 -left-4 text-accent animate-bounce" style={{animationDelay: '0s'}}>⭐</div>
+              <div className="absolute -top-4 -right-4 text-primary animate-bounce" style={{animationDelay: '1s'}}>⭐</div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 text-accent animate-bounce" style={{animationDelay: '2s'}}>⭐</div>
+            </div>
+            <p className="text-xl font-inter text-muted-foreground animate-fade-in" style={{animationDelay: '1s'}}>
+              A patriot's journey through persecution to vindication
+            </p>
           </div>
           
           <div className="relative">
-            {/* Horizontal timeline line */}
-            <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary hidden md:block"></div>
+            {/* Enhanced horizontal timeline line with gradient */}
+            <div className="absolute top-20 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-primary via-accent to-transparent rounded-full hidden md:block shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 rounded-full animate-pulse"></div>
+            </div>
             
-            {/* Timeline items in horizontal grid */}
+            {/* Timeline items with staggered animations */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {timelineEvents.map((event, index) => (
-                <div key={event.year} className="timeline-item flex flex-col items-center text-center">
-                  {/* Timeline point */}
-                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg mb-4 relative z-10"></div>
+                <div 
+                  key={event.year} 
+                  className="timeline-item flex flex-col items-center text-center animate-fade-in hover-scale group"
+                  style={{animationDelay: `${index * 0.2 + 1.5}s`}}
+                >
+                  {/* Enhanced timeline point with pulse effect */}
+                  <div className="relative mb-6">
+                    <div className="w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl relative z-10 group-hover:scale-125 transition-transform duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
+                    </div>
+                    {/* Year label floating above */}
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-mono text-accent font-bold bg-background/80 px-2 py-1 rounded border border-accent/30 backdrop-blur-sm">
+                      {event.year}
+                    </div>
+                  </div>
                   
-                  {/* Content */}
-                  <div className="bg-card rounded-lg p-4 border border-border shadow-lg hover:shadow-xl transition-shadow">
-                    <img 
-                      src={event.image} 
-                      alt={event.title} 
-                      className="w-full h-24 object-cover rounded mb-3"
-                    />
-                    <div className="text-xs font-mono text-accent mb-2 font-bold">{event.year}</div>
-                    <h3 className="text-sm font-space font-semibold text-foreground mb-2">{event.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-tight">{event.description}</p>
+                  {/* Enhanced content card */}
+                  <div className="bg-card/90 backdrop-blur-sm rounded-xl p-5 border border-border/50 shadow-lg hover:shadow-2xl transition-all duration-500 group-hover:border-accent/50 group-hover:bg-card transform group-hover:-translate-y-2 relative overflow-hidden">
+                    {/* Card glow effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <div className="relative z-10">
+                      <img 
+                        src={event.image} 
+                        alt={event.title} 
+                        className="w-full h-28 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <h3 className="text-base font-space font-bold text-foreground mb-3 group-hover:text-accent transition-colors duration-300">
+                        {event.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                        {event.description}
+                      </p>
+                    </div>
+                    
+                    {/* Corner accent */}
+                    <div className="absolute top-0 right-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-accent/20 group-hover:border-t-accent/40 transition-colors duration-300"></div>
                   </div>
                 </div>
               ))}
+            </div>
+            
+            {/* Success badge floating animation */}
+            <div className="absolute -bottom-8 right-8 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 backdrop-blur-sm animate-bounce hidden lg:block" style={{animationDelay: '3s'}}>
+              <span className="text-accent font-mono text-sm font-bold">🇺🇸 AMERICAN PATRIOT</span>
             </div>
           </div>
         </div>
