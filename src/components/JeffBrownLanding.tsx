@@ -21,20 +21,10 @@ const JeffBrownLanding = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate');
           
-          // Trigger pardoned stamp on last timeline item
+          // Trigger animation on last timeline item
           const timelineItems = document.querySelectorAll('.timeline-item');
           if (entry.target === timelineItems[timelineItems.length - 1]) {
-            setTimeout(() => {
-              const stamp = document.getElementById('pardonedStamp');
-              if (stamp) {
-                stamp.classList.add('show');
-                
-                // Hide stamp after 3 seconds
-                setTimeout(() => {
-                  stamp.classList.remove('show');
-                }, 3000);
-              }
-            }, 1000);
+            // Animation for last item completion
           }
         }
       });
@@ -310,12 +300,6 @@ const JeffBrownLanding = () => {
           </div>
         </div>
       </section>
-
-      {/* Pardoned Stamp */}
-      <div className="pardoned-stamp" id="pardonedStamp">
-        PARDONED<br />
-        <span style={{ fontSize: '1.5rem' }}>2025</span>
-      </div>
 
       {/* News & Press Section */}
       <NewsPress />
