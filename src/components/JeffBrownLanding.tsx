@@ -115,7 +115,7 @@ const JeffBrownLanding = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Jeff Brown</h1>
-          <p className="subtitle font-mono uppercase tracking-widest">CONSERVATIVE LEADER • PROVEN RESULTS • AMERICA FIRST</p>
+          <p className="subtitle font-mono uppercase tracking-widest">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <button 
               className="donate-button"
