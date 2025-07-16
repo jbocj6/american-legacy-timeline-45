@@ -104,6 +104,9 @@ const JeffBrownLanding = () => {
     <div className="min-h-screen">
       <Navigation />
       
+      {/* Seamless Background Container */}
+      <div className="seamless-background">
+      
       {/* Campaign Banner */}
       <div className="campaign-banner">
         <div className="max-w-4xl mx-auto">
@@ -143,8 +146,6 @@ const JeffBrownLanding = () => {
 
       {/* Reforms Needed Section */}
       <section className="relative py-24 px-8 overflow-hidden">
-        {/* Background gradient layer */}
-        <div className="absolute inset-0 bg-gradient-to-br from-destructive/10 to-primary/5 -z-10"></div>
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -231,7 +232,7 @@ const JeffBrownLanding = () => {
       <IssuesCards />
 
       {/* Timeline Section */}
-      <section id="timeline" className="py-24 px-8 bg-gradient-to-b from-background via-secondary/10 to-background relative" ref={timelineRef}>
+      <section id="timeline" className="py-24 px-8 relative" ref={timelineRef}>
         <div className="max-w-6xl mx-auto relative">
           {/* Header */}
           <div className="text-center mb-20">
@@ -346,8 +347,6 @@ const JeffBrownLanding = () => {
 
       {/* Policy Platform Section */}
       <section className="relative py-24 px-8 overflow-hidden">
-        {/* Background gradient layer */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/5 -z-10"></div>
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -459,6 +458,8 @@ const JeffBrownLanding = () => {
           </p>
         </div>
       </footer>
+      
+      </div> {/* End seamless background container */}
     </div>
   );
 };
