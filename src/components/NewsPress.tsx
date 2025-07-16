@@ -7,28 +7,28 @@ const NewsPress = () => {
       date: "January 20, 2025",
       excerpt: "Historic presidential pardon recognizes the injustice faced by peaceful protesters and restores constitutional order.",
       category: "Breaking News",
-      image: "/lovable-uploads/7fc79b02-bbe0-4a83-b9ac-b3ad6d4432b8.png"
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Conservative Coalition Grows Stronger",
       date: "January 15, 2025", 
       excerpt: "Local and national conservative leaders unite behind America First principles and constitutional governance.",
       category: "Politics",
-      image: "/lovable-uploads/a5f6b7c0-3d2d-4b86-97be-9c275654d4ca.png"
+      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Fighting Government Weaponization",
       date: "January 10, 2025",
       excerpt: "New initiatives to prevent federal agencies from being used against American citizens exercising their rights.",
       category: "Policy",
-      image: "/lovable-uploads/9bcbbf87-78c1-4886-974a-a70b2693bed9.png"
+      image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Election Integrity Remains Priority",
       date: "January 5, 2025",
       excerpt: "Continued advocacy for transparent, secure elections and addressing constitutional violations in voting processes.",
       category: "Elections",
-      image: "/lovable-uploads/ca5fe2f6-c779-4681-a048-51e116c95850.png"
+      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
