@@ -261,14 +261,11 @@ const JeffBrownLanding = () => {
               </h2>
             </div>
             
-            {/* Animated typewriter subtitle */}
-            <div className="overflow-hidden flex justify-center">
-              <p className="text-2xl font-inter text-muted-foreground animate-fade-in inline-block" 
+            {/* Subtitle */}
+            <div className="flex justify-center">
+              <p className="text-2xl font-inter text-muted-foreground animate-fade-in" 
                  style={{
-                   animationDelay: '1.2s',
-                   borderRight: '2px solid',
-                   whiteSpace: 'nowrap',
-                   animation: 'fade-in 0.5s ease-out 1.2s both, typewriter 3s steps(40, end) 1.2s both, blink-caret 0.75s step-end infinite 1.2s'
+                   animationDelay: '1.2s'
                  }}>
                 A patriot's journey through persecution to vindication
               </p>
