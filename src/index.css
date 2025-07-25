@@ -788,3 +788,16 @@ All colors MUST be HSL.
 .animate-highlight-glow {
   animation: highlight-glow 1.5s ease-in-out;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

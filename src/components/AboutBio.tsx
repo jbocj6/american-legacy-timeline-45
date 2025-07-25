@@ -1,9 +1,11 @@
 import { Shield, Star, Users } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import DonateModal from './DonateModal';
 
 const AboutBio = () => {
   const imageRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -93,7 +95,12 @@ const AboutBio = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="donate-button">DONATE</button>
+                <button 
+                  className="donate-button"
+                  onClick={() => setIsDonateModalOpen(true)}
+                >
+                  DONATE
+                </button>
                 <button className="donate-button" style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}>
                   BOOK A ONE-ON-ONE
                 </button>
@@ -101,6 +108,11 @@ const AboutBio = () => {
             </div>
           </div>
         </div>
+
+        <DonateModal 
+          isOpen={isDonateModalOpen}
+          onOpenChange={setIsDonateModalOpen}
+        />
       </div>
     </section>
   );
