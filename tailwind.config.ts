@@ -88,41 +88,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'stamp-land': {
-					'0%': {
-						transform: 'translateY(-100vh) rotate(12deg) scale(0.8)',
-						opacity: '0'
-					},
-					'70%': {
-						transform: 'translateY(20px) rotate(8deg) scale(1.1)',
-						opacity: '1'
-					},
-					'85%': {
-						transform: 'translateY(-10px) rotate(10deg) scale(0.95)',
-						opacity: '1'
-					},
-					'100%': {
-						transform: 'translateY(0) rotate(12deg) scale(1)',
-						opacity: '1'
-					}
-				},
-				'shadow-expand': {
-					'0%': {
-						transform: 'translateX(-50%) scale(0)',
-						opacity: '0'
-					},
-					'100%': {
-						transform: 'translateX(-50%) scale(1)',
-						opacity: '1'
-					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'stamp-land': 'stamp-land 2s ease-out 2s forwards',
-				'shadow-expand': 'shadow-expand 0.5s ease-out 4s forwards'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},

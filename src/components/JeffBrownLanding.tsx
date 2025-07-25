@@ -120,35 +120,6 @@ const JeffBrownLanding = () => {
           className="absolute right-0 bottom-0 h-[87vh] w-auto object-contain z-30"
         />
         
-        {/* Presidential Pardon Stamp Animation */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
-          <div className="animate-[stamp-land_2s_ease-out_2s_forwards] transform translate-y-[-100vh] rotate-12">
-            <div className="relative">
-              {/* Stamp Border */}
-              <div className="w-80 h-32 border-8 border-red-600 bg-red-600/90 rounded-2xl relative overflow-hidden shadow-2xl">
-                {/* Stamp Perforations */}
-                <div className="absolute inset-0 border-4 border-dashed border-red-800 rounded-xl m-2"></div>
-                
-                {/* Stamp Text */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-                  <div className="text-4xl font-mono font-black tracking-wider transform -rotate-12">
-                    PRESIDENTIAL
-                  </div>
-                  <div className="text-5xl font-mono font-black tracking-wider transform -rotate-12 mt-1">
-                    PARDON
-                  </div>
-                </div>
-                
-                {/* Ink splatter effect */}
-                <div className="absolute inset-0 bg-red-700/20 rounded-2xl animate-pulse"></div>
-              </div>
-              
-              {/* Impact shadow */}
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-96 h-8 bg-black/20 rounded-full blur-lg animate-[shadow-expand_0.5s_ease-out_4s_forwards] scale-0"></div>
-            </div>
-          </div>
-        </div>
-        
         {/* Hero Content - Repositioned to lower-left */}
         <div className="absolute bottom-[20%] left-[5%] z-40">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg">Jeff Brown</h1>
