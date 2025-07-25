@@ -83,6 +83,14 @@ const IssuesCards = () => {
                       className="w-full h-32 object-cover rounded-lg"
                     />
                   </div>
+                ) : issue.title === "Supporting Veterans" ? (
+                  <div className="mb-6">
+                    <img 
+                      src="/lovable-uploads/cd8c4bf9-bc78-405f-917b-2d7ab8c1a18d.png" 
+                      alt="Supporting Veterans" 
+                      className="w-full h-32 object-cover rounded-lg"
+                    />
+                  </div>
                 ) : (
                   <div className={`reform-icon mb-4 ${issue.color}`}>
                     <IconComponent className="w-8 h-8" />
