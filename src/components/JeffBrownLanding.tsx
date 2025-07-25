@@ -262,7 +262,7 @@ const JeffBrownLanding = () => {
             </div>
             
             {/* Animated typewriter subtitle */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden flex justify-center">
               <p className="text-2xl font-inter text-muted-foreground animate-fade-in inline-block" 
                  style={{
                    animationDelay: '1.2s',
