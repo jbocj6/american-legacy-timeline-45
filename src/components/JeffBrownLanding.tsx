@@ -73,7 +73,7 @@ const JeffBrownLanding = () => {
       year: "2021-2024",
       title: "The Persecution", 
       description: "Faced politically motivated prosecution",
-      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/fd21dff2-aae6-4617-9239-7b27b6a3dd09.png",
     },
     {
       year: "January 20, 2025",
