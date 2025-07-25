@@ -64,13 +64,13 @@ const AboutBio = () => {
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl font-space font-bold text-foreground mb-6">Meet Jeff Brown</h2>
             <div className="space-y-6">
-              <p className="text-lg font-inter text-muted-foreground leading-relaxed">
+              <p className="text-lg font-inter text-foreground leading-relaxed">
                 Jeff Brown is a dedicated conservative leader who has spent his life serving America and defending the Constitution. 
                 As a patriot and advocate for traditional values, Jeff understands what it means to stand up for what's right, 
                 even when facing adversity.
               </p>
               
-              <p className="text-lg font-inter text-muted-foreground leading-relaxed">
+              <p className="text-lg font-inter text-foreground leading-relaxed">
                 His experience on January 6th exemplifies the broader struggle facing conservative Americans today – the weaponization 
                 of government against those who dare to question the establishment and fight for election integrity.
               </p>
