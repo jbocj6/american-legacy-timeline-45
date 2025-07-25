@@ -63,10 +63,7 @@ const IssuesCards = () => {
                   <IconComponent className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-space font-semibold text-foreground mb-3">{issue.title}</h3>
-                <p className="text-muted-foreground font-inter leading-relaxed mb-4">{issue.description}</p>
-                <button className="text-accent font-inter font-medium hover:text-accent/80 transition-colors">
-                  Learn More →
-                </button>
+                <p className="text-muted-foreground font-inter leading-relaxed">{issue.description}</p>
               </div>
             );
           })}
