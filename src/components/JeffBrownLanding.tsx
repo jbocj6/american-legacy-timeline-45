@@ -91,7 +91,7 @@ const JeffBrownLanding = () => {
       year: "2028+",
       title: "The Victory",
       description: "America First policies for working families",
-      image: "https://images.unsplash.com/photo-1466442929976-97f336a657be?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/b5330b6e-db80-432c-964c-db835cb95315.png",
     }
   ];
 
