@@ -112,11 +112,19 @@ const JeffBrownLanding = () => {
       </div>
 
       {/* Hero Section - Outside seamless background */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Jeff Brown</h1>
-          <p className="subtitle font-mono uppercase tracking-widest">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+      <section className="hero relative">
+        {/* Jeff Brown Portrait */}
+        <img 
+          src="/lovable-uploads/d78a7ad7-78ed-43b8-8e74-213b83340d79.png" 
+          alt="Jeff Brown Portrait" 
+          className="absolute right-0 bottom-0 h-[67vh] w-auto object-contain z-30"
+        />
+        
+        {/* Hero Content - Repositioned to lower-left */}
+        <div className="absolute bottom-[20%] left-[5%] z-40">
+          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg">Jeff Brown</h1>
+          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <button 
               className="donate-button"
               onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
@@ -128,6 +136,7 @@ const JeffBrownLanding = () => {
             </button>
           </div>
         </div>
+        
         <div className="scroll-indicator" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
           <div className="flex flex-col items-center">
             <span className="text-sm font-mono tracking-widest mb-2">SCROLL</span>
