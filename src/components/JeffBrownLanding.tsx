@@ -85,7 +85,7 @@ const JeffBrownLanding = () => {
       year: "2025-2028",
       title: "The Movement",
       description: "Building conservative coalition nationwide",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/80ac080f-7e6a-4e88-bee8-32843fff046a.png",
     },
     {
       year: "2028+",
