@@ -60,11 +60,11 @@ const IssuesCards = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {issue.title === "Economy & Jobs" ? (
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <img 
                       src="/lovable-uploads/b1c70ea5-f3bb-4d74-a19e-f39d7b53ebce.png" 
                       alt="Economy & Jobs" 
-                      className="w-16 h-16 object-cover rounded-lg mx-auto"
+                      className="w-full h-32 object-cover rounded-lg"
                     />
                   </div>
                 ) : (
