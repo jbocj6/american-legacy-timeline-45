@@ -112,36 +112,22 @@ const JeffBrownLanding = () => {
       </div>
 
       {/* Hero Section - Outside seamless background */}
-      <section className="hero relative">
-        {/* Jeff Brown portrait positioned in upper 2/3 */}
-        <div className="absolute inset-0 flex items-start justify-center pt-8">
-          <img 
-            src="/lovable-uploads/eaea35e0-e9b8-4ba2-b483-dff48ce66881.png" 
-            alt="Jeff Brown" 
-            className="h-[66vh] w-auto object-contain z-20"
-            style={{
-              filter: 'drop-shadow(0 8px 32px rgba(0,0,0,0.3))'
-            }}
-          />
-        </div>
-        
-        {/* Content moved to lower left */}
-        <div className="absolute bottom-0 left-0 p-8 z-30 max-w-md">
-          <h1 className="text-white drop-shadow-lg">Jeff Brown</h1>
-          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg mb-6">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
-          <div className="flex flex-col gap-4">
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Jeff Brown</h1>
+          <p className="subtitle font-mono uppercase tracking-widest">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <button 
-              className="donate-button w-full"
+              className="donate-button"
               onClick={() => document.querySelector('#support-mission')?.scrollIntoView({ behavior: 'smooth' })}
             >
               DONATE NOW
             </button>
-            <button className="donate-button w-full" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>
+            <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>
               SCHEDULE A TALK
             </button>
           </div>
         </div>
-        
         <div className="scroll-indicator" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
           <div className="flex flex-col items-center">
             <span className="text-sm font-mono tracking-widest mb-2">SCROLL</span>
