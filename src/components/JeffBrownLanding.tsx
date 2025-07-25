@@ -252,9 +252,8 @@ const JeffBrownLanding = () => {
             <div className="relative inline-block">
               <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative">
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                  MISSION
+                  MISSION{' '}
                 </span>
-                <br />
                 <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent animate-pulse" style={{animationDelay: '0.5s'}}>
                   BRIEF
                 </span>
