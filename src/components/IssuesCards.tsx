@@ -59,9 +59,19 @@ const IssuesCards = () => {
                 className="reform-card group hover:scale-105 transition-all duration-300"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`reform-icon mb-4 ${issue.color}`}>
-                  <IconComponent className="w-8 h-8" />
-                </div>
+                {issue.title === "Economy & Jobs" ? (
+                  <div className="mb-4">
+                    <img 
+                      src="/lovable-uploads/b1c70ea5-f3bb-4d74-a19e-f39d7b53ebce.png" 
+                      alt="Economy & Jobs" 
+                      className="w-16 h-16 object-cover rounded-lg mx-auto"
+                    />
+                  </div>
+                ) : (
+                  <div className={`reform-icon mb-4 ${issue.color}`}>
+                    <IconComponent className="w-8 h-8" />
+                  </div>
+                )}
                 <h3 className="text-xl font-space font-semibold text-foreground mb-3">{issue.title}</h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">{issue.description}</p>
               </div>
