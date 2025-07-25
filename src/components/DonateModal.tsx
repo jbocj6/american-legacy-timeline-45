@@ -23,7 +23,7 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
             <img 
               src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
               alt="Cash App QR Code" 
-              className="w-40 h-40 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
             <p className="text-center text-base font-inter text-muted-foreground mt-3">Cash App</p>
           </div>
@@ -33,7 +33,7 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
             <img 
               src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
               alt="Venmo QR Code" 
-              className="w-40 h-40 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
             <p className="text-center text-base font-inter text-muted-foreground mt-3">Venmo</p>
           </div>
@@ -43,7 +43,7 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
             <img 
               src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
               alt="Give Send Go QR Code" 
-              className="w-40 h-40 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
             <p className="text-center text-base font-inter text-muted-foreground mt-3">Give Send Go</p>
           </div>
