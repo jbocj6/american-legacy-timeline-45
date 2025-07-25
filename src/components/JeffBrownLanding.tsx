@@ -67,7 +67,7 @@ const JeffBrownLanding = () => {
       year: "January 6, 2021", 
       title: "The Stand",
       description: "Exercised First Amendment rights at the Capitol",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/f4df3228-71b8-4df3-a4b3-80ce9ef6b880.png",
     },
     {
       year: "2021-2024",
