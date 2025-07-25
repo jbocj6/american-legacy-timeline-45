@@ -117,7 +117,7 @@ const JeffBrownLanding = () => {
         <img 
           src="/lovable-uploads/806ee4d5-28d7-48bd-9773-f511125effbb.png" 
           alt="Jeff Brown Portrait" 
-          className="absolute right-0 bottom-0 h-[67vh] w-auto object-contain z-30"
+          className="absolute right-0 bottom-0 h-[87vh] w-auto object-contain z-30"
         />
         
         {/* Hero Content - Repositioned to lower-left */}
