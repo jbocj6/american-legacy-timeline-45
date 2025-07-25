@@ -135,10 +135,11 @@ All colors MUST be HSL.
   .seamless-background {
     background: var(--gradient-seamless);
     margin: 0;
+    margin-top: -2px;
     padding: 0;
   }
   .hero {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--gradient-hero), url('/lovable-uploads/usa-flag-waving.gif');
     background-size: cover;
     background-position: center;
