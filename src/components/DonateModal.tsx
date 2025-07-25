@@ -8,7 +8,7 @@ interface DonateModalProps {
 const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl bg-background border border-border">
+      <DialogContent className="sm:max-w-4xl bg-background border border-border">
         <DialogHeader>
           <DialogTitle className="text-center">
             <div className="animate-float text-5xl font-space font-bold text-foreground mb-8">
@@ -17,13 +17,14 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
           </DialogTitle>
         </DialogHeader>
         
-        <div className="flex flex-col sm:flex-row gap-8 items-center justify-center p-6">
+        <div className="flex flex-col lg:flex-row gap-12 items-center justify-center p-8">
           {/* Cash App - Red Envelope (Left) */}
           <div className="qr-card group">
             <img 
               src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
               alt="Cash App QR Code" 
-              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-64 h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+              style={{ imageRendering: 'crisp-edges' }}
             />
           </div>
 
@@ -32,7 +33,8 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
             <img 
               src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
               alt="Venmo QR Code" 
-              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-64 h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+              style={{ imageRendering: 'crisp-edges' }}
             />
           </div>
 
@@ -41,7 +43,8 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
             <img 
               src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
               alt="Give Send Go QR Code" 
-              className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
+              className="w-64 h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+              style={{ imageRendering: 'crisp-edges' }}
             />
           </div>
         </div>
