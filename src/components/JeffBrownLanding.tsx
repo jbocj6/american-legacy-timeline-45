@@ -61,7 +61,7 @@ const JeffBrownLanding = () => {
       year: "2017-2020",
       title: "The Patriot",
       description: "Constitutional conservative fighting for American values",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/fe3392e0-ffa5-4364-a4ae-f65517f0bc88.png",
     },
     {
       year: "January 6, 2021", 
