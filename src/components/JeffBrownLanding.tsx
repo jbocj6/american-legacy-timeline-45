@@ -294,7 +294,7 @@ const JeffBrownLanding = () => {
                   
                   {/* Date */}
                   <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
-                    <div className="text-6xl md:text-8xl font-mono font-black text-primary/20 leading-none mb-2">
+                    <div className="text-6xl md:text-8xl font-mono font-black text-destructive/70 leading-none mb-2">
                       {event.year}
                     </div>
                   </div>
