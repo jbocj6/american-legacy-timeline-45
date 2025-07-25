@@ -147,7 +147,8 @@ All colors MUST be HSL.
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-top: 80px;
+    margin: 0;
+    padding: 0;
   }
 
   .hero-content {
