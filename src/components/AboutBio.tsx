@@ -46,7 +46,7 @@ const AboutBio = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/Xxh9Da_EJB4?autoplay=0&controls=1&rel=0" 
+                  src="https://www.youtube.com/embed/sGWBBTqWJN8?autoplay=0&controls=1&rel=0" 
                   title="America - YouTube Video"
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
