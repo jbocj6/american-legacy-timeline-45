@@ -316,10 +316,14 @@ const JeffBrownLanding = () => {
                           alt={event.title} 
                           className="w-full h-48 object-cover rounded-xl mb-6 transition-transform duration-300 group-hover:scale-105"
                         />
-                        <h3 className="text-2xl font-space font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                        <h3 className={`text-2xl font-space font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 ${
+                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
+                        }`}>
                           {event.title}
                         </h3>
-                        <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                        <p className={`text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 ${
+                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
+                        }`}>
                           {event.description}
                         </p>
                       </div>
