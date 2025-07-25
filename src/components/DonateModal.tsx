@@ -25,7 +25,6 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
               alt="Cash App QR Code" 
               className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
-            <p className="text-center text-base font-inter text-muted-foreground mt-3">Cash App</p>
           </div>
 
           {/* Venmo - White Envelope (Center) */}
@@ -35,7 +34,6 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
               alt="Venmo QR Code" 
               className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
-            <p className="text-center text-base font-inter text-muted-foreground mt-3">Venmo</p>
           </div>
 
           {/* Give Send Go - Blue Envelope (Right) */}
@@ -45,7 +43,6 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
               alt="Give Send Go QR Code" 
               className="w-48 h-48 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/20"
             />
-            <p className="text-center text-base font-inter text-muted-foreground mt-3">Give Send Go</p>
           </div>
         </div>
       </DialogContent>
