@@ -44,7 +44,7 @@ const IssuesCards = () => {
     <section id="issues" className="py-24 px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-space font-bold text-foreground mb-4">America First Priorities</h2>
+          <h2 className="text-6xl font-space font-bold text-foreground mb-4">America First Priorities</h2>
           <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">
             Fighting for the issues that matter most to conservative families and communities
           </p>
