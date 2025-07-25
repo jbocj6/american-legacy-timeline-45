@@ -79,7 +79,7 @@ const JeffBrownLanding = () => {
       year: "January 20, 2025",
       title: "The Vindication",
       description: "Presidential pardon restores justice",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/8a7efeac-fd06-4f1f-b613-b5bb958640e3.png",
     },
     {
       year: "2025-2028",
