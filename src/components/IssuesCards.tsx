@@ -91,6 +91,14 @@ const IssuesCards = () => {
                       className="w-full h-32 object-cover rounded-lg"
                     />
                   </div>
+                ) : issue.title === "Family Values" ? (
+                  <div className="mb-6">
+                    <img 
+                      src="/lovable-uploads/b67b9d15-3051-4348-b356-d760c90448e3.png" 
+                      alt="Family Values" 
+                      className="w-full h-32 object-cover rounded-lg"
+                    />
+                  </div>
                 ) : (
                   <div className={`reform-icon mb-4 ${issue.color}`}>
                     <IconComponent className="w-8 h-8" />
