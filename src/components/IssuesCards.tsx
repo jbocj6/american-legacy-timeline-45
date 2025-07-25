@@ -45,7 +45,7 @@ const IssuesCards = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-6xl font-space font-bold text-foreground mb-4">America First Priorities</h2>
-          <p className="text-lg font-inter text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-2xl font-inter text-muted-foreground max-w-2xl mx-auto">
             Fighting for the issues that matter most to conservative families and communities
           </p>
         </div>
