@@ -115,7 +115,7 @@ const JeffBrownLanding = () => {
       <section className="hero relative">
         {/* Jeff Brown Portrait */}
         <img 
-          src="/lovable-uploads/d78a7ad7-78ed-43b8-8e74-213b83340d79.png" 
+          src="/lovable-uploads/52108c7e-d5e4-4e4e-ac9b-71c398ff8c4c.png" 
           alt="Jeff Brown Portrait" 
           className="absolute right-0 bottom-0 h-[67vh] w-auto object-contain z-30"
         />
