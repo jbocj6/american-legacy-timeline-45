@@ -50,7 +50,8 @@ const BookSection = () => {
             The January 6th Truth
           </h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A Personal Account of What Really Happened - By Jeffrey Scott Brown
+            <span className="block sm:inline">A Personal Account of What Really Happened</span>
+            <span className="block sm:inline"> - By Jeffrey Scott Brown</span>
           </p>
         </div>
 
