@@ -8,7 +8,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'MEET JEFF', href: '#meet-jeff' },
-    { name: 'MY STORY', href: '#news' },
+    { name: 'MY STORY', href: '#book-section' },
     { name: 'PRIORITIES', href: '#events' },
     { name: 'NEWS', href: '#get-involved' },
     { name: 'GET INVOLVED', href: '#timeline' },
