@@ -1,8 +1,10 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import DonateModal from './DonateModal';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
 
   const navItems = [
     { name: 'PLATFORM', href: '#issues' },
@@ -43,7 +45,10 @@ const Navigation = () => {
 
             {/* Donate Button */}
             <div className="hidden md:block">
-              <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest">
+              <button 
+                onClick={() => setIsDonateModalOpen(true)}
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest"
+              >
                 Donate
               </button>
             </div>
@@ -74,13 +79,21 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest">
+              <button 
+                onClick={() => setIsDonateModalOpen(true)}
+                className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest"
+              >
                 Donate
               </button>
             </div>
           </div>
         )}
       </div>
+      
+      <DonateModal 
+        isOpen={isDonateModalOpen} 
+        onOpenChange={setIsDonateModalOpen} 
+      />
     </nav>
   );
 };
