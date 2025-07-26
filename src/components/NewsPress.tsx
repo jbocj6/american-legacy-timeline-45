@@ -123,7 +123,7 @@ const NewsPress = () => {
                 src="/lovable-uploads/44f76c58-3193-4e9c-bfbf-b21cbf3e5b1a.png" 
                 alt="President Trump signing legislation"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '50% 10%' }}
+                style={{ objectPosition: '50% 5%' }}
               />
             </div>
             
