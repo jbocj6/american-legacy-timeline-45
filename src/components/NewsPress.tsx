@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 const NewsPress = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
+  const [isThirdModalOpen, setIsThirdModalOpen] = useState(false);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   const newsItems = [
@@ -23,10 +24,10 @@ const NewsPress = () => {
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Fighting Government Weaponization",
-      date: "January 10, 2025",
-      excerpt: "New initiatives to prevent federal agencies from being used against American citizens exercising their rights.",
-      category: "Policy",
+      title: "SCOTUS Rules 7-2: Churches Can't Be Forced to Hire Against Their Beliefs",
+      date: "July 11, 2025",
+      excerpt: "Landmark decision protects faith-based organizations from government mandates in historic First Amendment victory.",
+      category: "RELIGIOUS LIBERTY",
       image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -97,7 +98,7 @@ const NewsPress = () => {
                 </p>
                 
                 <button 
-                  onClick={index === 0 ? () => setIsModalOpen(true) : index === 1 ? () => setIsSecondModalOpen(true) : undefined}
+                  onClick={index === 0 ? () => setIsModalOpen(true) : index === 1 ? () => setIsSecondModalOpen(true) : index === 2 ? () => setIsThirdModalOpen(true) : undefined}
                   className="flex items-center text-accent font-inter font-medium hover:text-accent/80 transition-colors"
                 >
                   Read Full Article
@@ -335,6 +336,161 @@ const NewsPress = () => {
             <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
               <p className="text-lg font-semibold">
                 Stand with President Trump and share this truth. The mainstream media won't report our success – it's up to patriots like you to spread the word.
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Third Article Modal - Religious Freedom */}
+      <Dialog open={isThirdModalOpen} onOpenChange={setIsThirdModalOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+              Supreme Court Delivers: Religious Freedom Wins Big
+            </DialogTitle>
+            <div className="text-center text-muted-foreground font-inter mb-4">
+              By Jeffrey Brown • July 11, 2025
+            </div>
+          </DialogHeader>
+          
+          <div className="prose prose-lg max-w-none text-foreground">
+            {/* Hero Image */}
+            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
+              <img 
+                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Supreme Court building"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Faith Under Fire No More: Supreme Court Stands with Religious Americans</h2>
+            
+            <p className="mb-4">
+              In a decisive 7-2 ruling that shocked liberal activists, the Supreme Court delivered its strongest defense of religious liberty in decades. The Court ruled that faith-based organizations cannot be forced to hire employees whose lifestyles contradict their religious teachings.
+            </p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "This is nothing short of a constitutional restoration," declared Alliance Defending Freedom CEO Michael Farris. "The Court has affirmed what the Founders always intended – that government cannot dictate matters of faith and conscience."
+            </blockquote>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Case That Changed Everything</h2>
+            
+            <h3 className="text-xl font-semibold mb-3">Background: David v. St. Michael's Christian Academy</h3>
+            
+            <p className="mb-4">
+              When St. Michael's Christian Academy in Ohio declined to renew the contract of a teacher who began publicly promoting views contradicting the school's statement of faith, they faced a discrimination lawsuit backed by the ACLU and Biden's Justice Department.
+            </p>
+            
+            <p className="mb-4">
+              The lower courts sided with the teacher, ruling that religious exemptions were "too broad" and "harmful to equality." The school faced potential closure and millions in fines.
+            </p>
+            
+            <p className="mb-6"><strong>Then came July 11, 2025.</strong></p>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Ruling That Restored Constitutional Order</h2>
+            
+            <p className="mb-4">Justice Amy Coney Barrett's majority opinion didn't mince words:</p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "The First Amendment's guarantee of religious freedom is not a second-class right. When the government forces religious institutions to employ those who actively undermine their core beliefs, it strikes at the very heart of religious liberty."
+            </blockquote>
+            
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">The 7-2 Breakdown:</h3>
+              <p className="mb-2"><strong>Majority:</strong> Roberts, Thomas, Alito, Gorsuch, Kavanaugh, Barrett, Jackson</p>
+              <p className="mb-4"><strong>Dissent:</strong> Sotomayor, Kagan</p>
+              <p>Yes, you read that right – even liberal Justice Ketanji Brown Jackson sided with religious freedom.</p>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What This Means for People of Faith</h2>
+            
+            <p className="mb-4">The decision's impact extends far beyond one school:</p>
+            
+            <h3 className="text-xl font-semibold mb-3">Protected Religious Rights:</h3>
+            <ol className="list-decimal pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Hiring Decisions</strong> – Faith-based employers can require employees to uphold organizational beliefs</li>
+              <li><strong className="text-primary">Student Admissions</strong> – Religious schools maintain standards aligned with their mission</li>
+              <li><strong className="text-primary">Healthcare Conscience</strong> – Religious hospitals can't be forced to perform procedures violating their faith</li>
+              <li><strong className="text-primary">Adoption Agencies</strong> – Faith-based agencies can place children according to religious convictions</li>
+            </ol>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Left's Meltdown Reveals Their True Agenda</h2>
+            
+            <p className="mb-4">The reaction from progressive leaders exposed their hostility to faith:</p>
+            
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">AOC:</strong> "This extremist Court just legalized discrimination"</li>
+              <li><strong className="text-primary">Elizabeth Warren:</strong> "Religious freedom is being weaponized against equality"</li>
+              <li><strong className="text-primary">Gavin Newsom:</strong> "California will resist this assault on civil rights"</li>
+            </ul>
+            
+            <p className="mb-6"><strong>Translation:</strong> They're furious that Christians can actually live according to their beliefs.</p>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">A Victory Years in the Making</h2>
+            
+            <p className="mb-4">This ruling represents the culmination of a decades-long fight:</p>
+            
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">2012:</strong> Obamacare contraception mandate challenged</li>
+              <li><strong className="text-primary">2014:</strong> Hobby Lobby wins at Supreme Court</li>
+              <li><strong className="text-primary">2018:</strong> Masterpiece Cakeshop victory</li>
+              <li><strong className="text-primary">2021:</strong> Fulton v. Philadelphia protects adoption agencies</li>
+              <li><strong className="text-primary">2023:</strong> 303 Creative affirms conscience rights</li>
+              <li><strong className="text-primary">2025:</strong> David v. St. Michael's – the ultimate vindication</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Real Americans, Real Impact</h2>
+            
+            <h3 className="text-xl font-semibold mb-3">Sister Mary Catherine, Principal of St. Joseph's School:</h3>
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "For years, we've faced pressure to compromise our beliefs or close our doors. Today, the Supreme Court said we can be both Catholic and American. Our prayers have been answered."
+            </blockquote>
+            
+            <h3 className="text-xl font-semibold mb-3">Rabbi David Goldstein, Yeshiva Director:</h3>
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "This protects not just Christians, but all faiths. Jewish schools can remain Jewish, Muslim schools can remain Muslim. Pluralism wins when religious freedom wins."
+            </blockquote>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Constitutional Foundation</h2>
+            
+            <p className="mb-4">Justice Gorsuch's concurring opinion provided a history lesson the left desperately needs:</p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "The Founders fled religious persecution. They embedded protections for faith in our Constitution's very first amendment. To suggest they intended government bureaucrats to dictate religious hiring is to ignore history, text, and common sense."
+            </blockquote>
+            
+            <h3 className="text-xl font-semibold mb-3">Key Constitutional Principles Affirmed:</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Free Exercise Clause</strong> protects religious practice, not just belief</li>
+              <li><strong className="text-primary">Establishment Clause</strong> prevents government interference in religious matters</li>
+              <li><strong className="text-primary">Freedom of Association</strong> includes right to maintain religious character</li>
+              <li><strong className="text-primary">Institutional Autonomy</strong> shields internal religious decisions from state control</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">A Message to the Faithful</h2>
+            
+            <p className="mb-4">For too long, Americans of faith have been told to hide their beliefs, compromise their convictions, and bow to secular demands. Today, the highest court in the land said: <strong>No more.</strong></p>
+            
+            <p className="mb-6">
+              You can run your schools according to Scripture.<br/>
+              You can hire those who share your mission.<br/>
+              You can practice what you preach.<br/>
+              You can be fully American and fully faithful.
+            </p>
+            
+            <p className="mb-4">Justice Barrett concluded the majority opinion with words that should be framed in every religious institution:</p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "In America, the government serves the people, not the other way around. And among the people's most cherished rights is the freedom to live, work, and worship according to their deepest convictions. Today, we reaffirm that fundamental truth."
+            </blockquote>
+            
+            <p className="mb-4"><strong>The Constitution won. Faith won. Freedom won.</strong></p>
+            <p className="mb-6">And that's exactly what the Founders intended.</p>
+            
+            <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
+              <p className="text-lg font-semibold">
+                Religious freedom isn't just for some Americans – it's for all Americans. Share this victory with your faith community and help protect what the Court has preserved.
               </p>
             </div>
           </div>
