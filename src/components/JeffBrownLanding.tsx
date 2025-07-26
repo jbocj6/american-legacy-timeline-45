@@ -281,9 +281,9 @@ const JeffBrownLanding = () => {
           <div className="text-center mb-20">
             {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
-              <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative
+              <h2 className="text-6xl md:text-7xl font-mono font-black tracking-widest mb-6 relative
                             max-md:text-4xl max-md:tracking-wider max-md:mb-4
-                            max-sm:text-3xl max-sm:tracking-wide max-sm:mb-3">
+                            max-sm:text-3xl max-sm:tracking-wide max-sm:mb-3" style={{fontWeight: '1000'}}>
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
                   JEFFREY'S{' '}
                 </span>
