@@ -418,10 +418,53 @@ const JeffBrownLanding = () => {
       </section>
 
       {/* Footer */}
-      <footer className="relative py-8 text-center">
+      <footer className="relative py-20 text-center overflow-hidden">
+        {/* Flag background with blue filter */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `var(--gradient-hero), url('/lovable-uploads/usa-flag-waving.gif')`
+          }}
+        ></div>
+        
+        {/* Content overlay */}
         <div className="relative z-10 text-white">
-          <p className="opacity-70 font-inter">
-            © 2025 Jeff Brown
+          <div className="text-6xl mb-5 animate-bounce">🇺🇸</div>
+          <h3 className="text-2xl mb-4 font-mono font-700 tracking-widest uppercase">AMERICAN PATRIOT COALITION</h3>
+          <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a href="#" className="cta-button" onClick={handleCTAClick}>
+              SCHEDULE A CALL
+            </a>
+            <a href="#" className="cta-button" onClick={handleCTAClick}>
+              RESOURCES
+            </a>
+          </div>
+          
+          {/* Enhanced Text Message Section */}
+          <div className="relative mb-8 max-w-3xl mx-auto">
+            {/* Animated background glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-xl blur-lg animate-pulse" style={{animationDuration: '3s'}}></div>
+            
+            {/* Main text message container */}
+            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/40 rounded-xl p-8 mx-4">
+              <div className="text-center">
+                <div className="text-sm font-mono uppercase tracking-wider text-accent/80 mb-3">
+                  🇺🇸 Join the Movement 🇺🇸
+                </div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold tracking-wide leading-tight">
+                  TEXT <span className="text-accent">JBJ6</span> TO <span className="text-accent">66055</span>
+                </div>
+                <div className="text-base md:text-lg font-mono uppercase tracking-widest text-white/80 mt-4">
+                  Stand with Constitutional Patriots
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <p className="mt-10 opacity-70 font-inter max-w-4xl mx-auto">
+            © 2025 Jeff Brown for Congress • Paid for by Jeff Brown for Congress Committee • Not authorized by any candidate or candidate's committee
           </p>
         </div>
       </footer>
