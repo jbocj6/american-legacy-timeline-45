@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 
 const NewsPress = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   const newsItems = [
     {
@@ -143,7 +144,8 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/e40a95ef-ccd1-4d5b-990c-f26de279e917.png" 
                 alt="One Big Beautiful Bill - $170.7B Investment Breakdown"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => setIsImageModalOpen(true)}
               />
             </div>
             
@@ -190,6 +192,19 @@ const NewsPress = () => {
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
               NRA Executive Vice President Doug Hamlin didn't mince words: "Promises made to law-abiding gun owners are being kept by President Donald J. Trump."
             </blockquote>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Image Modal */}
+      <Dialog open={isImageModalOpen} onOpenChange={setIsImageModalOpen}>
+        <DialogContent className="max-w-7xl max-h-[95vh] p-2">
+          <div className="w-full h-full flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/e40a95ef-ccd1-4d5b-990c-f26de279e917.png" 
+              alt="One Big Beautiful Bill - $170.7B Investment Breakdown"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
           </div>
         </DialogContent>
       </Dialog>
