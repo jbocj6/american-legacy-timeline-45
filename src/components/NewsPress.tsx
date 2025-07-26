@@ -418,14 +418,6 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Metadata Box */}
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
-                RELIGIOUS LIBERTY
-              </div>
-              <p><strong>Preview Title:</strong> SCOTUS Sides with Parents Against LGBTQ Indoctrination in Schools</p>
-              <p><strong>Preview Summary:</strong> Supreme Court delivers historic victory affirming parents' right to opt children out of controversial LGBTQ curriculum.</p>
-            </div>
 
             <h2 className="text-2xl font-semibold text-primary mb-4">Parents' Rights Triumph Over Woke School Agenda</h2>
             
