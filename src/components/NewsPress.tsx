@@ -6,6 +6,7 @@ const NewsPress = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
   const [isThirdModalOpen, setIsThirdModalOpen] = useState(false);
+  const [isFourthModalOpen, setIsFourthModalOpen] = useState(false);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   const newsItems = [
@@ -31,11 +32,11 @@ const NewsPress = () => {
       image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Election Integrity Remains Priority",
-      date: "January 5, 2025",
-      excerpt: "Continued advocacy for transparent, secure elections and addressing constitutional violations in voting processes.",
-      category: "Elections",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Trump Signs Historic $170B \"Big Beautiful Bill\" on Independence Day",
+      date: "July 4, 2025",
+      excerpt: "President delivers on campaign promises with massive immigration enforcement and tax cut legislation.",
+      category: "AMERICA FIRST",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -98,7 +99,7 @@ const NewsPress = () => {
                 </p>
                 
                 <button 
-                  onClick={index === 0 ? () => setIsModalOpen(true) : index === 1 ? () => setIsSecondModalOpen(true) : index === 2 ? () => setIsThirdModalOpen(true) : undefined}
+                  onClick={index === 0 ? () => setIsModalOpen(true) : index === 1 ? () => setIsSecondModalOpen(true) : index === 2 ? () => setIsThirdModalOpen(true) : index === 3 ? () => setIsFourthModalOpen(true) : undefined}
                   className="flex items-center text-accent font-inter font-medium hover:text-accent/80 transition-colors"
                 >
                   Read Full Article
@@ -600,6 +601,200 @@ const NewsPress = () => {
             <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
               <p className="text-lg font-semibold">
                 This victory belongs to every parent who believes in religious freedom and parental rights. Share this article with other parents in your community. The fight for our children's hearts and minds continues – but today, freedom won.
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Fourth Article Modal - Big Beautiful Bill */}
+      <Dialog open={isFourthModalOpen} onOpenChange={setIsFourthModalOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+              America First Wins: Trump Signs Historic $170B Big Beautiful Bill
+            </DialogTitle>
+            <div className="text-center text-muted-foreground font-inter mb-4">
+              By Jeffrey Brown • July 4, 2025
+            </div>
+          </DialogHeader>
+          
+          <div className="prose prose-lg max-w-none text-foreground">
+            <h2 className="text-2xl font-semibold text-primary mb-4">Independence Day Victory: Promises Made, Promises Kept</h2>
+            
+            {/* Hero Image Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
+                <p>President Trump signing the Big Beautiful Bill at White House ceremony, American flags in background, July 4 celebration setting</p>
+                <p className="text-sm mt-2">Image source needed - White House Photo/Reuters</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              President Donald J. Trump delivered the ultimate Fourth of July gift to American patriots today, signing the historic "One Big Beautiful Bill" into law at a 5 p.m. White House ceremony. The massive $170.7 billion package represents the largest conservative policy victory in decades, fundamentally reshaping America's approach to border security, immigration enforcement, and taxation.
+            </p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "Promises made, promises kept!" Vice President JD Vance posted on X. "At times I even doubted we'd get it done by July 4! But now we've delivered big tax cuts and the resources necessary to secure the border."
+            </blockquote>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">What's Really in the Bill Liberal Media Won't Tell You</h2>
+            
+            {/* Infographic Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
+                <p>Breakdown of $170.7B - showing $46.6B border wall, $45B detention centers, $30B ICE personnel, tax cut provisions</p>
+                <p className="text-sm mt-2">Create infographic showing funding breakdown</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              According to the House's passage of the bill on July 3, meeting Trump's self-imposed deadline of July 4, this legislation delivers on every major conservative priority:
+            </p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Border Security That Actually Works:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong className="text-primary">$46.6 billion for border wall construction</strong> – more than 3 times what the Trump administration spent in its first term</li>
+                <li><strong className="text-primary">$45 billion for detention centers</strong> – funding to expand ICE detention to at least 116,000 beds</li>
+                <li><strong className="text-primary">$30 billion for ICE personnel</strong> – hiring 10,000 new ICE agents, transportation, and facilities</li>
+                <li><strong className="text-primary">$14.4 billion for removals</strong> – helping ICE achieve as many as 1 million deportations per year</li>
+              </ul>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">Democrats' Eight-Hour Meltdown Fails to Stop Victory</h2>
+            
+            {/* Jeffries Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>House Minority Leader Hakeem Jeffries speaking during his record-breaking 8 hour 44 minute floor speech</p>
+                <p className="text-sm mt-2">Source needed - C-SPAN/House TV footage</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              Minority Leader Hakeem Jeffries spoke for eight hours and 44 minutes, breaking a record for the longest House floor speech, desperately trying to delay the inevitable. Jeffries decried cuts to Medicaid and other provisions in the sweeping legislation and referred to the House floor as a "crime scene."
+            </p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "This bill is a deal with the devil. It explodes our national debt. It militarizes our entire economy. And it strips away health care and basic dignity of the American people," ranted New York Democratic Rep. Alexandria Ocasio-Cortez.
+            </blockquote>
+            
+            <p className="mb-6">Reality check: Democrats are panicking because this bill delivers real results for real Americans instead of funding their radical agenda.</p>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">Secretary Noem: "Make America Safe Again!"</h2>
+            
+            {/* DHS Seal Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>DHS Secretary Kristi Noem at podium with DHS seal and American flag</p>
+                <p className="text-sm mt-2">Source needed - DHS Photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              "President Trump's signing the One Big Beautiful Bill is a win for law and order and the safety and security of the American people," said Secretary Kristi Noem. "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!"
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3">Key Provisions Secretary Noem Highlighted:</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>$46.5 billion to complete construction of the border wall</li>
+              <li>$12 billion in state reimbursements for states that fought against the Biden administration's open border</li>
+              <li>$4.1 billion to hire additional CBP personnel, including 3,000 more customs officers and 3,000 new Border Patrol agents</li>
+              <li>$10,000 bonus for ICE and Border Patrol agents for the next four years</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">Six Months of Winning: The Trump Effect</h2>
+            
+            {/* Statistics Chart Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[CHART NEEDED]</p>
+                <p>Before/After comparison showing border crossings plummeting under Trump vs Biden era peaks</p>
+                <p className="text-sm mt-2">Create chart using DHS statistics</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">The results speak for themselves. In both May and June, U.S. Border Patrol reported zero parole releases—reinforcing the Administration's commitment to ending catch-and-release policies.</p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Trump's First Six Months By The Numbers:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>The Trump administration has arrested more than 300,000 illegal aliens in 2025 alone. 70% of ICE arrests are criminal illegal aliens with criminal charges or convictions</li>
+                <li>Migrants are turning BACK before they even reach our border— migration through Panama's Darien Gap is down 99%</li>
+                <li>Slightly over 6,000 apprehensions in June, according to preliminary figures – compared to 251,487 monthly under Biden's peak</li>
+                <li>Border crossings earlier this year plunged to the lowest level in decades</li>
+              </ul>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">Tax Relief for Working Americans</h2>
+            
+            {/* Tax Relief Graphic Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[GRAPHIC NEEDED]</p>
+                <p>Icons showing tax relief for tips, overtime, and Social Security benefits</p>
+                <p className="text-sm mt-2">Create tax relief infographic</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">While Democrats screamed about the border provisions, they conveniently ignored the massive tax relief for working families:</p>
+
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">No taxes on tips</strong> – helping millions of service workers</li>
+              <li><strong className="text-primary">No taxes on overtime pay</strong> – rewarding hard work</li>
+              <li><strong className="text-primary">Social Security tax relief</strong> – protecting seniors' income</li>
+              <li><strong className="text-primary">Extension of Trump tax cuts</strong> – keeping more money in your pocket</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Real Story: Law and Order Returns</h2>
+            
+            {/* ICE Operations Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>ICE agents conducting enforcement operation</p>
+                <p className="text-sm mt-2">Source needed - ICE Photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              President Trump—with $46.5 billion from the Big Beautiful Bill—is finishing the border wall. DHS already has more than 85 miles either planned or under construction with funding from the prior year, in addition to hundreds of miles that are now planned to be funded by the bill.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3">What This Means for America:</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>ICE becomes the largest federal law enforcement agency</li>
+              <li>Criminal aliens can no longer hide in sanctuary cities</li>
+              <li>Drug cartels face unprecedented enforcement pressure</li>
+              <li>American communities become safer as criminals are removed</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: America First Delivers</h2>
+            
+            <p className="mb-4">
+              On this Independence Day, President Trump has given America its independence back – from open borders, from criminal aliens, from the radical left's agenda to transform our nation.
+            </p>
+            
+            <p className="mb-4">
+              This isn't just a funding bill. It's a declaration that America will no longer be the world's doormat. It's a promise that our tax dollars will secure OUR borders, protect OUR communities, and serve OUR citizens.
+            </p>
+            
+            <p className="mb-4">
+              The establishment said it couldn't be done. The media said it was impossible. The Democrats tried everything to stop it.
+            </p>
+            
+            <p className="mb-4">But Donald J. Trump delivered. Again.</p>
+            
+            <p className="mb-6"><strong>Happy Independence Day, America. Your country is back.</strong></p>
+
+            <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
+              <p className="text-lg font-semibold">
+                This historic victory must be defended. Share this truth with every American who cares about border security and the rule of law. The mainstream media won't tell this story – we must.
               </p>
             </div>
           </div>
