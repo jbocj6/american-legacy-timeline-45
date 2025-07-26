@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Users, Calendar, Share2, DollarSign, Mail, Phone, MapPin } from 'lucide-react';
+import { Calendar, Share2, DollarSign, Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import DonateModal from './DonateModal';
 
@@ -14,14 +14,6 @@ const GetInvolvedHub = () => {
   const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
   const { toast } = useToast();
 
-  const volunteerOptions = [
-    { id: 'phonebank', label: 'Phone Banking', icon: Phone },
-    { id: 'doorknocker', label: 'Door-to-Door Canvassing', icon: MapPin },
-    { id: 'events', label: 'Event Organizing', icon: Calendar },
-    { id: 'social', label: 'Social Media', icon: Share2 },
-    { id: 'fundraising', label: 'Fundraising', icon: DollarSign },
-    { id: 'newsletter', label: 'Newsletter & Communications', icon: Mail }
-  ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -30,29 +22,21 @@ const GetInvolvedHub = () => {
     });
   };
 
-  const handleInterestToggle = (interest: string) => {
-    setFormData({
-      ...formData,
-      interests: formData.interests.includes(interest)
-        ? formData.interests.filter(i => i !== interest)
-        : [...formData.interests, interest]
-    });
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) {
       toast({
-        title: "Please fill required fields",
-        description: "Name and email are required to volunteer.",
+        title: "Required Fields Missing",
+        description: "Please fill in your name and email address.",
         variant: "destructive"
       });
       return;
     }
 
     toast({
-      title: "Thank you for volunteering!",
-      description: "We'll be in touch soon with ways you can help our movement.",
+      title: "Successfully Subscribed!",
+      description: "Thank you for subscribing to our newsletter. You'll receive updates soon.",
     });
 
     // Reset form
@@ -69,9 +53,9 @@ const GetInvolvedHub = () => {
     <section id="get-involved" className="bg-secondary py-24 px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-space font-bold text-secondary-foreground mb-4">Join the Movement</h2>
+          <h2 className="text-4xl font-space font-bold text-secondary-foreground mb-4">Stay Connected</h2>
           <p className="text-lg font-inter text-secondary-foreground/80 max-w-2xl mx-auto">
-            Your voice matters. Join thousands of patriots fighting for conservative values and constitutional governance.
+            Subscribe to our newsletter to stay informed about our conservative movement and important updates from our community.
           </p>
         </div>
 
@@ -79,8 +63,8 @@ const GetInvolvedHub = () => {
           {/* Volunteer Form */}
           <div className="bg-card p-8 rounded-lg border border-border shadow-xl">
             <h3 className="text-2xl font-space font-semibold text-foreground mb-6 flex items-center">
-              <Users className="w-6 h-6 mr-3 text-accent" />
-              Volunteer Sign-Up
+              <Mail className="w-6 h-6 mr-3 text-accent" />
+              Newsletter Sign-Up
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -127,7 +111,7 @@ const GetInvolvedHub = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
-                    placeholder="(555) 123-4567"
+                    placeholder="(555) 123-4567 (optional)"
                   />
                 </div>
                 
@@ -141,46 +125,17 @@ const GetInvolvedHub = () => {
                     value={formData.zip}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
-                    placeholder="12345"
+                    placeholder="12345 (optional)"
                   />
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-4">
-                  How would you like to help? (Select all that apply)
-                </label>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {volunteerOptions.map((option) => {
-                    const IconComponent = option.icon;
-                    return (
-                      <label
-                        key={option.id}
-                        className={`flex items-center p-3 rounded-lg border cursor-pointer transition-all ${
-                          formData.interests.includes(option.id)
-                            ? 'border-accent bg-accent/10 text-accent'
-                            : 'border-border hover:border-accent/50'
-                        }`}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={formData.interests.includes(option.id)}
-                          onChange={() => handleInterestToggle(option.id)}
-                          className="sr-only"
-                        />
-                        <IconComponent className="w-4 h-4 mr-3" />
-                        <span className="text-sm font-medium">{option.label}</span>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
 
               <button
                 type="submit"
                 className="w-full donate-button"
               >
-                JOIN THE TEAM
+                SUBSCRIBE TO NEWSLETTER
               </button>
             </form>
           </div>
