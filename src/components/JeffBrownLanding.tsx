@@ -536,7 +536,7 @@ const JeffBrownLanding = () => {
                     />
                   </div>
                 </div>
-                <div className="text-lg md:text-2xl font-mono font-semibold uppercase tracking-widest text-white/80 mt-4">
+                <div className="text-2xl md:text-4xl font-mono font-semibold uppercase tracking-widest text-white/80 mt-4">
                   POWER OUR MISSION
                 </div>
               </div>
