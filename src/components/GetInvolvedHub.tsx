@@ -61,7 +61,7 @@ const GetInvolvedHub = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Volunteer Form */}
-          <div className="bg-card p-8 rounded-lg border border-border shadow-xl">
+          <div className="bg-card p-8 rounded-lg border border-border shadow-xl h-fit">
             <h3 className="text-2xl font-space font-semibold text-foreground mb-6 flex items-center justify-center">
               <Mail className="w-6 h-6 mr-3 text-accent" />
               Newsletter Sign-Up
@@ -178,18 +178,6 @@ const GetInvolvedHub = () => {
               </div>
             </div>
 
-            <div className="bg-card p-6 rounded-lg border border-border">
-              <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center">
-                <Calendar className="w-5 h-5 mr-3 text-accent" />
-                Attend Events
-              </h4>
-              <p className="text-muted-foreground font-inter mb-4">
-                Join us at town halls, rallies, and community events to meet fellow patriots.
-              </p>
-              <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>
-                VIEW EVENTS
-              </button>
-            </div>
           </div>
         </div>
       </div>
