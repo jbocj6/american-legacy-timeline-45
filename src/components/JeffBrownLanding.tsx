@@ -447,7 +447,12 @@ const JeffBrownLanding = () => {
           </div>
 
           <div className="text-center">
-            <button className="donate-button mr-4">SUPPORT THE MOVEMENT</button>
+            <button 
+              onClick={() => setIsDonateModalOpen(true)}
+              className="donate-button mr-4"
+            >
+              SUPPORT THE MOVEMENT
+            </button>
             <button className="donate-button bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-[0_0_20px_hsl(var(--primary)/0.2)]">
               JOIN THE FIGHT
             </button>
