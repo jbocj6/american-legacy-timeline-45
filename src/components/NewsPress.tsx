@@ -82,6 +82,12 @@ const NewsPress = () => {
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                ) : index === 3 ? (
+                  <img 
+                    src="/lovable-uploads/a75bcb41-c53a-4236-bc27-d2c724ca5130.png" 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 ) : (
                   <img 
                     src={item.image} 
