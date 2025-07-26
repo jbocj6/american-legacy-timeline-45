@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Calendar, Share2, DollarSign, Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import DonateModal from './DonateModal';
+import { sanitizeInput, validateEmail, validatePhone, validateZip, validateName, checkRateLimit } from '@/utils/security';
 
 const GetInvolvedHub = () => {
   const [formData, setFormData] = useState({
@@ -16,19 +17,70 @@ const GetInvolvedHub = () => {
 
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    const sanitizedValue = sanitizeInput(value);
+    
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: sanitizedValue
     });
   };
 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Rate limiting check
+    if (!checkRateLimit('newsletter-signup', 3, 300000)) { // 3 attempts per 5 minutes
+      toast({
+        title: "Too Many Attempts",
+        description: "Please wait a few minutes before trying again.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    // Input validation
     if (!formData.name || !formData.email) {
       toast({
         title: "Required Fields Missing",
         description: "Please fill in your name and email address.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (!validateName(formData.name)) {
+      toast({
+        title: "Invalid Name",
+        description: "Please enter a valid name (letters, spaces, hyphens, and apostrophes only).",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (!validateEmail(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (formData.phone && !validatePhone(formData.phone)) {
+      toast({
+        title: "Invalid Phone Number",
+        description: "Please enter a valid phone number.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (formData.zip && !validateZip(formData.zip)) {
+      toast({
+        title: "Invalid ZIP Code",
+        description: "Please enter a valid ZIP code (12345 or 12345-6789).",
         variant: "destructive"
       });
       return;

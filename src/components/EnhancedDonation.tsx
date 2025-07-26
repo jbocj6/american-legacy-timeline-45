@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CreditCard, Shield, Heart, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { sanitizeInput, validateEmail, validateName, validateDonationAmount, checkRateLimit } from '@/utils/security';
 
 const EnhancedDonation = () => {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
@@ -27,20 +28,34 @@ const EnhancedDonation = () => {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    const sanitizedValue = sanitizeInput(value);
+    
     setDonorInfo({
       ...donorInfo,
-      [e.target.name]: e.target.value
+      [name]: sanitizedValue
     });
   };
 
   const handleDonate = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Rate limiting check
+    if (!checkRateLimit('donation-form', 2, 300000)) { // 2 attempts per 5 minutes
+      toast({
+        title: "Too Many Attempts",
+        description: "Please wait a few minutes before trying again.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
     const amount = selectedAmount || parseFloat(customAmount);
     
-    if (!amount || amount < 1) {
+    if (!validateDonationAmount(amount)) {
       toast({
         title: "Invalid amount",
-        description: "Please enter a valid donation amount.",
+        description: "Please enter a valid donation amount between $1 and $50,000.",
         variant: "destructive"
       });
       return;
@@ -50,6 +65,24 @@ const EnhancedDonation = () => {
       toast({
         title: "Missing information",
         description: "Please fill in all required fields.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (!validateName(donorInfo.name)) {
+      toast({
+        title: "Invalid Name",
+        description: "Please enter a valid name (letters, spaces, hyphens, and apostrophes only).",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (!validateEmail(donorInfo.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
         variant: "destructive"
       });
       return;
@@ -105,9 +138,16 @@ const EnhancedDonation = () => {
                   type="number"
                   placeholder="Other amount"
                   value={customAmount}
-                  onChange={(e) => handleCustomAmountChange(e.target.value)}
-                  className="w-full pl-8 pr-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
-                  min="1"
+                   onChange={(e) => {
+                     const value = e.target.value;
+                     // Prevent negative numbers and limit decimal places
+                     if (value === '' || (!isNaN(Number(value)) && Number(value) >= 0)) {
+                       handleCustomAmountChange(value);
+                     }
+                   }}
+                   className="w-full pl-8 pr-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+                   min="1"
+                   max="50000"
                 />
               </div>
 
