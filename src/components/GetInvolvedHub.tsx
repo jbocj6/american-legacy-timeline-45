@@ -243,7 +243,8 @@ const GetInvolvedHub = () => {
                 {/* Rumble */}
                 <button className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+                    <path d="M12 2C8.5 2 5.5 3.5 3.5 6C1.5 8.5 1 11.5 2 14.5C3 17.5 5.5 19.5 8.5 20.5C11.5 21.5 14.5 21 17 19C19.5 17 21 14 21 11C21 8 19.5 5.5 17 4C14.5 2.5 12 2 12 2Z" fill="white"/>
+                    <path d="M10 8L16 12L10 16V8Z" fill="#2563eb"/>
                   </svg>
                 </button>
               </div>
