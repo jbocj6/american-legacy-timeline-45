@@ -122,7 +122,7 @@ const NewsPress = () => {
           
           <div className="prose prose-lg max-w-none text-foreground">
             {/* Hero Image */}
-            <div className="w-full h-64 rounded-lg overflow-hidden mb-6">
+            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
               <img 
                 src="/lovable-uploads/44f76c58-3193-4e9c-bfbf-b21cbf3e5b1a.png" 
                 alt="President Trump signing legislation"
