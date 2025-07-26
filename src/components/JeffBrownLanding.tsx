@@ -410,7 +410,7 @@ const JeffBrownLanding = () => {
             <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent max-md:text-4xl max-sm:text-3xl">
               America First Agenda
             </h2>
-            <p className="text-xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Constitutional principles and conservative values for a stronger America
             </p>
           </div>
