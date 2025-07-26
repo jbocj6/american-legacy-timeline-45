@@ -165,6 +165,34 @@ const JeffBrownLanding = () => {
           </div>
         </div>
         
+        {/* Social Media Icons - Lower Right Corner */}
+        <div className="absolute bottom-8 right-8 z-50 flex gap-3">
+          {/* Truth Social */}
+          <a 
+            href="https://truthsocial.com/@Jeffreybrownj6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/80 transition-colors"
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4 4h16v4H14v12h-4V8H4V4z"/>
+              <rect x="16" y="14" width="4" height="4" fill="currentColor"/>
+            </svg>
+          </a>
+          
+          {/* Rumble */}
+          <a 
+            href="https://rumble.com/user/Jeffreybrownj6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+          </a>
+        </div>
+
         <div className="scroll-indicator z-50" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
           <div className="flex flex-col items-center">
             <span className="text-sm font-mono tracking-widest mb-2">SCROLL</span>
