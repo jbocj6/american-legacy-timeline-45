@@ -141,7 +141,7 @@ const JeffBrownLanding = () => {
           </div>
         </div>
         
-        <div className="scroll-indicator" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
+        <div className="scroll-indicator z-50" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
           <div className="flex flex-col items-center">
             <span className="text-sm font-mono tracking-widest mb-2">SCROLL</span>
             <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
