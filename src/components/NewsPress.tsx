@@ -76,6 +76,12 @@ const NewsPress = () => {
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center top' }}
                   />
+                ) : index === 2 ? (
+                  <img 
+                    src="/lovable-uploads/6635dac5-99bd-4c7c-80cd-33726487d6ba.png" 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 ) : (
                   <img 
                     src={item.image} 
