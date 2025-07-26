@@ -46,7 +46,7 @@ const BookSection = () => {
               Featured Publication
             </span>
           </div>
-          <h2 className="text-5xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             The January 6th Truth
           </h2>
           <p className="text-xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
