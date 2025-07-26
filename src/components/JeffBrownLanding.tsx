@@ -1,14 +1,16 @@
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navigation from './Navigation';
 import AboutBio from './AboutBio';
 import BookSection from './BookSection';
 import IssuesCards from './IssuesCards';
 import NewsPress from './NewsPress';
 import GetInvolvedHub from './GetInvolvedHub';
+import DonateModal from './DonateModal';
 
 
 const JeffBrownLanding = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
 
   useEffect(() => {
     // Intersection Observer for Timeline Animations
@@ -144,7 +146,10 @@ const JeffBrownLanding = () => {
                           md:flex-row md:gap-4 md:mt-8
                           max-md:flex-col max-md:gap-3 max-md:mt-6
                           max-sm:flex-col max-sm:gap-2 max-sm:mt-4">
-            <button className="donate-button">
+            <button 
+              onClick={() => setIsDonateModalOpen(true)}
+              className="donate-button"
+            >
               DONATE NOW
             </button>
             <button className="donate-button" style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)'}}>
@@ -549,6 +554,11 @@ const JeffBrownLanding = () => {
       </footer>
       
       </div> {/* End seamless background container */}
+      
+      <DonateModal 
+        isOpen={isDonateModalOpen} 
+        onOpenChange={setIsDonateModalOpen} 
+      />
     </div>
   );
 };
