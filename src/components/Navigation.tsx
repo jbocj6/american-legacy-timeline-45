@@ -47,7 +47,7 @@ const Navigation = () => {
                 JBJ6
               </h1>
               <p className="text-xs text-primary-foreground/70 font-inter font-medium -mt-1 tracking-widest uppercase">
-                Jeff Brown J6
+                Jeff Brown
               </p>
             </a>
 
