@@ -215,7 +215,7 @@ const GetInvolvedHub = () => {
                 Join the Conversation
               </h4>
               <p className="text-muted-foreground font-inter mb-4">
-                Share our message on social media and help us reach more conservative voters.
+                Get exclusive updates from Jeffrey himself
               </p>
               <div className="flex gap-3 justify-center">
                 <button className="px-4 py-2 bg-accent text-accent-foreground rounded-lg font-medium text-sm">
