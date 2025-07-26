@@ -66,7 +66,7 @@ const BookSection = () => {
                 className="w-full max-w-md mx-auto h-auto rounded-lg shadow-xl"
               />
             </div>
-            <div className="bg-gradient-to-br from-primary to-accent p-8 rounded-xl shadow-2xl text-white">
+            <div className="bg-gradient-to-br from-primary to-accent p-8 rounded-xl shadow-2xl text-white relative">
               <div className="mb-6">
                 <h3 className="text-3xl font-space font-bold mb-4">THE JANUARY 6TH TRUTH</h3>
                 <p className="text-lg opacity-90 mb-4">A Personal Account of What Really Happened</p>
@@ -87,11 +87,11 @@ const BookSection = () => {
                   <span className="text-sm">Available online for free</span>
                 </div>
               </div>
-            </div>
-            
-            {/* Floating badge */}
-            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-              FREE READ
+              
+              {/* Floating badge */}
+              <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                FREE READ
+              </div>
             </div>
           </div>
 
