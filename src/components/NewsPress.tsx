@@ -358,8 +358,8 @@ const NewsPress = () => {
             {/* Hero Image */}
             <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
               <img 
-                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Supreme Court building"
+                src="/lovable-uploads/132715ba-98bd-41c0-a6c7-35d56bd75e3c.png" 
+                alt="Freedom of religion is a human right protest sign"
                 className="w-full h-full object-cover"
               />
             </div>
