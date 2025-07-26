@@ -16,10 +16,10 @@ const NewsPress = () => {
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Conservative Coalition Grows Stronger",
-      date: "January 15, 2025", 
-      excerpt: "Local and national conservative leaders unite behind America First principles and constitutional governance.",
-      category: "Politics",
+      title: "Border Patrol Reports 91% Drop in Crossings as Trump Policies Take Effect",
+      date: "July 18, 2025", 
+      excerpt: "New enforcement measures and completed wall sections slash illegal immigration to lowest levels in decades.",
+      category: "BORDER SECURITY",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
