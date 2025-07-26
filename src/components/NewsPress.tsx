@@ -17,9 +17,9 @@ const NewsPress = () => {
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Border Patrol Reports 91% Drop in Crossings as Trump Policies Take Effect",
+      title: "Trump's Six-Month Border Miracle: From 251,487 to 6,000 Monthly Crossings",
       date: "July 18, 2025", 
-      excerpt: "New enforcement measures and completed wall sections slash illegal immigration to lowest levels in decades.",
+      excerpt: "DHS reports historic enforcement success with 300,000 arrests, 99% drop in Darien Gap migration.",
       category: "BORDER SECURITY",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -212,7 +212,7 @@ const NewsPress = () => {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
-              Border Secured: How Trump Delivered Where Biden Failed
+              Border Crisis SOLVED: Six Months of Trump Enforcement Delivers Historic Results
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
               By Jeffrey Brown • July 18, 2025
@@ -220,119 +220,185 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Hero Image */}
-            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/014b2093-85d6-4c21-8e17-49f1bf900448.png" 
-                alt="Border Patrol vehicle at border wall construction"
-                className="w-full h-full object-cover"
-              />
+            {/* Metadata Box */}
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
+                BORDER SECURITY
+              </div>
+              <p><strong>Preview Title:</strong> Trump's Six-Month Border Miracle: From 251,487 to 6,000 Monthly Crossings</p>
+              <p><strong>Preview Summary:</strong> DHS reports historic enforcement success with 300,000 arrests, 99% drop in Darien Gap migration.</p>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
+            
+            {/* Hero Image Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
+                <p>Split screen showing crowded border under Biden vs. controlled, secure border with new wall sections under Trump</p>
+                <p className="text-sm mt-2">Image source needed - CBP Photo/Reuters</p>
+              </div>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Numbers Don't Lie: Biden's Crisis Becomes Trump's Victory</h2>
-            
             <p className="mb-4">
-              Just six months into President Trump's second term, the transformation at our southern border is nothing short of miraculous. Border Patrol reports a staggering 91% reduction in illegal crossings compared to the peak of Biden's manufactured crisis.
+              The transformation at America's southern border is nothing short of miraculous. Just six months after President Trump returned to the White House, the Department of Homeland Security reports the lowest border crossing numbers in decades – a stunning reversal from the Biden-era invasion that threatened American sovereignty.
             </p>
             
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "We finally have the tools, the mandate, and the leadership to do our jobs," declared Brandon Judd, President of the National Border Patrol Council. "Agents who were ready to quit under Biden are now proud to wear the uniform again."
+              "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!" - DHS Secretary Kristi Noem
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">From Chaos to Control: The Trump Doctrine Works</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
             
+            {/* Statistics Chart Placeholder */}
+            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[CHART NEEDED]</p>
+                <p>Bar graph comparing Biden's peak 251,487 monthly crossings to Trump's 6,000 in June 2025</p>
+                <p className="text-sm mt-2">Create chart using DHS data</p>
+              </div>
+            </div>
+
             <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">The Biden Disaster By The Numbers:</h3>
+              <h3 className="text-xl font-semibold mb-4">Biden's Border Disaster:</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong className="text-primary">251,487</strong> – Monthly illegal crossings at the peak (December 2023)</li>
-                <li><strong className="text-primary">85%</strong> – Percentage released into U.S. communities</li>
-                <li><strong className="text-primary">$150 billion</strong> – Annual cost to American taxpayers</li>
-                <li><strong className="text-primary">300,000</strong> – Unaccompanied minors "lost" in the system</li>
+                <li><strong className="text-primary">251,487</strong> - Monthly crossings at peak (December 2023)</li>
+                <li><strong className="text-primary">85%</strong> - Released into American communities</li>
+                <li><strong className="text-primary">$72 billion</strong> - Cost to taxpayers annually</li>
+                <li><strong className="text-primary">Zero</strong> - Miles of new wall built</li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-4">The Trump Turnaround:</h3>
+              <h3 className="text-xl font-semibold mb-4">Trump's Border Victory (Six Months):</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong className="text-primary">22,847</strong> – Monthly crossings as of July 2025</li>
-                <li><strong className="text-primary">0%</strong> – Catch and release (completely eliminated)</li>
-                <li><strong className="text-primary">116,000</strong> – Daily detention capacity funded</li>
-                <li><strong className="text-primary">100%</strong> – Prosecution rate for illegal entry</li>
+                <li><strong className="text-primary">6,000</strong> - Monthly crossings in June 2025</li>
+                <li><strong className="text-primary">300,000+</strong> - Illegal aliens arrested in 2025</li>
+                <li><strong className="text-primary">99%</strong> - Drop in Darien Gap migration</li>
+                <li><strong className="text-primary">85+ miles</strong> - New wall under construction</li>
+                <li><strong className="text-primary">ZERO</strong> - Parole releases in May and June</li>
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">How We Got Here: Policy That Puts America First</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">Ending Catch-and-Release: Promise Kept</h2>
             
-            <h3 className="text-xl font-semibold mb-3">1. Physical Barriers That Work</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">127 miles</strong> of new wall completed in six months</li>
-              <li><strong className="text-primary">30-foot steel barriers</strong> with anti-climb technology</li>
-              <li><strong className="text-primary">Advanced sensors</strong> detecting tunnels and breaches</li>
-              <li><strong className="text-primary">24/7 drone surveillance</strong> covering entire border</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold mb-3">2. Remain in Mexico Restored and Expanded</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">All asylum seekers</strong> wait outside U.S. borders</li>
-              <li><strong className="text-primary">Safe third country agreements</strong> with Guatemala, Honduras, El Salvador</li>
-              <li><strong className="text-primary">Zero tolerance</strong> for fraudulent asylum claims</li>
-              <li><strong className="text-primary">Expedited removal</strong> within 24 hours for illegal crossers</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold mb-3">3. Interior Enforcement Unleashed</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Workplace raids</strong> targeting employers of illegal aliens</li>
-              <li><strong className="text-primary">Sanctuary city defunding</strong> saving taxpayers billions</li>
-              <li><strong className="text-primary">E-Verify mandatory</strong> for all U.S. employers</li>
-              <li><strong className="text-primary">State cooperation agreements</strong> multiply ICE effectiveness</li>
-            </ul>
-            
-            
-            {/* Deportation Image */}
-            <div className="w-full h-64 rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/0b2507d6-1032-43e2-91b4-f0ca89bfbd31.png" 
-                alt="ICE deportation operations"
-                className="w-full h-full object-cover"
-              />
+            {/* ICE Operations Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>ICE agents conducting arrest operations, professional law enforcement at work</p>
+                <p className="text-sm mt-2">Source needed - ICE Photo</p>
+              </div>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Cartels in Full Retreat</h2>
+            <p className="mb-4">
+              In both May and June, U.S. Border Patrol reported zero parole releases—reinforcing the Administration's commitment to ending catch-and-release policies. This represents a complete reversal from Biden's open-border approach.
+            </p>
             
-            <p className="mb-4">The criminal organizations that prospered under Biden face extinction:</p>
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "The Trump Administration empowered our brave men and women in law enforcement to use common sense to do their jobs effectively," Secretary Noem stated.
+            </blockquote>
             
+            <h2 className="text-2xl font-semibold text-primary mb-4">Criminal Aliens Face Justice at Last</h2>
+            
+            {/* Deportation Statistics Graphic Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
+                <p>Visual showing 70% of ICE arrests are criminals, types of crimes, deportation numbers</p>
+                <p className="text-sm mt-2">Create criminal alien statistics infographic</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              The Trump administration has arrested more than 300,000 illegal aliens in 2025 alone. The crucial detail mainstream media won't report: <strong>70% of ICE arrests are criminal illegal aliens with criminal charges or convictions.</strong>
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3">Criminals Being Removed Include:</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Fentanyl seizures up 400%</strong> with new scanning technology</li>
-              <li><strong className="text-primary">Human trafficking rings dismantled</strong> through joint task forces</li>
-              <li><strong className="text-primary">Cartel finances frozen</strong> through aggressive Treasury actions</li>
-              <li><strong className="text-primary">Mexican military cooperation</strong> unprecedented under AMLO's successor</li>
+              <li>Gang members from MS-13 and other violent organizations</li>
+              <li>Drug traffickers poisoning American communities</li>
+              <li>Human traffickers exploiting vulnerable people</li>
+              <li>Violent felons previously protected by sanctuary cities</li>
             </ul>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Darien Gap Miracle: 99% Drop</h2>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What Real Leadership Looks Like</h2>
+            {/* Darien Gap Map Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[MAP NEEDED]</p>
+                <p>Map showing Darien Gap between Colombia and Panama with migration route and 99% drop notation</p>
+                <p className="text-sm mt-2">Create Darien Gap migration map</p>
+              </div>
+            </div>
             
-            <p className="mb-4">Unlike Biden's single staged visit, Trump's commitment is genuine:</p>
+            <p className="mb-4">
+              Perhaps the most stunning achievement: Migrants are turning BACK before they even reach our border. Migration through Panama's Darien Gap is down 99% - from tens of thousands monthly to a mere trickle.
+            </p>
             
+            <p className="mb-6">Why? Because the world knows: <strong>The free ride is over. America is closed to illegal entry.</strong></p>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Wall Gets Built - Finally</h2>
+            
+            {/* Wall Construction Image Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>New border wall construction showing 30-foot steel barriers being installed</p>
+                <p className="text-sm mt-2">Source needed - Construction photos</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              President Trump—with $46.5 billion from the Big Beautiful Bill—is finishing the border wall. DHS already has more than 85 miles either planned or under construction with funding from the prior year, in addition to hundreds of miles that are now planned.
+            </p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Wall Construction Progress:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong className="text-primary">701 miles</strong> of primary walls to be completed</li>
+                <li><strong className="text-primary">900 miles</strong> of river barriers planned</li>
+                <li><strong className="text-primary">$46.6 billion</strong> allocated for construction</li>
+                <li><strong className="text-primary">30-foot steel barriers</strong> with anti-climb technology</li>
+                <li><strong className="text-primary">Advanced sensors</strong> and surveillance integration</li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">What This Means for American Communities</h2>
+            
+            {/* Safe Community Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Safe American neighborhood with families, American flags visible</p>
+                <p className="text-sm mt-2">Source needed - Community stock photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">The dramatic enforcement success translates to real benefits for Americans:</p>
+
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Monthly border visits</strong> to assess progress</li>
-              <li><strong className="text-primary">Direct communication</strong> with front-line agents</li>
-              <li><strong className="text-primary">Immediate response</strong> to emerging threats</li>
-              <li><strong className="text-primary">Public support</strong> for law enforcement</li>
+              <li><strong className="text-primary">Safer neighborhoods</strong> as criminal aliens are removed</li>
+              <li><strong className="text-primary">Less strain</strong> on schools and hospitals</li>
+              <li><strong className="text-primary">Lower crime rates</strong> in previously overwhelmed border towns</li>
+              <li><strong className="text-primary">American jobs</strong> protected from illegal competition</li>
+              <li><strong className="text-primary">Reduced drug flow</strong> saving American lives</li>
             </ul>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: Sovereignty Restored</h2>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Path Forward: Permanent Security</h2>
+            <p className="mb-4">
+              In just six months, President Trump has accomplished what the establishment said was impossible. The border is no longer a suggestion – it's a reality. The invasion has become a trickle. The cartels are on the run. Criminal aliens are being removed.
+            </p>
             
-            <p className="mb-4">This is just the beginning. Phase Two includes:</p>
+            <p className="mb-4">
+              This isn't just about numbers or statistics. It's about restoring the basic principle that a nation without borders is not a nation at all. It's about putting American safety, American workers, and American sovereignty first.
+            </p>
             
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">500 total miles</strong> of new physical barriers by 2026</li>
-              <li><strong className="text-primary">Biometric exit tracking</strong> at all ports</li>
-              <li><strong className="text-primary">Birthright citizenship</strong> constitutional amendment</li>
-              <li><strong className="text-primary">Permanent funding</strong> mechanism for border security</li>
-            </ul>
-            
-            <p className="mb-4"><strong>The border is closed. America is full. Try the legal way or don't try at all.</strong></p>
-            
+            <p className="mb-6">The message to the world is clear: <strong>If you want to come to America, do it legally or don't come at all.</strong></p>
+
             <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
               <p className="text-lg font-semibold">
-                Stand with President Trump and share this truth. The mainstream media won't report our success – it's up to patriots like you to spread the word.
+                Share this incredible success story that mainstream media refuses to cover. Every American deserves to know: The border crisis is over because Donald Trump kept his promise.
               </p>
             </div>
           </div>
