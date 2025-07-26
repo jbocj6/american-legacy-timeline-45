@@ -50,8 +50,7 @@ const BookSection = () => {
             Setting the Record Straight
           </h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            <span className="block sm:inline">A Personal Account of What Really Happened</span>
-            <span className="block sm:inline"> - By Jeffrey Scott Brown</span>
+            A personal journey to expose the truth
           </p>
         </div>
 
