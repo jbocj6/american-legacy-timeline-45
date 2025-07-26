@@ -235,7 +235,8 @@ const GetInvolvedHub = () => {
                 {/* Truth Social */}
                 <button className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.975 8.852c.018.201.027.404.027.608 0 6.239-4.75 13.435-13.435 13.435-2.67 0-5.153-.782-7.243-2.122.369.044.744.066 1.125.066 2.209 0 4.241-.753 5.855-2.017a4.735 4.735 0 01-4.421-3.284c.292.056.592.088.9.088.436 0 .858-.059 1.26-.168a4.73 4.73 0 01-3.794-4.64v-.06c.7.389 1.503.623 2.356.65a4.734 4.734 0 01-1.463-6.32 13.433 13.433 0 009.748 4.943 4.732 4.732 0 018.063-4.316 9.463 9.463 0 003.005-1.148 4.744 4.744 0 01-2.08 2.616 9.405 9.405 0 002.717-.744 9.59 9.59 0 01-2.362 2.45z"/>
+                    <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/>
+                    <text x="12" y="16" textAnchor="middle" fontSize="14" fontWeight="bold" fill="white">T</text>
                   </svg>
                 </button>
                 
