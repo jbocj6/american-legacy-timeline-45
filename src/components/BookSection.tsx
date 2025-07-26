@@ -105,7 +105,7 @@ const BookSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
-                <Button size="lg" className="donate-button min-w-[200px] scale-115">
+                <Button size="lg" className="donate-button min-w-[200px] scale-130">
                   <Book className="w-5 h-5 mr-2" />
                   READ PREVIEW
                 </Button>
@@ -160,7 +160,7 @@ const BookSection = () => {
               variant="outline" 
               size="lg" 
               onClick={() => window.open('https://btapcsve.manussite.space/', '_blank')}
-              className="min-w-[200px] border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground scale-115"
+              className="min-w-[200px] border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground scale-130"
             >
               <ExternalLink className="w-5 h-5 mr-2" />
               FULL BOOK
