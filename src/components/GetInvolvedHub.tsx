@@ -157,15 +157,15 @@ const GetInvolvedHub = () => {
               </button>
             </div>
 
-            <div className="bg-card p-6 rounded-lg border border-border">
-              <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center">
+            <div className="bg-card p-6 rounded-lg border border-border text-center">
+              <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center justify-center">
                 <Share2 className="w-5 h-5 mr-3 text-accent" />
                 Spread the Word
               </h4>
               <p className="text-muted-foreground font-inter mb-4">
                 Share our message on social media and help us reach more conservative voters.
               </p>
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center">
                 <button className="px-4 py-2 bg-accent text-accent-foreground rounded-lg font-medium text-sm">
                   Share on Facebook
                 </button>
