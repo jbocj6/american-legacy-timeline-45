@@ -62,7 +62,7 @@ const GetInvolvedHub = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Volunteer Form */}
           <div className="bg-card p-8 rounded-lg border border-border shadow-xl">
-            <h3 className="text-2xl font-space font-semibold text-foreground mb-6 flex items-center">
+            <h3 className="text-2xl font-space font-semibold text-foreground mb-6 flex items-center justify-center">
               <Mail className="w-6 h-6 mr-3 text-accent" />
               Newsletter Sign-Up
             </h3>
@@ -131,12 +131,14 @@ const GetInvolvedHub = () => {
               </div>
 
 
-              <button
-                type="submit"
-                className="w-full donate-button"
-              >
-                SUBSCRIBE TO NEWSLETTER
-              </button>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="w-full donate-button"
+                >
+                  SUBSCRIBE TO NEWSLETTER
+                </button>
+              </div>
             </form>
           </div>
 
