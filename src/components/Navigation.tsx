@@ -21,14 +21,21 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex items-center h-20">
             {/* Logo/Brand */}
-            <div className="flex-shrink-0">
+            <a 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex-shrink-0 cursor-pointer"
+            >
               <h1 className="text-4xl font-mono font-900 text-primary-foreground tracking-widest">
                 JBJ6
               </h1>
               <p className="text-xs text-primary-foreground/70 font-inter font-medium -mt-1 tracking-widest uppercase">
                 Jeff Brown J6
               </p>
-            </div>
+            </a>
 
             {/* Desktop Navigation - Right aligned */}
             <div className="hidden md:flex flex-1 justify-end items-center space-x-10 mr-8">
