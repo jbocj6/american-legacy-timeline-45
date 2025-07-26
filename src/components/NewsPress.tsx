@@ -112,9 +112,12 @@ const NewsPress = () => {
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-4 text-center">
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
               Trump's Big Beautiful Bill: The Conservative Victory America Needed
             </DialogTitle>
+            <div className="text-center text-muted-foreground font-inter mb-4">
+              By Jeffrey Brown
+            </div>
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
