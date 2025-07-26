@@ -138,10 +138,197 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's In The Bill That Has Liberals Panicking</h2>
             
-            {/* Infographic Placeholder */}
-            <div className="w-full h-48 bg-muted rounded-lg flex items-center justify-center mb-4">
-              <div className="text-muted-foreground text-center p-4">
-                <p className="italic">Bar chart showing $170.7B breakdown - $46.6B border wall, $124.1B total immigration, tax cuts visualization</p>
+            {/* Bill Breakdown Chart */}
+            <div className="w-full h-[600px] mb-4 relative overflow-hidden rounded-lg">
+              <div 
+                className="w-full h-full"
+                style={{
+                  background: 'linear-gradient(135deg, #0a1929 0%, #1a2332 100%)',
+                  fontFamily: 'Arial, sans-serif',
+                  color: '#fff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '20px'
+                }}
+              >
+                <div 
+                  className="w-full max-w-6xl"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    backdropFilter: 'blur(10px)',
+                    borderRadius: '20px',
+                    padding: '30px',
+                    boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)',
+                    border: '2px solid rgba(255, 255, 255, 0.1)'
+                  }}
+                >
+                  <div className="text-center mb-6">
+                    <h3 
+                      className="text-3xl font-bold mb-2"
+                      style={{
+                        background: 'linear-gradient(90deg, #ff0000, #ffffff, #0000ff)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                        textShadow: '0 0 30px rgba(255, 255, 255, 0.3)'
+                      }}
+                    >
+                      ONE BIG BEAUTIFUL BILL
+                    </h3>
+                    <p className="text-lg" style={{ color: '#ffd700', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+                      Historic Investment in America's Future
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div className="text-center p-6 rounded-lg" style={{ background: 'radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent)' }}>
+                      <div className="text-sm mb-2" style={{ color: '#ffd700', textTransform: 'uppercase', letterSpacing: '2px' }}>
+                        Total Investment
+                      </div>
+                      <div 
+                        className="text-5xl font-bold my-2"
+                        style={{ 
+                          color: '#00ff00', 
+                          textShadow: '0 0 30px rgba(0, 255, 0, 0.5)'
+                        }}
+                      >
+                        $170.7B
+                      </div>
+                      <div className="flex justify-center gap-6 mt-4">
+                        <div 
+                          className="text-center p-3 rounded-lg cursor-pointer transition-all"
+                          style={{ background: 'rgba(255, 255, 255, 0.05)' }}
+                        >
+                          <div className="text-2xl mb-1">🛡️</div>
+                          <div className="text-lg font-bold" style={{ color: '#ffd700' }}>$46.6B</div>
+                          <div className="text-xs opacity-90">Border Wall</div>
+                        </div>
+                        <div 
+                          className="text-center p-3 rounded-lg cursor-pointer transition-all"
+                          style={{ background: 'rgba(255, 255, 255, 0.05)' }}
+                        >
+                          <div className="text-2xl mb-1">🏛️</div>
+                          <div className="text-lg font-bold" style={{ color: '#ffd700' }}>$124.1B</div>
+                          <div className="text-xs opacity-90">Immigration Total</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-6">
+                      <div>
+                        <div className="flex justify-between items-center mb-2">
+                          <div className="flex items-center gap-2 font-bold">
+                            <span>🛡️</span>
+                            <span>Border Wall Construction</span>
+                          </div>
+                          <div className="font-bold" style={{ color: '#ffd700' }}>$46.6B</div>
+                        </div>
+                        <div 
+                          className="h-10 rounded-full overflow-hidden relative"
+                          style={{ background: 'rgba(255, 255, 255, 0.1)', boxShadow: 'inset 0 0 15px rgba(0, 0, 0, 0.3)' }}
+                        >
+                          <div 
+                            className="h-full rounded-full flex items-center justify-end pr-4 font-bold"
+                            style={{ 
+                              width: '37.5%',
+                              background: 'linear-gradient(90deg, #ff4444, #ff6666)',
+                              boxShadow: '0 0 20px rgba(255, 68, 68, 0.5)'
+                            }}
+                          >
+                            <span className="text-xs">27.3% of total</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex justify-between items-center mb-2">
+                          <div className="flex items-center gap-2 font-bold">
+                            <span>🏛️</span>
+                            <span>Total Immigration & Border Security</span>
+                          </div>
+                          <div className="font-bold" style={{ color: '#ffd700' }}>$124.1B</div>
+                        </div>
+                        <div 
+                          className="h-10 rounded-full overflow-hidden relative"
+                          style={{ background: 'rgba(255, 255, 255, 0.1)', boxShadow: 'inset 0 0 15px rgba(0, 0, 0, 0.3)' }}
+                        >
+                          <div 
+                            className="h-full rounded-full flex items-center justify-end pr-4 font-bold"
+                            style={{ 
+                              width: '100%',
+                              background: 'linear-gradient(90deg, #4444ff, #6666ff)',
+                              boxShadow: '0 0 20px rgba(68, 68, 255, 0.5)'
+                            }}
+                          >
+                            <span className="text-xs">72.7% of total</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex justify-between items-center mb-2">
+                          <div className="flex items-center gap-2 font-bold">
+                            <span>⚡</span>
+                            <span>Daily Enforcement Capacity</span>
+                          </div>
+                          <div className="font-bold" style={{ color: '#ffd700' }}>116,000</div>
+                        </div>
+                        <div 
+                          className="h-10 rounded-full overflow-hidden relative"
+                          style={{ background: 'rgba(255, 255, 255, 0.1)', boxShadow: 'inset 0 0 15px rgba(0, 0, 0, 0.3)' }}
+                        >
+                          <div 
+                            className="h-full rounded-full flex items-center justify-end pr-4 font-bold"
+                            style={{ 
+                              width: '85%',
+                              background: 'linear-gradient(90deg, #44ff44, #66ff66)',
+                              boxShadow: '0 0 20px rgba(68, 255, 68, 0.5)'
+                            }}
+                          >
+                            <span className="text-xs">Detention beds daily</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                    <div 
+                      className="rounded-lg p-6 text-center cursor-pointer transition-all"
+                      style={{ 
+                        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
+                        border: '1px solid rgba(255, 255, 255, 0.2)'
+                      }}
+                    >
+                      <div className="text-3xl mb-3">🏗️</div>
+                      <div className="font-bold mb-2" style={{ color: '#ffd700' }}>3X MORE</div>
+                      <div className="text-sm opacity-90">Than Trump's first-term border wall spending</div>
+                    </div>
+                    <div 
+                      className="rounded-lg p-6 text-center cursor-pointer transition-all"
+                      style={{ 
+                        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
+                        border: '1px solid rgba(255, 255, 255, 0.2)'
+                      }}
+                    >
+                      <div className="text-3xl mb-3">🚫</div>
+                      <div className="font-bold mb-2" style={{ color: '#ffd700' }}>ZERO TOLERANCE</div>
+                      <div className="text-sm opacity-90">Complete defunding of sanctuary cities</div>
+                    </div>
+                    <div 
+                      className="rounded-lg p-6 text-center cursor-pointer transition-all"
+                      style={{ 
+                        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
+                        border: '1px solid rgba(255, 255, 255, 0.2)'
+                      }}
+                    >
+                      <div className="text-3xl mb-3">💪</div>
+                      <div className="font-bold mb-2" style={{ color: '#ffd700' }}>AMERICA FIRST</div>
+                      <div className="text-sm opacity-90">Largest border security investment in history</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             
