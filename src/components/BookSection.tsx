@@ -60,7 +60,7 @@ const BookSection = () => {
             {/* Book Cover Image */}
             <div className="mb-6 text-center">
               <img 
-                src="/lovable-uploads/0972a599-f321-49e9-9854-0df6a2651eea.png" 
+                src="/lovable-uploads/460c33af-a326-4ef8-9005-ce664b3eb18b.png" 
                 alt="The January 6th Truth Book Cover" 
                 className="w-full max-w-xs mx-auto h-auto rounded-lg shadow-xl"
               />
