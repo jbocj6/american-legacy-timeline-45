@@ -174,11 +174,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Second Amendment Victories Hidden in Plain Sight</h2>
             
-            {/* Gun Rights Image Placeholder */}
-            <div className="w-full h-40 bg-muted rounded-lg flex items-center justify-center mb-4">
-              <div className="text-muted-foreground text-center p-4">
-                <p className="italic">Split screen - NRA executives on one side, firearms/suppressors on other side</p>
-              </div>
+            {/* Gun Rights Image */}
+            <div className="w-full h-40 mb-4">
+              <img 
+                src="/lovable-uploads/dbfddf67-f12f-4266-9cee-43e78af28ea4.png" 
+                alt="Firearm suppressor - tax stamp elimination"
+                className="w-full h-full object-contain rounded-lg bg-muted"
+              />
             </div>
             
             <p className="mb-4">While mainstream media focused on the spending totals, gun rights advocates celebrated provisions that dismantle century-old restrictions:</p>
