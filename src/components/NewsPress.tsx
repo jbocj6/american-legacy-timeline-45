@@ -54,18 +54,11 @@ const NewsPress = () => {
             >
               <div className="relative h-48 overflow-hidden">
                 {index === 0 ? (
-                  <div className="relative w-full h-full bg-black">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-primary/80 rounded-full p-4 hover:bg-primary transition-colors cursor-pointer">
-                        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 rounded text-xs font-mono">
-                      LIVE
-                    </div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/44f76c58-3193-4e9c-bfbf-b21cbf3e5b1a.png" 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 ) : (
                   <img 
                     src={item.image} 
@@ -124,11 +117,13 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Hero Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg flex items-center justify-center mb-6">
-              <div className="text-muted-foreground text-center p-4">
-                <p className="italic">President Trump at podium signing legislation, American flags visible, Iowa State Fairgrounds setting, fireworks in background</p>
-              </div>
+            {/* Hero Image */}
+            <div className="w-full h-64 rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/44f76c58-3193-4e9c-bfbf-b21cbf3e5b1a.png" 
+                alt="President Trump signing legislation"
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <h2 className="text-2xl font-semibold text-primary mb-4">The Independence Day That Changed Everything</h2>
