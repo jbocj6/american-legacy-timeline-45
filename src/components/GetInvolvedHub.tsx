@@ -243,12 +243,17 @@ const GetInvolvedHub = () => {
                 </a>
                 
                 {/* Truth Social */}
-                <button className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors">
+                <a 
+                  href="https://truthsocial.com/@jeffreybrownj6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+                >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M4 4h16v4H14v12h-4V8H4V4z"/>
                     <rect x="16" y="14" width="4" height="4" fill="currentColor"/>
                   </svg>
-                </button>
+                </a>
                 
                 {/* Rumble */}
                 <button className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors">
