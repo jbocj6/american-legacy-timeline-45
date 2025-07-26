@@ -537,7 +537,7 @@ const JeffBrownLanding = () => {
                   </div>
                 </div>
                 <div className="text-base md:text-lg font-mono uppercase tracking-widest text-white/80 mt-4">
-                  Stand with Constitutional Patriots
+                  POWER OUR MISSION
                 </div>
               </div>
             </div>
