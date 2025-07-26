@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Users, Calendar, Share2, DollarSign, Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import DonateModal from './DonateModal';
 
 const GetInvolvedHub = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const GetInvolvedHub = () => {
     zip: '',
     interests: [] as string[]
   });
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
   const { toast } = useToast();
 
   const volunteerOptions = [
@@ -194,10 +196,7 @@ const GetInvolvedHub = () => {
                 Your financial support helps us reach more voters and spread our conservative message.
               </p>
               <button 
-                onClick={() => {
-                  const footer = document.getElementById('footer') || document.querySelector('footer');
-                  footer?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={() => setIsDonateModalOpen(true)}
                 className="donate-button"
               >
                 DONATE NOW
@@ -237,6 +236,11 @@ const GetInvolvedHub = () => {
           </div>
         </div>
       </div>
+      
+      <DonateModal 
+        isOpen={isDonateModalOpen} 
+        onOpenChange={setIsDonateModalOpen} 
+      />
     </section>
   );
 };
