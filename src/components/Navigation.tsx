@@ -10,7 +10,7 @@ const Navigation = () => {
     { name: 'MEET JEFF', href: '#meet-jeff' },
     { name: 'MY STORY', href: '#book-section' },
     { name: 'PRIORITIES', href: '#issues' },
-    { name: 'NEWS', href: '#get-involved' },
+    { name: 'NEWS', href: '#news' },
     { name: 'GET INVOLVED', href: '#timeline' },
   ];
 
