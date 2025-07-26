@@ -7,11 +7,11 @@ const Navigation = () => {
   const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
 
   const navItems = [
-    { name: 'PLATFORM', href: '#issues' },
-    { name: 'NEWS', href: '#news' },
-    { name: 'EVENTS', href: '#events' },
-    { name: 'GET INVOLVED', href: '#get-involved' },
-    { name: 'MY STORY', href: '#timeline' },
+    { name: 'MEET JEFF', href: '#issues' },
+    { name: 'MY STORY', href: '#news' },
+    { name: 'PRIORITIES', href: '#events' },
+    { name: 'NEWS', href: '#get-involved' },
+    { name: 'GET INVOLVED', href: '#timeline' },
   ];
 
   return (
