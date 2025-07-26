@@ -376,6 +376,15 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Case That Changed Everything</h2>
             
+            {/* Church Interior Image */}
+            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/da1b8660-4fed-4517-a9a4-4c0360ce0224.png" 
+                alt="Church interior with congregation"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
             <h3 className="text-xl font-semibold mb-3">Background: David v. St. Michael's Christian Academy</h3>
             
             <p className="mb-4">
