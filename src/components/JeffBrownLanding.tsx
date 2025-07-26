@@ -433,7 +433,7 @@ const JeffBrownLanding = () => {
         
         {/* Content overlay */}
         <div className="relative z-10 text-white">
-          <div className="text-6xl mb-5 animate-bounce">🇺🇸</div>
+          
           <h3 className="text-2xl mb-4 font-mono font-700 tracking-widest uppercase">AMERICAN PATRIOT COALITION</h3>
           <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
           
