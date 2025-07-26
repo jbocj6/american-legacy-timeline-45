@@ -185,15 +185,23 @@ const GetInvolvedHub = () => {
 
           {/* Ways to Get Involved */}
           <div className="space-y-8">
-            <div className="bg-card p-6 rounded-lg border border-border">
-              <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center">
+            <div className="bg-card p-6 rounded-lg border border-border text-center">
+              <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center justify-center">
                 <DollarSign className="w-5 h-5 mr-3 text-accent" />
-                Support the Campaign
+                Support the Cause
               </h4>
               <p className="text-muted-foreground font-inter mb-4">
                 Your financial support helps us reach more voters and spread our conservative message.
               </p>
-              <button className="donate-button">DONATE NOW</button>
+              <button 
+                onClick={() => {
+                  const footer = document.getElementById('footer') || document.querySelector('footer');
+                  footer?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="donate-button"
+              >
+                DONATE NOW
+              </button>
             </div>
 
             <div className="bg-card p-6 rounded-lg border border-border">
