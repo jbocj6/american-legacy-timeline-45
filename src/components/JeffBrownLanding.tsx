@@ -466,6 +466,21 @@ const JeffBrownLanding = () => {
           <p className="mt-10 opacity-70 font-inter max-w-4xl mx-auto">
             © 2025 Jeff Brown
           </p>
+          <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm">
+            <a 
+              href="#" 
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200 underline underline-offset-4"
+            >
+              Terms & Conditions
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <a 
+              href="#" 
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200 underline underline-offset-4"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </footer>
       
