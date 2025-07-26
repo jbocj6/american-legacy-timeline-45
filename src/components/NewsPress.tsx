@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 
 const NewsPress = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   const newsItems = [
@@ -89,7 +90,7 @@ const NewsPress = () => {
                 </p>
                 
                 <button 
-                  onClick={index === 0 ? () => setIsModalOpen(true) : undefined}
+                  onClick={index === 0 ? () => setIsModalOpen(true) : index === 1 ? () => setIsSecondModalOpen(true) : undefined}
                   className="flex items-center text-accent font-inter font-medium hover:text-accent/80 transition-colors"
                 >
                   Read Full Article
@@ -197,6 +198,128 @@ const NewsPress = () => {
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
               NRA Executive Vice President Doug Hamlin didn't mince words: "Promises made to law-abiding gun owners are being kept by President Donald J. Trump."
             </blockquote>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Second Article Modal */}
+      <Dialog open={isSecondModalOpen} onOpenChange={setIsSecondModalOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+              Border Secured: How Trump Delivered Where Biden Failed
+            </DialogTitle>
+            <div className="text-center text-muted-foreground font-inter mb-4">
+              By Jeffrey Brown • July 18, 2025
+            </div>
+          </DialogHeader>
+          
+          <div className="prose prose-lg max-w-none text-foreground">
+            {/* Hero Image */}
+            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
+              <img 
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Aerial view of completed border wall"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Numbers Don't Lie: Biden's Crisis Becomes Trump's Victory</h2>
+            
+            <p className="mb-4">
+              Just six months into President Trump's second term, the transformation at our southern border is nothing short of miraculous. Border Patrol reports a staggering 91% reduction in illegal crossings compared to the peak of Biden's manufactured crisis.
+            </p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "We finally have the tools, the mandate, and the leadership to do our jobs," declared Brandon Judd, President of the National Border Patrol Council. "Agents who were ready to quit under Biden are now proud to wear the uniform again."
+            </blockquote>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">From Chaos to Control: The Trump Doctrine Works</h2>
+            
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-center">The Biden Disaster By The Numbers:</h3>
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong className="text-primary">251,487</strong> – Monthly illegal crossings at the peak (December 2023)</li>
+                <li><strong className="text-primary">85%</strong> – Percentage released into U.S. communities</li>
+                <li><strong className="text-primary">$150 billion</strong> – Annual cost to American taxpayers</li>
+                <li><strong className="text-primary">300,000</strong> – Unaccompanied minors "lost" in the system</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-4 text-center">The Trump Turnaround:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong className="text-primary">22,847</strong> – Monthly crossings as of July 2025</li>
+                <li><strong className="text-primary">0%</strong> – Catch and release (completely eliminated)</li>
+                <li><strong className="text-primary">116,000</strong> – Daily detention capacity funded</li>
+                <li><strong className="text-primary">100%</strong> – Prosecution rate for illegal entry</li>
+              </ul>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">How We Got Here: Policy That Puts America First</h2>
+            
+            <h3 className="text-xl font-semibold mb-3">1. Physical Barriers That Work</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">127 miles</strong> of new wall completed in six months</li>
+              <li><strong className="text-primary">30-foot steel barriers</strong> with anti-climb technology</li>
+              <li><strong className="text-primary">Advanced sensors</strong> detecting tunnels and breaches</li>
+              <li><strong className="text-primary">24/7 drone surveillance</strong> covering entire border</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mb-3">2. Remain in Mexico Restored and Expanded</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">All asylum seekers</strong> wait outside U.S. borders</li>
+              <li><strong className="text-primary">Safe third country agreements</strong> with Guatemala, Honduras, El Salvador</li>
+              <li><strong className="text-primary">Zero tolerance</strong> for fraudulent asylum claims</li>
+              <li><strong className="text-primary">Expedited removal</strong> within 24 hours for illegal crossers</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mb-3">3. Interior Enforcement Unleashed</h3>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Workplace raids</strong> targeting employers of illegal aliens</li>
+              <li><strong className="text-primary">Sanctuary city defunding</strong> saving taxpayers billions</li>
+              <li><strong className="text-primary">E-Verify mandatory</strong> for all U.S. employers</li>
+              <li><strong className="text-primary">State cooperation agreements</strong> multiply ICE effectiveness</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Cartels in Full Retreat</h2>
+            
+            <p className="mb-4">The criminal organizations that prospered under Biden face extinction:</p>
+            
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Fentanyl seizures up 400%</strong> with new scanning technology</li>
+              <li><strong className="text-primary">Human trafficking rings dismantled</strong> through joint task forces</li>
+              <li><strong className="text-primary">Cartel finances frozen</strong> through aggressive Treasury actions</li>
+              <li><strong className="text-primary">Mexican military cooperation</strong> unprecedented under AMLO's successor</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What Real Leadership Looks Like</h2>
+            
+            <p className="mb-4">Unlike Biden's single staged visit, Trump's commitment is genuine:</p>
+            
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Monthly border visits</strong> to assess progress</li>
+              <li><strong className="text-primary">Direct communication</strong> with front-line agents</li>
+              <li><strong className="text-primary">Immediate response</strong> to emerging threats</li>
+              <li><strong className="text-primary">Public support</strong> for law enforcement</li>
+            </ul>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Path Forward: Permanent Security</h2>
+            
+            <p className="mb-4">This is just the beginning. Phase Two includes:</p>
+            
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">500 total miles</strong> of new physical barriers by 2026</li>
+              <li><strong className="text-primary">Biometric exit tracking</strong> at all ports</li>
+              <li><strong className="text-primary">Birthright citizenship</strong> constitutional amendment</li>
+              <li><strong className="text-primary">Permanent funding</strong> mechanism for border security</li>
+            </ul>
+            
+            <p className="mb-4"><strong>The border is closed. America is full. Try the legal way or don't try at all.</strong></p>
+            
+            <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
+              <p className="text-lg font-semibold">
+                Stand with President Trump and share this truth. The mainstream media won't report our success – it's up to patriots like you to spread the word.
+              </p>
+            </div>
           </div>
         </DialogContent>
       </Dialog>
