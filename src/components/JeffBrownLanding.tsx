@@ -479,10 +479,7 @@ const JeffBrownLanding = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a href="#" className="cta-button" onClick={handleCTAClick}>
-              SCHEDULE A CALL
-            </a>
-            <a href="#" className="cta-button" onClick={handleCTAClick}>
-              RESOURCES
+              BOOK A ONE-ON-ONE
             </a>
           </div>
           
