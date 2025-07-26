@@ -65,7 +65,8 @@ const NewsPress = () => {
                   <img 
                     src="/lovable-uploads/81904e5f-18dc-4375-9dd4-75bd5d05cd40.png" 
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center top' }}
                   />
                 ) : (
                   <img 
