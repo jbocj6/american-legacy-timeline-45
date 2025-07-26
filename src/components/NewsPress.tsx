@@ -126,7 +126,7 @@ const NewsPress = () => {
               />
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Independence Day That Changed Everything</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Independence Day That Changed Everything</h2>
             
             <p className="mb-4">
               On July 4th, 2025, President Donald J. Trump delivered what conservative leaders are calling the most significant policy victory in three decades. The "One Big Beautiful Bill" – a $170.7 billion legislative package – fundamentally reshapes America's tax code, border security, and education system.
@@ -136,7 +136,7 @@ const NewsPress = () => {
               "There could be no better birthday present for America than the phenomenal victory we achieved just hours ago," Trump declared to a roaring crowd of over 50,000 patriots gathered at the Iowa State Fairgrounds.
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">What's In The Bill That Has Liberals Panicking</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's In The Bill That Has Liberals Panicking</h2>
             
             {/* Infographic Placeholder */}
             <div className="w-full h-48 bg-muted rounded-lg flex items-center justify-center mb-4">
@@ -168,7 +168,7 @@ const NewsPress = () => {
               <li><strong className="text-primary">Protection for religious schools</strong> – defending faith-based education from government interference</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Second Amendment Victories Hidden in Plain Sight</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Second Amendment Victories Hidden in Plain Sight</h2>
             
             {/* Gun Rights Image Placeholder */}
             <div className="w-full h-40 bg-muted rounded-lg flex items-center justify-center mb-4">
