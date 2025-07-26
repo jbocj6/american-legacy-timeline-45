@@ -489,6 +489,51 @@ const JeffBrownLanding = () => {
         {/* Content overlay */}
         <div className="relative z-10 text-white">
           
+          {/* Enhanced Text Message Section */}
+          <div className="relative mb-8 max-w-3xl mx-auto">
+            {/* Animated background glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-xl blur-lg animate-pulse" style={{animationDuration: '3s'}}></div>
+            
+            {/* Main text message container */}
+            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/40 rounded-xl p-8 mx-4">
+              <div className="text-center">
+                <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
+                  {/* Cash App - Red Envelope */}
+                  <div className="qr-card group">
+                    <img 
+                      src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
+                      alt="Cash App QR Code" 
+                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+                      style={{ imageRendering: 'crisp-edges' }}
+                    />
+                  </div>
+
+                  {/* Venmo - White Envelope */}
+                  <div className="qr-card group">
+                    <img 
+                      src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
+                      alt="Venmo QR Code" 
+                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+                      style={{ imageRendering: 'crisp-edges' }}
+                    />
+                  </div>
+
+                  {/* Give Send Go - Blue Envelope */}
+                  <div className="qr-card group">
+                    <img 
+                      src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
+                      alt="Give Send Go QR Code" 
+                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
+                      style={{ imageRendering: 'crisp-edges' }}
+                    />
+                  </div>
+                </div>
+                <div className="text-2xl md:text-4xl font-mono font-semibold uppercase tracking-widest text-white/80 mt-4">
+                  POWER OUR MISSION
+                </div>
+              </div>
+            </div>
+          </div>
           
           <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
           
@@ -548,52 +593,6 @@ const JeffBrownLanding = () => {
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
               </svg>
             </a>
-          </div>
-          
-          {/* Enhanced Text Message Section */}
-          <div className="relative mb-8 max-w-3xl mx-auto">
-            {/* Animated background glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 rounded-xl blur-lg animate-pulse" style={{animationDuration: '3s'}}></div>
-            
-            {/* Main text message container */}
-            <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/40 rounded-xl p-8 mx-4">
-              <div className="text-center">
-                <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
-                  {/* Cash App - Red Envelope */}
-                  <div className="qr-card group">
-                    <img 
-                      src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
-                      alt="Cash App QR Code" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-                      style={{ imageRendering: 'crisp-edges' }}
-                    />
-                  </div>
-
-                  {/* Venmo - White Envelope */}
-                  <div className="qr-card group">
-                    <img 
-                      src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
-                      alt="Venmo QR Code" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-                      style={{ imageRendering: 'crisp-edges' }}
-                    />
-                  </div>
-
-                  {/* Give Send Go - Blue Envelope */}
-                  <div className="qr-card group">
-                    <img 
-                      src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
-                      alt="Give Send Go QR Code" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-                      style={{ imageRendering: 'crisp-edges' }}
-                    />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-4xl font-mono font-semibold uppercase tracking-widest text-white/80 mt-4">
-                  POWER OUR MISSION
-                </div>
-              </div>
-            </div>
           </div>
           
           <p className="mt-10 opacity-70 font-inter max-w-4xl mx-auto">
