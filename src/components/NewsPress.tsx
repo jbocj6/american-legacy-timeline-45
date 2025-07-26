@@ -287,6 +287,16 @@ const NewsPress = () => {
               <li><strong className="text-primary">State cooperation agreements</strong> multiply ICE effectiveness</li>
             </ul>
             
+            
+            {/* Deportation Image */}
+            <div className="w-full h-64 rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/0b2507d6-1032-43e2-91b4-f0ca89bfbd31.png" 
+                alt="ICE deportation operations"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Cartels in Full Retreat</h2>
             
             <p className="mb-4">The criminal organizations that prospered under Biden face extinction:</p>
