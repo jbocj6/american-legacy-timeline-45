@@ -179,7 +179,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/dbfddf67-f12f-4266-9cee-43e78af28ea4.png" 
                 alt="Firearm suppressor - tax stamp elimination"
-                className="w-full h-full object-contain rounded-lg bg-muted"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
             
