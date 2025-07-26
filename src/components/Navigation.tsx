@@ -43,7 +43,14 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 hover:scale-105"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(item.href);
+                    if (target) {
+                      target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 hover:scale-105 cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -80,8 +87,15 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(item.href);
+                    if (target) {
+                      target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 cursor-pointer"
                 >
                   {item.name}
                 </a>
