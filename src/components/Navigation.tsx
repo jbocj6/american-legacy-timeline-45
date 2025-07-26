@@ -14,6 +14,20 @@ const Navigation = () => {
     { name: 'GET INVOLVED', href: '#get-involved' },
   ];
 
+  const scrollToSection = (href: string) => {
+    const target = document.querySelector(href);
+    if (target) {
+      const navbarHeight = 80; // h-20 = 80px
+      const additionalOffset = 30; // Extra padding for better visual spacing
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight - additionalOffset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-2xl backdrop-blur-sm">
       {/* Top red bar */}
@@ -45,10 +59,7 @@ const Navigation = () => {
                   href={item.href}
                   onClick={(e) => {
                     e.preventDefault();
-                    const target = document.querySelector(item.href);
-                    if (target) {
-                      target.scrollIntoView({ behavior: 'smooth' });
-                    }
+                    scrollToSection(item.href);
                   }}
                   className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 hover:scale-105 cursor-pointer"
                 >
@@ -89,10 +100,7 @@ const Navigation = () => {
                   href={item.href}
                   onClick={(e) => {
                     e.preventDefault();
-                    const target = document.querySelector(item.href);
-                    if (target) {
-                      target.scrollIntoView({ behavior: 'smooth' });
-                    }
+                    scrollToSection(item.href);
                     setIsMenuOpen(false);
                   }}
                   className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 cursor-pointer"
