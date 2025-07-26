@@ -120,7 +120,7 @@ const JeffBrownLanding = () => {
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
-                     md:right-[-15%] md:bottom-[-2%] md:h-[87vh] md:scale-110
+                     md:right-[-25%] md:bottom-[-2%] md:h-[87vh] md:scale-110
                      max-md:right-[-5%] max-md:bottom-[5%] max-md:h-[50vh] max-md:scale-100
                      max-sm:right-[0%] max-sm:bottom-[10%] max-sm:h-[40vh] max-sm:scale-90"
         />
