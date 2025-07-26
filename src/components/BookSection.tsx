@@ -47,7 +47,7 @@ const BookSection = () => {
             </span>
           </div>
           <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            The January 6th Truth
+            Setting the Record Straight
           </h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             <span className="block sm:inline">A Personal Account of What Really Happened</span>
