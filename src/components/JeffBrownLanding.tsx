@@ -450,9 +450,6 @@ const JeffBrownLanding = () => {
             {/* Main text message container */}
             <div className="relative bg-background/20 backdrop-blur-sm border-2 border-accent/40 rounded-xl p-8 mx-4">
               <div className="text-center">
-                <div className="text-sm font-mono uppercase tracking-wider text-accent/80 mb-3">
-                  🇺🇸 Join the Movement 🇺🇸
-                </div>
                 <div className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold tracking-wide leading-tight">
                   TEXT <span className="text-accent">JBJ6</span> TO <span className="text-accent">66055</span>
                 </div>
