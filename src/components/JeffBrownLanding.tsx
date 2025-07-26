@@ -172,7 +172,7 @@ const JeffBrownLanding = () => {
             <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent">
               Reforms Needed
             </h2>
-            <p className="text-xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Restoring constitutional governance and ending political persecution
             </p>
           </div>
