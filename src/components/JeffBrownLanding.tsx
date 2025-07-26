@@ -113,18 +113,37 @@ const JeffBrownLanding = () => {
 
       {/* Hero Section - Outside seamless background */}
       <section className="hero relative">
-        {/* Jeff Brown Portrait */}
+        {/* Jeff Brown Portrait - Mobile responsive positioning */}
         <img 
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
-          className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110"
+          className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
+                     md:right-[-15%] md:bottom-[-2%] md:h-[87vh] md:scale-110
+                     max-md:right-[-5%] max-md:bottom-[5%] max-md:h-[50vh] max-md:scale-100
+                     max-sm:right-[0%] max-sm:bottom-[10%] max-sm:h-[40vh] max-sm:scale-90"
         />
         
-        {/* Hero Content - Repositioned to lower-left */}
-        <div className="absolute bottom-[20%] left-[5%] z-40">
-          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg">Jeff Brown</h1>
-          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg">PATRIOT • PROVEN LEADER • AMERICA FIRST</p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+        {/* Hero Content - Mobile responsive positioning */}
+        <div className="absolute bottom-[20%] left-[5%] z-40 
+                        md:bottom-[20%] md:left-[5%]
+                        max-md:bottom-[45%] max-md:left-[5%] max-md:right-[5%]
+                        max-sm:bottom-[50%] max-sm:left-[2%] max-sm:right-[2%] max-sm:text-center">
+          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
+                         md:text-8xl 
+                         max-md:text-4xl max-md:mb-3 max-md:tracking-wider
+                         max-sm:text-3xl max-sm:mb-2 max-sm:tracking-wide">
+            Jeff Brown
+          </h1>
+          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
+                        md:text-base
+                        max-md:text-sm max-md:tracking-wider max-md:mb-6
+                        max-sm:text-xs max-sm:tracking-wide max-sm:mb-4">
+            PATRIOT • PROVEN LEADER • AMERICA FIRST
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 
+                          md:flex-row md:gap-4 md:mt-8
+                          max-md:flex-col max-md:gap-3 max-md:mt-6
+                          max-sm:flex-col max-sm:gap-2 max-sm:mt-4">
             <button className="donate-button">
               DONATE NOW
             </button>
@@ -173,17 +192,23 @@ const JeffBrownLanding = () => {
                 Critical Reforms
               </span>
             </div>
-            <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent">
+            <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent
+                          max-md:text-4xl max-md:mb-4
+                          max-sm:text-3xl max-sm:mb-3">
               Reforms Needed
             </h2>
-            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed
+                         max-md:text-lg max-md:leading-relaxed
+                         max-sm:text-base max-sm:leading-normal">
               Restoring constitutional governance and ending political persecution
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8" style={{gridTemplateColumns: 'repeat(6, 1fr)'}}>
-            {/* Top row - 3 bubbles */}
-            <div className="col-span-2 bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 
+                          max-md:grid-cols-1 max-md:gap-4">
+            {/* Reform cards - Mobile optimized */}
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
               <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -193,7 +218,8 @@ const JeffBrownLanding = () => {
               <p className="text-muted-foreground font-inter leading-relaxed">End weaponized prosecutions and restore impartial justice for all Americans</p>
             </div>
 
-            <div className="col-span-2 bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
               <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -203,7 +229,8 @@ const JeffBrownLanding = () => {
               <p className="text-muted-foreground font-inter leading-relaxed">Combat misinformation campaigns and restore honest journalism</p>
             </div>
 
-            <div className="col-span-2 bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
               <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -213,8 +240,8 @@ const JeffBrownLanding = () => {
               <p className="text-muted-foreground font-inter leading-relaxed">Release all suppressed January 6th evidence and government communications</p>
             </div>
 
-            {/* Bottom row - 2 bubbles centered */}
-            <div className="col-start-2 col-span-2 bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
               <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -224,7 +251,8 @@ const JeffBrownLanding = () => {
               <p className="text-muted-foreground font-inter leading-relaxed">Address constitutional violations and ensure secure, transparent elections</p>
             </div>
 
-            <div className="col-span-2 bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
               <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -254,7 +282,9 @@ const JeffBrownLanding = () => {
           <div className="text-center mb-20">
             {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
-              <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative">
+              <h2 className="text-6xl md:text-7xl font-mono font-900 tracking-widest mb-6 relative
+                            max-md:text-4xl max-md:tracking-wider max-md:mb-4
+                            max-sm:text-3xl max-sm:tracking-wide max-sm:mb-3">
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
                   MISSION{' '}
                 </span>
@@ -267,7 +297,9 @@ const JeffBrownLanding = () => {
             
             {/* Subtitle */}
             <div className="flex justify-center">
-              <p className="text-2xl font-inter text-muted-foreground animate-fade-in" 
+              <p className="text-2xl font-inter text-muted-foreground animate-fade-in
+                         max-md:text-lg max-md:leading-relaxed
+                         max-sm:text-base max-sm:leading-normal" 
                  style={{
                    animationDelay: '1.2s'
                  }}>
@@ -296,9 +328,12 @@ const JeffBrownLanding = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
                   </div>
                   
-                  {/* Date */}
-                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
-                    <div className="text-6xl md:text-8xl font-mono font-black text-destructive/70 leading-none mb-2">
+                  {/* Date - Mobile optimized */}
+                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'} 
+                                  max-md:text-center max-md:mb-4`}>
+                    <div className="text-6xl md:text-8xl font-mono font-black text-destructive/70 leading-none mb-2
+                                   max-md:text-4xl max-md:mb-2
+                                   max-sm:text-3xl max-sm:mb-1">
                       {event.year}
                     </div>
                   </div>

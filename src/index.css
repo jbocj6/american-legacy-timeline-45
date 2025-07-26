@@ -155,6 +155,15 @@ All colors MUST be HSL.
     padding: 0;
   }
 
+  /* Mobile-first hero optimizations */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 100vh;
+      padding: 1rem;
+      background-size: cover;
+    }
+  }
+
   .hero-content {
     z-index: 2;
     color: white;
@@ -176,6 +185,22 @@ All colors MUST be HSL.
     transform: translateY(50px);
   }
 
+  /* Mobile hero title scaling */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
   .hero .subtitle {
     font-family: var(--font-mono);
     font-size: 1.5rem;
@@ -186,6 +211,23 @@ All colors MUST be HSL.
     animation: heroSubtitleReveal 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
     opacity: 0;
     transform: translateY(30px);
+  }
+
+  /* Mobile subtitle scaling */
+  @media (max-width: 768px) {
+    .hero .subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+      line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero .subtitle {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   .campaign-banner {
@@ -202,6 +244,15 @@ All colors MUST be HSL.
     font-weight: 600;
     letter-spacing: 0.1em;
     box-shadow: var(--shadow-tech);
+  }
+
+  /* Mobile campaign banner */
+  @media (max-width: 768px) {
+    .campaign-banner {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
   }
 
   .scroll-indicator {
@@ -229,6 +280,26 @@ All colors MUST be HSL.
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: var(--shadow-glow);
     margin: 0 1rem;
+  }
+
+  /* Mobile donate button */
+  @media (max-width: 768px) {
+    .donate-button {
+      padding: 0.875rem 1.5rem;
+      font-size: 0.875rem;
+      margin: 0.25rem;
+      min-height: 44px; /* Touch-friendly minimum */
+      letter-spacing: 0.05em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .donate-button {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.75rem;
+      width: 100%;
+      margin: 0.25rem 0;
+    }
   }
 
   .donate-button:hover {
@@ -714,7 +785,7 @@ All colors MUST be HSL.
   }
 }
 
-/* Responsive Design */
+/* Responsive Design - Enhanced Mobile Optimizations */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 4rem;
@@ -730,23 +801,53 @@ All colors MUST be HSL.
     padding: 0.75rem;
   }
 
+  /* Timeline mobile redesign */
   .timeline-line {
     left: 30px;
+    width: 3px;
   }
 
   .timeline-content {
     width: calc(100% - 80px);
     margin-left: 80px !important;
+    padding: 1.5rem;
   }
 
   .timeline-point {
     left: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .timeline-point::before {
+    font-size: 14px;
   }
 
   .timeline-content::before {
     left: -30px !important;
     border-right-color: hsl(var(--primary)) !important;
     border-left-color: transparent !important;
+    border-width: 10px;
+  }
+
+  .timeline-item {
+    margin: 80px 0;
+  }
+
+  .timeline-date {
+    font-size: 1.2rem;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-text {
+    font-size: 0.9rem;
+  }
+
+  .timeline-image {
+    height: 200px;
   }
 
   .pardoned-stamp {
@@ -756,6 +857,95 @@ All colors MUST be HSL.
 
   .quote-text {
     font-size: 1.5rem;
+  }
+
+  /* Section spacing adjustments */
+  section {
+    padding: 3rem 1rem !important;
+  }
+
+  /* Grid system mobile fixes */
+  .grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .grid > * {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Typography mobile scaling */
+  h2 {
+    font-size: 2.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Card mobile adjustments */
+  .reform-card,
+  .achievement-card {
+    padding: 1.5rem !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  .reform-title {
+    font-size: 1.1rem !important;
+  }
+
+  .reform-description {
+    font-size: 0.9rem !important;
+  }
+
+  /* Button mobile optimization */
+  button {
+    min-height: 44px !important;
+    touch-action: manipulation;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hero .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .campaign-banner {
+    font-size: 0.7rem !important;
+    padding: 0.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .timeline-content {
+    padding: 1rem !important;
+  }
+
+  .timeline-date {
+    font-size: 1rem !important;
+  }
+
+  .donate-button {
+    font-size: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+
+  section {
+    padding: 2rem 0.75rem !important;
   }
 }
 

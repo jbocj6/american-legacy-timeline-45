@@ -36,9 +36,9 @@ const AboutBio = () => {
   }, []);
 
   return (
-    <section className="py-24 px-8 mt-20">
+    <section className="py-24 px-8 mt-20 max-md:py-16 max-md:px-4 max-md:mt-16">
       <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-md:grid-cols-1 max-md:gap-8">
           {/* Professional headshot placeholder */}
           <div className="order-2 lg:order-1">
             <div className="relative" ref={imageRef}>
@@ -62,7 +62,7 @@ const AboutBio = () => {
 
           {/* Bio content */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl font-space font-bold text-foreground mb-6">Meet Jeff Brown</h2>
+            <h2 className="text-4xl font-space font-bold text-foreground mb-6 max-md:text-3xl max-md:mb-4 max-sm:text-2xl max-sm:mb-3">Meet Jeff Brown</h2>
             <div className="space-y-6">
               <p className="text-lg font-inter text-foreground leading-relaxed">
                 Jeff Brown is a dedicated conservative leader who has spent his life serving America and defending the Constitution. 
@@ -76,7 +76,7 @@ const AboutBio = () => {
               </p>
 
               {/* Key accomplishments */}
-              <div className="grid sm:grid-cols-2 gap-4 mt-8" ref={cardsRef}>
+              <div className="grid sm:grid-cols-2 gap-4 mt-8 max-sm:grid-cols-1 max-sm:gap-3 max-sm:mt-6" ref={cardsRef}>
                 <div className="achievement-card flex items-center space-x-3 p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <Shield className="w-6 h-6 text-accent" />
                   <div>
