@@ -455,9 +455,16 @@ const JeffBrownLanding = () => {
             </button>
             <button 
               onClick={() => {
-                const section = document.getElementById('get-involved');
-                if (section) {
-                  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const target = document.querySelector('#get-involved');
+                if (target) {
+                  const navbarHeight = 80; // h-20 = 80px
+                  const additionalOffset = 30; // Extra padding for better visual spacing
+                  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight - additionalOffset;
+                  
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  });
                 }
               }}
               className="donate-button bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-[0_0_20px_hsl(var(--primary)/0.2)]"
