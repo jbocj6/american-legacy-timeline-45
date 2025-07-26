@@ -107,7 +107,7 @@ const GetInvolvedHub = () => {
         <div className="text-center mb-16">
           <h2 className="text-6xl font-space font-bold text-secondary-foreground mb-6 max-md:text-4xl max-sm:text-3xl">Stay Connected</h2>
           <p className="text-2xl font-inter text-secondary-foreground/80 max-w-2xl mx-auto">
-            Subscribe to our newsletter to stay informed about our conservative movement and important updates from our community.
+            Subscribe to our newsletter to stay informed about our conservative movement and important updates from our community
           </p>
         </div>
 
