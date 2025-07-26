@@ -124,7 +124,7 @@ const NewsPress = () => {
               Trump's Big Beautiful Bill: The Conservative Victory America Needed
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
-              By Jeffrey Brown
+              By Jeffrey Brown • July 25, 2025
             </div>
           </DialogHeader>
           
