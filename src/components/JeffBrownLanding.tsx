@@ -285,10 +285,10 @@ const JeffBrownLanding = () => {
                             max-md:text-4xl max-md:tracking-wider max-md:mb-4
                             max-sm:text-3xl max-sm:tracking-wide max-sm:mb-3">
                 <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                  MISSION{' '}
+                  JEFFREY'S{' '}
                 </span>
                 <span className="bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent animate-pulse" style={{animationDelay: '0.5s'}}>
-                  BRIEF
+                  JOURNEY
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 blur-xl -z-10 animate-pulse"></div>
               </h2>
