@@ -11,7 +11,7 @@ const Navigation = () => {
     { name: 'MY STORY', href: '#book-section' },
     { name: 'PRIORITIES', href: '#issues' },
     { name: 'NEWS', href: '#news' },
-    { name: 'GET INVOLVED', href: '#timeline' },
+    { name: 'GET INVOLVED', href: '#get-involved' },
   ];
 
   return (
