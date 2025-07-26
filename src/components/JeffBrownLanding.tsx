@@ -281,6 +281,13 @@ const JeffBrownLanding = () => {
           <div className="text-center mb-20">
             {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <svg className="w-8 h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" strokeWidth={2}></circle>
+                  <polyline points="12,6 12,12 16,14" strokeWidth={2}></polyline>
+                </svg>
+                <span className="text-sm font-space uppercase tracking-widest text-destructive font-bold">TIMELINE</span>
+              </div>
               <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent
                             max-md:text-4xl max-md:mb-4
                             max-sm:text-3xl max-sm:mb-3">
