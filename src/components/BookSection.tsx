@@ -58,6 +58,14 @@ const BookSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Book Cover/Info */}
           <div className="relative">
+            {/* Book Cover Image */}
+            <div className="mb-6 text-center">
+              <img 
+                src="/lovable-uploads/0972a599-f321-49e9-9854-0df6a2651eea.png" 
+                alt="The January 6th Truth Book Cover" 
+                className="w-full max-w-md mx-auto h-auto rounded-lg shadow-xl"
+              />
+            </div>
             <div className="bg-gradient-to-br from-primary to-accent p-8 rounded-xl shadow-2xl text-white">
               <div className="mb-6">
                 <h3 className="text-3xl font-space font-bold mb-4">THE JANUARY 6TH TRUTH</h3>
