@@ -419,7 +419,7 @@ const NewsPress = () => {
           
           <div className="prose prose-lg max-w-none text-foreground">
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">Parents' Rights Triumph Over Woke School Agenda</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Parents' Rights Triumph Over Woke School Agenda</h2>
             
             {/* Hero Image Placeholder */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -438,7 +438,7 @@ const NewsPress = () => {
               "The U.S. Supreme Court's decision is a monumental victory for parents and their fundamental right to make decisions consistent with their religious beliefs about the upbringing and education of their children," declared Alliance Defending Freedom Senior Counsel John Bursch.
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Case That United Faiths Against Indoctrination</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Case That United Faiths Against Indoctrination</h2>
             
             {/* Book Covers Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -465,7 +465,7 @@ const NewsPress = () => {
               <li>Materials presented same-sex relationships as normative</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Justice Alito's Powerful Defense of Parental Rights</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Justice Alito's Powerful Defense of Parental Rights</h2>
             
             {/* Justice Alito Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -488,7 +488,7 @@ const NewsPress = () => {
               Justice Alito specifically noted how "Uncle Bobby's Wedding" presented "a specific, if subtle, message about marriage. It asserts that two people can get married, regardless of whether they are of the same or the opposite sex, so long as they 'love each other.'"
             </p>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Coalition That Shocked the Left</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Coalition That Shocked the Left</h2>
             
             {/* Interfaith Coalition Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -516,7 +516,7 @@ const NewsPress = () => {
               "Government officials can't force parents to give up that right or violate their religious beliefs in exchange for a public education," Bursch emphasized.
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Why This Victory Matters for Every American Parent</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Why This Victory Matters for Every American Parent</h2>
             
             {/* Parents Rights Graphic Placeholder */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -538,7 +538,7 @@ const NewsPress = () => {
             <h3 className="text-xl font-semibold mb-3">3. The First Amendment Still Matters</h3>
             <p className="mb-6">Despite the left's attempts to erode religious liberty, the Constitution's protections remain strong.</p>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">What This Means for Your Children</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What This Means for Your Children</h2>
             
             {/* Classroom Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -562,7 +562,7 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">What You Can Do Now</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What You Can Do Now</h2>
             
             {/* Action Items Graphic Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -583,7 +583,7 @@ const NewsPress = () => {
               <li><strong className="text-primary">Share this victory</strong> – Other parents need to know their rights</li>
             </ol>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: Parents Win, Woke Ideology Loses</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Bottom Line: Parents Win, Woke Ideology Loses</h2>
             
             <p className="mb-4">
               For too long, radical activists have used public schools as laboratories for social experimentation on our children. They believed they could override parental authority and religious convictions with government mandates.
