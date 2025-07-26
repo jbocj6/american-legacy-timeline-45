@@ -44,7 +44,7 @@ const NewsPress = () => {
     <section id="news" className="bg-background py-24 px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-space font-bold text-foreground mb-4">Latest News & Updates</h2>
+          <h2 className="text-6xl font-space font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Latest News & Updates</h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-2xl mx-auto">
             Stay informed on the latest developments in our fight for conservative values
           </p>
