@@ -464,7 +464,7 @@ const JeffBrownLanding = () => {
           </div>
           
           <p className="mt-10 opacity-70 font-inter max-w-4xl mx-auto">
-            © 2025 Jeff Brown for Congress • Paid for by Jeff Brown for Congress Committee • Not authorized by any candidate or candidate's committee
+            © 2025 Jeff Brown
           </p>
         </div>
       </footer>
