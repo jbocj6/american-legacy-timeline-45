@@ -29,7 +29,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-2xl backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-[60] bg-primary shadow-2xl backdrop-blur-sm">
       {/* Top red bar */}
       <div className="bg-primary border-b border-primary-foreground/10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
