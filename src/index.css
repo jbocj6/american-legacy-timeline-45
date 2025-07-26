@@ -239,7 +239,7 @@ All colors MUST be HSL.
     color: hsl(var(--primary-foreground));
     padding: 1rem;
     text-align: center;
-    z-index: 40;
+    z-index: 55;
     font-family: var(--font-mono);
     font-weight: 600;
     letter-spacing: 0.1em;
