@@ -48,7 +48,7 @@ const IssuesCards = () => {
             <Flag className="w-8 h-8 text-destructive" />
             <span className="text-sm font-space uppercase tracking-widest text-destructive font-bold">AMERICA FIRST</span>
           </div>
-          <h2 className="text-6xl font-space font-bold text-foreground mb-4">America First Priorities</h2>
+          <h2 className="text-6xl font-space font-bold text-foreground mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">America First Priorities</h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-2xl mx-auto">
             Fighting for the issues that matter most to conservative families and communities
           </p>
