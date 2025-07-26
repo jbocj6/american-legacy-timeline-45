@@ -244,7 +244,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">From Chaos to Control: The Trump Doctrine Works</h2>
             
             <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4 text-center">The Biden Disaster By The Numbers:</h3>
+              <h3 className="text-xl font-semibold mb-4">The Biden Disaster By The Numbers:</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong className="text-primary">251,487</strong> – Monthly illegal crossings at the peak (December 2023)</li>
                 <li><strong className="text-primary">85%</strong> – Percentage released into U.S. communities</li>
@@ -252,7 +252,7 @@ const NewsPress = () => {
                 <li><strong className="text-primary">300,000</strong> – Unaccompanied minors "lost" in the system</li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-4 text-center">The Trump Turnaround:</h3>
+              <h3 className="text-xl font-semibold mb-4">The Trump Turnaround:</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong className="text-primary">22,847</strong> – Monthly crossings as of July 2025</li>
                 <li><strong className="text-primary">0%</strong> – Catch and release (completely eliminated)</li>
