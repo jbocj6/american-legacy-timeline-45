@@ -225,8 +225,8 @@ const NewsPress = () => {
             {/* Hero Image */}
             <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
               <img 
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Aerial view of completed border wall"
+                src="/lovable-uploads/014b2093-85d6-4c21-8e17-49f1bf900448.png" 
+                alt="Border Patrol vehicle at border wall construction"
                 className="w-full h-full object-cover"
               />
             </div>
