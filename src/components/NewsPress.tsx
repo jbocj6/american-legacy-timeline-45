@@ -24,9 +24,9 @@ const NewsPress = () => {
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "SCOTUS Rules 7-2: Churches Can't Be Forced to Hire Against Their Beliefs",
+      title: "SCOTUS Sides with Parents Against LGBTQ Indoctrination in Schools",
       date: "July 11, 2025",
-      excerpt: "Landmark decision protects faith-based organizations from government mandates in historic First Amendment victory.",
+      excerpt: "Supreme Court delivers historic victory affirming parents' right to opt children out of controversial LGBTQ curriculum.",
       category: "RELIGIOUS LIBERTY",
       image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -410,7 +410,7 @@ const NewsPress = () => {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
-              Supreme Court Delivers: Religious Freedom Wins Big
+              Supreme Court Delivers: Maryland Parents Win Huge Religious Liberty Victory
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
               By Jeffrey Brown • July 11, 2025
@@ -418,151 +418,196 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Hero Image */}
-            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/132715ba-98bd-41c0-a6c7-35d56bd75e3c.png" 
-                alt="Freedom of religion is a human right protest sign"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Faith Under Fire No More: Supreme Court Stands with Religious Americans</h2>
-            
-            <p className="mb-4">
-              In a decisive 7-2 ruling that shocked liberal activists, the Supreme Court delivered its strongest defense of religious liberty in decades. The Court ruled that faith-based organizations cannot be forced to hire employees whose lifestyles contradict their religious teachings.
-            </p>
-            
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "This is nothing short of a constitutional restoration," declared Alliance Defending Freedom CEO Michael Farris. "The Court has affirmed what the Founders always intended – that government cannot dictate matters of faith and conscience."
-            </blockquote>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Case That Changed Everything</h2>
-            
-            {/* Church Interior Image */}
-            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/da1b8660-4fed-4517-a9a4-4c0360ce0224.png" 
-                alt="Church interior with congregation"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            
-            <h3 className="text-xl font-semibold mb-3">Background: David v. St. Michael's Christian Academy</h3>
-            
-            <p className="mb-4">
-              When St. Michael's Christian Academy in Ohio declined to renew the contract of a teacher who began publicly promoting views contradicting the school's statement of faith, they faced a discrimination lawsuit backed by the ACLU and Biden's Justice Department.
-            </p>
-            
-            <p className="mb-4">
-              The lower courts sided with the teacher, ruling that religious exemptions were "too broad" and "harmful to equality." The school faced potential closure and millions in fines.
-            </p>
-            
-            <p className="mb-6"><strong>Then came July 11, 2025.</strong></p>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Ruling That Restored Constitutional Order</h2>
-            
-            <p className="mb-4">Justice Amy Coney Barrett's majority opinion didn't mince words:</p>
-            
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "The First Amendment's guarantee of religious freedom is not a second-class right. When the government forces religious institutions to employ those who actively undermine their core beliefs, it strikes at the very heart of religious liberty."
-            </blockquote>
-            
+            {/* Metadata Box */}
             <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">The 7-2 Breakdown:</h3>
-              <p className="mb-2"><strong>Majority:</strong> Roberts, Thomas, Alito, Gorsuch, Kavanaugh, Barrett, Jackson</p>
-              <p className="mb-4"><strong>Dissent:</strong> Sotomayor, Kagan</p>
-              <p>Yes, you read that right – even liberal Justice Ketanji Brown Jackson sided with religious freedom.</p>
+              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
+                RELIGIOUS LIBERTY
+              </div>
+              <p><strong>Preview Title:</strong> SCOTUS Sides with Parents Against LGBTQ Indoctrination in Schools</p>
+              <p><strong>Preview Summary:</strong> Supreme Court delivers historic victory affirming parents' right to opt children out of controversial LGBTQ curriculum.</p>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">Parents' Rights Triumph Over Woke School Agenda</h2>
+            
+            {/* Hero Image Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
+                <p>Diverse group of parents (Muslim, Christian, Jewish) celebrating outside Supreme Court building with "Parents' Rights" signs</p>
+                <p className="text-sm mt-2">Image source needed - Reuters/AP Photo</p>
+              </div>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What This Means for People of Faith</h2>
-            
-            <p className="mb-4">The decision's impact extends far beyond one school:</p>
-            
-            <h3 className="text-xl font-semibold mb-3">Protected Religious Rights:</h3>
-            <ol className="list-decimal pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Hiring Decisions</strong> – Faith-based employers can require employees to uphold organizational beliefs</li>
-              <li><strong className="text-primary">Student Admissions</strong> – Religious schools maintain standards aligned with their mission</li>
-              <li><strong className="text-primary">Healthcare Conscience</strong> – Religious hospitals can't be forced to perform procedures violating their faith</li>
-              <li><strong className="text-primary">Adoption Agencies</strong> – Faith-based agencies can place children according to religious convictions</li>
-            </ol>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Left's Meltdown Reveals Their True Agenda</h2>
-            
-            <p className="mb-4">The reaction from progressive leaders exposed their hostility to faith:</p>
-            
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">AOC:</strong> "This extremist Court just legalized discrimination"</li>
-              <li><strong className="text-primary">Elizabeth Warren:</strong> "Religious freedom is being weaponized against equality"</li>
-              <li><strong className="text-primary">Gavin Newsom:</strong> "California will resist this assault on civil rights"</li>
-            </ul>
-            
-            <p className="mb-6"><strong>Translation:</strong> They're furious that Christians can actually live according to their beliefs.</p>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">A Victory Years in the Making</h2>
-            
-            <p className="mb-4">This ruling represents the culmination of a decades-long fight:</p>
-            
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">2012:</strong> Obamacare contraception mandate challenged</li>
-              <li><strong className="text-primary">2014:</strong> Hobby Lobby wins at Supreme Court</li>
-              <li><strong className="text-primary">2018:</strong> Masterpiece Cakeshop victory</li>
-              <li><strong className="text-primary">2021:</strong> Fulton v. Philadelphia protects adoption agencies</li>
-              <li><strong className="text-primary">2023:</strong> 303 Creative affirms conscience rights</li>
-              <li><strong className="text-primary">2025:</strong> David v. St. Michael's – the ultimate vindication</li>
-            </ul>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Real Americans, Real Impact</h2>
-            
-            <h3 className="text-xl font-semibold mb-3">Sister Mary Catherine, Principal of St. Joseph's School:</h3>
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "For years, we've faced pressure to compromise our beliefs or close our doors. Today, the Supreme Court said we can be both Catholic and American. Our prayers have been answered."
-            </blockquote>
-            
-            <h3 className="text-xl font-semibold mb-3">Rabbi David Goldstein, Yeshiva Director:</h3>
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "This protects not just Christians, but all faiths. Jewish schools can remain Jewish, Muslim schools can remain Muslim. Pluralism wins when religious freedom wins."
-            </blockquote>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Constitutional Foundation</h2>
-            
-            <p className="mb-4">Justice Gorsuch's concurring opinion provided a history lesson the left desperately needs:</p>
+            <p className="mb-4">
+              In a monumental victory for religious freedom and parental rights, the Supreme Court ruled decisively in favor of an interfaith group of Maryland parents in <em>Mahmoud v. Taylor</em>, affirming their right to opt their children out of classroom instruction containing LGBTQ+ themes that conflict with their religious beliefs.
+            </p>
             
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "The Founders fled religious persecution. They embedded protections for faith in our Constitution's very first amendment. To suggest they intended government bureaucrats to dictate religious hiring is to ignore history, text, and common sense."
+              "The U.S. Supreme Court's decision is a monumental victory for parents and their fundamental right to make decisions consistent with their religious beliefs about the upbringing and education of their children," declared Alliance Defending Freedom Senior Counsel John Bursch.
             </blockquote>
             
-            <h3 className="text-xl font-semibold mb-3">Key Constitutional Principles Affirmed:</h3>
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Case That United Faiths Against Indoctrination</h2>
+            
+            {/* Book Covers Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Display of controversial children's books including "Uncle Bobby's Wedding" and other LGBTQ-themed titles</p>
+                <p className="text-sm mt-2">Source needed - Court exhibit photos</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              The case emerged when Maryland's Montgomery County Public Schools refused to allow parents to opt their children out of lessons featuring books with LGBTQ+ content, including titles like "Uncle Bobby's Wedding" – a story about two male penguins getting married.
+            </p>
+            
+            <p className="mb-4">
+              What made this case extraordinary was the coalition it formed: Muslim, Christian, and Jewish parents united in defense of their shared right to guide their children's moral and religious education.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-3">Key Facts of the Case:</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Free Exercise Clause</strong> protects religious practice, not just belief</li>
-              <li><strong className="text-primary">Establishment Clause</strong> prevents government interference in religious matters</li>
-              <li><strong className="text-primary">Freedom of Association</strong> includes right to maintain religious character</li>
-              <li><strong className="text-primary">Institutional Autonomy</strong> shields internal religious decisions from state control</li>
+              <li>School district mandated participation in LGBTQ-themed lessons</li>
+              <li>Parents were denied opt-out options previously available</li>
+              <li>Books targeted children as young as kindergarten</li>
+              <li>Materials presented same-sex relationships as normative</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">A Message to the Faithful</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">Justice Alito's Powerful Defense of Parental Rights</h2>
             
-            <p className="mb-4">For too long, Americans of faith have been told to hide their beliefs, compromise their convictions, and bow to secular demands. Today, the highest court in the land said: <strong>No more.</strong></p>
+            {/* Justice Alito Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Justice Samuel Alito in his Supreme Court robes</p>
+                <p className="text-sm mt-2">Source needed - Supreme Court Photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              Writing for the Court and quoting the 1972 case Wisconsin v. Yoder, Justice Samuel Alito explained that for students to opt out, the material must be presented in a way that is "hostile" to their religious beliefs and imposes a "pressure to conform."
+            </p>
+            
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+              "The court made clear that parents don't surrender that right just because they use public schools," stated Mark Rienzi from Becket Fund for Religious Liberty.
+            </blockquote>
             
             <p className="mb-6">
-              You can run your schools according to Scripture.<br/>
-              You can hire those who share your mission.<br/>
-              You can practice what you preach.<br/>
-              You can be fully American and fully faithful.
+              Justice Alito specifically noted how "Uncle Bobby's Wedding" presented "a specific, if subtle, message about marriage. It asserts that two people can get married, regardless of whether they are of the same or the opposite sex, so long as they 'love each other.'"
             </p>
             
-            <p className="mb-4">Justice Barrett concluded the majority opinion with words that should be framed in every religious institution:</p>
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Coalition That Shocked the Left</h2>
             
+            {/* Interfaith Coalition Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Muslim, Christian, and Jewish religious leaders standing together at press conference</p>
+                <p className="text-sm mt-2">Source needed - News photography</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">This wasn't just a Christian conservative victory – it was an interfaith triumph that united:</p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">The Unprecedented Religious Coalition:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong className="text-primary">Muslim families</strong> defending Islamic teachings on marriage</li>
+                <li><strong className="text-primary">Orthodox Jewish parents</strong> protecting Torah values</li>
+                <li><strong className="text-primary">Catholic families</strong> upholding Church doctrine</li>
+                <li><strong className="text-primary">Protestant Christians</strong> standing for Biblical truth</li>
+                <li><strong className="text-primary">Ethiopian Orthodox</strong> preserving traditional values</li>
+              </ul>
+            </div>
+
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "In America, the government serves the people, not the other way around. And among the people's most cherished rights is the freedom to live, work, and worship according to their deepest convictions. Today, we reaffirm that fundamental truth."
+              "Government officials can't force parents to give up that right or violate their religious beliefs in exchange for a public education," Bursch emphasized.
             </blockquote>
             
-            <p className="mb-4"><strong>The Constitution won. Faith won. Freedom won.</strong></p>
-            <p className="mb-6">And that's exactly what the Founders intended.</p>
+            <h2 className="text-2xl font-semibold text-primary mb-4">Why This Victory Matters for Every American Parent</h2>
             
+            {/* Parents Rights Graphic Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
+                <p>Visual showing parental rights protected by the decision - religious upbringing, moral education, curriculum oversight</p>
+                <p className="text-sm mt-2">Create parental rights infographic</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">The Supreme Court's decision reaffirms fundamental principles:</p>
+
+            <h3 className="text-xl font-semibold mb-3">1. Parents Are Primary Educators</h3>
+            <p className="mb-4">The Court recognized that parents, not government bureaucrats, have the primary right and responsibility to guide their children's moral and religious education.</p>
+
+            <h3 className="text-xl font-semibold mb-3">2. Religious Freedom Isn't Negotiable</h3>
+            <p className="mb-4">Public schools cannot force children to participate in instruction that violates their family's deeply held religious beliefs.</p>
+
+            <h3 className="text-xl font-semibold mb-3">3. The First Amendment Still Matters</h3>
+            <p className="mb-6">Despite the left's attempts to erode religious liberty, the Constitution's protections remain strong.</p>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">What This Means for Your Children</h2>
+            
+            {/* Classroom Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Elementary school classroom with traditional learning materials</p>
+                <p className="text-sm mt-2">Source needed - Education stock photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">Parents across America now have clear Supreme Court precedent protecting their rights:</p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Your Protected Rights:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Request to review all curriculum materials</li>
+                <li>Opt children out of lessons conflicting with religious beliefs</li>
+                <li>Challenge school policies that undermine parental authority</li>
+                <li>Unite with other parents regardless of faith background</li>
+                <li>Demand schools respect your role as primary educator</li>
+              </ul>
+            </div>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">What You Can Do Now</h2>
+            
+            {/* Action Items Graphic Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[GRAPHIC NEEDED]</p>
+                <p>Action steps for parents - review curriculum, know your rights, organize with others</p>
+                <p className="text-sm mt-2">Create action items infographic</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">This victory opens doors for parents nationwide:</p>
+
+            <ol className="list-decimal pl-6 mb-6 space-y-2">
+              <li><strong className="text-primary">Review your school's curriculum</strong> – You have the right to know what's being taught</li>
+              <li><strong className="text-primary">Request opt-out forms</strong> – Schools must now provide them for controversial content</li>
+              <li><strong className="text-primary">Organize with other parents</strong> – Strength in numbers across faith lines</li>
+              <li><strong className="text-primary">Contact ADF or Becket</strong> – If your school refuses to comply</li>
+              <li><strong className="text-primary">Share this victory</strong> – Other parents need to know their rights</li>
+            </ol>
+            
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: Parents Win, Woke Ideology Loses</h2>
+            
+            <p className="mb-4">
+              For too long, radical activists have used public schools as laboratories for social experimentation on our children. They believed they could override parental authority and religious convictions with government mandates.
+            </p>
+            
+            <p className="mb-4">The Supreme Court just said: <strong>Not on our watch.</strong></p>
+            
+            <p className="mb-4">
+              This isn't about hate or discrimination – it's about the fundamental right of parents to raise their children according to their faith and values. Muslim parents, Jewish parents, Christian parents – all united in defending this basic freedom.
+            </p>
+            
+            <p className="mb-6">The message is clear: Schools work for parents, not the other way around.</p>
+
             <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
               <p className="text-lg font-semibold">
-                Religious freedom isn't just for some Americans – it's for all Americans. Share this victory with your faith community and help protect what the Court has preserved.
+                This victory belongs to every parent who believes in religious freedom and parental rights. Share this article with other parents in your community. The fight for our children's hearts and minds continues – but today, freedom won.
               </p>
             </div>
           </div>
