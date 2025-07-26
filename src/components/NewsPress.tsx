@@ -10,10 +10,10 @@ const NewsPress = () => {
 
   const newsItems = [
     {
-      title: "Trump Signs Historic $170B Conservative Victory Package",
+      title: "USAID Dismantled: Trump Redirects $40 Billion from Foreign Handouts to American Priorities",
       date: "July 25, 2025",
-      excerpt: "President Trump transforms July 4th into policy triumph with sweeping tax cuts and border security funding.",
-      category: "POLICY WIN",
+      excerpt: "State Department takes control as President ends decades of wasteful spending on nations that hate us.",
+      category: "AMERICA FIRST",
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -122,7 +122,7 @@ const NewsPress = () => {
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
-              Trump's Big Beautiful Bill: The Conservative Victory America Needed
+              America First Foreign Policy: Trump Ends Billions in Wasteful Aid to Focus on Americans
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
               By Jeffrey Brown • July 25, 2025
@@ -130,81 +130,78 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Hero Image */}
-            <div className="w-full h-80 rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/44f76c58-3193-4e9c-bfbf-b21cbf3e5b1a.png" 
-                alt="President Trump signing legislation"
-                className="w-full h-full object-cover"
-              />
+            {/* Metadata Box */}
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
+                AMERICA FIRST
+              </div>
+              <p><strong>Preview Title:</strong> USAID Dismantled: Trump Redirects $40 Billion from Foreign Handouts to American Priorities</p>
+              <p><strong>Preview Summary:</strong> State Department takes control as President ends decades of wasteful spending on nations that hate us.</p>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Death of USAID: Taxpayers Finally Win</h2>
+            
+            {/* Hero Image Placeholder */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
+                <p>USAID headquarters with "CLOSED" sign or being dismantled, American flag prominent</p>
+                <p className="text-sm mt-2">Image source needed - Reuters/AP Photo</p>
+              </div>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Independence Day That Changed Everything</h2>
-            
             <p className="mb-4">
-              On July 4th, 2025, President Donald J. Trump delivered what conservative leaders are calling the most significant policy victory in three decades. The "One Big Beautiful Bill" – a $170.7 billion legislative package – fundamentally reshapes America's tax code, border security, and education system.
+              In a historic victory for American taxpayers, the Trump administration officially shuttered the United States Agency for International Development (USAID) this month, ending decades of unchecked foreign handouts that cost hardworking Americans over $40 billion annually.
             </p>
             
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "There could be no better birthday present for America than the phenomenal victory we achieved just hours ago," Trump declared to a roaring crowd of over 50,000 patriots gathered at the Iowa State Fairgrounds.
+              "President Trump stated clearly that the United States is no longer going to blindly dole out money with no return for the American people. Reviewing and realigning foreign assistance on behalf of hardworking taxpayers is not just the right thing to do, it is a moral imperative." - State Department Spokesperson Tammy Bruce
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's In The Bill That Has Liberals Panicking</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">The Shocking Truth About Your Tax Dollars</h2>
             
-            {/* Bill Breakdown Chart */}
-            <div className="w-full h-auto mb-4">
-              <img 
-                src="/lovable-uploads/e40a95ef-ccd1-4d5b-990c-f26de279e917.png" 
-                alt="One Big Beautiful Bill - $170.7B Investment Breakdown"
-                className="w-full h-auto rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => setIsImageModalOpen(true)}
-              />
+            {/* Waste Infographic Placeholder */}
+            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
+                <p>Visual showing $72 billion in 2023 foreign aid broken down by wasteful categories</p>
+                <p className="text-sm mt-2">Create infographic using government data</p>
+              </div>
             </div>
             
-            <p className="mb-4">The comprehensive package delivers on every major conservative promise:</p>
-            
-            <h3 className="text-xl font-semibold mb-3">Tax Relief for Working Americans</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Eliminates taxes on tips</strong> – helping millions of service workers keep their hard-earned money</li>
-              <li><strong className="text-primary">Zero tax on overtime pay</strong> – rewarding Americans who work extra hours</li>
-              <li><strong className="text-primary">No more taxes on Social Security benefits</strong> – protecting our seniors</li>
-              <li><strong className="text-primary">Permanent extension of Trump's 2017 tax cuts</strong> – keeping more money in your pocket</li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mb-3">Border Security That Actually Works</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">$46.6 billion for border wall construction</strong> – more than triple Trump's first-term spending</li>
-              <li><strong className="text-primary">$124.1 billion total for immigration enforcement</strong> – funding detention of 116,000 illegal aliens daily</li>
-              <li><strong className="text-primary">Complete defunding of sanctuary cities</strong> – no more taxpayer money for lawless jurisdictions</li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mb-3">Education Freedom Expands</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">School choice provisions for low-income families</strong> – parents, not bureaucrats, control education dollars</li>
-              <li><strong className="text-primary">Protection for religious schools</strong> – defending faith-based education from government interference</li>
-            </ul>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Second Amendment Victories Hidden in Plain Sight</h2>
-            
-            {/* Gun Rights Image */}
-            <div className="w-full h-40 mb-4">
-              <img 
-                src="/lovable-uploads/dbfddf67-f12f-4266-9cee-43e78af28ea4.png" 
-                alt="Firearm suppressor - tax stamp elimination"
-                className="w-full h-full object-cover rounded-lg"
-              />
+            <p className="mb-4">
+              The United States was the largest single donor of aid globally. In fiscal year 2023 alone, it disbursed $72 billion in assistance. It provided 42% of all humanitarian aid tracked by the United Nations in 2024.
+            </p>
+
+            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Where Your Money Really Went:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong className="text-primary">$8 billion</strong> to Afghanistan since 2021 Taliban takeover</li>
+                <li><strong className="text-primary">45%</strong> of Sudan's humanitarian aid while Americans suffered</li>
+                <li><strong className="text-primary">$100 million</strong> in "condoms to Gaza" (Trump's January revelation)</li>
+                <li><strong className="text-primary">Billions</strong> to corrupt regimes voting against us at the UN</li>
+                <li><strong className="text-primary">Gender studies</strong> programs in Pakistan and Afghanistan</li>
+                <li><strong className="text-primary">Climate change</strong> initiatives benefiting China</li>
+              </ul>
             </div>
             
-            <p className="mb-4">While mainstream media focused on the spending totals, gun rights advocates celebrated provisions that dismantle century-old restrictions:</p>
+            <h2 className="text-2xl font-semibold text-primary mb-4">Secretary Rubio's America First Revolution</h2>
             
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">Elimination of $200 tax stamps</strong> on suppressors and short-barreled rifles</li>
-              <li><strong className="text-primary">Streamlined background checks</strong> for law-abiding citizens</li>
-              <li><strong className="text-primary">Protection from ATF overreach</strong> through new oversight provisions</li>
-            </ul>
+            {/* Rubio Image Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
+                <p>Secretary of State Marco Rubio at podium announcing foreign aid reforms</p>
+                <p className="text-sm mt-2">Source needed - State Department Photo</p>
+              </div>
+            </div>
+            
+            <p className="mb-4">
+              Secretary of State Marco Rubio has initiated a comprehensive review of all foreign assistance programs to ensure they are efficient and consistent with U.S. foreign policy under the America First agenda.
+            </p>
             
             <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              NRA Executive Vice President Doug Hamlin didn't mince words: "Promises made to law-abiding gun owners are being kept by President Donald J. Trump."
+              "Every dollar we spend, every program we fund, and every policy we pursue must be justified with the answer to three simple questions: Does it make America safer? Does it make America stronger? Does it make America more prosperous?" - Secretary Marco Rubio
             </blockquote>
           </div>
         </DialogContent>
