@@ -212,7 +212,7 @@ const GetInvolvedHub = () => {
             <div className="bg-card p-6 rounded-lg border border-border text-center">
               <h4 className="text-xl font-space font-semibold text-foreground mb-4 flex items-center justify-center">
                 <Share2 className="w-5 h-5 mr-3 text-accent" />
-                Spread the Word
+                Join the Conversation
               </h4>
               <p className="text-muted-foreground font-inter mb-4">
                 Share our message on social media and help us reach more conservative voters.
