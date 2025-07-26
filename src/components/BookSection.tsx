@@ -50,7 +50,7 @@ const BookSection = () => {
             Setting the Record Straight
           </h2>
           <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A personal journey to expose the truth
+            A Personal Journey to Expose the Truth
           </p>
         </div>
 
