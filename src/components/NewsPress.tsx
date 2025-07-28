@@ -393,7 +393,8 @@ const NewsPress = () => {
                   <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                     <h2 className="text-2xl font-bold mb-5 text-center text-green-300">
                       Trump's Border Victory
-                      <span className="bg-green-500/30 text-green-200 px-3 py-1 rounded-full text-sm ml-3">6 MONTHS</span>
+                      <br />
+                      <span className="bg-green-500/30 text-green-200 px-3 py-1 rounded-full text-sm">6 MONTHS</span>
                     </h2>
                     
                     <div className="space-y-4">
