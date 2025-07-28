@@ -173,12 +173,75 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4">The Shocking Truth About Your Tax Dollars</h2>
             
-            {/* Waste Infographic Placeholder */}
-            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
-                <p>Visual showing $72 billion in 2023 foreign aid broken down by wasteful categories</p>
-                <p className="text-sm mt-2">Create infographic using government data</p>
+            {/* Foreign Aid Breakdown Infographic */}
+            <div className="w-full mb-6 relative overflow-hidden rounded-xl" style={{
+              background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #ef4444 100%)',
+              color: 'white',
+              padding: '40px',
+              position: 'relative'
+            }}>
+              {/* Flag accent */}
+              <div className="absolute top-5 right-5 w-15 h-10 rounded opacity-30" style={{
+                background: 'linear-gradient(to bottom, #ef4444 33%, white 33%, white 66%, #ef4444 66%)'
+              }}>
+                <div className="absolute top-0 left-0 w-6 h-full bg-blue-900"></div>
+              </div>
+              
+              {/* Header */}
+              <div className="text-center mb-10 relative z-10">
+                <h1 className="text-6xl font-bold mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>$72 BILLION</h1>
+                <p className="text-xl opacity-90 mb-5">U.S. Foreign Aid Spending</p>
+                <div className="inline-block px-5 py-2 rounded-full font-bold border-2" style={{
+                  background: 'rgba(255,255,255,0.2)',
+                  borderColor: 'rgba(255,255,255,0.3)'
+                }}>FISCAL YEAR 2023</div>
+              </div>
+
+              {/* Content Grid */}
+              <div className="grid lg:grid-cols-3 gap-8 mt-10 relative z-10">
+                {/* Global Stats */}
+                <div className="lg:col-span-1 p-6 rounded-xl border text-center" style={{
+                  background: 'rgba(255,255,255,0.15)',
+                  backdropFilter: 'blur(10px)',
+                  borderColor: 'rgba(255,255,255,0.2)'
+                }}>
+                  <div className="text-lg leading-relaxed">
+                    The United States was the <span className="text-yellow-400 font-bold text-xl">largest single donor</span> of aid globally
+                    <br/><br/>
+                    Provided <span className="text-yellow-400 font-bold text-xl">42%</span> of all humanitarian aid tracked by the UN in 2024
+                  </div>
+                </div>
+
+                {/* Breakdown Section */}
+                <div className="lg:col-span-2 p-8 rounded-xl border" style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  backdropFilter: 'blur(10px)',
+                  borderColor: 'rgba(255,255,255,0.2)'
+                }}>
+                  <h2 className="text-4xl mb-6 text-center text-yellow-400" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.3)'}}>
+                    Where Your Money Really Went:
+                  </h2>
+                  
+                  <div className="grid md:grid-cols-2 gap-5">
+                    {[
+                      { amount: '$8 Billion', description: 'to Afghanistan since 2021 Taliban takeover' },
+                      { amount: '45%', description: 'of Sudan\'s humanitarian aid while Americans suffered' },
+                      { amount: '$100 Million', description: 'in "condoms to Gaza" (Trump\'s January revelation)' },
+                      { amount: 'Billions', description: 'to corrupt regimes voting against us at the UN' },
+                      { amount: 'Gender Studies', description: 'programs in Pakistan and Afghanistan', pulse: true },
+                      { amount: 'Climate Change', description: 'initiatives benefiting China', pulse: true }
+                    ].map((item, index) => (
+                      <div 
+                        key={index}
+                        className={`p-5 rounded-lg border-l-4 border-red-500 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg ${item.pulse ? 'animate-pulse' : ''}`}
+                        style={{background: 'rgba(255,255,255,0.1)'}}
+                      >
+                        <div className="text-3xl font-bold text-yellow-400 mb-2">{item.amount}</div>
+                        <div className="text-lg opacity-95">{item.description}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
             
