@@ -445,13 +445,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4">Ending Catch-and-Release: Promise Kept</h2>
             
-            {/* ICE Operations Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>ICE agents conducting arrest operations, professional law enforcement at work</p>
-                <p className="text-sm mt-2">Source needed - ICE Photo</p>
-              </div>
+            {/* ICE Operations Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/b917ca10-5b5f-42d5-899a-d65d5827782c.png" 
+                alt="ICE deportation operations - detained individuals being transported" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
