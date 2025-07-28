@@ -651,7 +651,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/a2259c5e-95cd-4931-868c-10d7021f6880.png" 
                 alt="US Border Patrol officer speaking at podium with border wall in background" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             
