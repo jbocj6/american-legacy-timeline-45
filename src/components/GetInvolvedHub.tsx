@@ -3,6 +3,7 @@ import { Calendar, Share2, DollarSign, Mail, Phone, MapPin } from 'lucide-react'
 import { useToast } from '@/hooks/use-toast';
 import DonateModal from './DonateModal';
 import { sanitizeInput, validateEmail, validatePhone, validateZip, validateName, checkRateLimit } from '@/utils/security';
+import { supabase } from '@/integrations/supabase/client';
 
 const GetInvolvedHub = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const GetInvolvedHub = () => {
   };
 
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Rate limiting check
@@ -86,19 +87,46 @@ const GetInvolvedHub = () => {
       return;
     }
 
-    toast({
-      title: "Successfully Subscribed!",
-      description: "Thank you for subscribing to our newsletter. You'll receive updates soon.",
-    });
+    try {
+      // Save to Supabase
+      const { error } = await supabase
+        .from('newsletter_signups')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || null,
+          zip: formData.zip || null,
+        });
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      zip: '',
-      interests: []
-    });
+      if (error) {
+        toast({
+          title: "Subscription Failed",
+          description: "There was an error subscribing to the newsletter. Please try again.",
+          variant: "destructive"
+        });
+        return;
+      }
+
+      toast({
+        title: "Successfully Subscribed!",
+        description: "Thank you for subscribing to our newsletter. You'll receive updates soon.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        zip: '',
+        interests: []
+      });
+    } catch (error) {
+      toast({
+        title: "Subscription Failed",
+        description: "There was an error subscribing to the newsletter. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
