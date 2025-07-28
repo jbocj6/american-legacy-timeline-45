@@ -787,7 +787,7 @@ const NewsPress = () => {
             </div>
             
             <p className="mb-4">
-              The case emerged when Maryland's Montgomery County Public Schools refused to allow parents to opt their children out of lessons featuring books with LGBTQ+ content, including titles like "Uncle Bobby's Wedding" – a story about two male penguins getting married.
+              The case emerged when Maryland's Montgomery County Public Schools refused to allow parents to opt their children out of lessons featuring books with LGBTQ+ content, including titles like "Uncle Bobby's Wedding."
             </p>
             
             <p className="mb-4">
