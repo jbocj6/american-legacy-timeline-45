@@ -873,27 +873,27 @@ const NewsPress = () => {
               </div>
 
               {/* Content Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-6 flex-1 relative z-10">
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-5xl mb-3 drop-shadow-md text-yellow-300">✝️</div>
-                  <div className="text-lg font-bold text-white mb-3 drop-shadow-md">Religious Upbringing</div>
-                  <div className="text-sm text-white/90 leading-snug">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-2 flex-1 relative z-10">
+                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                  <div className="text-4xl mb-2 drop-shadow-md text-yellow-300">✝️</div>
+                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Religious Upbringing</div>
+                  <div className="text-base text-white/90 leading-snug">
                     Parents have the fundamental right to direct their children's religious development without government interference
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-5xl mb-3 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
-                  <div className="text-lg font-bold text-white mb-3 drop-shadow-md">Moral Education</div>
-                  <div className="text-sm text-white/90 leading-snug">
+                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                  <div className="text-4xl mb-2 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
+                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Moral Education</div>
+                  <div className="text-base text-white/90 leading-snug">
                     Families, not bureaucrats, are the primary educators responsible for instilling values and moral principles
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-5xl mb-3 drop-shadow-md text-red-400">📚</div>
-                  <div className="text-lg font-bold text-white mb-3 drop-shadow-md">Curriculum Oversight</div>
-                  <div className="text-sm text-white/90 leading-snug">
+                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                  <div className="text-4xl mb-2 drop-shadow-md text-red-400">📚</div>
+                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Curriculum Oversight</div>
+                  <div className="text-base text-white/90 leading-snug">
                     Parents must be notified and given opt-out rights when content conflicts with their religious beliefs
                   </div>
                 </div>
