@@ -855,7 +855,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Why This Victory Matters for Every American Parent</h2>
             
             {/* Parental Rights Infographic */}
-            <div className="w-full max-w-6xl mx-auto h-[600px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
+            <div className="w-full max-w-6xl mx-auto h-[700px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
               {/* Background Stars Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="w-full h-full bg-repeat" style={{backgroundImage: "radial-gradient(circle at 50% 50%, white 1px, transparent 1px)", backgroundSize: "20px 20px"}}></div>
@@ -873,7 +873,7 @@ const NewsPress = () => {
               </div>
 
               {/* Content Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-2 flex-1 relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-16 flex-1 relative z-10">
                 <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
                   <div className="text-4xl mb-2 drop-shadow-md text-yellow-300">✝️</div>
                   <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Religious Upbringing</div>
