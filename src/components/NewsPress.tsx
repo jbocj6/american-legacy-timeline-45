@@ -1059,13 +1059,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4">The Real Story: Law and Order Returns</h2>
             
-            {/* ICE Operations Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>ICE agents conducting enforcement operation</p>
-                <p className="text-sm mt-2">Source needed - ICE Photo</p>
-              </div>
+            {/* ICE Operations Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/ea694af3-b20f-42df-9ff3-ed044e032f8c.png" 
+                alt="People celebrating with American flags" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
