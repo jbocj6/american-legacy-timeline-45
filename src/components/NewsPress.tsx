@@ -834,14 +834,6 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Coalition That Shocked the Left</h2>
             
-            {/* Interfaith Coalition Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>Muslim, Christian, and Jewish religious leaders standing together at press conference</p>
-                <p className="text-sm mt-2">Source needed - News photography</p>
-              </div>
-            </div>
             
             <p className="mb-4">This wasn't just a Christian conservative victory – it was an interfaith triumph that united:</p>
 
