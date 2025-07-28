@@ -874,7 +874,7 @@ const NewsPress = () => {
 
               {/* Content Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-16 flex-1 relative z-10">
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
                   <div className="text-4xl mb-2 drop-shadow-md text-yellow-300">✝️</div>
                   <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Religious Upbringing</div>
                   <div className="text-base text-white/90 leading-snug">
@@ -882,7 +882,7 @@ const NewsPress = () => {
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
                   <div className="text-4xl mb-2 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
                   <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Moral Education</div>
                   <div className="text-base text-white/90 leading-snug">
@@ -890,7 +890,7 @@ const NewsPress = () => {
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm p-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
+                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
                   <div className="text-4xl mb-2 drop-shadow-md text-red-400">📚</div>
                   <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Curriculum Oversight</div>
                   <div className="text-base text-white/90 leading-snug">
