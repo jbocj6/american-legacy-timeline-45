@@ -372,7 +372,7 @@ const JeffBrownLanding = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
             {/* Timeline items */}
-            <div className="space-y-16">
+            <div className="space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
                 <div 
                   key={event.year}
