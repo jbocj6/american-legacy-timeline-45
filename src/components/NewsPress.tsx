@@ -198,9 +198,9 @@ const NewsPress = () => {
               </div>
 
               {/* Content Grid */}
-              <div className="grid lg:grid-cols-3 gap-4 mt-5 relative z-10">
+              <div className="flex lg:flex-row flex-col gap-4 mt-5 relative z-10">
                 {/* Global Stats */}
-                <div className="lg:col-span-1 p-4 rounded-xl border text-center" style={{
+                <div className="lg:w-1/3 p-4 rounded-xl border text-center self-start" style={{
                   background: 'rgba(255,255,255,0.15)',
                   backdropFilter: 'blur(10px)',
                   borderColor: 'rgba(255,255,255,0.2)'
@@ -213,7 +213,7 @@ const NewsPress = () => {
                 </div>
 
                 {/* Breakdown Section */}
-                <div className="lg:col-span-2 p-4 rounded-xl border" style={{
+                <div className="lg:w-2/3 p-4 rounded-xl border" style={{
                   background: 'rgba(255,255,255,0.1)',
                   backdropFilter: 'blur(10px)',
                   borderColor: 'rgba(255,255,255,0.2)'
