@@ -616,7 +616,7 @@ const NewsPress = () => {
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500/95 text-white px-3 py-1 rounded-full text-lg font-bold border-2 border-white/30" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
                         99% DROP
                       </div>
-                      <div className="text-5xl text-yellow-400 animate-pulse" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
+                      <div className="text-9xl text-yellow-400 animate-pulse" style={{textShadow: '4px 4px 8px rgba(0,0,0,0.5)', fontSize: '12rem'}}>
                         →
                       </div>
                     </div>
