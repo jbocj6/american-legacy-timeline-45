@@ -324,7 +324,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
             
             {/* Statistics Chart */}
-            <div className="w-full bg-gradient-to-br from-blue-900 via-blue-600 via-red-500 to-red-600 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
+            <div className="w-full bg-gradient-to-br from-blue-900 via-blue-700 via-blue-500 to-red-400 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10" style={{
                 backgroundImage: `url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='stars' patternUnits='userSpaceOnUse' width='15' height='15'><circle cx='7.5' cy='7.5' r='0.8' fill='white' opacity='0.1'/></pattern></defs><rect width='100' height='100' fill='url(%23stars)'/></svg>")`
