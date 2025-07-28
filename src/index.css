@@ -785,78 +785,111 @@ All colors MUST be HSL.
   }
 }
 
-/* Responsive Design - Enhanced Mobile Optimizations */
+/* Mobile-First Responsive Design - Comprehensive Mobile Optimizations */
 @media (max-width: 768px) {
+  /* Global mobile typography */
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Hero Section Mobile Optimizations */
+  .hero {
+    min-height: 100vh;
+    padding: 1rem;
+    text-align: left;
+  }
+
   .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
   }
 
   .hero .subtitle {
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 3vw, 1.2rem);
+    line-height: 1.4;
+    margin-bottom: 2rem;
   }
 
+  /* Navigation Mobile */
   .campaign-banner {
     font-size: 0.875rem;
-    padding: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    letter-spacing: 0.05em;
   }
 
-  /* Timeline mobile redesign */
-  .timeline-line {
-    left: 30px;
-    width: 3px;
+  /* CRITICAL: Timeline Section Mobile Redesign */
+  #timeline {
+    padding: 3rem 1rem;
   }
 
-  .timeline-content {
-    width: calc(100% - 80px);
-    margin-left: 80px !important;
+  /* Hide desktop timeline elements */
+  #timeline .timeline-line,
+  #timeline .absolute.left-1\\/2 {
+    display: none !important;
+  }
+
+  /* Mobile timeline layout - vertical stack */
+  #timeline .space-y-16 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #timeline .timeline-item {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    position: relative;
+  }
+
+  /* Mobile timeline date badges */
+  #timeline .timeline-item > div:first-child {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    padding: 0 !important;
+  }
+
+  #timeline .timeline-item .text-6xl,
+  #timeline .timeline-item .text-8xl {
+    font-size: 1.5rem !important;
+    background: hsl(var(--primary));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin: 0 !important;
+    line-height: 1 !important;
+  }
+
+  /* Mobile timeline cards */
+  #timeline .timeline-item > div:last-child {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  #timeline .timeline-item .bg-card {
+    margin: 0;
     padding: 1.5rem;
   }
 
-  .timeline-point {
-    left: 30px;
-    width: 30px;
-    height: 30px;
+  /* Hide desktop connectors */
+  #timeline .timeline-item .absolute {
+    display: none !important;
   }
 
-  .timeline-point::before {
-    font-size: 14px;
-  }
-
-  .timeline-content::before {
-    left: -30px !important;
-    border-right-color: hsl(var(--primary)) !important;
-    border-left-color: transparent !important;
-    border-width: 10px;
-  }
-
-  .timeline-item {
-    margin: 80px 0;
-  }
-
-  .timeline-date {
-    font-size: 1.2rem;
-  }
-
-  .timeline-title {
-    font-size: 1.25rem;
-  }
-
-  .timeline-text {
-    font-size: 0.9rem;
-  }
-
-  .timeline-image {
-    height: 200px;
-  }
-
-  .pardoned-stamp {
-    font-size: 2rem;
-    padding: 30px 40px;
-  }
-
-  .quote-text {
-    font-size: 1.5rem;
+  /* Mobile timeline images */
+  #timeline .timeline-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   /* Section spacing adjustments */
@@ -864,88 +897,245 @@ All colors MUST be HSL.
     padding: 3rem 1rem !important;
   }
 
-  /* Grid system mobile fixes */
+  /* Grid system mobile fixes - Force single column */
   .grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 1rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 
-  .grid > * {
-    width: 100% !important;
+  .grid.md\\:grid-cols-2,
+  .grid.md\\:grid-cols-3,
+  .grid.lg\\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Issues Cards Mobile - Single column stack */
+  #issues .grid {
     max-width: none !important;
+    justify-items: stretch !important;
   }
 
-  /* Typography mobile scaling */
+  #issues .reform-card {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  /* Typography mobile scaling with fluid responsive design */
+  h1 {
+    font-size: clamp(2rem, 7vw, 3.5rem) !important;
+    line-height: 1.1 !important;
+  }
+
   h2 {
-    font-size: 2.5rem !important;
+    font-size: clamp(2rem, 6vw, 2.5rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
   }
 
   h3 {
-    font-size: 1.5rem !important;
+    font-size: clamp(1.25rem, 4vw, 1.5rem) !important;
+    line-height: 1.3 !important;
   }
 
   p {
     font-size: 1rem !important;
     line-height: 1.6 !important;
+    max-width: 65ch;
   }
 
   /* Card mobile adjustments */
   .reform-card,
   .achievement-card {
     padding: 1.5rem !important;
-    margin: 0.5rem 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
   }
 
   .reform-title {
-    font-size: 1.1rem !important;
+    font-size: 1.125rem !important;
   }
 
   .reform-description {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
 
-  /* Button mobile optimization */
-  button {
+  /* Button mobile optimization - Touch-friendly */
+  button,
+  .donate-button {
     min-height: 44px !important;
     touch-action: manipulation;
+    font-size: 0.875rem !important;
+    padding: 0.875rem 1.5rem !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  /* Mobile button stacking */
+  .flex.flex-col.sm\\:flex-row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* Footer mobile optimizations */
+  footer .flex.flex-col.sm\\:flex-row {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+
+  footer .qr-card img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  /* Social media mobile spacing */
+  .flex.gap-4.justify-center {
+    gap: 1rem !important;
+  }
+
+  /* Form mobile optimization */
+  input,
+  textarea,
+  select {
+    min-height: 44px !important;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 0.75rem !important;
+  }
+
+  /* Social media icons mobile positioning */
+  .hero .absolute.bottom-8.right-8 {
+    bottom: 4rem !important;
+    right: 1rem !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .hero .absolute.bottom-8.right-8 a {
+    padding: 0.5rem !important;
+  }
+
+  .hero .absolute.bottom-8.right-8 svg {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  /* Mobile scroll behavior */
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  /* Scroll indicator mobile */
+  .scroll-indicator {
+    bottom: 1rem !important;
+    transform: translateX(-50%) scale(0.8) !important;
+  }
+
+  /* QR codes mobile stacking */
+  footer .flex.flex-col.sm\\:flex-row.gap-8 {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+
+  footer .qr-card {
+    flex-shrink: 0;
+  }
+
+  /* Policy platform mobile fixes */
+  section .grid.md\\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  section .grid.md\\:grid-cols-3 > div {
+    padding: 1.5rem !important;
+  }
+
+  /* Text center mobile for policy buttons */
+  section .text-center button {
+    margin: 0.5rem 0 !important;
+    width: 100% !important;
+  }
+
+  /* Mobile image optimizations */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile form inputs - prevent zoom on iOS */
+  input[type="text"],
+  input[type="email"], 
+  input[type="tel"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px !important;
   }
 }
 
-/* Extra small mobile devices */
+/* Extra small mobile devices - 480px and below */
 @media (max-width: 480px) {
+  /* Even more compact mobile typography */
   .hero h1 {
-    font-size: 2.5rem !important;
+    font-size: clamp(2rem, 6vw, 2.5rem) !important;
   }
 
   .hero .subtitle {
-    font-size: 0.9rem !important;
+    font-size: clamp(0.75rem, 2.5vw, 0.9rem) !important;
   }
 
   .campaign-banner {
     font-size: 0.7rem !important;
-    padding: 0.5rem !important;
+    padding: 0.5rem 0.25rem !important;
   }
 
   h2 {
-    font-size: 2rem !important;
+    font-size: clamp(1.75rem, 5vw, 2rem) !important;
   }
 
-  .timeline-content {
+  h3 {
+    font-size: clamp(1.125rem, 3.5vw, 1.25rem) !important;
+  }
+
+  /* Timeline mobile - extra small */
+  #timeline .timeline-item .text-6xl,
+  #timeline .timeline-item .text-8xl {
+    font-size: 1.25rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+
+  #timeline .timeline-item .bg-card {
     padding: 1rem !important;
   }
 
-  .timeline-date {
-    font-size: 1rem !important;
+  #timeline .timeline-item img {
+    height: 140px !important;
   }
 
+  /* Button extra small mobile */
+  button,
   .donate-button {
     font-size: 0.75rem !important;
     padding: 0.75rem 1rem !important;
+    min-height: 44px !important;
   }
 
+  /* Section spacing extra small */
   section {
     padding: 2rem 0.75rem !important;
+  }
+
+  /* Cards extra small mobile */
+  .reform-card,
+  .achievement-card {
+    padding: 1rem !important;
+  }
+
+  /* Footer QR codes extra small */
+  footer .qr-card img {
+    width: 100px !important;
+    height: 100px !important;
   }
 }
 

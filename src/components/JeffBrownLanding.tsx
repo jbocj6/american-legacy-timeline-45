@@ -366,40 +366,47 @@ const JeffBrownLanding = () => {
             </div>
           </div>
 
-          {/* Vertical Timeline */}
+          {/* Responsive Timeline */}
           <div className="relative">
-            {/* Central vertical line */}
+            {/* Desktop: Central vertical line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
             {/* Timeline items */}
-            <div className="space-y-16 mt-8">
+            <div className="space-y-16 md:space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
                 <div 
                   key={event.year}
-                  className={`timeline-item relative flex items-center animate-fade-in ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
+                  className={`timeline-item relative animate-fade-in
+                    md:flex md:items-center
+                    ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}
+                    flex flex-col
+                  `}
                   style={{animationDelay: `${index * 0.3 + 1.8}s`}}
                 >
-                  {/* Timeline dot */}
+                  {/* Desktop timeline dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden md:block hover:scale-125 transition-transform duration-300">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
                   </div>
                   
-                  {/* Date - Mobile optimized */}
-                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'} 
-                                  max-md:text-center max-md:mb-4`}>
-                    <div className="text-6xl md:text-8xl font-mono font-black text-destructive/70 leading-none mb-2
-                                   max-md:text-4xl max-md:mb-2
-                                   max-sm:text-3xl max-sm:mb-1">
+                  {/* Date - Mobile: Badge, Desktop: Side placement */}
+                  <div className={`
+                    flex-none w-full md:w-1/2 
+                    ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} 
+                    text-center md:text-inherit mb-4 md:mb-0
+                  `}>
+                    <div className="
+                      text-6xl md:text-8xl font-mono font-black leading-none mb-2
+                      md:text-destructive/70
+                      text-base md:text-6xl lg:text-8xl
+                    ">
                       {event.year}
                     </div>
                   </div>
                   
                   {/* Content card */}
                   <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'}`}>
-                    <div className="bg-card border border-border/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
-                      {/* Card connector line */}
+                    <div className="bg-card border border-border/50 rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
+                      {/* Desktop card connector line */}
                       <div className={`absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden md:block ${
                         index % 2 === 0 ? '-left-8' : '-right-8'
                       }`}></div>
@@ -411,16 +418,18 @@ const JeffBrownLanding = () => {
                         <img 
                           src={event.image} 
                           alt={event.title} 
-                          className="w-full h-48 object-cover rounded-xl mb-6 transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-40 md:h-48 object-cover rounded-xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-105"
                         />
-                        <h3 className={`text-2xl font-space font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 ${
-                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
-                        }`}>
+                        <h3 className={`
+                          text-xl md:text-2xl font-space font-bold text-foreground mb-3 md:mb-4 group-hover:text-accent transition-colors duration-300 
+                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''}
+                        `}>
                           {event.title}
                         </h3>
-                        <p className={`text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 ${
-                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
-                        }`}>
+                        <p className={`
+                          text-base md:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 
+                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''}
+                        `}>
                           {event.description}
                         </p>
                       </div>
