@@ -155,12 +155,59 @@ All colors MUST be HSL.
     padding: 0;
   }
 
-  /* Mobile-first hero optimizations */
-  @media (max-width: 768px) {
+  /* Mobile-only hero optimizations */
+  @media (max-width: 767px) {
     .hero {
+      height: 100vh;
       min-height: 100vh;
       padding: 1rem;
       background-size: cover;
+    }
+    
+    /* Mobile hero headshot positioning */
+    .hero-headshot-mobile {
+      position: absolute !important;
+      right: 0% !important;
+      bottom: 0% !important;
+      height: 60vh !important;
+      width: auto !important;
+      z-index: 10 !important;
+      transform: none !important;
+      object-fit: cover !important;
+      object-position: top center !important;
+    }
+    
+    /* Mobile hero content positioning */
+    .hero-content-mobile {
+      position: absolute !important;
+      top: 20% !important;
+      left: 5% !important;
+      right: 5% !important;
+      bottom: auto !important;
+      z-index: 20 !important;
+      text-align: center !important;
+    }
+    
+    /* Mobile social icons horizontal layout */
+    .hero-social-mobile {
+      position: absolute !important;
+      bottom: 8px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      right: auto !important;
+      z-index: 30 !important;
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 12px !important;
+    }
+    
+    /* Mobile button layout */
+    .hero-buttons-mobile {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+      margin-top: 16px !important;
+      width: 100% !important;
     }
   }
 

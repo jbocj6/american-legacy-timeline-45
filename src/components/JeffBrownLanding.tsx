@@ -121,15 +121,13 @@ const JeffBrownLanding = () => {
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
                      md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
-                     max-md:right-[-5%] max-md:bottom-[5%] max-md:h-[50vh] max-md:scale-100
-                     max-sm:right-[0%] max-sm:bottom-[10%] max-sm:h-[40vh] max-sm:scale-90"
+                     hero-headshot-mobile"
         />
         
         {/* Hero Content - Mobile responsive positioning */}
         <div className="absolute bottom-[20%] left-[5%] z-40 
                         md:bottom-[20%] md:left-[5%]
-                        max-md:bottom-[45%] max-md:left-[5%] max-md:right-[5%]
-                        max-sm:bottom-[50%] max-sm:left-[2%] max-sm:right-[2%] max-sm:text-center">
+                        hero-content-mobile">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
                          md:text-8xl 
                          max-md:text-4xl max-md:mb-3 max-md:tracking-wider
@@ -144,8 +142,7 @@ const JeffBrownLanding = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 
                           md:flex-row md:gap-4 md:mt-8
-                          max-md:flex-col max-md:gap-3 max-md:mt-6
-                          max-sm:flex-col max-sm:gap-2 max-sm:mt-4">
+                          hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
               className="donate-button"
@@ -172,7 +169,7 @@ const JeffBrownLanding = () => {
         </div>
         
         {/* Social Media Icons - Lower Right Corner */}
-        <div className="absolute bottom-8 right-8 z-50 flex gap-3">
+        <div className="absolute bottom-8 right-8 z-50 flex gap-3 hero-social-mobile">
           {/* Instagram */}
           <a 
             href="https://www.instagram.com/jeffreybrownj6/" 
