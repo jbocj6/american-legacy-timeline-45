@@ -62,7 +62,7 @@ const BookSection = () => {
               <img 
                 src="/lovable-uploads/460c33af-a326-4ef8-9005-ce664b3eb18b.png" 
                 alt="The January 6th Truth Book Cover" 
-                className="w-full max-w-xs mx-auto h-auto rounded-lg shadow-xl"
+                className="w-full max-w-xs mx-auto h-auto rounded-lg shadow-xl border-4 border-primary"
               />
             </div>
             <div className="bg-gradient-to-br from-primary to-accent p-8 rounded-xl shadow-2xl text-white relative">
