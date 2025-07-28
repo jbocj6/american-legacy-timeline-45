@@ -900,7 +900,7 @@ const NewsPress = () => {
               </div>
 
               {/* Victory Banner */}
-              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-8 py-3 rounded-full text-xl font-bold drop-shadow-md border-2 border-white/30 animate-pulse">
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-8 py-3 rounded-full text-xl font-bold drop-shadow-md border-2 border-white/30 animate-pulse">
                 CONSTITUTIONAL RIGHTS UPHELD
               </div>
             </div>
