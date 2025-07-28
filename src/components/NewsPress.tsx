@@ -302,7 +302,7 @@ const NewsPress = () => {
             {/* Hero Image */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
               <img 
-                src="/lovable-uploads/composite-border-diagonal.png" 
+                src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png"
                 alt="Split view showing border conditions before and after" 
                 className="w-full h-full object-cover"
               />
