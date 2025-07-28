@@ -43,12 +43,11 @@ const Navigation = () => {
               }}
               className="flex-shrink-0 cursor-pointer"
             >
-              <h1 className="text-4xl font-mono font-900 text-primary-foreground tracking-widest">
-                JBJ6
-              </h1>
-              <p className="text-xs text-primary-foreground/70 font-inter font-medium -mt-1 tracking-widest uppercase">
-                Jeff Brown
-              </p>
+              <img 
+                src="/lovable-uploads/b6b33c1e-3c56-4dba-a7e6-47f2668a0c85.png" 
+                alt="JBJ6 - Jeff Brown for Congress" 
+                className="h-12 w-auto"
+              />
             </a>
 
             {/* Desktop Navigation - Right aligned */}
