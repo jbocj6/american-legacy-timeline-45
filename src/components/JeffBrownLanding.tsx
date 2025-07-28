@@ -336,7 +336,7 @@ const JeffBrownLanding = () => {
       <section id="timeline" className="py-24 px-8 relative" ref={timelineRef}>
         <div className="max-w-6xl mx-auto relative">
           {/* Header */}
-          <div className="text-center mb-20">
+          <div className="text-center mb-8">
             {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
               <div className="inline-flex items-center gap-3 mb-6">
