@@ -677,7 +677,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/ea694af3-b20f-42df-9ff3-ed044e032f8c.png" 
                 alt="People celebrating with American flags" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-bottom"
               />
             </div>
             
