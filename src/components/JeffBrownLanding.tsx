@@ -596,7 +596,12 @@ const JeffBrownLanding = () => {
           <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="#" className="cta-button" onClick={handleCTAClick}>
+            <a 
+              href="https://calendly.com/bhogan-revgenengines/30min" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button"
+            >
               BOOK A ONE-ON-ONE
             </a>
           </div>
