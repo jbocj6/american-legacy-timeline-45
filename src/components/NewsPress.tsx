@@ -299,12 +299,17 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
-            {/* Hero Image */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
+            {/* Hero Images - Side by Side */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex">
               <img 
-                src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png"
-                alt="Split view showing border conditions before and after" 
-                className="w-full h-full object-cover"
+                src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png" 
+                alt="People by river border area" 
+                className="w-1/2 h-full object-cover"
+              />
+              <img 
+                src="/lovable-uploads/cf66cf87-7033-496f-b442-053dc512ccbc.png" 
+                alt="Border wall with surveillance" 
+                className="w-1/2 h-full object-cover"
               />
             </div>
             
