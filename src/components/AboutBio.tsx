@@ -36,7 +36,7 @@ const AboutBio = () => {
   }, []);
 
   return (
-    <section id="meet-jeff" className="py-24 px-8 mt-20 max-md:py-16 max-md:px-4 max-md:mt-16">
+    <section id="meet-jeff" className="py-24 px-8 max-md:py-16 max-md:px-4 max-md:mt-16">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-md:grid-cols-1 max-md:gap-8">
           {/* Professional headshot placeholder */}
