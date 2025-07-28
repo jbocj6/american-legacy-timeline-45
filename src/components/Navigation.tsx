@@ -44,7 +44,7 @@ const Navigation = () => {
               className="flex-shrink-0 cursor-pointer"
             >
               <img 
-                src="/lovable-uploads/b6b33c1e-3c56-4dba-a7e6-47f2668a0c85.png" 
+                src="/lovable-uploads/06df19f8-8cfd-4f55-9219-4718dc1f32d4.png" 
                 alt="JBJ6 - Jeff Brown for Congress" 
                 className="h-12 w-auto"
               />
