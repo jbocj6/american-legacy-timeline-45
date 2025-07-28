@@ -120,7 +120,7 @@ const JeffBrownLanding = () => {
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
           className="absolute w-auto object-contain z-30
-                     /* Desktop */
+                     /* Desktop: Position on right side */
                      lg:right-[-5%] lg:bottom-[-2%] lg:h-[87vh] lg:scale-110
                      /* Mobile/Tablet */ 
                      right-[5%] bottom-[2%] h-[45vh] scale-100
@@ -131,8 +131,8 @@ const JeffBrownLanding = () => {
         <div className="relative z-40 w-full max-w-7xl mx-auto px-4 md:px-8
                         /* Mobile: Stack vertically center */
                         flex flex-col justify-center min-h-screen
-                        /* Desktop: Position left */
-                        lg:justify-end lg:pb-[20%] lg:items-start
+                        /* Desktop: Position left with proper spacing */
+                        lg:justify-center lg:items-start lg:pl-12
                         md:justify-center md:pb-0">
           <div className="text-center lg:text-left max-w-lg lg:max-w-2xl mx-auto lg:mx-0">
             <h1 className="font-mono font-black tracking-wider text-white drop-shadow-lg mb-3 md:mb-4
