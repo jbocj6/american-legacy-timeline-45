@@ -827,7 +827,7 @@ All colors MUST be HSL.
 
   /* Hide desktop timeline elements */
   #timeline .timeline-line,
-  #timeline .absolute.left-1\\/2 {
+  #timeline .absolute.left-1\/2 {
     display: none !important;
   }
 
@@ -904,9 +904,9 @@ All colors MUST be HSL.
     gap: 1.5rem !important;
   }
 
-  .grid.md\\:grid-cols-2,
-  .grid.md\\:grid-cols-3,
-  .grid.lg\\:grid-cols-3 {
+  .grid.md\:grid-cols-2,
+  .grid.md\:grid-cols-3,
+  .grid.lg\:grid-cols-3 {
     grid-template-columns: 1fr !important;
   }
 
@@ -972,13 +972,13 @@ All colors MUST be HSL.
   }
 
   /* Mobile button stacking */
-  .flex.flex-col.sm\\:flex-row {
+  .flex.flex-col.sm\:flex-row {
     flex-direction: column !important;
     gap: 1rem !important;
   }
 
   /* Footer mobile optimizations */
-  footer .flex.flex-col.sm\\:flex-row {
+  footer .flex.flex-col.sm\:flex-row {
     flex-direction: column !important;
     gap: 1.5rem !important;
   }
@@ -1031,7 +1031,7 @@ All colors MUST be HSL.
   }
 
   /* QR codes mobile stacking */
-  footer .flex.flex-col.sm\\:flex-row.gap-8 {
+  footer .flex.flex-col.sm\:flex-row.gap-8 {
     flex-direction: column !important;
     gap: 1rem !important;
     align-items: center !important;
@@ -1042,12 +1042,12 @@ All colors MUST be HSL.
   }
 
   /* Policy platform mobile fixes */
-  section .grid.md\\:grid-cols-3 {
+  section .grid.md\:grid-cols-3 {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
   }
 
-  section .grid.md\\:grid-cols-3 > div {
+  section .grid.md\:grid-cols-3 > div {
     padding: 1.5rem !important;
   }
 
