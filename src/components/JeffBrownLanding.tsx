@@ -114,38 +114,44 @@ const JeffBrownLanding = () => {
       </div>
 
       {/* Hero Section - Outside seamless background */}
-      <section className="hero relative">
+      <section className="hero relative md:h-auto max-md:h-screen">
         {/* Jeff Brown Portrait - Mobile responsive positioning */}
         <img 
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
                      md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
-                     max-md:right-[-5%] max-md:bottom-[5%] max-md:h-[50vh] max-md:scale-100
-                     max-sm:right-[0%] max-sm:bottom-[10%] max-sm:h-[40vh] max-sm:scale-90"
+                     max-md:right-[-15%] max-md:bottom-[5%] max-md:h-[75vh] max-md:scale-100 max-md:z-10
+                     max-sm:right-[-10%] max-sm:bottom-[0%] max-sm:h-[70vh] max-sm:scale-90 max-sm:z-10"
         />
         
         {/* Hero Content - Mobile responsive positioning */}
         <div className="absolute bottom-[20%] left-[5%] z-40 
                         md:bottom-[20%] md:left-[5%]
-                        max-md:bottom-[45%] max-md:left-[5%] max-md:right-[5%]
-                        max-sm:bottom-[50%] max-sm:left-[2%] max-sm:right-[2%] max-sm:text-center">
-          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
-                         md:text-8xl 
-                         max-md:text-4xl max-md:mb-3 max-md:tracking-wider
-                         max-sm:text-3xl max-sm:mb-2 max-sm:tracking-wide">
-            Jeff Brown
-          </h1>
-          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
-                        md:text-base
-                        max-md:text-sm max-md:tracking-wider max-md:mb-6
-                        max-sm:text-xs max-sm:tracking-wide max-sm:mb-4">
-            PATRIOT • PROVEN LEADER • AMERICA FIRST
-          </p>
+                        max-md:top-[15%] max-md:left-[5%] max-md:right-[5%] max-md:flex max-md:flex-col max-md:items-center max-md:text-center max-md:h-[85%] max-md:justify-between
+                        max-sm:top-[12%] max-sm:left-[5%] max-sm:right-[5%] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:h-[88%] max-sm:justify-between">
+          
+          {/* Text Section */}
+          <div className="max-md:flex max-md:flex-col max-md:items-center max-md:z-50">
+            <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
+                           md:text-8xl 
+                           max-md:text-4xl max-md:mb-3 max-md:tracking-wider
+                           max-sm:text-3xl max-sm:mb-2 max-sm:tracking-wide">
+              Jeff Brown
+            </h1>
+            <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
+                          md:text-base
+                          max-md:text-sm max-md:tracking-wider max-md:mb-6
+                          max-sm:text-xs max-sm:tracking-wide max-sm:mb-4">
+              PATRIOT • PROVEN LEADER • AMERICA FIRST
+            </p>
+          </div>
+
+          {/* Buttons Section */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8 
                           md:flex-row md:gap-4 md:mt-8
-                          max-md:flex-col max-md:gap-3 max-md:mt-6
-                          max-sm:flex-col max-sm:gap-2 max-sm:mt-4">
+                          max-md:flex-col max-md:gap-3 max-md:mt-0 max-md:z-50 max-md:w-full max-md:px-4
+                          max-sm:flex-col max-sm:gap-3 max-sm:mt-0 max-sm:z-50 max-sm:w-full max-sm:px-2">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
               className="donate-button"
@@ -169,58 +175,65 @@ const JeffBrownLanding = () => {
               READ JEFF'S BOOK
             </button>
           </div>
-        </div>
-        
-        {/* Social Media Icons - Lower Right Corner */}
-        <div className="absolute bottom-8 right-8 z-50 flex gap-3">
-          {/* Instagram */}
-          <a 
-            href="https://www.instagram.com/jeffreybrownj6/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/>
-            </svg>
-          </a>
-          
-          {/* X (Twitter) */}
-          <a 
-            href="https://x.com/jeffreybrownj6" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-          </a>
-          
-          {/* Truth Social */}
-          <a 
-            href="https://truthsocial.com/@jeffreybrownj6" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M4 4h16v4H14v12h-4V8H4V4z"/>
-              <rect x="16" y="14" width="4" height="4" fill="currentColor"/>
-            </svg>
-          </a>
-          
-          {/* Rumble */}
-          <a 
-            href="https://rumble.com/user/Jeffreybrownj6" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-            </svg>
-          </a>
+
+          {/* Social Media Icons - Mobile horizontal, Desktop bottom right */}
+          <div className="absolute bottom-8 right-8 z-50 flex gap-3
+                          md:bottom-8 md:right-8 md:flex md:gap-3
+                          max-md:relative max-md:bottom-auto max-md:right-auto max-md:flex max-md:flex-row max-md:gap-4 max-md:justify-center max-md:mt-6
+                          max-sm:relative max-sm:bottom-auto max-sm:right-auto max-sm:flex max-sm:flex-row max-sm:gap-3 max-sm:justify-center max-sm:mt-4">
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/jeffreybrownj6/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors
+                         max-md:p-2 max-sm:p-2"
+            >
+              <svg className="w-6 h-6 max-md:w-5 max-md:h-5 max-sm:w-4 max-sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            
+            {/* X (Twitter) */}
+            <a 
+              href="https://x.com/jeffreybrownj6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors
+                         max-md:p-2 max-sm:p-2"
+            >
+              <svg className="w-6 h-6 max-md:w-5 max-md:h-5 max-sm:w-4 max-sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            
+            {/* Truth Social */}
+            <a 
+              href="https://truthsocial.com/@jeffreybrownj6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors
+                         max-md:p-2 max-sm:p-2"
+            >
+              <svg className="w-6 h-6 max-md:w-5 max-md:h-5 max-sm:w-4 max-sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 4h16v4H14v12h-4V8H4V4z"/>
+                <rect x="16" y="14" width="4" height="4" fill="currentColor"/>
+              </svg>
+            </a>
+            
+            {/* Rumble */}
+            <a 
+              href="https://rumble.com/user/Jeffreybrownj6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors
+                         max-md:p-2 max-sm:p-2"
+            >
+              <svg className="w-6 h-6 max-md:w-5 max-md:h-5 max-sm:w-4 max-sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div className="scroll-indicator z-50" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
