@@ -747,12 +747,42 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Case That United Faiths Against Indoctrination</h2>
             
-            {/* Book Covers Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>Display of controversial children's books including "Uncle Bobby's Wedding" and other LGBTQ-themed titles</p>
-                <p className="text-sm mt-2">Source needed - Court exhibit photos</p>
+            {/* Court Exhibit Header */}
+            <div className="w-full max-w-4xl mx-auto mb-6">
+              <div className="bg-gray-50 border-2 border-slate-700 rounded-t-lg p-6 text-center font-serif">
+                <div className="text-2xl font-bold text-slate-700 mb-2 tracking-wide">
+                  MAHMOUD ET AL. v. TAYLOR ET AL.
+                </div>
+                <div className="text-sm text-slate-600 mb-1 font-medium">
+                  SUPREME COURT OF THE UNITED STATES
+                </div>
+                <div className="text-sm text-slate-600 mb-4 font-medium">
+                  Decided June 27, 2025
+                </div>
+                <div className="inline-block bg-white border-2 border-red-600 text-red-600 px-5 py-2 rounded font-bold text-lg uppercase tracking-wider">
+                  Court Exhibit A
+                </div>
+                <div className="text-xs text-gray-500 mt-2 italic">
+                  No. 24–297
+                </div>
+              </div>
+            </div>
+
+            {/* Side by Side Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/bd7775e4-7477-4b12-b0e9-05ef09fb4769.png" 
+                  alt="Child expressing joy and warm feelings" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/68d4ab21-23cf-4443-844b-a98a124677b0.png" 
+                  alt="Mother and child discussing identity" 
+                  className="w-full h-80 object-cover"
+                />
               </div>
             </div>
             
