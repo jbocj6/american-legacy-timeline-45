@@ -768,8 +768,15 @@ const NewsPress = () => {
               </div>
             </div>
 
-            {/* Side by Side Images */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Three Images Side by Side */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/8c5b90c9-0f28-4aa6-a117-0b87fe03142f.png" 
+                  alt="Uncle Bobby's Wedding book cover" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
               <div className="rounded-lg overflow-hidden">
                 <img 
                   src="/lovable-uploads/bd7775e4-7477-4b12-b0e9-05ef09fb4769.png" 
