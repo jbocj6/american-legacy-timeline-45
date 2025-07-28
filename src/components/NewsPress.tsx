@@ -728,13 +728,13 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Parents' Rights Triumph Over Woke School Agenda</h2>
             
-            {/* Hero Image Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
-                <p>Diverse group of parents (Muslim, Christian, Jewish) celebrating outside Supreme Court building with "Parents' Rights" signs</p>
-                <p className="text-sm mt-2">Image source needed - Reuters/AP Photo</p>
-              </div>
+            {/* Hero Image */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/659789db-6b54-4168-afa0-5306412198f1.png" 
+                alt="Freedom of Religion is a Human Right protest sign" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
