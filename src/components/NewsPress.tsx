@@ -855,7 +855,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Why This Victory Matters for Every American Parent</h2>
             
             {/* Parental Rights Infographic */}
-            <div className="w-full max-w-6xl mx-auto h-[700px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
+            <div className="w-full max-w-6xl mx-auto h-[550px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
               {/* Background Stars Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="w-full h-full bg-repeat" style={{backgroundImage: "radial-gradient(circle at 50% 50%, white 1px, transparent 1px)", backgroundSize: "20px 20px"}}></div>
