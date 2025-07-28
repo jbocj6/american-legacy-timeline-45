@@ -323,12 +323,103 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
             
-            {/* Statistics Chart Placeholder */}
-            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[CHART NEEDED]</p>
-                <p>Bar graph comparing Biden's peak 251,487 monthly crossings to Trump's 6,000 in June 2025</p>
-                <p className="text-sm mt-2">Create chart using DHS data</p>
+            {/* Statistics Chart */}
+            <div className="w-full bg-gradient-to-br from-blue-900 via-blue-600 via-red-500 to-red-600 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
+              {/* Background pattern */}
+              <div className="absolute inset-0 opacity-10" style={{
+                backgroundImage: `url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='stars' patternUnits='userSpaceOnUse' width='15' height='15'><circle cx='7.5' cy='7.5' r='0.8' fill='white' opacity='0.1'/></pattern></defs><rect width='100' height='100' fill='url(%23stars)'/></svg>")`
+              }} />
+              
+              <div className="relative z-10">
+                <div className="text-center mb-10">
+                  <h1 className="text-5xl font-bold mb-3 drop-shadow-lg">BORDER CROSSINGS COMPARISON</h1>
+                  <p className="text-xl opacity-90 mb-4">Monthly Border Encounters: Biden Peak vs Trump Results</p>
+                  <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full inline-block border border-white/30">
+                    Source: DHS Data
+                  </div>
+                </div>
+
+                <div className="flex justify-center items-end gap-16 my-10 h-80">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-32 h-64 bg-gradient-to-t from-red-500 to-red-600 rounded-t-lg relative shadow-xl hover:scale-105 transition-transform">
+                      <div className="absolute -top-9 left-1/2 transform -translate-x-1/2 text-xl font-bold text-yellow-300 drop-shadow animate-pulse">
+                        251,487
+                      </div>
+                    </div>
+                    <div className="mt-4 text-xl font-bold text-center">Biden Peak</div>
+                    <div className="text-sm opacity-80 mt-1">December 2023</div>
+                  </div>
+                  
+                  <div className="absolute text-5xl text-yellow-300 drop-shadow-lg">→</div>
+                  
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-32 h-4 bg-gradient-to-t from-green-500 to-green-400 rounded-t-lg relative shadow-xl hover:scale-105 transition-transform">
+                      <div className="absolute -top-9 left-1/2 transform -translate-x-1/2 text-xl font-bold text-yellow-300 drop-shadow">
+                        6,000
+                      </div>
+                    </div>
+                    <div className="mt-4 text-xl font-bold text-center">Trump Results</div>
+                    <div className="text-sm opacity-80 mt-1">June 2025</div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
+                  <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                    <h2 className="text-2xl font-bold mb-5 text-center text-red-300">
+                      Biden's Border Disaster
+                      <span className="bg-red-500/30 text-red-200 px-3 py-1 rounded-full text-sm ml-3">CRISIS</span>
+                    </h2>
+                    
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Monthly crossings at peak</span>
+                        <span className="text-xl font-bold text-yellow-300">251,487</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Released into American communities</span>
+                        <span className="text-xl font-bold text-yellow-300">85%</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Cost to taxpayers annually</span>
+                        <span className="text-xl font-bold text-yellow-300">$72 billion</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3">
+                        <span>Miles of new wall built</span>
+                        <span className="text-xl font-bold text-yellow-300">ZERO</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+                    <h2 className="text-2xl font-bold mb-5 text-center text-green-300">
+                      Trump's Border Victory
+                      <span className="bg-green-500/30 text-green-200 px-3 py-1 rounded-full text-sm ml-3">6 MONTHS</span>
+                    </h2>
+                    
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Monthly crossings in June 2025</span>
+                        <span className="text-xl font-bold text-yellow-300">6,000</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Illegal aliens arrested in 2025</span>
+                        <span className="text-xl font-bold text-yellow-300">300,000+</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>Drop in Darien Gap migration</span>
+                        <span className="text-xl font-bold text-yellow-300">99%</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                        <span>New wall under construction</span>
+                        <span className="text-xl font-bold text-yellow-300">85+ miles</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3">
+                        <span>Parole releases (May & June)</span>
+                        <span className="text-xl font-bold text-yellow-300 animate-pulse">ZERO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
