@@ -566,12 +566,123 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4">The Darien Gap Miracle: 99% Drop</h2>
             
-            {/* Darien Gap Map Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[MAP NEEDED]</p>
-                <p>Map showing Darien Gap between Colombia and Panama with migration route and 99% drop notation</p>
-                <p className="text-sm mt-2">Create Darien Gap migration map</p>
+            {/* Darien Gap Map */}
+            <div className="w-full max-w-7xl h-[700px] mx-auto bg-gradient-to-br from-sky-900 via-blue-700 via-emerald-600 via-red-600 to-red-900 rounded-3xl relative overflow-hidden shadow-2xl mb-6">
+              <svg className="w-full h-full relative" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+                {/* Coordinate grid */}
+                <defs>
+                  <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+                    <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1" strokeDasharray="3,3"/>
+                  </pattern>
+                </defs>
+                <rect width="1400" height="700" fill="url(#grid)" opacity="0.3"/>
+                
+                {/* Water bodies */}
+                {/* Caribbean Sea */}
+                <path className="fill-blue-700 opacity-80" d="M0,0 L1400,0 L1400,150 Q1200,180 1000,160 Q800,140 600,155 Q400,170 200,150 Q100,140 0,130 Z"/>
+                <text className="text-2xl font-bold fill-blue-100 drop-shadow-md font-sans italic" x="700" y="80" textAnchor="middle">CARIBBEAN SEA</text>
+                
+                {/* Pacific Ocean */}
+                <path className="fill-sky-600 opacity-80" d="M0,550 Q200,530 400,540 Q600,550 800,545 Q1000,540 1200,535 L1400,530 L1400,700 L0,700 Z"/>
+                <text className="text-2xl font-bold fill-blue-100 drop-shadow-md font-sans italic" x="700" y="620" textAnchor="middle">PACIFIC OCEAN</text>
+                
+                {/* Gulf of Urabá */}
+                <ellipse cx="350" cy="380" rx="60" ry="40" className="fill-sky-600 opacity-80"/>
+                <text className="text-sm font-bold fill-blue-100 drop-shadow-md font-sans italic" x="350" y="385" textAnchor="middle">Gulf of Urabá</text>
+                
+                {/* Colombia */}
+                <path className="fill-emerald-600 stroke-white stroke-2 opacity-90" d="M50,200 Q150,180 250,190 Q350,200 450,210 Q500,220 520,280 Q540,340 520,400 Q500,460 480,520 Q450,540 400,535 Q350,530 300,540 Q250,550 200,545 Q150,540 100,530 Q75,480 60,430 Q45,380 50,330 Q55,280 50,230 Z"/>
+                <text className="text-3xl font-bold fill-white drop-shadow-lg font-sans" x="285" y="350" textAnchor="middle">COLOMBIA</text>
+                
+                {/* Key Colombian cities */}
+                <circle cx="180" cy="480" r="6" className="fill-yellow-300 stroke-black stroke-2"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="180" y="500" textAnchor="middle">Turbo</text>
+                
+                <circle cx="280" cy="450" r="4" className="fill-white stroke-black stroke-1"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="280" y="470" textAnchor="middle">Necoclí</text>
+                
+                <circle cx="380" cy="420" r="4" className="fill-white stroke-black stroke-1"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="380" y="440" textAnchor="middle">Acandí</text>
+                
+                {/* Panama */}
+                <path className="fill-sky-600 stroke-white stroke-2 opacity-90" d="M520,280 Q580,270 640,275 Q700,280 760,285 Q820,290 880,285 Q940,280 1000,275 Q1060,270 1120,265 Q1150,260 1170,240 Q1190,220 1200,200 Q1210,180 1220,160 L1400,150 L1400,400 Q1350,420 1300,430 Q1250,440 1200,445 Q1150,450 1100,455 Q1050,460 1000,465 Q950,470 900,475 Q850,480 800,485 Q750,490 700,495 Q650,500 600,495 Q570,490 540,470 Q525,440 520,400 Q515,360 520,320 Z"/>
+                <text className="text-3xl font-bold fill-white drop-shadow-lg font-sans" x="850" y="350" textAnchor="middle">PANAMA</text>
+                
+                {/* Key Panamanian cities */}
+                <circle cx="600" cy="470" r="4" className="fill-white stroke-black stroke-1"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="600" y="490" textAnchor="middle">Yaviza</text>
+                
+                <circle cx="750" cy="450" r="4" className="fill-white stroke-black stroke-1"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="750" y="470" textAnchor="middle">El Real</text>
+                
+                <circle cx="1100" cy="300" r="6" className="fill-yellow-300 stroke-black stroke-2"/>
+                <text className="text-sm font-bold fill-white drop-shadow-md font-sans" x="1100" y="280" textAnchor="middle">Panama City</text>
+                
+                {/* The Darien Gap */}
+                <path className="fill-red-600 stroke-yellow-300 stroke-3 opacity-90 animate-pulse" strokeDasharray="8,4" d="M450,300 Q500,290 550,295 Q600,300 650,305 Q700,310 750,315 Q800,320 820,360 Q840,400 820,440 Q800,480 780,500 Q740,510 700,505 Q660,500 620,495 Q580,490 540,485 Q500,480 470,460 Q450,420 445,380 Q440,340 450,300 Z"/>
+                
+                {/* Darien Gap label */}
+                <text className="text-2xl font-bold fill-yellow-300 drop-shadow-lg font-sans" x="635" y="400" textAnchor="middle">DARIÉN GAP</text>
+                <text className="text-lg font-bold fill-yellow-300 drop-shadow-lg font-sans" x="635" y="425" textAnchor="middle">160km × 50km</text>
+                
+                {/* Migration route */}
+                <path className="stroke-yellow-300 stroke-6 fill-none opacity-90" strokeDasharray="15,8" d="M180,480 Q250,460 350,440 Q450,420 550,410 Q650,400 750,395 Q850,390 950,385">
+                  <animate attributeName="stroke-dashoffset" values="0;-23" dur="4s" repeatCount="indefinite"/>
+                </path>
+                
+                {/* Migration arrows */}
+                <polygon className="fill-yellow-300 stroke-black stroke-1 animate-pulse" points="320,445 335,440 335,450" transform="rotate(15 327.5 445)"/>
+                <polygon className="fill-yellow-300 stroke-black stroke-1 animate-pulse" points="520,415 535,410 535,420" transform="rotate(10 527.5 415)"/>
+                <polygon className="fill-yellow-300 stroke-black stroke-1 animate-pulse" points="720,398 735,393 735,403" transform="rotate(5 727.5 398)"/>
+                <polygon className="fill-yellow-300 stroke-black stroke-1 animate-pulse" points="920,388 935,383 935,393" transform="rotate(0 927.5 388)"/>
+                
+                {/* National Parks */}
+                <rect x="580" y="360" width="80" height="60" fill="none" stroke="#22c55e" strokeWidth="2" strokeDasharray="5,5" opacity="0.7"/>
+                <text x="620" y="380" className="text-sm font-bold fill-green-500 drop-shadow-md font-sans" textAnchor="middle">Darién National Park</text>
+                
+                <rect x="480" y="380" width="70" height="50" fill="none" stroke="#22c55e" strokeWidth="2" strokeDasharray="5,5" opacity="0.7"/>
+                <text x="515" y="395" className="text-sm font-bold fill-green-500 drop-shadow-md font-sans" textAnchor="middle">Los Katíos</text>
+                <text x="515" y="410" className="text-sm font-bold fill-green-500 drop-shadow-md font-sans" textAnchor="middle">National Park</text>
+                
+                {/* Coordinate markers */}
+                <text className="text-xs fill-white/60 font-sans" x="20" y="350">8°N</text>
+                <text className="text-xs fill-white/60 font-sans" x="20" y="450">7°N</text>
+                <text className="text-xs fill-white/60 font-sans" x="350" y="680">77°W</text>
+                <text className="text-xs fill-white/60 font-sans" x="750" y="680">76°W</text>
+                
+                {/* Distance scale */}
+                <line x1="50" y1="650" x2="150" y2="650" className="stroke-white stroke-3"/>
+                <text x="100" y="645" className="text-sm font-bold fill-white font-sans" textAnchor="middle">100 km</text>
+                <text x="100" y="670" className="text-sm font-bold fill-white font-sans" textAnchor="middle">Scale</text>
+                
+                {/* 99% Drop indicator */}
+                <rect x="1200" y="50" width="180" height="80" fill="rgba(239,68,68,0.9)" stroke="white" strokeWidth="2" rx="10"/>
+                <text x="1290" y="75" className="text-xl font-bold fill-yellow-300 drop-shadow-lg font-sans" textAnchor="middle">↓ 99% DROP</text>
+                <text x="1290" y="95" className="text-sm font-bold fill-white drop-shadow-md font-sans" textAnchor="middle">Migration Reduced</text>
+                <text x="1290" y="110" className="text-sm font-bold fill-white drop-shadow-md font-sans" textAnchor="middle">2025 Results</text>
+              </svg>
+              
+              <div className="absolute bottom-5 right-5 bg-black/70 p-4 rounded-lg text-white font-sans text-xs">
+                <div className="flex items-center mb-1">
+                  <div className="w-5 h-4 bg-emerald-600 border border-white mr-2"></div>
+                  <span>Colombia</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div className="w-5 h-4 bg-sky-600 border border-white mr-2"></div>
+                  <span>Panama</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div className="w-5 h-4 bg-red-600 border border-white mr-2"></div>
+                  <span>Darién Gap</span>
+                </div>
+                <div className="flex items-center mb-1">
+                  <div className="w-5 h-4 bg-yellow-300 border border-white mr-2"></div>
+                  <span>Migration Route</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-5 h-4 bg-green-500/50 border border-white mr-2"></div>
+                  <span>National Parks</span>
+                </div>
               </div>
             </div>
             
