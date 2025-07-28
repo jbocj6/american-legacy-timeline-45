@@ -263,13 +263,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4">Secretary Rubio's America First Revolution</h2>
             
-            {/* Rubio Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>Secretary of State Marco Rubio at podium announcing foreign aid reforms</p>
-                <p className="text-sm mt-2">Source needed - State Department Photo</p>
-              </div>
+            {/* Rubio Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/f623fc9c-32ba-4e10-b5c8-9d8f46f9d648.png" 
+                alt="Secretary of State Marco Rubio at podium announcing foreign aid reforms" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
