@@ -646,13 +646,13 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4">The Wall Gets Built - Finally</h2>
             
-            {/* Wall Construction Image Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>New border wall construction showing 30-foot steel barriers being installed</p>
-                <p className="text-sm mt-2">Source needed - Construction photos</p>
-              </div>
+            {/* Wall Construction Image */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/a2259c5e-95cd-4931-868c-10d7021f6880.png" 
+                alt="US Border Patrol officer speaking at podium with border wall in background" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
