@@ -816,7 +816,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/b8ab8c64-7019-4fcb-9f76-e1d547f4a152.png" 
                 alt="Justice Samuel Alito in his Supreme Court robes" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             
