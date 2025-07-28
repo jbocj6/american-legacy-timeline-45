@@ -513,7 +513,7 @@ const NewsPress = () => {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl opacity-30">⚔️</div>
+                      <div className="absolute top-4 right-4 text-2xl">⚔️</div>
                       <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">VIOLENT</div>
                       <div className="text-xl font-bold text-red-300 mb-3">Gang Members</div>
                       <div className="text-lg leading-relaxed opacity-90">
@@ -522,7 +522,7 @@ const NewsPress = () => {
                     </div>
                     
                     <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl opacity-30">💊</div>
+                      <div className="absolute top-4 right-4 text-2xl">💊</div>
                       <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">DEADLY</div>
                       <div className="text-xl font-bold text-red-300 mb-3">Drug Traffickers</div>
                       <div className="text-lg leading-relaxed opacity-90">
@@ -531,7 +531,7 @@ const NewsPress = () => {
                     </div>
                     
                     <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl opacity-30">⛓️</div>
+                      <div className="absolute top-4 right-4 text-2xl">⛓️</div>
                       <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">PREDATOR</div>
                       <div className="text-xl font-bold text-red-300 mb-3">Human Traffickers</div>
                       <div className="text-lg leading-relaxed opacity-90">
@@ -540,7 +540,7 @@ const NewsPress = () => {
                     </div>
                     
                     <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl opacity-30">🚨</div>
+                      <div className="absolute top-4 right-4 text-2xl">🚨</div>
                       <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">PROTECTED</div>
                       <div className="text-xl font-bold text-red-300 mb-3">Violent Felons</div>
                       <div className="text-lg leading-relaxed opacity-90">
