@@ -101,18 +101,25 @@ const AboutBio = () => {
                 >
                   DONATE
                 </button>
-                <button 
+                <a 
+                  href="https://calendly.com/bhogan-revgenengines/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="donate-button" 
                   style={{
                     background: 'rgba(0, 0, 0, 0.4)', 
                     border: '2px solid hsl(var(--accent))', 
                     boxShadow: '0 0 20px hsl(var(--accent) / 0.2)', 
                     color: 'white',
-                    backdropFilter: 'blur(8px)'
+                    backdropFilter: 'blur(8px)',
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                   }}
                 >
                   BOOK A ONE-ON-ONE
-                </button>
+                </a>
               </div>
             </div>
           </div>
