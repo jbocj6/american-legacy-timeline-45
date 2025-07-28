@@ -481,9 +481,9 @@ const NewsPress = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
-                  <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border-2 border-green-500/30 text-center">
+                  <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border-2 border-green-500/30 flex flex-col items-center justify-center">
                     <div className="text-6xl font-bold text-green-500 drop-shadow-lg mb-3 animate-pulse">300,000+</div>
-                    <div className="text-xl opacity-90">Illegal Aliens Arrested<br />in 2025 Alone</div>
+                    <div className="text-xl opacity-90 text-center">Illegal Aliens Arrested<br />in 2025 Alone</div>
                   </div>
 
                   <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border-2 border-red-500/30 relative overflow-hidden">
