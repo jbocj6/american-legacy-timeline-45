@@ -861,10 +861,6 @@ const NewsPress = () => {
                 <div className="w-full h-full bg-repeat" style={{backgroundImage: "radial-gradient(circle at 50% 50%, white 1px, transparent 1px)", backgroundSize: "20px 20px"}}></div>
               </div>
               
-              {/* Supreme Court Badge */}
-              <div className="absolute top-5 right-8 bg-white/20 text-white px-5 py-3 rounded-full text-sm font-bold border-2 border-white/30">
-                SUPREME COURT VICTORY
-              </div>
               
               {/* Header */}
               <div className="text-center p-8 pb-5 relative z-10">
