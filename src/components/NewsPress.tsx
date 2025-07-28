@@ -812,7 +812,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Justice Alito's Powerful Defense of Parental Rights</h2>
             
             {/* Justice Alito Image */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
               <img 
                 src="/lovable-uploads/b8ab8c64-7019-4fcb-9f76-e1d547f4a152.png" 
                 alt="Justice Samuel Alito in his Supreme Court robes" 
