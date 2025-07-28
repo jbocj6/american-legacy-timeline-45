@@ -672,13 +672,13 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4">What This Means for American Communities</h2>
             
-            {/* Safe Community Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>Safe American neighborhood with families, American flags visible</p>
-                <p className="text-sm mt-2">Source needed - Community stock photo</p>
-              </div>
+            {/* Safe Community Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/ea694af3-b20f-42df-9ff3-ed044e032f8c.png" 
+                alt="People celebrating with American flags" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">The dramatic enforcement success translates to real benefits for Americans:</p>
@@ -871,13 +871,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What You Can Do Now</h2>
             
-            {/* Action Items Graphic */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/ea694af3-b20f-42df-9ff3-ed044e032f8c.png" 
-                alt="People celebrating with American flags" 
-                className="w-full h-full object-cover"
-              />
+            {/* Action Items Graphic Placeholder */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
+              <div className="text-center text-muted-foreground p-8">
+                <p className="text-lg font-semibold mb-2">[GRAPHIC NEEDED]</p>
+                <p>Action steps for parents - review curriculum, know your rights, organize with others</p>
+                <p className="text-sm mt-2">Create action items infographic</p>
+              </div>
             </div>
             
             <p className="mb-4">This victory opens doors for parents nationwide:</p>
