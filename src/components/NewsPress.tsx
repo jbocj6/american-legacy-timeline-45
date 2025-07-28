@@ -299,13 +299,13 @@ const NewsPress = () => {
 
             <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
-            {/* Hero Image Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
-                <p>Split screen showing crowded border under Biden vs. controlled, secure border with new wall sections under Trump</p>
-                <p className="text-sm mt-2">Image source needed - CBP Photo/Reuters</p>
-              </div>
+            {/* Hero Image */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/composite-border-diagonal.png" 
+                alt="Split view showing border conditions before and after" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
