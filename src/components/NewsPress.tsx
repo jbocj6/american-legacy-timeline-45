@@ -569,7 +569,7 @@ const NewsPress = () => {
             {/* Darien Gap Infographic */}
             <div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden mb-6">
               <div 
-                className="relative p-12 text-white font-sans overflow-hidden"
+                className="relative p-6 text-white font-sans overflow-hidden"
                 style={{
                   background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #1e3a8a 50%, #dc2626 100%)'
                 }}
@@ -584,52 +584,52 @@ const NewsPress = () => {
                 
                 <div className="relative z-10">
                   {/* Header */}
-                  <div className="text-center mb-12">
-                    <h1 className="text-6xl font-bold mb-5 text-yellow-400" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.4)'}}>
+                  <div className="text-center mb-6">
+                    <h1 className="text-3xl font-bold mb-2 text-yellow-400" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.4)'}}>
                       DARIEN GAP MIGRATION
                     </h1>
-                    <p className="text-2xl mb-4 opacity-95">
+                    <p className="text-lg mb-2 opacity-95">
                       The World's Most Dangerous Migration Route
                     </p>
-                    <div className="inline-block bg-green-500/30 border-2 border-green-500/60 px-8 py-4 rounded-full text-xl font-bold uppercase">
+                    <div className="inline-block bg-green-500/30 border-2 border-green-500/60 px-4 py-2 rounded-full text-sm font-bold uppercase">
                       Stunning Achievement
                     </div>
                   </div>
 
                   {/* Comparison Section */}
-                  <div className="grid lg:grid-cols-3 gap-10 items-center mb-16">
+                  <div className="grid lg:grid-cols-3 gap-6 items-center">
                     {/* Before Card */}
-                    <div className="bg-white/10 backdrop-blur-md border-2 border-red-500/50 rounded-2xl p-10 text-center hover:transform hover:-translate-y-2 transition-all duration-300">
-                      <div className="text-2xl font-bold mb-5 text-red-300">
+                    <div className="bg-white/10 backdrop-blur-md border-2 border-red-500/50 rounded-xl p-5 text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+                      <div className="text-lg font-bold mb-3 text-red-300">
                         BEFORE TRUMP
                       </div>
-                      <div className="text-6xl font-bold mb-4 text-red-400" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      <div className="text-3xl font-bold mb-2 text-red-400" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.3)'}}>
                         TENS OF<br/>THOUSANDS
                       </div>
-                      <div className="text-xl opacity-90 leading-relaxed">
+                      <div className="text-sm opacity-90 leading-relaxed">
                         Monthly crossings through Panama's treacherous Darien Gap jungle
                       </div>
                     </div>
 
                     {/* Arrow with Drop Percentage */}
                     <div className="relative text-center">
-                      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-red-500/95 text-white px-5 py-3 rounded-full text-3xl font-bold border-4 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
+                      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500/95 text-white px-3 py-1 rounded-full text-lg font-bold border-2 border-white/30" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
                         99% DROP
                       </div>
-                      <div className="text-9xl text-yellow-400 animate-pulse" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.5)'}}>
+                      <div className="text-5xl text-yellow-400 animate-pulse" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
                         →
                       </div>
                     </div>
 
                     {/* After Card */}
-                    <div className="bg-white/10 backdrop-blur-md border-2 border-green-500/50 rounded-2xl p-10 text-center hover:transform hover:-translate-y-2 transition-all duration-300">
-                      <div className="text-2xl font-bold mb-5 text-green-300">
+                    <div className="bg-white/10 backdrop-blur-md border-2 border-green-500/50 rounded-xl p-5 text-center hover:transform hover:-translate-y-1 transition-all duration-300">
+                      <div className="text-lg font-bold mb-3 text-green-300">
                         AFTER TRUMP
                       </div>
-                      <div className="text-6xl font-bold mb-4 text-green-400" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      <div className="text-3xl font-bold mb-2 text-green-400" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.3)'}}>
                         MERE<br/>TRICKLE
                       </div>
-                      <div className="text-xl opacity-90 leading-relaxed">
+                      <div className="text-sm opacity-90 leading-relaxed">
                         Migrants turning back before they even reach our border
                       </div>
                     </div>
