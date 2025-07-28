@@ -107,84 +107,80 @@ const JeffBrownLanding = () => {
       <Navigation />
       
       {/* Campaign Banner */}
-      <div className="campaign-banner px-4 py-2 md:py-3">
+      <div className="campaign-banner">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs md:text-sm">STAND WITH JUSTICE • SUPPORT CONSTITUTIONAL RIGHTS</span>
+          <span className="text-sm">STAND WITH JUSTICE • SUPPORT CONSTITUTIONAL RIGHTS</span>
         </div>
       </div>
 
-      {/* Hero Section - Mobile-First Responsive */}
-      <section className="hero relative min-h-screen flex items-center">
+      {/* Hero Section - Outside seamless background */}
+      <section className="hero relative">
         {/* Jeff Brown Portrait - Mobile responsive positioning */}
         <img 
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
-          className="absolute w-auto object-contain z-30
-                     /* Desktop: Position on right side */
-                     lg:right-[-5%] lg:bottom-[-2%] lg:h-[87vh] lg:scale-110
-                     /* Mobile/Tablet */ 
-                     right-[5%] bottom-[2%] h-[45vh] scale-100
-                     md:right-[0%] md:bottom-[0%] md:h-[55vh] md:scale-105"
+          className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
+                     md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
+                     max-md:right-[-5%] max-md:bottom-[5%] max-md:h-[50vh] max-md:scale-100
+                     max-sm:right-[0%] max-sm:bottom-[10%] max-sm:h-[40vh] max-sm:scale-90"
         />
         
         {/* Hero Content - Mobile responsive positioning */}
-        <div className="relative z-40 w-full max-w-7xl mx-auto px-4 md:px-8
-                        /* Mobile: Stack vertically center */
-                        flex flex-col justify-center min-h-screen
-                        /* Desktop: Position left side properly */
-                        lg:justify-center lg:items-start lg:pl-16
-                        md:justify-center md:pb-0">
-          <div className="text-center lg:text-left max-w-lg lg:max-w-3xl mx-auto lg:mx-0">
-            <h1 className="font-mono font-black tracking-wider text-white drop-shadow-lg mb-3 md:mb-4
-                           /* Mobile stacked, Desktop single line */
-                           text-4xl md:text-6xl lg:text-7xl xl:text-8xl
-                           leading-tight lg:leading-none">
-              Jeff Brown
-            </h1>
-            <p className="subtitle font-mono uppercase tracking-wide text-white drop-shadow-lg mb-6 md:mb-8
-                          text-sm md:text-base lg:text-xl
-                          opacity-90">
-              PATRIOT • PROVEN LEADER • AMERICA FIRST
-            </p>
-            <div className="flex flex-col gap-3 md:gap-4 max-w-sm mx-auto 
-                           /* Desktop: Horizontal row with proper spacing */
-                           lg:flex-row lg:gap-6 lg:max-w-none lg:mx-0">
-              <button 
-                onClick={() => setIsDonateModalOpen(true)}
-                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4"
-              >
-                DONATE NOW
-              </button>
-              <a 
-                href="https://calendly.com/bhogan-revgenengines/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4" 
-                style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
-              >
-                BOOK A ONE-ON-ONE
-              </a>
-              <button 
-                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4" 
-                style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}
-                onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
-              >
-                READ JEFF'S BOOK
-              </button>
-            </div>
+        <div className="absolute bottom-[20%] left-[5%] z-40 
+                        md:bottom-[20%] md:left-[5%]
+                        max-md:bottom-[45%] max-md:left-[5%] max-md:right-[5%]
+                        max-sm:bottom-[50%] max-sm:left-[2%] max-sm:right-[2%] max-sm:text-center">
+          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
+                         md:text-8xl 
+                         max-md:text-4xl max-md:mb-3 max-md:tracking-wider
+                         max-sm:text-3xl max-sm:mb-2 max-sm:tracking-wide">
+            Jeff Brown
+          </h1>
+          <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
+                        md:text-base
+                        max-md:text-sm max-md:tracking-wider max-md:mb-6
+                        max-sm:text-xs max-sm:tracking-wide max-sm:mb-4">
+            PATRIOT • PROVEN LEADER • AMERICA FIRST
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 
+                          md:flex-row md:gap-4 md:mt-8
+                          max-md:flex-col max-md:gap-3 max-md:mt-6
+                          max-sm:flex-col max-sm:gap-2 max-sm:mt-4">
+            <button 
+              onClick={() => setIsDonateModalOpen(true)}
+              className="donate-button"
+            >
+              DONATE NOW
+            </button>
+            <a 
+              href="https://calendly.com/bhogan-revgenengines/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="donate-button" 
+              style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
+            >
+              BOOK A ONE-ON-ONE
+            </a>
+            <button 
+              className="donate-button" 
+              style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}
+              onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
+            >
+              READ JEFF'S BOOK
+            </button>
           </div>
         </div>
         
-        {/* Social Media Icons - Mobile responsive */}
-        <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 z-50 flex gap-2 md:gap-3">
+        {/* Social Media Icons - Lower Right Corner */}
+        <div className="absolute bottom-8 right-8 z-50 flex gap-3">
           {/* Instagram */}
           <a 
             href="https://www.instagram.com/jeffreybrownj6/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 md:p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
           >
-            <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z"/>
             </svg>
           </a>
@@ -194,9 +190,9 @@ const JeffBrownLanding = () => {
             href="https://x.com/jeffreybrownj6" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 md:p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
           >
-            <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
             </svg>
           </a>
@@ -206,9 +202,9 @@ const JeffBrownLanding = () => {
             href="https://truthsocial.com/@jeffreybrownj6" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 md:p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
           >
-            <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M4 4h16v4H14v12h-4V8H4V4z"/>
               <rect x="16" y="14" width="4" height="4" fill="currentColor"/>
             </svg>
@@ -219,16 +215,15 @@ const JeffBrownLanding = () => {
             href="https://rumble.com/user/Jeffreybrownj6" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 md:p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
+            className="p-3 bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors"
           >
-            <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
             </svg>
           </a>
         </div>
 
-        {/* Scroll indicator - Hidden on mobile to reduce clutter */}
-        <div className="scroll-indicator z-50 hidden md:flex" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
+        <div className="scroll-indicator z-50" onClick={() => document.querySelector('.reforms-section')?.scrollIntoView({behavior: 'smooth'})}>
           <div className="flex flex-col items-center">
             <span className="text-sm font-mono tracking-widest mb-2">SCROLL</span>
             <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">
@@ -247,77 +242,87 @@ const JeffBrownLanding = () => {
       {/* Book Section */}
       <BookSection />
 
-      {/* Reforms Needed Section - Mobile-First */}
-      <section className="relative py-12 md:py-24 px-4 md:px-8 overflow-hidden">
+      {/* Reforms Needed Section */}
+      <section className="relative py-24 px-8 overflow-hidden">
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-8 md:mb-16">
-            <div className="inline-flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <svg className="w-8 h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
-              <span className="text-xs md:text-sm font-space uppercase tracking-widest text-destructive font-bold">
+              <span className="text-sm font-space uppercase tracking-widest text-destructive font-bold">
                 Critical Reforms
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-space font-bold text-foreground mb-4 md:mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent">
+            <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-destructive to-primary bg-clip-text text-transparent
+                          max-md:text-4xl max-md:mb-4
+                          max-sm:text-3xl max-sm:mb-3">
               Reforms Needed
             </h2>
-            <p className="text-base md:text-lg lg:text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed
+                         max-md:text-lg max-md:leading-relaxed
+                         max-sm:text-base max-sm:leading-normal">
               Restoring constitutional governance and ending political persecution
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 
+                          max-md:grid-cols-1 max-md:gap-4">
             {/* Reform cards - Mobile optimized */}
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg font-space font-semibold text-foreground mb-2 md:mb-3">Justice System Reform</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">End weaponized prosecutions and restore impartial justice for all Americans</p>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Justice System Reform</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">End weaponized prosecutions and restore impartial justice for all Americans</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg font-space font-semibold text-foreground mb-2 md:mb-3">Media Accountability</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Combat misinformation campaigns and restore honest journalism</p>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Media Accountability</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Combat misinformation campaigns and restore honest journalism</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg font-space font-semibold text-foreground mb-2 md:mb-3">Government Transparency</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Release all suppressed January 6th evidence and government communications</p>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Government Transparency</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Release all suppressed January 6th evidence and government communications</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg font-space font-semibold text-foreground mb-2 md:mb-3">Election Integrity</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Address constitutional violations and ensure secure, transparent elections</p>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Election Integrity</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Address constitutional violations and ensure secure, transparent elections</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-4 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center md:col-span-2 lg:col-span-1">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:mb-4 mx-auto">
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
+                           max-md:p-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg font-space font-semibold text-foreground mb-2 md:mb-3">Federal Agency Reform</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Prevent weaponization of federal agencies against American citizens and restore constitutional boundaries</p>
+              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Federal Agency Reform</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Prevent weaponization of federal agencies against American citizens and restore constitutional boundaries</p>
             </div>
           </div>
 
@@ -327,27 +332,32 @@ const JeffBrownLanding = () => {
       {/* Key Issues Cards */}
       <IssuesCards />
 
-      {/* Timeline Section - Mobile-First Responsive */}
-      <section id="timeline" className="py-12 md:py-24 px-4 md:px-8 relative" ref={timelineRef}>
+      {/* Timeline Section */}
+      <section id="timeline" className="py-24 px-8 relative" ref={timelineRef}>
         <div className="max-w-6xl mx-auto relative">
           {/* Header */}
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-2">
+            {/* Keep the animated title the user likes */}
             <div className="relative inline-block">
-              <div className="inline-flex items-center gap-3 mb-4 md:mb-6">
-                <svg className="w-6 h-6 md:w-8 md:h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <svg className="w-8 h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10" strokeWidth={2}></circle>
                   <polyline points="12,6 12,12 16,14" strokeWidth={2}></polyline>
                 </svg>
-                <span className="text-xs md:text-sm font-space uppercase tracking-widest text-destructive font-bold">TIMELINE</span>
+                <span className="text-sm font-space uppercase tracking-widest text-destructive font-bold">TIMELINE</span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-6xl font-space font-bold text-foreground mb-4 md:mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent
+                            max-md:text-4xl max-md:mb-4
+                            max-sm:text-3xl max-sm:mb-3">
                 Jeffrey's Journey
               </h2>
             </div>
             
             {/* Subtitle */}
             <div className="flex justify-center">
-              <p className="text-base md:text-lg lg:text-2xl font-inter text-muted-foreground animate-fade-in max-w-2xl mx-auto px-4" 
+              <p className="text-2xl font-inter text-muted-foreground animate-fade-in
+                         max-md:text-lg max-md:leading-relaxed
+                         max-sm:text-base max-sm:leading-normal" 
                  style={{
                    animationDelay: '1.2s'
                  }}>
@@ -356,54 +366,40 @@ const JeffBrownLanding = () => {
             </div>
           </div>
 
-          {/* Mobile-First Timeline */}
+          {/* Vertical Timeline */}
           <div className="relative">
-            {/* Desktop: Central vertical line | Mobile: Left vertical line */}
-            <div className="absolute left-6 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 md:w-1 bg-gradient-to-b from-primary via-accent to-primary"></div>
+            {/* Central vertical line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
             {/* Timeline items */}
-            <div className="space-y-8 md:space-y-16 mt-8">
+            <div className="space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
                 <div 
                   key={event.year}
-                  className={`timeline-item relative animate-fade-in
-                    /* Mobile: Always left-aligned stack */
-                    flex flex-col md:flex-row md:items-center
-                    ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}
-                  `}
+                  className={`timeline-item relative flex items-center animate-fade-in ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
                   style={{animationDelay: `${index * 0.3 + 1.8}s`}}
                 >
-                  {/* Timeline dot - Mobile: Left side | Desktop: Center */}
-                  <div className="absolute left-6 md:left-1/2 md:transform md:-translate-x-1/2 w-3 h-3 md:w-6 md:h-6 bg-gradient-to-r from-primary to-accent rounded-full border-2 md:border-4 border-background shadow-xl z-10 hover:scale-125 transition-transform duration-300 top-6 md:top-auto">
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden md:block hover:scale-125 transition-transform duration-300">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
                   </div>
                   
-                  {/* Mobile: Date badge above card */}
-                  <div className="md:hidden mb-4 ml-16">
-                    <div className="inline-flex items-center justify-center bg-gradient-to-r from-primary to-accent px-3 py-1 rounded-full">
-                      <span className="text-xs font-mono font-bold text-white tracking-wider">
-                        {event.year}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Desktop: Date section */}
-                  <div className={`hidden md:flex flex-none w-full md:w-1/2 ${
-                    index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'
-                  }`}>
-                    <div className="text-4xl lg:text-6xl xl:text-8xl font-mono font-black text-destructive/70 leading-none mb-2">
+                  {/* Date - Mobile optimized */}
+                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'} 
+                                  max-md:text-center max-md:mb-4`}>
+                    <div className="text-6xl md:text-8xl font-mono font-black text-destructive/70 leading-none mb-2
+                                   max-md:text-4xl max-md:mb-2
+                                   max-sm:text-3xl max-sm:mb-1">
                       {event.year}
                     </div>
                   </div>
                   
                   {/* Content card */}
-                  <div className={`
-                    /* Mobile: Full width with left margin */
-                    w-full ml-16 md:ml-0 md:w-1/2
-                    ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'}
-                  `}>
-                    <div className="bg-card border border-border/50 rounded-2xl p-4 md:p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
-                      {/* Desktop: Card connector line */}
+                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'}`}>
+                    <div className="bg-card border border-border/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
+                      {/* Card connector line */}
                       <div className={`absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden md:block ${
                         index % 2 === 0 ? '-left-8' : '-right-8'
                       }`}></div>
@@ -415,15 +411,15 @@ const JeffBrownLanding = () => {
                         <img 
                           src={event.image} 
                           alt={event.title} 
-                          className="w-full h-32 md:h-40 lg:h-48 object-cover rounded-xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-48 object-cover rounded-xl mb-6 transition-transform duration-300 group-hover:scale-105"
                         />
-                        <h3 className={`text-lg md:text-xl lg:text-2xl font-space font-bold text-foreground mb-3 md:mb-4 group-hover:text-accent transition-colors duration-300 ${
-                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''
+                        <h3 className={`text-2xl font-space font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 ${
+                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
                         }`}>
                           {event.title}
                         </h3>
-                        <p className={`text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 ${
-                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''
+                        <p className={`text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 ${
+                          ['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'text-right' : ''
                         }`}>
                           {event.description}
                         </p>
@@ -456,63 +452,63 @@ const JeffBrownLanding = () => {
       {/* Get Involved Hub */}
       <GetInvolvedHub />
 
-      {/* Policy Platform Section - Mobile-First */}
-      <section className="relative py-12 md:py-24 px-4 md:px-8 overflow-hidden">
+      {/* Policy Platform Section */}
+      <section className="relative py-24 px-8 overflow-hidden">
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-8 md:mb-16">
-            <div className="inline-flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
-              <span className="text-xs md:text-sm font-space uppercase tracking-widest text-primary font-bold">
+              <span className="text-sm font-space uppercase tracking-widest text-primary font-bold">
                 Policy Platform
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-space font-bold text-foreground mb-4 md:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-6xl font-space font-bold text-foreground mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent max-md:text-4xl max-sm:text-3xl">
               America First Agenda
             </h2>
-            <p className="text-base md:text-lg lg:text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Constitutional principles and conservative values for a stronger America
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-4 md:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
-                <svg className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg lg:text-xl font-space font-semibold text-foreground mb-3 md:mb-4">Constitutional Rights</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Defending First and Second Amendment freedoms against government overreach and protecting individual liberties.</p>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Constitutional Rights</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Defending First and Second Amendment freedoms against government overreach and protecting individual liberties.</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-4 md:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
-                <svg className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg lg:text-xl font-space font-semibold text-foreground mb-3 md:mb-4">Election Integrity</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Ensuring secure, transparent elections and restoring trust in our democratic process through accountability.</p>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Election Integrity</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Ensuring secure, transparent elections and restoring trust in our democratic process through accountability.</p>
             </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-4 md:p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
-                <svg className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-base md:text-lg lg:text-xl font-space font-semibold text-foreground mb-3 md:mb-4">Economic Freedom</h3>
-              <p className="text-sm md:text-base text-muted-foreground font-inter leading-relaxed">Reducing government regulation and empowering American workers and businesses to thrive and prosper.</p>
+              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Economic Freedom</h3>
+              <p className="text-muted-foreground font-inter leading-relaxed">Reducing government regulation and empowering American workers and businesses to thrive and prosper.</p>
             </div>
           </div>
 
-          <div className="text-center flex flex-col md:flex-row gap-3 md:gap-4 justify-center items-center">
+          <div className="text-center">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
-              className="donate-button w-full md:w-auto text-sm md:text-base"
+              className="donate-button mr-4"
             >
               SUPPORT THE MOVEMENT
             </button>
@@ -530,7 +526,7 @@ const JeffBrownLanding = () => {
                   });
                 }
               }}
-              className="donate-button w-full md:w-auto text-sm md:text-base bg-transparent border-2 border-primary text-white hover:bg-primary hover:text-white shadow-[0_0_20px_hsl(var(--primary)/0.2)]"
+              className="donate-button bg-transparent border-2 border-primary text-white hover:bg-primary hover:text-white shadow-[0_0_20px_hsl(var(--primary)/0.2)]"
             >
               JOIN THE FIGHT
             </button>
