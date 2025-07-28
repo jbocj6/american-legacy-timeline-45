@@ -131,24 +131,27 @@ const JeffBrownLanding = () => {
         <div className="relative z-40 w-full max-w-7xl mx-auto px-4 md:px-8
                         /* Mobile: Stack vertically center */
                         flex flex-col justify-center min-h-screen
-                        /* Desktop: Position left with proper spacing */
-                        lg:justify-center lg:items-start lg:pl-12
+                        /* Desktop: Position left side properly */
+                        lg:justify-center lg:items-start lg:pl-16
                         md:justify-center md:pb-0">
-          <div className="text-center lg:text-left max-w-lg lg:max-w-2xl mx-auto lg:mx-0">
+          <div className="text-center lg:text-left max-w-lg lg:max-w-3xl mx-auto lg:mx-0">
             <h1 className="font-mono font-black tracking-wider text-white drop-shadow-lg mb-3 md:mb-4
-                           text-4xl md:text-6xl lg:text-8xl
-                           leading-tight">
+                           /* Mobile stacked, Desktop single line */
+                           text-4xl md:text-6xl lg:text-7xl xl:text-8xl
+                           leading-tight lg:leading-none">
               Jeff Brown
             </h1>
             <p className="subtitle font-mono uppercase tracking-wide text-white drop-shadow-lg mb-6 md:mb-8
-                          text-sm md:text-base lg:text-lg
+                          text-sm md:text-base lg:text-xl
                           opacity-90">
               PATRIOT • PROVEN LEADER • AMERICA FIRST
             </p>
-            <div className="flex flex-col gap-3 md:gap-4 max-w-sm mx-auto lg:mx-0 lg:flex-row lg:max-w-none">
+            <div className="flex flex-col gap-3 md:gap-4 max-w-sm mx-auto 
+                           /* Desktop: Horizontal row with proper spacing */
+                           lg:flex-row lg:gap-6 lg:max-w-none lg:mx-0">
               <button 
                 onClick={() => setIsDonateModalOpen(true)}
-                className="donate-button w-full lg:w-auto text-sm md:text-base"
+                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4"
               >
                 DONATE NOW
               </button>
@@ -156,13 +159,13 @@ const JeffBrownLanding = () => {
                 href="https://calendly.com/bhogan-revgenengines/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="donate-button w-full lg:w-auto text-sm md:text-base" 
+                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4" 
                 style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
               >
                 BOOK A ONE-ON-ONE
               </a>
               <button 
-                className="donate-button w-full lg:w-auto text-sm md:text-base" 
+                className="donate-button w-full lg:w-auto text-sm md:text-base lg:px-8 lg:py-4" 
                 style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}
                 onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
               >
