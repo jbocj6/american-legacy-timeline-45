@@ -854,12 +854,58 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Why This Victory Matters for Every American Parent</h2>
             
-            {/* Parents Rights Graphic Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
-                <p>Visual showing parental rights protected by the decision - religious upbringing, moral education, curriculum oversight</p>
-                <p className="text-sm mt-2">Create parental rights infographic</p>
+            {/* Parental Rights Infographic */}
+            <div className="w-full max-w-6xl mx-auto h-[600px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
+              {/* Background Stars Pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="w-full h-full bg-repeat" style={{backgroundImage: "radial-gradient(circle at 50% 50%, white 1px, transparent 1px)", backgroundSize: "20px 20px"}}></div>
+              </div>
+              
+              {/* Supreme Court Badge */}
+              <div className="absolute top-5 right-8 bg-white/20 text-white px-5 py-3 rounded-full text-sm font-bold border-2 border-white/30">
+                SUPREME COURT VICTORY
+              </div>
+              
+              {/* Header */}
+              <div className="text-center p-8 pb-5 relative z-10">
+                <h1 className="text-5xl font-bold mb-3 text-white drop-shadow-lg">
+                  PARENTAL RIGHTS PROTECTED
+                </h1>
+                <p className="text-xl text-white/90">
+                  Constitutional Freedoms Reaffirmed by the Supreme Court
+                </p>
+              </div>
+
+              {/* Content Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 pb-10 flex-1 relative z-10">
+                <div className="bg-white/15 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
+                  <div className="text-6xl mb-4 drop-shadow-md text-yellow-300">✝️</div>
+                  <div className="text-xl font-bold text-white mb-4 drop-shadow-md">Religious Upbringing</div>
+                  <div className="text-lg text-white/90 leading-snug">
+                    Parents have the fundamental right to direct their children's religious development without government interference
+                  </div>
+                </div>
+
+                <div className="bg-white/15 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
+                  <div className="text-6xl mb-4 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
+                  <div className="text-xl font-bold text-white mb-4 drop-shadow-md">Moral Education</div>
+                  <div className="text-lg text-white/90 leading-snug">
+                    Families, not bureaucrats, are the primary educators responsible for instilling values and moral principles
+                  </div>
+                </div>
+
+                <div className="bg-white/15 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl">
+                  <div className="text-6xl mb-4 drop-shadow-md text-red-400">📚</div>
+                  <div className="text-xl font-bold text-white mb-4 drop-shadow-md">Curriculum Oversight</div>
+                  <div className="text-lg text-white/90 leading-snug">
+                    Parents must be notified and given opt-out rights when content conflicts with their religious beliefs
+                  </div>
+                </div>
+              </div>
+
+              {/* Victory Banner */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-8 py-3 rounded-full text-xl font-bold drop-shadow-md border-2 border-white/30 animate-pulse">
+                CONSTITUTIONAL RIGHTS UPHELD
               </div>
             </div>
             
