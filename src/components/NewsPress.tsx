@@ -143,14 +143,6 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Metadata Box */}
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
-                AMERICA FIRST
-              </div>
-              <p><strong>Preview Title:</strong> USAID Dismantled: Trump Redirects $40 Billion from Foreign Handouts to American Priorities</p>
-              <p><strong>Preview Summary:</strong> State Department takes control as President ends decades of wasteful spending on nations that hate us.</p>
-            </div>
 
             <h2 className="text-2xl font-semibold text-primary mb-4">The Death of USAID: Taxpayers Finally Win</h2>
             
