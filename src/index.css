@@ -161,7 +161,7 @@ All colors MUST be HSL.
       height: 100vh;
       min-height: 100vh;
       padding: 1rem;
-      background-size: 155% 155%;
+      background-size: 250% 250%;
     }
     
     /* Mobile hero headshot positioning - full width and height */
