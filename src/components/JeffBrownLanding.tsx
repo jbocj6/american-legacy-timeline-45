@@ -254,10 +254,10 @@ const JeffBrownLanding = () => {
             
             
             {/* Desktop: Original layout */}
-            <div className="desktop-hero-buttons" style={{display: 'flex', gap: '1rem'}}>
+            <div className="hidden md:flex gap-4">
               <button 
                 onClick={() => setIsDonateModalOpen(true)}
-                className="donate-button"
+                className="bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-10 py-4 rounded font-mono font-bold uppercase tracking-wider border-none cursor-pointer transition-all duration-300 shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl"
               >
                 DONATE NOW
               </button>
@@ -265,28 +265,14 @@ const JeffBrownLanding = () => {
                 href="https://calendly.com/bhogan-revgenengines/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="donate-button" 
-                style={{
-                  background: 'white', 
-                  color: 'black', 
-                  border: '2px solid white', 
-                  boxShadow: '0 0 20px rgba(255,255,255,0.2)', 
-                  textDecoration: 'none', 
-                  display: 'inline-flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center'
-                }}
+                className="bg-white text-black px-10 py-4 rounded font-mono font-bold uppercase tracking-wider border-2 border-white cursor-pointer transition-all duration-300 shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl inline-flex items-center justify-center no-underline"
+                style={{boxShadow: '0 0 20px rgba(255,255,255,0.2)'}}
               >
                 BOOK A ONE-ON-ONE
               </a>
               <button 
-                className="donate-button" 
-                style={{
-                  background: 'hsl(var(--destructive))', 
-                  color: 'white', 
-                  border: '2px solid hsl(var(--destructive))', 
-                  boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'
-                }}
+                className="px-10 py-4 rounded font-mono font-bold uppercase tracking-wider border-2 cursor-pointer transition-all duration-300 shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl"
+                style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}
                 onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
               >
                 READ JEFF'S BOOK
