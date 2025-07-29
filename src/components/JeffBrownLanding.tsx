@@ -56,32 +56,28 @@ const JeffBrownLanding = () => {
     const handleTimelineScroll = () => {
       const timelineSection = timelineRef.current;
       const timelineLine = document.getElementById('mobile-timeline-line');
-      const firstTimelineItem = timelineSection?.querySelector('.timeline-item:first-child');
-      const lastTimelineItem = timelineSection?.querySelector('.timeline-item:last-child');
       
-      if (!timelineSection || !timelineLine || !firstTimelineItem || !lastTimelineItem || window.innerWidth >= 768) return;
+      if (!timelineSection || !timelineLine || window.innerWidth >= 768) return;
 
-      const sectionRect = timelineSection.getBoundingClientRect();
-      const firstItemRect = firstTimelineItem.getBoundingClientRect();
-      const lastItemRect = lastTimelineItem.getBoundingClientRect();
+      const rect = timelineSection.getBoundingClientRect();
+      const sectionHeight = timelineSection.offsetHeight;
+      const viewportHeight = window.innerHeight;
       
-      // Only show line when timeline section is in view
-      if (sectionRect.bottom > 0 && sectionRect.top < window.innerHeight) {
-        // Calculate distance from first to last timeline item
-        const startY = firstItemRect.top - sectionRect.top + 40; // Offset to date position
-        const endY = lastItemRect.bottom - sectionRect.top - 40; // Offset to date position
-        const totalDistance = endY - startY;
-        
-        // Calculate scroll progress within the timeline section
-        const viewportCenter = window.innerHeight / 2;
-        const sectionProgress = Math.max(0, Math.min(1, 
-          (viewportCenter - sectionRect.top) / sectionRect.height
+      // Calculate how much of the timeline section is visible
+      const sectionTop = rect.top;
+      const sectionBottom = rect.bottom;
+      
+      // Start animation when section comes into view
+      if (sectionBottom > 0 && sectionTop < viewportHeight) {
+        const scrollProgress = Math.max(0, Math.min(1, 
+          (viewportHeight - sectionTop) / (sectionHeight + viewportHeight)
         ));
         
-        const currentHeight = sectionProgress * totalDistance;
-        timelineLine.style.height = `${Math.max(0, currentHeight)}px`;
-        timelineLine.style.top = `${startY}px`;
-        timelineLine.style.opacity = sectionProgress > 0.1 ? '1' : '0';
+        // Calculate height to span from first to last timeline item (approximately)
+        const maxHeight = sectionHeight * 0.8; // 80% of section height
+        const lineHeight = scrollProgress * maxHeight;
+        timelineLine.style.height = `${lineHeight}px`;
+        timelineLine.style.opacity = scrollProgress > 0 ? '1' : '0';
       } else {
         timelineLine.style.height = '0px';
         timelineLine.style.opacity = '0';
