@@ -242,12 +242,15 @@ All colors MUST be HSL.
       margin-bottom: 1rem;
       line-height: 1.1;
       text-shadow: 
-        0 0 20px hsl(0 0% 0% / 1), 
-        0 0 40px hsl(0 0% 0% / 1), 
-        0 0 60px hsl(0 0% 0% / 1), 
-        0 0 80px hsl(0 0% 0% / 0.8),
-        0 0 100px hsl(0 0% 0% / 0.6),
-        0 0 120px hsl(0 0% 0% / 0.4);
+        0 0 15px hsl(0 0% 0% / 1), 
+        0 0 30px hsl(0 0% 0% / 1), 
+        0 0 45px hsl(0 0% 0% / 1), 
+        0 0 60px hsl(0 0% 0% / 1),
+        0 0 75px hsl(0 0% 0% / 1),
+        0 0 90px hsl(0 0% 0% / 0.9),
+        0 0 105px hsl(0 0% 0% / 0.8),
+        0 0 120px hsl(0 0% 0% / 0.7),
+        0 0 135px hsl(0 0% 0% / 0.6);
     }
   }
 
