@@ -352,16 +352,32 @@ const JeffBrownLanding = () => {
           </div>
 
           {/* Desktop version - Cards */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {reformData.map((reform, index) => (
-              <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-                <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  {reform.icon}
+          <div className="hidden md:block mb-8">
+            {/* First 3 cards in a row */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+              {reformData.slice(0, 3).map((reform, index) => (
+                <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+                  <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    {reform.icon}
+                  </div>
+                  <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                  <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
                 </div>
-                <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
-                <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            
+            {/* Last 2 cards centered */}
+            <div className="flex justify-center gap-6">
+              {reformData.slice(3).map((reform, index) => (
+                <div key={index + 3} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center w-full max-w-sm">
+                  <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    {reform.icon}
+                  </div>
+                  <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                  <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Mobile version - Accordion */}
