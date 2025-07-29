@@ -167,12 +167,12 @@ All colors MUST be HSL.
     /* Mobile hero headshot positioning */
     .hero-headshot-mobile {
       position: absolute !important;
-      right: 0% !important;
-      bottom: 0% !important;
+      top: 15px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
       height: 60vh !important;
       width: auto !important;
       z-index: 10 !important;
-      transform: none !important;
       object-fit: cover !important;
       object-position: top center !important;
     }
@@ -180,7 +180,7 @@ All colors MUST be HSL.
     /* Mobile hero content positioning */
     .hero-content-mobile {
       position: absolute !important;
-      top: 20% !important;
+      top: 50% !important;
       left: 5% !important;
       right: 5% !important;
       bottom: auto !important;
@@ -191,14 +191,23 @@ All colors MUST be HSL.
     /* Mobile social icons horizontal layout */
     .hero-social-mobile {
       position: absolute !important;
-      bottom: 8px !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      right: auto !important;
+      bottom: 16px !important;
+      left: 16px !important;
+      right: 16px !important;
       z-index: 30 !important;
-      display: flex !important;
-      flex-direction: row !important;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
       gap: 12px !important;
+      padding: 0 !important;
+    }
+    
+    /* Make social icons square */
+    .hero-social-mobile a {
+      aspect-ratio: 1 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 8px !important;
     }
     
     /* Mobile button layout */
