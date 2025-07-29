@@ -52,46 +52,9 @@ const JeffBrownLanding = () => {
 
     timelineItems.forEach(item => timelineObserver.observe(item));
 
-    // Mobile timeline line scroll animation
-    const handleTimelineScroll = () => {
-      const timelineSection = timelineRef.current;
-      const timelineLine = document.getElementById('mobile-timeline-line');
-      
-      if (!timelineSection || !timelineLine || window.innerWidth >= 768) return;
-
-      const rect = timelineSection.getBoundingClientRect();
-      const sectionHeight = timelineSection.offsetHeight;
-      const viewportHeight = window.innerHeight;
-      
-      // Calculate how much of the timeline section is visible
-      const sectionTop = rect.top;
-      const sectionBottom = rect.bottom;
-      
-      // Start animation when section comes into view
-      if (sectionBottom > 0 && sectionTop < viewportHeight) {
-        const scrollProgress = Math.max(0, Math.min(1, 
-          (viewportHeight - sectionTop) / (sectionHeight + viewportHeight)
-        ));
-        
-        // Calculate height to span from first to last timeline item (approximately)
-        const maxHeight = sectionHeight * 0.8; // 80% of section height
-        const lineHeight = scrollProgress * maxHeight;
-        timelineLine.style.height = `${lineHeight}px`;
-        timelineLine.style.opacity = scrollProgress > 0 ? '1' : '0';
-      } else {
-        timelineLine.style.height = '0px';
-        timelineLine.style.opacity = '0';
-      }
-    };
-
-    window.addEventListener('scroll', handleTimelineScroll);
-    window.addEventListener('resize', handleTimelineScroll);
-
     return () => {
       observer.disconnect();
       timelineObserver.disconnect();
-      window.removeEventListener('scroll', handleTimelineScroll);
-      window.removeEventListener('resize', handleTimelineScroll);
     };
   }, []);
 
@@ -438,12 +401,15 @@ const JeffBrownLanding = () => {
             
             {/* Mobile: Animated red dotted line connecting first to last date */}
             <div 
-              id="mobile-timeline-line" 
-              className="absolute left-1/2 transform -translate-x-1/2 w-1 md:hidden opacity-0 transition-all duration-300 ease-out z-0"
+              className="absolute left-1/2 transform -translate-x-1/2 w-1 md:hidden z-0"
               style={{ 
-                height: '0%',
-                top: '2rem',
-                background: 'repeating-linear-gradient(to bottom, #ef4444 0px, #ef4444 4px, transparent 4px, transparent 8px)'
+                top: '80px',
+                height: 'calc(100% - 160px)',
+                background: 'repeating-linear-gradient(to bottom, #ef4444 0px, #ef4444 4px, transparent 4px, transparent 8px)',
+                maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
+                animation: 'drawLine 3s ease-in-out forwards',
+                animationDelay: '2s'
               }}
             ></div>
             
