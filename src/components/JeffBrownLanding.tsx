@@ -56,28 +56,34 @@ const JeffBrownLanding = () => {
     const handleTimelineScroll = () => {
       const timelineSection = timelineRef.current;
       const timelineLine = document.getElementById('mobile-timeline-line');
+      const firstTimelineItem = timelineSection?.querySelector('.timeline-item:first-child');
+      const lastTimelineItem = timelineSection?.querySelector('.timeline-item:last-child');
       
-      if (!timelineSection || !timelineLine || window.innerWidth >= 768) return;
+      if (!timelineSection || !timelineLine || !firstTimelineItem || !lastTimelineItem || window.innerWidth >= 768) return;
 
-      const rect = timelineSection.getBoundingClientRect();
-      const sectionHeight = timelineSection.offsetHeight;
-      const viewportHeight = window.innerHeight;
+      const sectionRect = timelineSection.getBoundingClientRect();
+      const firstItemRect = firstTimelineItem.getBoundingClientRect();
+      const lastItemRect = lastTimelineItem.getBoundingClientRect();
       
-      // Calculate how much of the timeline section is visible
-      const sectionTop = rect.top;
-      const sectionBottom = rect.bottom;
-      
-      // Start animation when section comes into view
-      if (sectionBottom > 0 && sectionTop < viewportHeight) {
-        const scrollProgress = Math.max(0, Math.min(1, 
-          (viewportHeight - sectionTop) / (sectionHeight + viewportHeight)
+      // Only show line when timeline section is in view
+      if (sectionRect.bottom > 0 && sectionRect.top < window.innerHeight) {
+        // Calculate distance from first to last timeline item
+        const startY = firstItemRect.top - sectionRect.top + 40; // Offset to date position
+        const endY = lastItemRect.bottom - sectionRect.top - 40; // Offset to date position
+        const totalDistance = endY - startY;
+        
+        // Calculate scroll progress within the timeline section
+        const viewportCenter = window.innerHeight / 2;
+        const sectionProgress = Math.max(0, Math.min(1, 
+          (viewportCenter - sectionRect.top) / sectionRect.height
         ));
         
-        const lineHeight = scrollProgress * 100;
-        timelineLine.style.height = `${lineHeight}%`;
-        timelineLine.style.opacity = scrollProgress > 0 ? '1' : '0';
+        const currentHeight = sectionProgress * totalDistance;
+        timelineLine.style.height = `${Math.max(0, currentHeight)}px`;
+        timelineLine.style.top = `${startY}px`;
+        timelineLine.style.opacity = sectionProgress > 0.1 ? '1' : '0';
       } else {
-        timelineLine.style.height = '0%';
+        timelineLine.style.height = '0px';
         timelineLine.style.opacity = '0';
       }
     };
@@ -429,21 +435,21 @@ const JeffBrownLanding = () => {
             </div>
           </div>
 
-          {/* TEST LINE OUTSIDE */}
-          <div 
-            id="mobile-timeline-line" 
-            className="fixed top-20 left-1/2 transform -translate-x-1/2 w-8 bg-red-500 z-50 border-4 border-yellow-400"
-            style={{ 
-              height: '300px'
-            }}
-          >
-            <div className="text-white text-xs">TEST LINE</div>
-          </div>
-
           {/* Responsive Timeline */}
           <div className="relative">
             {/* Desktop: Central vertical line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
+            
+            {/* Mobile: Animated red dotted line connecting first to last date */}
+            <div 
+              id="mobile-timeline-line" 
+              className="absolute left-1/2 transform -translate-x-1/2 w-1 md:hidden opacity-0 transition-all duration-300 ease-out z-0"
+              style={{ 
+                height: '0%',
+                top: '2rem',
+                background: 'repeating-linear-gradient(to bottom, #ef4444 0px, #ef4444 4px, transparent 4px, transparent 8px)'
+              }}
+            ></div>
             
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
