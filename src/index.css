@@ -164,11 +164,13 @@ All colors MUST be HSL.
       background-size: cover;
     }
     
-    /* Mobile hero headshot positioning - back to normal size, no cropping */
-    .hero-headshot-mobile {
+    /* Mobile hero headshot positioning - FORCE OVERRIDE */
+    img.hero-headshot-mobile {
       position: absolute !important;
       top: 140px !important;
       left: 50% !important;
+      right: auto !important;
+      bottom: auto !important;
       transform: translateX(-50%) !important;
       height: calc(100vh - 140px) !important;
       width: auto !important;
