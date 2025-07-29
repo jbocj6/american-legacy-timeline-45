@@ -132,9 +132,9 @@ const NewsPress = () => {
 
       {/* Article Modal */}
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto [&>button]:border-0 [&>button]:bg-transparent [&>button]:hover:bg-muted [&>button]:focus:outline-none [&>button]:focus:ring-0">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center pt-4">
               America First Foreign Policy: Trump Ends Billions in Wasteful Aid to Focus on Americans
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -277,9 +277,9 @@ const NewsPress = () => {
 
       {/* Second Article Modal */}
       <Dialog open={isSecondModalOpen} onOpenChange={setIsSecondModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden">{/* Added overflow-x-hidden */}
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden [&>button]:border-0 [&>button]:bg-transparent [&>button]:hover:bg-muted [&>button]:focus:outline-none [&>button]:focus:ring-0">{/* Added overflow-x-hidden */}
           <DialogHeader>
-            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight break-words px-2">
+            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight break-words px-2 pt-4">
               Border Crisis SOLVED: Six Months of Trump Enforcement Delivers Historic Results
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -769,9 +769,9 @@ const NewsPress = () => {
 
       {/* Third Article Modal - Religious Freedom */}
       <Dialog open={isThirdModalOpen} onOpenChange={setIsThirdModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto [&>button]:border-0 [&>button]:bg-transparent [&>button]:hover:bg-muted [&>button]:focus:outline-none [&>button]:focus:ring-0">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center pt-4">
               Supreme Court Delivers: Maryland Parents Win Huge Religious Liberty Victory
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -1041,9 +1041,9 @@ const NewsPress = () => {
 
       {/* Fourth Article Modal - Big Beautiful Bill */}
       <Dialog open={isFourthModalOpen} onOpenChange={setIsFourthModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto [&>button]:border-0 [&>button]:bg-transparent [&>button]:hover:bg-muted [&>button]:focus:outline-none [&>button]:focus:ring-0">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center pt-4">
               America First Wins: Trump Signs Historic $170B Big Beautiful Bill
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
