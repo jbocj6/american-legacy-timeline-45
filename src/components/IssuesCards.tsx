@@ -143,14 +143,19 @@ const IssuesCards = () => {
 
               return (
                 <AccordionItem key={issue.title} value={`item-${index}`} className="border border-border rounded-lg">
-                  <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <AccordionTrigger className="px-6 py-4 text-left hover:no-underline [&[data-state=open]>div>svg]:rotate-180">
                     <div className="flex flex-col items-center text-center w-full">
                       <img 
                         src={getImageSrc(issue.title)} 
                         alt={issue.title} 
                         className="w-full h-32 object-cover rounded-lg mb-4"
                       />
-                      <h3 className="text-lg font-space font-semibold text-foreground">{issue.title}</h3>
+                      <div className="flex items-center justify-between w-full">
+                        <h3 className="text-lg font-space font-bold text-foreground">{issue.title}</h3>
+                        <svg className="h-4 w-4 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4">
