@@ -1165,7 +1165,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
                 alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
               />
             </div>
             
