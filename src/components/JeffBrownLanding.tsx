@@ -936,44 +936,44 @@ const JeffBrownLanding = () => {
             >
               DONATE NOW
             </button>
-            <button 
-              className="donate-button flex-1 whitespace-nowrap" 
+            <a 
+              href="https://calendly.com/bhogan-revgenengines/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="donate-button flex-1 whitespace-nowrap"
               style={{
-                background: 'hsl(var(--destructive))', 
-                color: 'white', 
-                border: '2px solid hsl(var(--destructive))', 
-                boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)',
-                transform: 'translateY(-2px)',
+                background: 'white', 
+                color: 'black', 
+                border: '2px solid white', 
+                borderBottomColor: 'rgba(0,0,0,0.2)',
+                boxShadow: '0 0 20px rgba(255,255,255,0.2)', 
+                textDecoration: 'none', 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
                 minHeight: '44px'
               }}
-              onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
             >
-              READ JEFF'S BOOK
-            </button>
+              BOOK A ONE-ON-ONE
+            </a>
           </div>
           
-          {/* Bottom Row - One-on-one button full width */}
-          <a 
-            href="https://calendly.com/bhogan-revgenengines/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="donate-button whitespace-nowrap"
+          {/* Bottom Row - Book button full width */}
+          <button 
+            className="donate-button whitespace-nowrap" 
             style={{
-              background: 'white', 
-              color: 'black', 
-              border: '2px solid white', 
-              borderBottomColor: 'rgba(0,0,0,0.2)',
-              boxShadow: '0 0 20px rgba(255,255,255,0.2)', 
-              textDecoration: 'none', 
-              display: 'inline-flex', 
-              alignItems: 'center', 
-              justifyContent: 'center',
+              background: 'hsl(var(--destructive))', 
+              color: 'white', 
+              border: '2px solid hsl(var(--destructive))', 
+              boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)',
+              transform: 'translateY(-2px)',
               width: '100%',
               minHeight: '44px'
             }}
+            onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
           >
-            BOOK A ONE-ON-ONE
-          </a>
+            READ JEFF'S BOOK
+          </button>
         </div>
       </div>
     </div>
