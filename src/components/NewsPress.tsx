@@ -1366,7 +1366,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/6d3dfc36-c7a3-4174-987b-0a5aeec7bb0f.png" 
                 alt="DHS Secretary Kristi Noem at podium with DHS seal and American flag" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             
