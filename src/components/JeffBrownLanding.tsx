@@ -230,10 +230,10 @@ const JeffBrownLanding = () => {
             <div>PATRIOT • PROVEN LEADER</div>
             <div>AMERICA FIRST</div>
           </div>
-          <div className="sticky bottom-5 z-50 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-xl flex flex-col sm:flex-row gap-4 mt-8
+          <div className="md:flex md:flex-col md:sm:flex-row md:gap-4 md:mt-8
                           md:lg:flex-row md:lg:gap-3 md:lg:mt-6
                           lg:flex-row lg:gap-4 lg:mt-8
-                          max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
+                          max-md:fixed max-md:bottom-5 max-md:left-4 max-md:right-4 max-md:z-[100] max-md:bg-background/90 max-md:backdrop-blur-sm max-md:border max-md:border-border/50 max-md:rounded-xl max-md:p-4 max-md:shadow-xl max-md:flex max-md:flex-col max-md:gap-2 max-md:h-auto
                           hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
