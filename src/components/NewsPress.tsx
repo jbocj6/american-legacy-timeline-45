@@ -1160,13 +1160,13 @@ const NewsPress = () => {
           <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Independence Day Victory: Promises Made, Promises Kept</h2>
             
-            {/* Hero Image Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[HERO IMAGE NEEDED]</p>
-                <p>President Trump signing the Big Beautiful Bill at White House ceremony, American flags in background, July 4 celebration setting</p>
-                <p className="text-sm mt-2">Image source needed - White House Photo/Reuters</p>
-              </div>
+            {/* Hero Image */}
+            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
+                alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
