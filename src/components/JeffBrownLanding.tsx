@@ -219,11 +219,11 @@ const JeffBrownLanding = () => {
                         md:text-base md:mb-8
                         max-md:text-xs max-md:tracking-wider max-md:mb-2
                         max-sm:text-xs max-sm:tracking-wide max-sm:mb-2 max-md:hidden">
-            PATRIOT • PROVEN LEADER • AMERICA FIRST
+            PATRIOT • PROVEN LEADER AMERICA FIRST
           </p>
           {/* Mobile-only patriot text */}
           <p className="font-mono uppercase tracking-widest text-white drop-shadow-lg text-xs mb-2 md:hidden">
-            PATRIOT • PROVEN LEADER • AMERICA FIRST
+            PATRIOT • PROVEN LEADER AMERICA FIRST
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8
                           md:flex-row md:gap-4 md:mt-8
