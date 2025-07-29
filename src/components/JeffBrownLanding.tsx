@@ -951,6 +951,7 @@ const JeffBrownLanding = () => {
                 color: 'white', 
                 border: '2px solid hsl(var(--destructive))', 
                 boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)',
+                transform: 'translateY(-2px)',
                 minHeight: '44px'
               }}
               onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
