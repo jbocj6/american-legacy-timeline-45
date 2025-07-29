@@ -899,7 +899,7 @@ const JeffBrownLanding = () => {
       />
       
       {/* Sticky Button Container */}
-      <div className="fixed bottom-4 left-4 right-4 md:bottom-5 md:left-6 md:right-6 z-50 bg-background/95 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 md:p-5 shadow-2xl shadow-black/20">
+      <div className="fixed bottom-4 left-4 right-4 z-50 bg-background/95 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 shadow-2xl shadow-black/20 md:hidden">
         <div className="flex flex-col md:flex-row gap-1 md:gap-4">
           <button 
             onClick={() => setIsDonateModalOpen(true)}
