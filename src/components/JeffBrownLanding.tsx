@@ -347,7 +347,7 @@ const JeffBrownLanding = () => {
             <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 max-md:!mb-4
                          max-md:text-lg max-md:leading-relaxed
                          max-sm:text-base max-sm:leading-normal">
-              Restoring constitutional governance and ending political persecution
+              Restoring Constitutional Governance and Ending Political Persecution
             </p>
           </div>
 
