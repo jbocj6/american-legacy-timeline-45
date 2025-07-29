@@ -960,7 +960,7 @@ const JeffBrownLanding = () => {
           
           {/* Bottom Row - Book button full width */}
           <button 
-            className="donate-button whitespace-nowrap" 
+            className="donate-button whitespace-nowrap max-md:hidden"
             style={{
               background: 'hsl(var(--destructive))', 
               color: 'white', 
