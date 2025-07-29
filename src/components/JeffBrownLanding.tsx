@@ -602,7 +602,7 @@ const JeffBrownLanding = () => {
       <GetInvolvedHub />
 
       {/* Policy Platform Section */}
-      <section className="relative py-24 px-8 overflow-hidden">
+      <section className="relative py-24 lg:py-12 px-8 overflow-hidden">
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-8 md:mb-16">
