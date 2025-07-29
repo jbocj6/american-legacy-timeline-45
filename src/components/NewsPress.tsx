@@ -1160,36 +1160,13 @@ const NewsPress = () => {
           <div className="prose prose-lg max-w-none text-foreground overflow-x-hidden">
             <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">Independence Day Victory: Promises Made, Promises Kept</h2>
             
-            {/* Hero Images - Responsive Layout */}
+            {/* Hero Image - Responsive */}
             <div className="w-full mb-6">
-              {/* Mobile: Stack vertically */}
-              <div className="sm:hidden space-y-3">
-                <div className="h-48 bg-muted rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/usa-flag-waving.gif" 
-                    alt="American flag waving" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="h-48 bg-muted rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
-                    alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              {/* Desktop: Side by side */}
-              <div className="hidden sm:flex h-64 sm:h-80 bg-muted rounded-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/usa-flag-waving.gif" 
-                  alt="American flag waving" 
-                  className="w-1/2 h-full object-cover"
-                />
+              <div className="h-48 sm:h-64 lg:h-80 bg-muted rounded-lg overflow-hidden">
                 <img 
                   src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
                   alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
-                  className="w-1/2 h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
