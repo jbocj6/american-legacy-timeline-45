@@ -1204,13 +1204,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Democrats' Eight-Hour Meltdown Fails to Stop Victory</h2>
             
-            {/* Jeffries Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>House Minority Leader Hakeem Jeffries speaking during his record-breaking 8 hour 44 minute floor speech</p>
-                <p className="text-sm mt-2">Source needed - C-SPAN/House TV footage</p>
-              </div>
+            {/* Democrats' Opposition Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/c4b1deb4-7945-4707-99a6-4bdf5f4860a0.png" 
+                alt="Democratic opposition presenting protest boards against Trump's legislation" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
