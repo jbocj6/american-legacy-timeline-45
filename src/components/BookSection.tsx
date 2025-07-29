@@ -36,7 +36,7 @@ const BookSection = () => {
   ];
 
   return (
-    <section id="book-section" className="relative py-24 px-8 overflow-hidden">
+    <section id="book-section" className="relative py-24 max-md:pt-12 px-8 overflow-hidden">
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
