@@ -1209,7 +1209,7 @@ const NewsPress = () => {
               <img 
                 src="/lovable-uploads/c4b1deb4-7945-4707-99a6-4bdf5f4860a0.png" 
                 alt="Democratic opposition presenting protest boards against Trump's legislation" 
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover"
               />
             </div>
             
