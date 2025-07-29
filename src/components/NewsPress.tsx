@@ -1179,12 +1179,148 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's Really in the Bill Liberal Media Won't Tell You</h2>
             
-            {/* Infographic Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[INFOGRAPHIC NEEDED]</p>
-                <p>Breakdown of $170.7B - showing $46.6B border wall, $45B detention centers, $30B ICE personnel, tax cut provisions</p>
-                <p className="text-sm mt-2">Create infographic showing funding breakdown</p>
+            {/* Border Security Funding Breakdown */}
+            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
+              {/* Header */}
+              <div 
+                className="text-white p-8 text-center relative overflow-hidden"
+                style={{
+                  background: 'linear-gradient(135deg, #c41e3a 0%, #8B0000 100%)',
+                }}
+              >
+                <div 
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>')`,
+                  }}
+                />
+                <h1 className="text-4xl font-bold mb-2 relative z-10">Border Security Funding</h1>
+                <div className="text-xl opacity-90 relative z-10">Breakdown by Category</div>
+              </div>
+              
+              {/* Total Amount */}
+              <div 
+                className="text-center p-6 text-5xl font-bold tracking-widest"
+                style={{
+                  background: '#1a1a1a',
+                  color: '#00ff88',
+                  textShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
+                }}
+              >
+                $170.7B
+              </div>
+              
+              {/* Funding Items */}
+              <div className="p-8 bg-white space-y-6">
+                {/* Border Wall */}
+                <div 
+                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{background: 'linear-gradient(135deg, #ff6b6b, #ff4757)'}}
+                >
+                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
+                    🏗️
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      $46.6B
+                    </div>
+                    <div className="text-xl text-white opacity-95 font-medium">Border Wall Construction</div>
+                    <div className="h-2 bg-white/30 rounded-full mt-3">
+                      <div className="h-full bg-white/90 rounded-full" style={{width: '27.3%'}}></div>
+                    </div>
+                  </div>
+                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    27.3%
+                  </div>
+                </div>
+
+                {/* Detention Centers */}
+                <div 
+                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{background: 'linear-gradient(135deg, #4834d4, #667eea)'}}
+                >
+                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
+                    🏢
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      $45.0B
+                    </div>
+                    <div className="text-xl text-white opacity-95 font-medium">Detention Centers</div>
+                    <div className="h-2 bg-white/30 rounded-full mt-3">
+                      <div className="h-full bg-white/90 rounded-full" style={{width: '26.4%'}}></div>
+                    </div>
+                  </div>
+                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    26.4%
+                  </div>
+                </div>
+
+                {/* ICE Personnel */}
+                <div 
+                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{background: 'linear-gradient(135deg, #ff9ff3, #f368e0)'}}
+                >
+                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
+                    👮
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      $30.0B
+                    </div>
+                    <div className="text-xl text-white opacity-95 font-medium">ICE Personnel</div>
+                    <div className="h-2 bg-white/30 rounded-full mt-3">
+                      <div className="h-full bg-white/90 rounded-full" style={{width: '17.6%'}}></div>
+                    </div>
+                  </div>
+                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    17.6%
+                  </div>
+                </div>
+
+                {/* Deportation Operations */}
+                <div 
+                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{background: 'linear-gradient(135deg, #ff6348, #ff4757)'}}
+                >
+                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
+                    ✈️
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      $14.4B
+                    </div>
+                    <div className="text-xl text-white opacity-95 font-medium">Deportation Operations</div>
+                    <div className="h-2 bg-white/30 rounded-full mt-3">
+                      <div className="h-full bg-white/90 rounded-full" style={{width: '8.4%'}}></div>
+                    </div>
+                  </div>
+                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    8.4%
+                  </div>
+                </div>
+
+                {/* Tax Cut Provisions */}
+                <div 
+                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  style={{background: 'linear-gradient(135deg, #7bed9f, #70a1ff)'}}
+                >
+                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
+                    📋
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                      $34.7B
+                    </div>
+                    <div className="text-xl text-white opacity-95 font-medium">Tax Cut Provisions</div>
+                    <div className="h-2 bg-white/30 rounded-full mt-3">
+                      <div className="h-full bg-white/90 rounded-full" style={{width: '20.3%'}}></div>
+                    </div>
+                  </div>
+                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    20.3%
+                  </div>
+                </div>
               </div>
             </div>
             
