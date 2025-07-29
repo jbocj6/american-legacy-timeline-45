@@ -1478,12 +1478,122 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Tax Relief for Working Americans</h2>
             
-            {/* Tax Relief Graphic Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[GRAPHIC NEEDED]</p>
-                <p>Icons showing tax relief for tips, overtime, and Social Security benefits</p>
-                <p className="text-sm mt-2">Create tax relief infographic</p>
+            {/* Tax Relief Graphic */}
+            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
+              {/* Header */}
+              <div 
+                className="text-white p-8 text-center relative overflow-hidden"
+                style={{
+                  background: 'linear-gradient(135deg, #2E8B57 0%, #228B22 100%)',
+                }}
+              >
+                <div 
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dollars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><text x="10" y="15" text-anchor="middle" fill="rgba(255,255,255,0.1)" font-size="12">$</text></pattern></defs><rect width="100" height="100" fill="url(%23dollars)"/></svg>')`,
+                  }}
+                />
+                <h1 className="text-4xl font-bold mb-3 relative z-10">Tax Relief for Working Families</h1>
+                <div className="text-xl opacity-90 relative z-10">Keeping More Money in Your Pocket</div>
+              </div>
+              
+              {/* Benefits Grid */}
+              <div className="bg-white p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* No Taxes on Tips */}
+                <div 
+                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
+                  style={{background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)'}}
+                >
+                  <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
+                    0% TAX
+                  </div>
+                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
+                    💰
+                  </div>
+                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    No Taxes on Tips
+                  </div>
+                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
+                    Service workers keep 100% of their tips
+                  </div>
+                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
+                    Millions Benefit
+                  </div>
+                </div>
+
+                {/* No Taxes on Overtime */}
+                <div 
+                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
+                  style={{background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'}}
+                >
+                  <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
+                    0% TAX
+                  </div>
+                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
+                    ⏰
+                  </div>
+                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    No Taxes on Overtime
+                  </div>
+                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
+                    Hard work pays off with tax-free overtime pay
+                  </div>
+                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
+                    Rewards Work
+                  </div>
+                </div>
+
+                {/* Social Security Tax Relief */}
+                <div 
+                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
+                  style={{background: 'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)'}}
+                >
+                  <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
+                    RELIEF
+                  </div>
+                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
+                    👴
+                  </div>
+                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    Social Security Tax Relief
+                  </div>
+                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
+                    Protecting seniors' hard-earned income
+                  </div>
+                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
+                    Senior Protection
+                  </div>
+                </div>
+
+                {/* Trump Tax Cuts Extended */}
+                <div 
+                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
+                  style={{background: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'}}
+                >
+                  <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
+                    EXTENDED
+                  </div>
+                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
+                    📊
+                  </div>
+                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    Trump Tax Cuts Extended
+                  </div>
+                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
+                    Continuing proven tax relief for families
+                  </div>
+                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
+                    Lower Rates
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bottom Banner */}
+              <div 
+                className="p-6 text-center text-gray-800 text-xl font-bold relative overflow-hidden"
+                style={{background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)'}}
+              >
+                <span className="relative z-10">💵 REAL RELIEF FOR WORKING AMERICANS 💵</span>
               </div>
             </div>
             
