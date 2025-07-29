@@ -400,6 +400,11 @@ const JeffBrownLanding = () => {
             {/* Desktop: Central vertical line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
+            {/* Mobile: Animated red dotted line connecting first to last date */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-0.5 md:hidden overflow-hidden">
+              <div className="w-full h-full border-l-2 border-dotted border-destructive opacity-0 animate-draw-line"></div>
+            </div>
+            
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
@@ -470,7 +475,7 @@ const JeffBrownLanding = () => {
           </div>
         </div>
         
-        {/* Add custom keyframes for typewriter effect */}
+        {/* Add custom keyframes for typewriter effect and timeline line */}
         <style>{`
           @keyframes typewriter {
             from { width: 0; }
@@ -479,6 +484,22 @@ const JeffBrownLanding = () => {
           @keyframes blink-caret {
             from, to { border-color: transparent; }
             50% { border-color: hsl(var(--accent)); }
+          }
+          @keyframes draw-line {
+            0% { 
+              opacity: 0;
+              clip-path: inset(0 0 100% 0);
+            }
+            20% {
+              opacity: 1;
+            }
+            100% { 
+              opacity: 1;
+              clip-path: inset(0 0 0% 0);
+            }
+          }
+          .animate-draw-line {
+            animation: draw-line 4s ease-out 1s forwards;
           }
         `}</style>
       </section>
