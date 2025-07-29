@@ -133,8 +133,13 @@ const JeffBrownLanding = () => {
                         max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
                          md:text-8xl md:mb-4
-                         max-md:!text-9xl max-md:mb-2 max-md:tracking-wider max-md:hero-text-outline
-                         max-sm:!text-8xl max-sm:mb-1 max-sm:tracking-wide">
+                         max-md:!text-9xl max-md:mb-2 max-md:tracking-wider
+                         max-sm:!text-8xl max-sm:mb-1 max-sm:tracking-wide"
+              style={{
+                textShadow: window.innerWidth <= 768 ? 
+                  '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000' : 
+                  '0 0 30px hsl(var(--accent) / 0.8)'
+              }}>
             Jeff Brown
           </h1>
           <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
