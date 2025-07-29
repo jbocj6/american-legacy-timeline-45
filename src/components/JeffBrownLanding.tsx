@@ -437,12 +437,13 @@ const JeffBrownLanding = () => {
             {/* Mobile: Animated red dotted line connecting first to last date */}
             <div 
               id="mobile-timeline-line" 
-              className="absolute left-1/2 transform -translate-x-1/2 top-0 w-1 md:hidden bg-red-500 transition-all duration-300 ease-out z-10"
+              className="absolute left-1/2 transform -translate-x-1/2 top-0 w-4 bg-pink-500 transition-all duration-300 ease-out z-50"
               style={{ 
-                height: '100px', 
-                background: 'repeating-linear-gradient(to bottom, #ef4444 0px, #ef4444 4px, transparent 4px, transparent 8px)'
+                height: '200px'
               }}
-            ></div>
+            >
+              TEST LINE
+            </div>
             
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
