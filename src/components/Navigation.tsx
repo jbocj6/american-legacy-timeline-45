@@ -60,7 +60,7 @@ const Navigation = () => {
 
             {/* Donate Button */}
             <div className="hidden md:block">
-              <button onClick={() => setIsDonateModalOpen(true)} className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded font-mono font-bold text-base transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest">
+              <button onClick={() => setIsDonateModalOpen(true)} className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded font-inter font-bold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 uppercase tracking-widest">
                 Donate
               </button>
             </div>
