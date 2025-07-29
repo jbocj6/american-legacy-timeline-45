@@ -235,33 +235,6 @@ const JeffBrownLanding = () => {
                           lg:flex-row lg:gap-4 lg:mt-8
                           max-md:hidden
                           hero-buttons-mobile">
-            {/* Mobile: Top row with Donate and Book buttons side by side */}
-            <div className="hidden max-md:flex max-md:gap-2 max-md:w-full max-md:max-w-sm">
-              <button 
-                onClick={() => setIsDonateModalOpen(true)}
-                className="donate-button flex-1 whitespace-nowrap py-2 text-sm"
-              >
-                DONATE NOW
-              </button>
-              <button 
-                className="donate-button flex-1 whitespace-nowrap py-2 text-sm" 
-                style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'}}
-                onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
-              >
-                READ JEFF'S BOOK
-              </button>
-            </div>
-            
-            {/* Mobile: Bottom row with One-on-one button full width */}
-            <a 
-              href="https://calendly.com/bhogan-revgenengines/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="donate-button max-md:w-full max-md:max-w-sm max-md:py-2 max-md:text-sm max-md:whitespace-nowrap md:hidden" 
-              style={{background: 'white', color: 'black', border: '2px solid white', boxShadow: '0 0 20px rgba(255,255,255,0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
-            >
-              BOOK A ONE-ON-ONE
-            </a>
             
             {/* Desktop: Original layout */}
             <button 
