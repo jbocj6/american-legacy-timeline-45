@@ -345,20 +345,25 @@ All colors MUST be HSL.
   /* Mobile donate button */
   @media (max-width: 768px) {
     .donate-button {
-      padding: 0.875rem 1.5rem;
-      font-size: 1.75rem; /* Increased from 0.875rem to 2x size */
+      padding: 1rem 2rem;
+      font-size: 1rem;
       margin: 0.25rem;
-      min-height: 44px; /* Touch-friendly minimum */
+      min-height: 48px;
       letter-spacing: 0.05em;
+      background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent) / 0.8) 100%) !important;
+      color: hsl(var(--accent-foreground)) !important;
+      box-shadow: var(--shadow-glow) !important;
     }
   }
 
   @media (max-width: 480px) {
     .donate-button {
-      padding: 0.75rem 1.25rem;
-      font-size: 1.5rem; /* Increased from 0.75rem to 2x size */
+      padding: 1rem 1.5rem !important;
+      font-size: 0.9rem !important;
       width: 100%;
       margin: 0.25rem 0;
+      background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent) / 0.8) 100%) !important;
+      color: hsl(var(--accent-foreground)) !important;
     }
   }
 
@@ -1021,9 +1026,8 @@ All colors MUST be HSL.
     font-size: 1rem !important;
   }
 
-  /* Button mobile optimization - Touch-friendly */
-  button,
-  .donate-button {
+  /* General button mobile optimization - Touch-friendly */
+  button:not(.donate-button) {
     min-height: 44px !important;
     touch-action: manipulation;
     font-size: 0.875rem !important;
@@ -1172,9 +1176,8 @@ All colors MUST be HSL.
     height: 140px !important;
   }
 
-  /* Button extra small mobile */
-  button,
-  .donate-button {
+  /* General button extra small mobile */
+  button:not(.donate-button) {
     font-size: 0.75rem !important;
     padding: 0.75rem 1rem !important;
     min-height: 44px !important;
