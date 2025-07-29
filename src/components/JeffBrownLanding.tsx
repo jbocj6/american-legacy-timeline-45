@@ -897,6 +897,26 @@ const JeffBrownLanding = () => {
         isOpen={isDonateModalOpen} 
         onOpenChange={setIsDonateModalOpen} 
       />
+      
+      {/* Sticky Button Container */}
+      <div className="fixed bottom-5 left-4 right-4 z-50 bg-background/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-lg">
+        <div className="flex gap-3">
+          <button 
+            onClick={() => setIsDonateModalOpen(true)}
+            className="flex-1 bg-destructive text-destructive-foreground font-semibold py-3 px-4 rounded-lg hover:bg-destructive/90 transition-all duration-200 hover:scale-105 shadow-md"
+          >
+            Donate Now
+          </button>
+          <a 
+            href="https://calendly.com/bhogan-revgenengines/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 bg-primary text-primary-foreground font-semibold py-3 px-4 rounded-lg hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-md text-center no-underline flex items-center justify-center"
+          >
+            Book a One on One
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
