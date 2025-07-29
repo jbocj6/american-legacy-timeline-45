@@ -1,4 +1,5 @@
 import { DollarSign, Shield, Scale, Flag, Users, FileText } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const IssuesCards = () => {
   const issues = [
@@ -54,7 +55,8 @@ const IssuesCards = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-auto max-w-6xl">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mx-auto max-w-6xl">
           {issues.map((issue, index) => {
             const IconComponent = issue.icon;
             return (
@@ -121,6 +123,43 @@ const IssuesCards = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Mobile Accordion */}
+        <div className="md:hidden">
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {issues.map((issue, index) => {
+              const getImageSrc = (title: string) => {
+                switch (title) {
+                  case "Economy & Jobs": return "/lovable-uploads/b1c70ea5-f3bb-4d74-a19e-f39d7b53ebce.png";
+                  case "Border Security": return "/lovable-uploads/c79c0714-78b4-477d-9dac-6f3d6bd158a6.png";
+                  case "Constitutional Rights": return "/lovable-uploads/aaacfd3d-76e0-453c-9f4b-a2a752d06a89.png";
+                  case "Supporting Veterans": return "/lovable-uploads/cd8c4bf9-bc78-405f-917b-2d7ab8c1a18d.png";
+                  case "Family Values": return "/lovable-uploads/b67b9d15-3051-4348-b356-d760c90448e3.png";
+                  case "Government Accountability": return "/lovable-uploads/45098e7b-92c4-443a-a471-829b89780f13.png";
+                  default: return "";
+                }
+              };
+
+              return (
+                <AccordionItem key={issue.title} value={`item-${index}`} className="border border-border rounded-lg">
+                  <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                    <div className="flex flex-col items-center text-center w-full">
+                      <img 
+                        src={getImageSrc(issue.title)} 
+                        alt={issue.title} 
+                        className="w-full h-32 object-cover rounded-lg mb-4"
+                      />
+                      <h3 className="text-lg font-space font-semibold text-foreground">{issue.title}</h3>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4">
+                    <p className="text-muted-foreground font-inter leading-relaxed">{issue.description}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
+          </Accordion>
         </div>
       </div>
     </section>
