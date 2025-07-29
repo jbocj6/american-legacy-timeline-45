@@ -997,12 +997,118 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What You Can Do Now</h2>
             
-            {/* Action Items Graphic Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[GRAPHIC NEEDED]</p>
-                <p>Action steps for parents - review curriculum, know your rights, organize with others</p>
-                <p className="text-sm mt-2">Create action items infographic</p>
+            {/* Action Items Interactive Component */}
+            <div className="w-full mb-6">
+              <div 
+                className="w-full max-w-5xl mx-auto rounded-[20px] relative overflow-hidden p-6 sm:p-10 text-white font-sans"
+                style={{
+                  background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #1e3a8a 50%, #dc2626 100%)',
+                  boxShadow: '0 15px 40px rgba(0,0,0,0.3)'
+                }}
+              >
+                {/* Star Pattern Background */}
+                <div 
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="action-stars" patternUnits="userSpaceOnUse" width="25" height="25"><polygon points="12.5,2 15.5,8.5 22.5,8.5 17,13 19,20 12.5,16 6,20 8,13 2.5,8.5 9.5,8.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23action-stars)"/></svg>')`,
+                  }}
+                />
+                
+                {/* Header */}
+                <div className="text-center mb-8 relative z-10">
+                  <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 text-yellow-400" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.4)'}}>
+                    TAKE ACTION NOW
+                  </h1>
+                  <p className="text-lg sm:text-xl lg:text-2xl opacity-95 mb-3">
+                    Use Your Newly Protected Constitutional Rights
+                  </p>
+                  <div 
+                    className="inline-block px-4 py-2 rounded-full font-bold text-sm sm:text-base border-2 animate-pulse"
+                    style={{
+                      background: 'rgba(34, 197, 94, 0.3)',
+                      borderColor: 'rgba(34, 197, 94, 0.6)'
+                    }}
+                  >
+                    SUPREME COURT VICTORY
+                  </div>
+                </div>
+
+                {/* Steps Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 mt-8 relative z-10">
+                  {[
+                    { number: 1, icon: '📋', title: 'Review School Curriculum', description: 'Demand transparency in what\'s being taught to your children', color: '#fbbf24' },
+                    { number: 2, icon: '📝', title: 'Request Opt-Out Forms', description: 'Schools must now provide them for controversial content', color: '#22c55e' },
+                    { number: 3, icon: '🤝', title: 'Organize With Parents', description: 'Build coalitions across faith lines for maximum impact', color: '#8b5cf6' },
+                    { number: 4, icon: '⚖️', title: 'Contact Legal Groups', description: 'ADF or Becket can help if schools refuse to comply', color: '#ef4444' },
+                    { number: 5, icon: '📢', title: 'Share This Victory', description: 'Spread the word - other parents need to know their rights', color: '#06b6d4' }
+                  ].map((step, index) => (
+                    <div 
+                      key={index}
+                      className="relative p-4 lg:p-6 rounded-xl border-2 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg group"
+                      style={{
+                        background: 'rgba(255,255,255,0.1)',
+                        backdropFilter: 'blur(10px)',
+                        borderColor: 'rgba(255,255,255,0.2)'
+                      }}
+                    >
+                      {/* Step Number */}
+                      <div 
+                        className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-3 border-white"
+                        style={{
+                          background: '#ef4444',
+                          boxShadow: '0 3px 10px rgba(0,0,0,0.3)'
+                        }}
+                      >
+                        {step.number}
+                      </div>
+                      
+                      {/* Icon */}
+                      <div 
+                        className="text-3xl lg:text-4xl my-4 lg:my-6"
+                        style={{
+                          textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
+                          color: step.color
+                        }}
+                      >
+                        {step.icon}
+                      </div>
+                      
+                      {/* Title */}
+                      <div className="text-sm lg:text-lg font-bold mb-2 lg:mb-3 leading-tight" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.3)'}}>
+                        {step.title}
+                      </div>
+                      
+                      {/* Description */}
+                      <div className="text-xs lg:text-sm opacity-90 leading-relaxed">
+                        {step.description}
+                      </div>
+                      
+                      {/* Arrow (hidden on mobile and last item) */}
+                      {index < 4 && (
+                        <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-xl text-yellow-400" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                          →
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                {/* Call to Action */}
+                <div 
+                  className="mt-8 p-6 rounded-xl text-center border-2 relative z-10"
+                  style={{
+                    background: 'rgba(239, 68, 68, 0.2)',
+                    borderColor: 'rgba(239, 68, 68, 0.4)'
+                  }}
+                >
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-yellow-400 mb-3" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    The Time Is NOW
+                  </div>
+                  <div className="text-base sm:text-lg lg:text-xl font-bold leading-relaxed">
+                    This Supreme Court victory gives parents unprecedented power.<br className="hidden sm:block" />
+                    Don't let this moment pass - ACT TODAY!
+                  </div>
+                </div>
               </div>
             </div>
             
