@@ -264,6 +264,15 @@ const JeffBrownLanding = () => {
             </a>
             
             {/* Desktop: Original layout */}
+            <a 
+              href="https://calendly.com/bhogan-revgenengines/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="donate-button md:block hidden" 
+              style={{background: 'white', color: 'black', border: '2px solid white', boxShadow: '0 0 20px rgba(255,255,255,0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
+            >
+              BOOK A ONE-ON-ONE
+            </a>
             <button 
               onClick={() => setIsDonateModalOpen(true)}
               className="donate-button md:block hidden"
