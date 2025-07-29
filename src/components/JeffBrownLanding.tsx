@@ -356,23 +356,25 @@ const JeffBrownLanding = () => {
             </p>
           </div>
 
-          {/* Tablet & Desktop version - Cards */}
+          {/* Desktop version - Cards */}
           <div className="hidden md:block mb-8">
-            {/* Tablet: 2-column grid for all 5 cards */}
-            <div className="md:lg:grid md:lg:grid-cols-2 md:lg:gap-5 md:lg:max-w-4xl md:lg:mx-auto hidden">
-              {reformData.map((reform, index) => (
-                <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl md:lg:p-5 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-                  <div className="w-10 h-10 md:lg:w-11 md:lg:h-11 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:lg:mb-4 mx-auto">
-                    {reform.icon}
+            {/* Tablet only: 2-column grid for all 5 cards */}
+            <div className="md:lg:block lg:hidden">
+              <div className="grid grid-cols-2 gap-5 max-w-4xl mx-auto">
+                {reformData.map((reform, index) => (
+                  <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+                    <div className="w-11 h-11 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                      {reform.icon}
+                    </div>
+                    <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                    <p className="text-base text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
                   </div>
-                  <h3 className="text-base md:lg:text-lg font-space font-semibold text-foreground mb-2 md:lg:mb-3">{reform.title}</h3>
-                  <p className="text-sm md:lg:text-base text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             
-            {/* Desktop: First 3 cards in a row, last 2 centered */}
-            <div className="lg:block hidden">
+            {/* Desktop only: First 3 cards in a row, last 2 centered */}
+            <div className="hidden lg:block">
               <div className="grid lg:grid-cols-3 gap-6 mb-6">
                 {reformData.slice(0, 3).map((reform, index) => (
                   <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
