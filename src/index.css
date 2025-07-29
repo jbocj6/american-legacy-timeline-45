@@ -167,10 +167,10 @@ All colors MUST be HSL.
     /* Mobile hero headshot positioning */
     .hero-headshot-mobile {
       position: absolute !important;
-      top: 15px !important;
+      top: 80px !important;
       left: 50% !important;
       transform: translateX(-50%) !important;
-      height: 60vh !important;
+      height: calc(100vh - 80px) !important;
       width: auto !important;
       z-index: 10 !important;
       object-fit: cover !important;
@@ -197,26 +197,40 @@ All colors MUST be HSL.
       z-index: 30 !important;
       display: grid !important;
       grid-template-columns: repeat(4, 1fr) !important;
-      gap: 12px !important;
+      gap: 8px !important;
       padding: 0 !important;
     }
     
-    /* Make social icons square */
+    /* Make social icons much smaller (25% of current size) */
     .hero-social-mobile a {
       aspect-ratio: 1 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      border-radius: 8px !important;
+      border-radius: 4px !important;
+      padding: 8px !important;
+      font-size: 0.75rem !important;
     }
     
-    /* Mobile button layout */
+    .hero-social-mobile svg {
+      width: 14px !important;
+      height: 14px !important;
+    }
+    
+    /* Mobile button layout - smaller buttons */
     .hero-buttons-mobile {
       display: flex !important;
       flex-direction: column !important;
-      gap: 12px !important;
-      margin-top: 16px !important;
+      gap: 8px !important;
+      margin-top: 12px !important;
+      margin-bottom: 20px !important;
       width: 100% !important;
+    }
+    
+    .hero-buttons-mobile button {
+      padding: 8px 16px !important;
+      font-size: 0.75rem !important;
+      min-height: 36px !important;
     }
   }
 
