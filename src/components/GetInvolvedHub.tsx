@@ -243,7 +243,7 @@ const GetInvolvedHub = () => {
                 Join the Conversation
               </h4>
               <p className="text-muted-foreground font-inter mb-4">
-                Get exclusive updates from Jeffrey himself
+                Get exclusive updates from Jeffrey himself!
               </p>
               <div className="flex gap-4 justify-center">
                 {/* Instagram */}
