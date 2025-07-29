@@ -195,28 +195,32 @@ const JeffBrownLanding = () => {
 
       {/* Hero Section - Outside seamless background */}
       <section className="hero relative md:min-h-screen max-md:h-[60vh]">
-        {/* Jeff Brown Portrait - Mobile responsive positioning */}
+        {/* Jeff Brown Portrait - Tablet & Mobile responsive positioning */}
         <img 
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
-                     md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
+                     md:lg:right-[-8%] md:lg:bottom-[-2%] md:lg:h-[85vh] md:lg:scale-105
+                     lg:right-[-5%] lg:bottom-[-2%] lg:h-[87vh] lg:scale-110
                      max-md:top-[95px] max-md:left-0 max-md:right-0 max-md:w-full max-md:h-[calc(60vh-95px)] max-md:object-cover max-md:object-top
                      hero-headshot-mobile"
         />
         
-        {/* Hero Content - Mobile responsive positioning */}
+        {/* Hero Content - Tablet & Mobile responsive positioning */}
         <div className="absolute bottom-[20%] left-[5%] z-40 
-                        md:bottom-[20%] md:left-[5%]
+                        md:lg:bottom-[18%] md:lg:left-[6%]
+                        lg:bottom-[20%] lg:left-[5%]
                         max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:translate-y-[60px] max-md:text-center max-md:w-full max-md:px-4">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
-                         md:text-8xl md:mb-4
+                         md:lg:text-7xl md:lg:mb-3
+                         lg:text-8xl lg:mb-4
                          max-md:!text-9xl max-md:mb-2 max-md:tracking-wider max-md:hero-text-outline
                          max-sm:!text-8xl max-sm:mb-1 max-sm:tracking-wide">
             Jeff Brown
           </h1>
           <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
-                        md:text-base md:mb-8
+                        md:lg:text-sm md:lg:mb-6
+                        lg:text-base lg:mb-8
                         max-md:text-xs max-md:tracking-wider max-md:mb-2
                         max-sm:text-xs max-sm:tracking-wide max-sm:mb-2 max-md:hidden">
             PATRIOT • PROVEN LEADER • AMERICA FIRST
@@ -227,7 +231,8 @@ const JeffBrownLanding = () => {
             <div>AMERICA FIRST</div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-8
-                          md:flex-row md:gap-4 md:mt-8
+                          md:lg:flex-row md:lg:gap-3 md:lg:mt-6
+                          lg:flex-row lg:gap-4 lg:mt-8
                           max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             <button 
@@ -351,32 +356,46 @@ const JeffBrownLanding = () => {
             </p>
           </div>
 
-          {/* Desktop version - Cards */}
+          {/* Tablet & Desktop version - Cards */}
           <div className="hidden md:block mb-8">
-            {/* First 3 cards in a row */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-              {reformData.slice(0, 3).map((reform, index) => (
-                <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
-                  <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+            {/* Tablet: 2-column grid for all 5 cards */}
+            <div className="md:lg:grid md:lg:grid-cols-2 md:lg:gap-5 md:lg:max-w-4xl md:lg:mx-auto hidden">
+              {reformData.map((reform, index) => (
+                <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl md:lg:p-5 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+                  <div className="w-10 h-10 md:lg:w-11 md:lg:h-11 bg-destructive/10 rounded-lg flex items-center justify-center mb-3 md:lg:mb-4 mx-auto">
                     {reform.icon}
                   </div>
-                  <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
-                  <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
+                  <h3 className="text-base md:lg:text-lg font-space font-semibold text-foreground mb-2 md:lg:mb-3">{reform.title}</h3>
+                  <p className="text-sm md:lg:text-base text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
                 </div>
               ))}
             </div>
             
-            {/* Last 2 cards centered */}
-            <div className="flex justify-center gap-6">
-              {reformData.slice(3).map((reform, index) => (
-                <div key={index + 3} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center w-full max-w-sm">
-                  <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                    {reform.icon}
+            {/* Desktop: First 3 cards in a row, last 2 centered */}
+            <div className="lg:block hidden">
+              <div className="grid lg:grid-cols-3 gap-6 mb-6">
+                {reformData.slice(0, 3).map((reform, index) => (
+                  <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                      {reform.icon}
+                    </div>
+                    <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                    <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
                   </div>
-                  <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
-                  <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
-                </div>
-              ))}
+                ))}
+              </div>
+              
+              <div className="flex justify-center gap-6">
+                {reformData.slice(3).map((reform, index) => (
+                  <div key={index + 3} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center w-full max-w-sm">
+                    <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                      {reform.icon}
+                    </div>
+                    <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                    <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -448,7 +467,10 @@ const JeffBrownLanding = () => {
           {/* Responsive Timeline */}
           <div className="relative">
             {/* Desktop: Central vertical line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden lg:block"></div>
+            
+            {/* Tablet: Left-aligned vertical line */}
+            <div className="absolute left-8 md:lg:left-12 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:lg:block lg:hidden"></div>
             
             {/* Mobile: Animated treasure trail line */}
             <svg 
@@ -471,45 +493,61 @@ const JeffBrownLanding = () => {
             </svg>
             
             {/* Timeline items */}
-            <div className="space-y-16 md:space-y-16 mt-8">
+            <div className="space-y-16 md:lg:space-y-12 lg:space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
                  <div 
                    key={event.year}
                    className={`timeline-item relative animate-fade-in z-10
-                     md:flex md:items-center
-                     ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}
+                     md:lg:flex md:lg:items-start md:lg:flex-row
+                     lg:flex lg:items-center
+                     ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}
                      flex flex-col
                    `}
                    style={{animationDelay: `${index * 0.3 + 1.8}s`}}
                  >
                   {/* Desktop timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden md:block hover:scale-125 transition-transform duration-300">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden lg:block hover:scale-125 transition-transform duration-300">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
                   </div>
                   
-                  {/* Date - Mobile: Badge, Desktop: Side placement */}
+                  {/* Tablet timeline dot */}
+                  <div className="absolute left-8 md:lg:left-12 transform -translate-x-1/2 w-5 h-5 md:lg:w-6 md:lg:h-6 bg-gradient-to-r from-primary to-accent rounded-full border-3 md:lg:border-4 border-background shadow-xl z-10 hidden md:lg:block lg:hidden hover:scale-125 transition-transform duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
+                  </div>
+                  
+                  {/* Date - Mobile: Badge, Tablet: Left side, Desktop: Side placement */}
                   <div className={`
-                    flex-none w-full md:w-1/2 
-                    ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} 
-                    text-center md:text-inherit mb-4 md:mb-0
+                    flex-none w-full 
+                    md:lg:w-auto md:lg:min-w-[140px] md:lg:text-left md:lg:mr-8
+                    lg:w-1/2 
+                    ${index % 2 === 0 ? 'lg:pr-16 lg:text-right' : 'lg:pl-16 lg:text-left'} 
+                    text-center lg:text-inherit mb-4 md:lg:mb-6 lg:mb-0
                   `}>
                      <div className="
                        inline-block px-4 py-2 rounded-full
-                       bg-destructive md:bg-transparent
-                       text-white md:text-destructive/70
-                       text-lg md:text-6xl lg:text-8xl font-mono font-black leading-none
+                       bg-destructive md:lg:bg-transparent lg:bg-transparent
+                       text-white md:lg:text-destructive/70 lg:text-destructive/70
+                       text-lg md:lg:text-2xl lg:text-6xl xl:text-8xl font-mono font-black leading-none
                      ">
                        {event.year}
                      </div>
                   </div>
                   
                   {/* Content card */}
-                  <div className={`flex-none w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-16' : 'md:pr-16'}`}>
-                    <div className="bg-card border border-border/50 rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
+                  <div className={`
+                    flex-none w-full 
+                    md:lg:flex-1
+                    lg:w-1/2 
+                    ${index % 2 === 0 ? 'lg:pl-16' : 'lg:pr-16'}
+                  `}>
+                    <div className="bg-card border border-border/50 rounded-2xl p-6 md:lg:p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-accent/50 transform hover:-translate-y-2 group relative overflow-hidden">
                       {/* Desktop card connector line */}
-                      <div className={`absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden md:block ${
+                      <div className={`absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden lg:block ${
                         index % 2 === 0 ? '-left-8' : '-right-8'
                       }`}></div>
+                      
+                      {/* Tablet card connector line */}
+                      <div className="absolute top-6 left-[-24px] md:lg:left-[-36px] w-6 md:lg:w-8 h-0.5 bg-gradient-to-r from-primary to-accent hidden md:lg:block lg:hidden"></div>
                       
                       {/* Card glow effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
@@ -518,17 +556,17 @@ const JeffBrownLanding = () => {
                         <img 
                           src={event.image} 
                           alt={event.title} 
-                          className="w-full h-40 md:h-48 object-cover rounded-xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-40 md:lg:h-36 lg:h-48 object-cover rounded-xl mb-4 md:lg:mb-4 lg:mb-6 transition-transform duration-300 group-hover:scale-105"
                         />
                         <h3 className={`
-                          text-xl md:text-2xl font-space font-bold text-foreground mb-3 md:mb-4 group-hover:text-accent transition-colors duration-300 
-                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''}
+                          text-xl md:lg:text-xl lg:text-2xl font-space font-bold text-foreground mb-3 md:lg:mb-3 lg:mb-4 group-hover:text-accent transition-colors duration-300 
+                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'lg:text-right' : ''}
                         `}>
                           {event.title}
                         </h3>
                         <p className={`
-                          text-base md:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 
-                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'md:text-right' : ''}
+                          text-base md:lg:text-base lg:text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300 
+                          ${['The Stand', 'The Vindication', 'The Victory'].includes(event.title) ? 'lg:text-right' : ''}
                         `}>
                           {event.description}
                         </p>
@@ -582,17 +620,44 @@ const JeffBrownLanding = () => {
             </p>
           </div>
 
-          {/* Desktop version - Cards */}
-          <div className="hidden md:grid md:grid-cols-3 gap-6 mb-12">
-            {policyData.map((policy, index) => (
-              <div key={index} className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  {policy.icon}
-                </div>
-                <h3 className="text-xl font-space font-semibold text-foreground mb-4">{policy.title}</h3>
-                <p className="text-muted-foreground font-inter leading-relaxed">{policy.description}</p>
+          {/* Tablet & Desktop version - Cards */}
+          <div className="hidden md:block mb-12">
+            {/* Tablet: 2-column grid with centered last item */}
+            <div className="md:lg:block lg:hidden">
+              <div className="grid grid-cols-2 gap-6 mb-6 max-w-3xl mx-auto">
+                {policyData.slice(0, 2).map((policy, index) => (
+                  <div key={index} className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                      {policy.icon}
+                    </div>
+                    <h3 className="text-lg font-space font-semibold text-foreground mb-3">{policy.title}</h3>
+                    <p className="text-sm text-muted-foreground font-inter leading-relaxed">{policy.description}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+              <div className="flex justify-center">
+                <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center w-full max-w-sm">
+                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                    {policyData[2].icon}
+                  </div>
+                  <h3 className="text-lg font-space font-semibold text-foreground mb-3">{policyData[2].title}</h3>
+                  <p className="text-sm text-muted-foreground font-inter leading-relaxed">{policyData[2].description}</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Desktop: 3-column grid */}
+            <div className="hidden lg:grid lg:grid-cols-3 gap-6">
+              {policyData.map((policy, index) => (
+                <div key={index} className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    {policy.icon}
+                  </div>
+                  <h3 className="text-xl font-space font-semibold text-foreground mb-4">{policy.title}</h3>
+                  <p className="text-muted-foreground font-inter leading-relaxed">{policy.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Mobile version - Accordion */}
