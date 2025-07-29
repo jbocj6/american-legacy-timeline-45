@@ -277,9 +277,9 @@ const NewsPress = () => {
 
       {/* Second Article Modal */}
       <Dialog open={isSecondModalOpen} onOpenChange={setIsSecondModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6">{/* Added responsive padding */}
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden">{/* Added overflow-x-hidden */}
           <DialogHeader>
-            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight">
+            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight break-words px-2">
               Border Crisis SOLVED: Six Months of Trump Enforcement Delivers Historic Results
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -287,8 +287,8 @@ const NewsPress = () => {
             </div>
           </DialogHeader>
           
-          <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
+          <div className="prose prose-lg max-w-none text-foreground overflow-x-hidden">{/* Added overflow-x-hidden */}
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
             {/* Hero Images - Responsive Layout */}
             <div className="w-full mb-6">
@@ -324,17 +324,18 @@ const NewsPress = () => {
               </div>
             </div>
             
-            <p className="mb-4">
+            <p className="mb-4 break-words">
               The transformation at America's southern border is nothing short of miraculous. Just six months after President Trump returned to the White House, the Department of Homeland Security reports the lowest border crossing numbers in decades – a stunning reversal from the Biden-era invasion that threatened American sovereignty.
             </p>
             
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6 break-words overflow-wrap-anywhere">
               "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!" - DHS Secretary Kristi Noem
             </blockquote>
             
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
-            
-            {/* Statistics Chart - Mobile Optimized */}
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">The Numbers That Prove Trump's Success</h2>
+
+            {/* Hide complex chart on mobile to prevent overflow */}
+            <div className="hidden sm:block">{/* Desktop only */}
             <div className="w-full bg-gradient-to-br from-blue-900 via-blue-700 via-blue-500 to-red-400 p-4 sm:p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10" style={{
@@ -343,8 +344,8 @@ const NewsPress = () => {
               
               <div className="relative z-10">
                 <div className="text-center mb-6 sm:mb-10">
-                  <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-3 drop-shadow-lg">BORDER CROSSINGS COMPARISON</h1>
-                  <p className="text-sm sm:text-xl opacity-90 mb-2 sm:mb-4">Monthly Border Encounters: Biden Peak vs Trump Results</p>
+                  <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-3 drop-shadow-lg break-words">BORDER CROSSINGS COMPARISON</h1>
+                  <p className="text-sm sm:text-xl opacity-90 mb-2 sm:mb-4 break-words">Monthly Border Encounters: Biden Peak vs Trump Results</p>
                   <div className="bg-white/20 backdrop-blur-md px-2 sm:px-4 py-1 sm:py-2 rounded-full inline-block border border-white/30 text-xs sm:text-base">
                     Source: DHS Data
                   </div>
@@ -458,6 +459,25 @@ const NewsPress = () => {
                 </div>
               </div>
             </div>
+            </div>{/* End desktop only chart */}
+
+            {/* Mobile-friendly simple stats - Show on mobile only */}
+            <div className="sm:hidden bg-accent/10 border border-accent p-4 mb-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-4 text-center">Border Crossings Comparison</h3>
+              <div className="grid grid-cols-2 gap-4 text-center">
+                <div className="bg-red-100 p-3 rounded">
+                  <div className="text-2xl font-bold text-red-600">251,487</div>
+                  <div className="text-sm text-red-700">Biden Peak</div>
+                  <div className="text-xs text-gray-600">Dec 2023</div>
+                </div>
+                <div className="bg-green-100 p-3 rounded">
+                  <div className="text-2xl font-bold text-green-600">6,000</div>
+                  <div className="text-sm text-green-700">Trump Result</div>
+                  <div className="text-xs text-gray-600">July 2025</div>
+                </div>
+              </div>
+              <div className="text-center mt-3 text-sm text-gray-600">98% Reduction in Border Crossings</div>
+            </div>
 
             <div className="bg-accent/10 border border-accent p-4 sm:p-6 mb-6 rounded-lg">
               <h3 className="text-lg sm:text-xl font-semibold mb-4">Biden's Border Disaster:</h3>
@@ -478,10 +498,10 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Ending Catch-and-Release: Promise Kept</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">Ending Catch-and-Release: Promise Kept</h2>
             
             {/* ICE Operations Image */}
-            <div className="w-full h-48 sm:h-64 bg-muted rounded-lg overflow-hidden mb-6">
+            <div className="w-full h-48 sm:h-64 bg-muted rounded-lg overflow-hidden mb-6 max-w-full">{/* Added max-w-full */}
               <img 
                 src="/lovable-uploads/b917ca10-5b5f-42d5-899a-d65d5827782c.png" 
                 alt="ICE deportation operations - detained individuals being transported" 
