@@ -928,7 +928,7 @@ const NewsPress = () => {
               </div>
 
               {/* Content Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-10 pb-8 sm:pb-12 lg:pb-16 flex-1 relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-10 pb-16 sm:pb-20 lg:pb-16 flex-1 relative z-10">
                 <div className="bg-white/15 backdrop-blur-sm py-3 sm:py-4 px-3 sm:px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[140px] sm:min-h-[160px] lg:min-h-[180px]">
                   <div className="text-2xl sm:text-3xl lg:text-4xl mb-1 sm:mb-2 drop-shadow-md text-yellow-300">✝️</div>
                   <div className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 drop-shadow-md">Religious Upbringing</div>
