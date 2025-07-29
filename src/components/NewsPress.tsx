@@ -1384,12 +1384,83 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Six Months of Winning: The Trump Effect</h2>
             
-            {/* Statistics Chart Placeholder */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[CHART NEEDED]</p>
-                <p>Before/After comparison showing border crossings plummeting under Trump vs Biden era peaks</p>
-                <p className="text-sm mt-2">Create chart using DHS statistics</p>
+            {/* Border Crossings Comparison Chart */}
+            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
+              {/* Header */}
+              <div 
+                className="text-white p-8 text-center relative overflow-hidden"
+                style={{
+                  background: 'linear-gradient(135deg, #c41e3a 0%, #8B0000 100%)',
+                }}
+              >
+                <div 
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>')`,
+                  }}
+                />
+                <h1 className="text-4xl font-bold mb-3 relative z-10">Border Crossings Comparison</h1>
+                <div className="text-xl opacity-90 relative z-10">Biden Peak vs Trump 2025 Results</div>
+              </div>
+              
+              {/* Comparison Container */}
+              <div className="bg-white p-10 flex flex-col lg:flex-row gap-10 relative">
+                {/* Biden Era */}
+                <div 
+                  className="flex-1 text-center rounded-3xl p-10 text-white relative overflow-hidden"
+                  style={{background: 'linear-gradient(135deg, #ff6b6b, #ff4757)'}}
+                >
+                  <div className="text-3xl font-bold mb-5 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    BIDEN ERA PEAK
+                  </div>
+                  <div className="text-6xl my-8 relative z-10">⬆️</div>
+                  <div className="text-6xl font-bold my-8 relative z-10 leading-tight" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.3)'}}>
+                    251,487
+                  </div>
+                  <div className="text-xl opacity-95 mb-5 relative z-10">Monthly Apprehensions</div>
+                  <div className="h-5 bg-white/20 rounded-full mb-5 overflow-hidden relative z-10">
+                    <div className="h-full bg-white/90 rounded-full w-full"></div>
+                  </div>
+                  <div className="border-t-2 border-white/30 pt-5 relative z-10">
+                    <div className="text-lg mb-2 opacity-90">Crisis-level crossings</div>
+                    <div className="text-lg opacity-90">Overwhelmed Border Patrol</div>
+                  </div>
+                </div>
+
+                {/* VS Divider */}
+                <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-black text-green-400 p-5 rounded-full text-3xl font-bold shadow-2xl hidden lg:block">
+                  VS
+                </div>
+
+                {/* Trump Era */}
+                <div 
+                  className="flex-1 text-center rounded-3xl p-10 text-white relative overflow-hidden"
+                  style={{background: 'linear-gradient(135deg, #2ed573, #1e90ff)'}}
+                >
+                  <div className="text-3xl font-bold mb-5 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+                    TRUMP 2025
+                  </div>
+                  <div className="text-6xl my-8 relative z-10">⬇️</div>
+                  <div className="text-6xl font-bold my-8 relative z-10 leading-tight" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.3)'}}>
+                    6,000
+                  </div>
+                  <div className="text-xl opacity-95 mb-5 relative z-10">June 2025 Apprehensions</div>
+                  <div className="h-5 bg-white/20 rounded-full mb-5 overflow-hidden relative z-10">
+                    <div className="h-full bg-white/90 rounded-full" style={{width: '2.4%'}}></div>
+                  </div>
+                  <div className="bg-black/30 px-6 py-4 rounded-3xl text-2xl font-bold mb-5 relative z-10">
+                    -97.6% DECREASE
+                  </div>
+                  <div className="border-t-2 border-white/30 pt-5 relative z-10">
+                    <div className="text-lg mb-2 opacity-90">Lowest in decades</div>
+                    <div className="text-lg opacity-90">Zero parole releases</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Source Note */}
+              <div className="bg-gray-50 p-5 text-center text-gray-600 italic border-t-2 border-gray-200">
+                Source: DHS Statistics & U.S. Border Patrol Preliminary Figures
               </div>
             </div>
             
