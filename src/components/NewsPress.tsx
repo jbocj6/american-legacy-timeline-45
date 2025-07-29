@@ -520,85 +520,85 @@ const NewsPress = () => {
             <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Criminal Aliens Face Justice at Last</h2>
             
             {/* Criminal Statistics Infographic */}
-            <div className="w-full bg-gradient-to-br from-slate-900 via-slate-700 via-blue-900 to-red-600 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
+            <div className="w-full bg-gradient-to-br from-slate-900 via-slate-700 via-blue-900 to-red-600 p-4 sm:p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10" style={{
                 backgroundImage: `url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='badge' patternUnits='userSpaceOnUse' width='25' height='25'><polygon points='12.5,2 15.5,8.5 22.5,8.5 17,13 19,20 12.5,16 6,20 8,13 2.5,8.5 9.5,8.5' fill='white' opacity='0.05'/></pattern></defs><rect width='100' height='100' fill='url(%23badge)'/></svg>")`
               }} />
               
               <div className="relative z-10">
-                <div className="text-center mb-10">
-                  <h1 className="text-5xl font-bold mb-4 text-yellow-300 drop-shadow-lg">ICE ENFORCEMENT RESULTS</h1>
-                  <p className="text-2xl opacity-95 mb-3">Criminal Alien Arrests in 2025</p>
-                  <div className="bg-red-500/30 border-2 border-red-500/50 px-5 py-3 rounded-full inline-block animate-pulse italic">
+                <div className="text-center mb-6 sm:mb-10">
+                  <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 text-yellow-300 drop-shadow-lg">ICE ENFORCEMENT RESULTS</h1>
+                  <p className="text-lg sm:text-2xl opacity-95 mb-2 sm:mb-3">Criminal Alien Arrests in 2025</p>
+                  <div className="bg-red-500/30 border-2 border-red-500/50 px-3 sm:px-5 py-2 sm:py-3 rounded-full inline-block animate-pulse italic text-sm sm:text-base">
                     The crucial detail mainstream media won't report
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
-                  <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border-2 border-green-500/30 flex flex-col items-center justify-center">
-                    <div className="text-6xl font-bold text-green-500 drop-shadow-lg mb-3 animate-pulse">300,000+</div>
-                    <div className="text-xl opacity-90 text-center">Illegal Aliens Arrested<br />in 2025 Alone</div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 my-6 sm:my-10">
+                  <div className="bg-white/10 backdrop-blur-md p-4 sm:p-8 rounded-2xl border-2 border-green-500/30 flex flex-col items-center justify-center">
+                    <div className="text-3xl sm:text-6xl font-bold text-green-500 drop-shadow-lg mb-2 sm:mb-3 animate-pulse">300,000+</div>
+                    <div className="text-sm sm:text-xl opacity-90 text-center">Illegal Aliens Arrested<br />in 2025 Alone</div>
                   </div>
 
-                  <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border-2 border-red-500/30 relative overflow-hidden">
-                    <div className="w-52 h-52 mx-auto mb-5 rounded-full relative shadow-2xl" style={{
+                  <div className="bg-white/10 backdrop-blur-md p-4 sm:p-8 rounded-2xl border-2 border-red-500/30 relative overflow-hidden">
+                    <div className="w-32 h-32 sm:w-52 sm:h-52 mx-auto mb-3 sm:mb-5 rounded-full relative shadow-2xl" style={{
                       background: `conic-gradient(#ef4444 0deg 252deg, #374151 252deg 360deg)`
                     }}>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 w-32 h-32 rounded-full flex flex-col items-center justify-center border-3 border-white/20">
-                        <div className="text-4xl font-bold text-yellow-300">70%</div>
-                        <div className="text-sm opacity-80 text-center">Are<br />Criminals</div>
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 w-20 h-20 sm:w-32 sm:h-32 rounded-full flex flex-col items-center justify-center border-3 border-white/20">
+                        <div className="text-2xl sm:text-4xl font-bold text-yellow-300">70%</div>
+                        <div className="text-xs sm:text-sm opacity-80 text-center">Are<br />Criminals</div>
                       </div>
                     </div>
-                    <div className="flex justify-center gap-5">
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-red-500 rounded"></div>
-                        <span className="text-sm">Criminal Aliens (70%)</span>
+                    <div className="flex justify-center gap-2 sm:gap-5">
+                      <div className="flex items-center gap-1 sm:gap-2">
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 bg-red-500 rounded"></div>
+                        <span className="text-xs sm:text-sm">Criminal Aliens (70%)</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-gray-600 rounded"></div>
-                        <span className="text-sm">Non-Criminal (30%)</span>
+                      <div className="flex items-center gap-1 sm:gap-2">
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 bg-gray-600 rounded"></div>
+                        <span className="text-xs sm:text-sm">Non-Criminal (30%)</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-12">
-                  <h2 className="text-4xl text-center mb-8 text-yellow-300 drop-shadow-lg font-bold">Criminals Being Removed Include:</h2>
+                <div className="mt-8 sm:mt-12">
+                  <h2 className="text-2xl sm:text-4xl text-center mb-4 sm:mb-8 text-yellow-300 drop-shadow-lg font-bold">Criminals Being Removed Include:</h2>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl">⚔️</div>
-                      <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">VIOLENT</div>
-                      <div className="text-xl font-bold text-red-300 mb-3">Gang Members</div>
-                      <div className="text-lg leading-relaxed opacity-90">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
+                    <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
+                      <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-lg sm:text-2xl">⚔️</div>
+                      <div className="absolute -top-2 sm:-top-3 right-3 sm:right-5 bg-red-500/90 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold uppercase">VIOLENT</div>
+                      <div className="text-lg sm:text-xl font-bold text-red-300 mb-2 sm:mb-3">Gang Members</div>
+                      <div className="text-sm sm:text-lg leading-relaxed opacity-90">
                         MS-13 and other violent criminal organizations terrorizing American communities
                       </div>
                     </div>
                     
-                    <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl">💊</div>
-                      <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">DEADLY</div>
-                      <div className="text-xl font-bold text-red-300 mb-3">Drug Traffickers</div>
-                      <div className="text-lg leading-relaxed opacity-90">
+                    <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
+                      <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-lg sm:text-2xl">💊</div>
+                      <div className="absolute -top-2 sm:-top-3 right-3 sm:right-5 bg-red-500/90 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold uppercase">DEADLY</div>
+                      <div className="text-lg sm:text-xl font-bold text-red-300 mb-2 sm:mb-3">Drug Traffickers</div>
+                      <div className="text-sm sm:text-lg leading-relaxed opacity-90">
                         Criminals poisoning American communities with fentanyl and other deadly substances
                       </div>
                     </div>
                     
-                    <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl">⛓️</div>
-                      <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">PREDATOR</div>
-                      <div className="text-xl font-bold text-red-300 mb-3">Human Traffickers</div>
-                      <div className="text-lg leading-relaxed opacity-90">
+                    <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
+                      <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-lg sm:text-2xl">⛓️</div>
+                      <div className="absolute -top-2 sm:-top-3 right-3 sm:right-5 bg-red-500/90 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold uppercase">PREDATOR</div>
+                      <div className="text-lg sm:text-xl font-bold text-red-300 mb-2 sm:mb-3">Human Traffickers</div>
+                      <div className="text-sm sm:text-lg leading-relaxed opacity-90">
                         Exploiting vulnerable people and profiting from human misery
                       </div>
                     </div>
                     
-                    <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
-                      <div className="absolute top-4 right-4 text-2xl">🚨</div>
-                      <div className="absolute -top-3 right-5 bg-red-500/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">PROTECTED</div>
-                      <div className="text-xl font-bold text-red-300 mb-3">Violent Felons</div>
-                      <div className="text-lg leading-relaxed opacity-90">
+                    <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-xl border-l-4 border-red-500 relative group hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 hover:bg-white/15">
+                      <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-lg sm:text-2xl">🚨</div>
+                      <div className="absolute -top-2 sm:-top-3 right-3 sm:right-5 bg-red-500/90 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold uppercase">PROTECTED</div>
+                      <div className="text-lg sm:text-xl font-bold text-red-300 mb-2 sm:mb-3">Violent Felons</div>
+                      <div className="text-sm sm:text-lg leading-relaxed opacity-90">
                         Previously protected by <span className="text-yellow-300 font-bold">sanctuary cities</span> that shielded criminals from justice
                       </div>
                     </div>
