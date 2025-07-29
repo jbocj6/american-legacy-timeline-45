@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MoreVertical } from 'lucide-react';
 import { useState } from 'react';
 import DonateModal from './DonateModal';
 
@@ -77,13 +77,13 @@ const Navigation = () => {
               </button>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
+            {/* Mobile menu button - Right justified */}
+            <div className="md:hidden flex-1 flex justify-end">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-primary-foreground hover:text-accent-foreground p-3"
               >
-                {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                {isMenuOpen ? <X size={28} /> : <MoreVertical size={28} />}
               </button>
             </div>
           </div>
