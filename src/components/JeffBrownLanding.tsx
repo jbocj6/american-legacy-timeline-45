@@ -114,21 +114,21 @@ const JeffBrownLanding = () => {
       </div>
 
       {/* Hero Section - Outside seamless background */}
-      <section className="hero relative md:min-h-screen max-md:h-[70vh]">
+      <section className="hero relative md:min-h-screen max-md:h-[60vh]">
         {/* Jeff Brown Portrait - Mobile responsive positioning */}
         <img 
           src="/lovable-uploads/719ad38e-9ed6-4a9a-a1d1-f4e27b328670.png" 
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
                      md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
-                     max-md:top-[95px] max-md:left-0 max-md:right-0 max-md:w-full max-md:h-[calc(70vh-95px)] max-md:object-cover max-md:object-top
+                     max-md:top-[95px] max-md:left-0 max-md:right-0 max-md:w-full max-md:h-[calc(60vh-95px)] max-md:object-cover max-md:object-top
                      hero-headshot-mobile"
         />
         
         {/* Hero Content - Mobile responsive positioning */}
         <div className="absolute bottom-[20%] left-[5%] z-40 
                         md:bottom-[20%] md:left-[5%]
-                        max-md:bottom-[15%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
+                        max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
                          md:text-8xl md:mb-4
                          max-md:text-3xl max-md:mb-2 max-md:tracking-wider
@@ -143,7 +143,7 @@ const JeffBrownLanding = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 
                           md:flex-row md:gap-4 md:mt-8
-                          max-md:flex-col max-md:gap-2 max-md:mt-2 max-md:items-center
+                          max-md:flex-col max-md:gap-[6px] max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
