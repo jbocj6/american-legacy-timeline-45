@@ -1147,9 +1147,9 @@ const NewsPress = () => {
 
       {/* Fourth Article Modal - Big Beautiful Bill */}
       <Dialog open={isFourthModalOpen} onOpenChange={setIsFourthModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden">
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center pt-4">
+            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight break-words px-2 pt-4">
               America First Wins: Trump Signs Historic $170B Big Beautiful Bill
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -1157,498 +1157,392 @@ const NewsPress = () => {
             </div>
           </DialogHeader>
           
-          <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Independence Day Victory: Promises Made, Promises Kept</h2>
+          <div className="prose prose-lg max-w-none text-foreground overflow-x-hidden">
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">Independence Day Victory: Promises Made, Promises Kept</h2>
             
-            {/* Hero Image */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
-                alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
-                className="w-full h-full object-cover"
-              />
+            {/* Hero Images - Responsive Layout */}
+            <div className="w-full mb-6">
+              {/* Mobile: Stack vertically */}
+              <div className="sm:hidden space-y-3">
+                <div className="h-48 bg-muted rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/usa-flag-waving.gif" 
+                    alt="American flag waving" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="h-48 bg-muted rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
+                    alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              {/* Desktop: Side by side */}
+              <div className="hidden sm:flex h-64 sm:h-80 bg-muted rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/usa-flag-waving.gif" 
+                  alt="American flag waving" 
+                  className="w-1/2 h-full object-cover"
+                />
+                <img 
+                  src="/lovable-uploads/e92fe117-ce24-4d7b-ba39-520838953dfe.png" 
+                  alt="President Trump signing the Big Beautiful Bill at White House ceremony on Independence Day" 
+                  className="w-1/2 h-full object-cover"
+                />
+              </div>
             </div>
             
-            <p className="mb-4">
+            <p className="mb-4 break-words">
               President Donald J. Trump delivered the ultimate Fourth of July gift to American patriots today, signing the historic "One Big Beautiful Bill" into law at a 5 p.m. White House ceremony. The massive $170.7 billion package represents the largest conservative policy victory in decades, fundamentally reshaping America's approach to border security, immigration enforcement, and taxation.
             </p>
             
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
+            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6 break-words">
               "Promises made, promises kept!" Vice President JD Vance posted on X. "At times I even doubted we'd get it done by July 4! But now we've delivered big tax cuts and the resources necessary to secure the border."
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's Really in the Bill Liberal Media Won't Tell You</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">What's Really in the Bill Liberal Media Won't Tell You</h2>
             
-            {/* Border Security Funding Breakdown */}
-            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
-              {/* Header */}
-              <div 
-                className="text-white p-8 text-center relative overflow-hidden"
-                style={{
-                  background: 'linear-gradient(135deg, #c41e3a 0%, #8B0000 100%)',
-                }}
-              >
-                <div 
-                  className="absolute inset-0 opacity-30"
-                  style={{
-                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>')`,
-                  }}
-                />
-                <h1 className="text-4xl font-bold mb-2 relative z-10">Border Security Funding</h1>
-                <div className="text-xl opacity-90 relative z-10">Breakdown by Category</div>
-              </div>
-              
-              {/* Total Amount */}
-              <div 
-                className="text-center p-6 text-5xl font-bold tracking-widest"
-                style={{
-                  background: '#1a1a1a',
-                  color: '#00ff88',
-                  textShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
-                }}
-              >
-                $170.7B
-              </div>
-              
-              {/* Funding Items */}
-              <div className="p-8 bg-white space-y-6">
-                {/* Border Wall */}
-                <div 
-                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{background: 'linear-gradient(135deg, #ff6b6b, #ff4757)'}}
-                >
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
-                    🏗️
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                      $46.6B
-                    </div>
-                    <div className="text-xl text-white opacity-95 font-medium">Border Wall Construction</div>
-                    <div className="h-2 bg-white/30 rounded-full mt-3">
-                      <div className="h-full bg-white/90 rounded-full" style={{width: '27.3%'}}></div>
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    27.3%
-                  </div>
+            {/* Border Security Funding - Mobile Simplified */}
+            <div className="bg-accent/10 border border-accent p-4 sm:p-6 mb-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 break-words">Border Security Funding: $170.7B Total</h3>
+              <div className="grid grid-cols-1 gap-4">
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">Border Wall Construction:</span>
+                  <span className="font-bold">$46.6B (27.3%)</span>
                 </div>
-
-                {/* Detention Centers */}
-                <div 
-                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{background: 'linear-gradient(135deg, #4834d4, #667eea)'}}
-                >
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
-                    🏢
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                      $45.0B
-                    </div>
-                    <div className="text-xl text-white opacity-95 font-medium">Detention Centers</div>
-                    <div className="h-2 bg-white/30 rounded-full mt-3">
-                      <div className="h-full bg-white/90 rounded-full" style={{width: '26.4%'}}></div>
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    26.4%
-                  </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">Detention Centers:</span>
+                  <span className="font-bold">$45.0B (26.4%)</span>
                 </div>
-
-                {/* ICE Personnel */}
-                <div 
-                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{background: 'linear-gradient(135deg, #ff9ff3, #f368e0)'}}
-                >
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
-                    👮
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                      $30.0B
-                    </div>
-                    <div className="text-xl text-white opacity-95 font-medium">ICE Personnel</div>
-                    <div className="h-2 bg-white/30 rounded-full mt-3">
-                      <div className="h-full bg-white/90 rounded-full" style={{width: '17.6%'}}></div>
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    17.6%
-                  </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">ICE Personnel:</span>
+                  <span className="font-bold">$30.0B (17.6%)</span>
                 </div>
-
-                {/* Deportation Operations */}
-                <div 
-                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{background: 'linear-gradient(135deg, #ff6348, #ff4757)'}}
-                >
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
-                    ✈️
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                      $14.4B
-                    </div>
-                    <div className="text-xl text-white opacity-95 font-medium">Deportation Operations</div>
-                    <div className="h-2 bg-white/30 rounded-full mt-3">
-                      <div className="h-full bg-white/90 rounded-full" style={{width: '8.4%'}}></div>
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    8.4%
-                  </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">Deportation Operations:</span>
+                  <span className="font-bold">$14.4B (8.4%)</span>
                 </div>
-
-                {/* Tax Cut Provisions */}
-                <div 
-                  className="flex items-center p-6 rounded-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                  style={{background: 'linear-gradient(135deg, #7bed9f, #70a1ff)'}}
-                >
-                  <div className="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mr-8 text-4xl border-2 border-white/30">
-                    📋
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-3xl font-bold text-white mb-2" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                      $34.7B
-                    </div>
-                    <div className="text-xl text-white opacity-95 font-medium">Tax Cut Provisions</div>
-                    <div className="h-2 bg-white/30 rounded-full mt-3">
-                      <div className="h-full bg-white/90 rounded-full" style={{width: '20.3%'}}></div>
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold text-white px-4 py-2 bg-black/20 rounded-lg border-2 border-white/30" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    20.3%
-                  </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2">
+                  <span className="font-medium text-primary break-words">Tax Cut Provisions:</span>
+                  <span className="font-bold">$34.7B (20.3%)</span>
                 </div>
               </div>
             </div>
             
-            <p className="mb-4">
-              According to the House's passage of the bill on July 3, meeting Trump's self-imposed deadline of July 4, this legislation delivers on every major conservative priority:
+            <p className="mb-4 break-words">
+              According to the House's passage of the bill on July 3, meeting Trump's self-imposed deadline of July 4, this legislation delivers on every major conservative priority.
             </p>
 
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Border Security That Actually Works:</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong className="text-primary">$46.6 billion for border wall construction</strong> – more than 3 times what the Trump administration spent in its first term</li>
-                <li><strong className="text-primary">$45 billion for detention centers</strong> – funding to expand ICE detention to at least 116,000 beds</li>
-                <li><strong className="text-primary">$30 billion for ICE personnel</strong> – hiring 10,000 new ICE agents, transportation, and facilities</li>
-                <li><strong className="text-primary">$14.4 billion for removals</strong> – helping ICE achieve as many as 1 million deportations per year</li>
-              </ul>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">Six Months of Winning: The Trump Effect</h2>
+            
+            {/* Border Crossings Comparison - Mobile Optimized */}
+            <div className="w-full mb-6">
+              {/* Mobile: Stacked layout */}
+              <div className="sm:hidden space-y-4">
+                <div className="bg-red-100 border-2 border-red-400 p-4 rounded-lg text-center">
+                  <h3 className="text-lg font-bold text-red-800 mb-2">Biden Era Chaos</h3>
+                  <div className="text-3xl font-bold text-red-600 mb-1">251,487</div>
+                  <div className="text-sm text-red-700">Monthly Border Crossings</div>
+                  <div className="text-xs text-red-600 mt-1">December 2024</div>
+                </div>
+                <div className="bg-green-100 border-2 border-green-400 p-4 rounded-lg text-center">
+                  <h3 className="text-lg font-bold text-green-800 mb-2">Trump Enforcement</h3>
+                  <div className="text-3xl font-bold text-green-600 mb-1">6,000</div>
+                  <div className="text-sm text-green-700">Monthly Border Crossings</div>
+                  <div className="text-xs text-green-600 mt-1">June 2025</div>
+                </div>
+                <div className="bg-blue-100 border-2 border-blue-400 p-4 rounded-lg text-center">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">97.6%</div>
+                  <div className="text-sm text-blue-700 font-semibold">REDUCTION</div>
+                </div>
+              </div>
+              {/* Desktop: Side by side layout */}
+              <div className="hidden sm:flex gap-4">
+                <div className="flex-1 bg-red-100 border-2 border-red-400 p-6 rounded-lg text-center">
+                  <h3 className="text-xl font-bold text-red-800 mb-3">Biden Era Chaos</h3>
+                  <div className="text-4xl font-bold text-red-600 mb-2">251,487</div>
+                  <div className="text-sm text-red-700">Monthly Border Crossings</div>
+                  <div className="text-xs text-red-600 mt-2">December 2024</div>
+                </div>
+                <div className="flex-1 bg-green-100 border-2 border-green-400 p-6 rounded-lg text-center">
+                  <h3 className="text-xl font-bold text-green-800 mb-3">Trump Enforcement</h3>
+                  <div className="text-4xl font-bold text-green-600 mb-2">6,000</div>
+                  <div className="text-sm text-green-700">Monthly Border Crossings</div>
+                  <div className="text-xs text-green-600 mt-2">June 2025</div>
+                </div>
+                <div className="flex-1 bg-blue-100 border-2 border-blue-400 p-6 rounded-lg text-center">
+                  <div className="text-5xl font-bold text-blue-600 mb-2">97.6%</div>
+                  <div className="text-lg text-blue-700 font-semibold">REDUCTION</div>
+                </div>
+              </div>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Democrats' Eight-Hour Meltdown Fails to Stop Victory</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">Tax Relief for Working Americans</h2>
             
-            {/* Democrats' Opposition Image */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/c4b1deb4-7945-4707-99a6-4bdf5f4860a0.png" 
-                alt="Democratic opposition presenting protest boards against Trump's legislation" 
-                className="w-full h-full object-cover object-top"
-              />
+            {/* Tax Relief - Mobile Optimized */}
+            <div className="w-full mb-6">
+              <div className="h-auto bg-muted rounded-lg overflow-hidden">
+                <div className="p-4" style={{
+                  background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+                }}>
+                  <div style={{
+                    background: 'white',
+                    borderRadius: '20px',
+                    boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+                    overflow: 'hidden'
+                  }}>
+                    <div style={{
+                      background: 'linear-gradient(135deg, #2E8B57 0%, #228B22 100%)',
+                      color: 'white',
+                      padding: '20px',
+                      textAlign: 'center',
+                      position: 'relative'
+                    }}>
+                      <h1 className="text-2xl sm:text-3xl font-bold mb-2">Tax Relief for Working Families</h1>
+                      <div className="text-lg sm:text-xl opacity-90">Keeping More Money in Your Pocket</div>
+                    </div>
+                    
+                    {/* Mobile: Single column layout */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 sm:p-6">
+                      <div style={{
+                        background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)',
+                        borderRadius: '20px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        color: 'white',
+                        position: 'relative'
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          top: '15px',
+                          right: '15px',
+                          background: '#FF4444',
+                          color: 'white',
+                          padding: '6px 12px',
+                          borderRadius: '20px',
+                          fontSize: '0.8rem',
+                          fontWeight: 'bold',
+                          transform: 'rotate(12deg)',
+                          boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+                        }}>
+                          0% TAX
+                        </div>
+                        <div className="text-4xl mb-4">💰</div>
+                        <div className="text-lg sm:text-xl font-bold mb-2">No Taxes on Tips</div>
+                        <div className="text-sm sm:text-base mb-2">Service workers keep 100% of their tips</div>
+                        <div style={{
+                          background: 'rgba(0,0,0,0.2)',
+                          padding: '8px 16px',
+                          borderRadius: '25px',
+                          marginTop: '10px',
+                          fontSize: '0.9rem',
+                          fontWeight: 'bold'
+                        }}>
+                          Millions Benefit
+                        </div>
+                      </div>
+                      
+                      <div style={{
+                        background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+                        borderRadius: '20px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        color: 'white',
+                        position: 'relative'
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          top: '15px',
+                          right: '15px',
+                          background: '#FF4444',
+                          color: 'white',
+                          padding: '6px 12px',
+                          borderRadius: '20px',
+                          fontSize: '0.8rem',
+                          fontWeight: 'bold',
+                          transform: 'rotate(12deg)',
+                          boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+                        }}>
+                          0% TAX
+                        </div>
+                        <div className="text-4xl mb-4">⏰</div>
+                        <div className="text-lg sm:text-xl font-bold mb-2">No Taxes on Overtime</div>
+                        <div className="text-sm sm:text-base mb-2">Hard work pays off with tax-free overtime pay</div>
+                        <div style={{
+                          background: 'rgba(0,0,0,0.2)',
+                          padding: '8px 16px',
+                          borderRadius: '25px',
+                          marginTop: '10px',
+                          fontSize: '0.9rem',
+                          fontWeight: 'bold'
+                        }}>
+                          Rewards Work
+                        </div>
+                      </div>
+                      
+                      <div style={{
+                        background: 'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)',
+                        borderRadius: '20px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        color: 'white',
+                        position: 'relative'
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          top: '15px',
+                          right: '15px',
+                          background: '#00AA44',
+                          color: 'white',
+                          padding: '6px 12px',
+                          borderRadius: '20px',
+                          fontSize: '0.8rem',
+                          fontWeight: 'bold',
+                          transform: 'rotate(12deg)',
+                          boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+                        }}>
+                          RELIEF
+                        </div>
+                        <div className="text-4xl mb-4">👴</div>
+                        <div className="text-lg sm:text-xl font-bold mb-2">Social Security Tax Relief</div>
+                        <div className="text-sm sm:text-base mb-2">Protecting seniors' hard-earned income</div>
+                        <div style={{
+                          background: 'rgba(0,0,0,0.2)',
+                          padding: '8px 16px',
+                          borderRadius: '25px',
+                          marginTop: '10px',
+                          fontSize: '0.9rem',
+                          fontWeight: 'bold'
+                        }}>
+                          Senior Protection
+                        </div>
+                      </div>
+                      
+                      <div style={{
+                        background: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)',
+                        borderRadius: '20px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        color: 'white',
+                        position: 'relative'
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          top: '15px',
+                          right: '15px',
+                          background: '#00AA44',
+                          color: 'white',
+                          padding: '6px 12px',
+                          borderRadius: '20px',
+                          fontSize: '0.8rem',
+                          fontWeight: 'bold',
+                          transform: 'rotate(12deg)',
+                          boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+                        }}>
+                          EXTENDED
+                        </div>
+                        <div className="text-4xl mb-4">📊</div>
+                        <div className="text-lg sm:text-xl font-bold mb-2">Trump Tax Cuts Extended</div>
+                        <div className="text-sm sm:text-base mb-2">Continuing proven tax relief for families</div>
+                        <div style={{
+                          background: 'rgba(0,0,0,0.2)',
+                          padding: '8px 16px',
+                          borderRadius: '25px',
+                          marginTop: '10px',
+                          fontSize: '0.9rem',
+                          fontWeight: 'bold'
+                        }}>
+                          Lower Rates
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div style={{
+                      background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
+                      padding: '16px',
+                      textAlign: 'center',
+                      color: '#333',
+                      fontSize: '1.2rem',
+                      fontWeight: 'bold'
+                    }}>
+                      💵 REAL RELIEF FOR WORKING AMERICANS 💵
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            <p className="mb-4">
-              Minority Leader Hakeem Jeffries spoke for eight hours and 44 minutes, breaking a record for the longest House floor speech, desperately trying to delay the inevitable. Jeffries decried cuts to Medicaid and other provisions in the sweeping legislation and referred to the House floor as a "crime scene."
+            <p className="mb-4 break-words">
+              While Democrats screamed about the border provisions, they conveniently ignored the massive tax relief for working families.
             </p>
-            
-            <blockquote className="border-l-4 border-primary pl-4 italic text-lg text-primary mb-6">
-              "This bill is a deal with the devil. It explodes our national debt. It militarizes our entire economy. And it strips away health care and basic dignity of the American people," ranted New York Democratic Rep. Alexandria Ocasio-Cortez.
-            </blockquote>
-            
-            <p className="mb-6">Reality check: Democrats are panicking because this bill delivers real results for real Americans instead of funding their radical agenda.</p>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Secretary Noem: "Make America Safe Again!"</h2>
-            
-            {/* DHS Secretary Noem Image */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/6d3dfc36-c7a3-4174-987b-0a5aeec7bb0f.png" 
-                alt="DHS Secretary Kristi Noem at podium with DHS seal and American flag" 
-                className="w-full h-full object-cover object-top"
-              />
+
+            <div className="bg-accent/10 border border-accent p-4 sm:p-6 mb-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 break-words">Total Tax Relief Package: $85 Billion</h3>
+              <div className="grid grid-cols-1 gap-4">
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">No taxes on tips (service industry):</span>
+                  <span className="font-bold">$15 billion annually</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">No taxes on overtime pay:</span>
+                  <span className="font-bold">$25 billion annually</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2 border-b border-accent/20">
+                  <span className="font-medium text-primary break-words">Social Security tax elimination:</span>
+                  <span className="font-bold">$30 billion annually</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:justify-between py-2">
+                  <span className="font-medium text-primary break-words">Extended Trump tax cuts:</span>
+                  <span className="font-bold">$15 billion annually</span>
+                </div>
+              </div>
             </div>
             
-            <p className="mb-4">
-              "President Trump's signing the One Big Beautiful Bill is a win for law and order and the safety and security of the American people," said Secretary Kristi Noem. "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!"
-            </p>
-
-            <h3 className="text-xl font-semibold mb-3">Key Provisions Secretary Noem Highlighted:</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>$46.5 billion to complete construction of the border wall</li>
-              <li>$12 billion in state reimbursements for states that fought against the Biden administration's open border</li>
-              <li>$4.1 billion to hire additional CBP personnel, including 3,000 more customs officers and 3,000 new Border Patrol agents</li>
-              <li>$10,000 bonus for ICE and Border Patrol agents for the next four years</li>
-            </ul>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">The Real Story: Law and Order Returns</h2>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Six Months of Winning: The Trump Effect</h2>
-            
-            {/* Border Crossings Comparison Chart */}
-            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
-              {/* Header */}
-              <div 
-                className="text-white p-8 text-center relative overflow-hidden"
-                style={{
-                  background: 'linear-gradient(135deg, #c41e3a 0%, #8B0000 100%)',
-                }}
-              >
-                <div 
-                  className="absolute inset-0 opacity-30"
-                  style={{
-                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>')`,
-                  }}
+            {/* ICE Operations Image - Responsive */}
+            <div className="w-full mb-6">
+              <div className="h-48 sm:h-64 bg-muted rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/3c66ab31-6c36-41ce-9105-814c4b60e666.png" 
+                  alt="ICE agents conducting enforcement operation" 
+                  className="w-full h-full object-cover"
                 />
-                <h1 className="text-4xl font-bold mb-3 relative z-10">Border Crossings Comparison</h1>
-                <div className="text-xl opacity-90 relative z-10">Biden Peak vs Trump 2025 Results</div>
-              </div>
-              
-              {/* Comparison Container */}
-              <div className="bg-white p-10 flex flex-col lg:flex-row gap-10 relative">
-                {/* Biden Era */}
-                <div 
-                  className="flex-1 text-center rounded-3xl p-10 text-white relative overflow-hidden"
-                  style={{background: 'linear-gradient(135deg, #ff6b6b, #ff4757)'}}
-                >
-                  <div className="text-3xl font-bold mb-5 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    BIDEN ERA PEAK
-                  </div>
-                  <div className="text-6xl my-8 relative z-10">⬆️</div>
-                  <div className="text-6xl font-bold my-8 relative z-10 leading-tight" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.3)'}}>
-                    251,487
-                  </div>
-                  <div className="text-xl opacity-95 mb-5 relative z-10">Monthly Apprehensions</div>
-                  <div className="h-5 bg-white/20 rounded-full mb-5 overflow-hidden relative z-10">
-                    <div className="h-full bg-white/90 rounded-full w-full"></div>
-                  </div>
-                  <div className="border-t-2 border-white/30 pt-5 relative z-10">
-                    <div className="text-lg mb-2 opacity-90">Crisis-level crossings</div>
-                    <div className="text-lg opacity-90">Overwhelmed Border Patrol</div>
-                  </div>
-                </div>
-
-                {/* VS Divider */}
-                <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-black text-green-400 p-5 rounded-full text-3xl font-bold shadow-2xl hidden lg:block">
-                  VS
-                </div>
-
-                {/* Trump Era */}
-                <div 
-                  className="flex-1 text-center rounded-3xl p-10 text-white relative overflow-hidden"
-                  style={{background: 'linear-gradient(135deg, #2ed573, #1e90ff)'}}
-                >
-                  <div className="text-3xl font-bold mb-5 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    TRUMP 2025
-                  </div>
-                  <div className="text-6xl my-8 relative z-10">⬇️</div>
-                  <div className="text-6xl font-bold my-8 relative z-10 leading-tight" style={{textShadow: '3px 3px 6px rgba(0,0,0,0.3)'}}>
-                    6,000
-                  </div>
-                  <div className="text-xl opacity-95 mb-5 relative z-10">June 2025 Apprehensions</div>
-                  <div className="h-5 bg-white/20 rounded-full mb-5 overflow-hidden relative z-10">
-                    <div className="h-full bg-white/90 rounded-full" style={{width: '2.4%'}}></div>
-                  </div>
-                  <div className="bg-black/30 px-6 py-4 rounded-3xl text-2xl font-bold mb-5 relative z-10">
-                    -97.6% DECREASE
-                  </div>
-                  <div className="border-t-2 border-white/30 pt-5 relative z-10">
-                    <div className="text-lg mb-2 opacity-90">Lowest in decades</div>
-                    <div className="text-lg opacity-90">Zero parole releases</div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Source Note */}
-              <div className="bg-gray-50 p-5 text-center text-gray-600 italic border-t-2 border-gray-200">
-                Source: DHS Statistics & U.S. Border Patrol Preliminary Figures
               </div>
             </div>
             
-            <p className="mb-4">The results speak for themselves. In both May and June, U.S. Border Patrol reported zero parole releases—reinforcing the Administration's commitment to ending catch-and-release policies.</p>
-
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Trump's First Six Months By The Numbers:</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>The Trump administration has arrested more than 300,000 illegal aliens in 2025 alone. 70% of ICE arrests are criminal illegal aliens with criminal charges or convictions</li>
-                <li>Migrants are turning BACK before they even reach our border— migration through Panama's Darien Gap is down 99%</li>
-                <li>Slightly over 6,000 apprehensions in June, according to preliminary figures – compared to 251,487 monthly under Biden's peak</li>
-                <li>Border crossings earlier this year plunged to the lowest level in decades</li>
-              </ul>
-            </div>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Tax Relief for Working Americans</h2>
-            
-            {/* Tax Relief Graphic */}
-            <div className="w-full mb-6 overflow-hidden rounded-xl shadow-2xl">
-              {/* Header */}
-              <div 
-                className="text-white p-8 text-center relative overflow-hidden"
-                style={{
-                  background: 'linear-gradient(135deg, #2E8B57 0%, #228B22 100%)',
-                }}
-              >
-                <div 
-                  className="absolute inset-0 opacity-30"
-                  style={{
-                    backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dollars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><text x="10" y="15" text-anchor="middle" fill="rgba(255,255,255,0.1)" font-size="12">$</text></pattern></defs><rect width="100" height="100" fill="url(%23dollars)"/></svg>')`,
-                  }}
-                />
-                <h1 className="text-4xl font-bold mb-3 relative z-10">Tax Relief for Working Families</h1>
-                <div className="text-xl opacity-90 relative z-10">Keeping More Money in Your Pocket</div>
-              </div>
-              
-              {/* Benefits Grid */}
-              <div className="bg-white p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* No Taxes on Tips */}
-                <div 
-                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
-                  style={{background: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%)'}}
-                >
-                  <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
-                    0% TAX
-                  </div>
-                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
-                    💰
-                  </div>
-                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    No Taxes on Tips
-                  </div>
-                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
-                    Service workers keep 100% of their tips
-                  </div>
-                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
-                    Millions Benefit
-                  </div>
-                </div>
-
-                {/* No Taxes on Overtime */}
-                <div 
-                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
-                  style={{background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'}}
-                >
-                  <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
-                    0% TAX
-                  </div>
-                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
-                    ⏰
-                  </div>
-                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    No Taxes on Overtime
-                  </div>
-                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
-                    Hard work pays off with tax-free overtime pay
-                  </div>
-                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
-                    Rewards Work
-                  </div>
-                </div>
-
-                {/* Social Security Tax Relief */}
-                <div 
-                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
-                  style={{background: 'linear-gradient(135deg, #d299c2 0%, #fef9d7 100%)'}}
-                >
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
-                    RELIEF
-                  </div>
-                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
-                    👴
-                  </div>
-                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    Social Security Tax Relief
-                  </div>
-                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
-                    Protecting seniors' hard-earned income
-                  </div>
-                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
-                    Senior Protection
-                  </div>
-                </div>
-
-                {/* Trump Tax Cuts Extended */}
-                <div 
-                  className="rounded-3xl p-10 text-center text-white relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-white/20"
-                  style={{background: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)'}}
-                >
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10 transform rotate-12 shadow-lg">
-                    EXTENDED
-                  </div>
-                  <div className="w-28 h-28 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 text-6xl border-4 border-white/30 relative z-10">
-                    📊
-                  </div>
-                  <div className="text-2xl font-bold mb-4 relative z-10" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
-                    Trump Tax Cuts Extended
-                  </div>
-                  <div className="text-lg opacity-95 mb-5 font-medium relative z-10">
-                    Continuing proven tax relief for families
-                  </div>
-                  <div className="bg-black/20 px-6 py-3 rounded-3xl text-xl font-bold relative z-10">
-                    Lower Rates
-                  </div>
-                </div>
-              </div>
-              
-              {/* Bottom Banner */}
-              <div 
-                className="p-6 text-center text-gray-800 text-xl font-bold relative overflow-hidden"
-                style={{background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)'}}
-              >
-                <span className="relative z-10">💵 REAL RELIEF FOR WORKING AMERICANS 💵</span>
-              </div>
-            </div>
-            
-            <p className="mb-4">While Democrats screamed about the border provisions, they conveniently ignored the massive tax relief for working families:</p>
-
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li><strong className="text-primary">No taxes on tips</strong> – helping millions of service workers</li>
-              <li><strong className="text-primary">No taxes on overtime pay</strong> – rewarding hard work</li>
-              <li><strong className="text-primary">Social Security tax relief</strong> – protecting seniors' income</li>
-              <li><strong className="text-primary">Extension of Trump tax cuts</strong> – keeping more money in your pocket</li>
-            </ul>
-            
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Real Story: Law and Order Returns</h2>
-            
-            {/* ICE Operations Image */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
-              <img 
-                src="/lovable-uploads/3c66ab31-6c36-41ce-9105-814c4b60e666.png" 
-                alt="ICE agents conducting enforcement operation" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            
-            <p className="mb-4">
+            <p className="mb-4 break-words">
               President Trump—with $46.5 billion from the Big Beautiful Bill—is finishing the border wall. DHS already has more than 85 miles either planned or under construction with funding from the prior year, in addition to hundreds of miles that are now planned to be funded by the bill.
             </p>
 
-            <h3 className="text-xl font-semibold mb-3">What This Means for America:</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>ICE becomes the largest federal law enforcement agency</li>
-              <li>Criminal aliens can no longer hide in sanctuary cities</li>
-              <li>Drug cartels face unprecedented enforcement pressure</li>
-              <li>American communities become safer as criminals are removed</li>
-            </ul>
+            <div className="bg-accent/10 border border-accent p-4 sm:p-6 mb-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 break-words">What This Means for America:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li className="break-words">ICE becomes the largest federal law enforcement agency</li>
+                <li className="break-words">Criminal aliens can no longer hide in sanctuary cities</li>
+                <li className="break-words">Drug cartels face unprecedented enforcement pressure</li>
+                <li className="break-words">American communities become safer as criminals are removed</li>
+              </ul>
+            </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Bottom Line: America First Delivers</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">The Bottom Line: America First Delivers</h2>
             
-            <p className="mb-4">
+            <p className="mb-4 break-words">
               On this Independence Day, President Trump has given America its independence back – from open borders, from criminal aliens, from the radical left's agenda to transform our nation.
             </p>
             
-            <p className="mb-4">
+            <p className="mb-4 break-words">
               This isn't just a funding bill. It's a declaration that America will no longer be the world's doormat. It's a promise that our tax dollars will secure OUR borders, protect OUR communities, and serve OUR citizens.
             </p>
             
-            <p className="mb-4">
-              The establishment said it couldn't be done. The media said it was impossible. The Democrats tried everything to stop it.
-            </p>
+            <p className="mb-4 break-words">But Donald J. Trump delivered. Again.</p>
             
-            <p className="mb-4">But Donald J. Trump delivered. Again.</p>
-            
-            <p className="mb-6"><strong>Happy Independence Day, America. Your country is back.</strong></p>
+            <p className="mb-6 break-words"><strong>Happy Independence Day, America. Your country is back.</strong></p>
 
-            <div className="bg-primary text-primary-foreground p-6 rounded-lg text-center mt-8">
-              <p className="text-lg font-semibold">
+            <div className="bg-primary text-primary-foreground p-4 sm:p-6 rounded-lg text-center mt-8">
+              <p className="text-base sm:text-lg font-semibold break-words">
                 This historic victory must be defended. Share this truth with every American who cares about border security and the rule of law. The mainstream media won't tell this story – we must.
               </p>
             </div>
