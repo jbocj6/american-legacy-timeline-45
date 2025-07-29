@@ -132,7 +132,7 @@ const NewsPress = () => {
 
       {/* Article Modal */}
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto relative [&>button]:fixed [&>button]:top-4 [&>button]:right-4 [&>button]:z-50 [&>button]:bg-background [&>button]:border [&>button]:border-border [&>button]:rounded-full [&>button]:w-8 [&>button]:h-8 [&>button]:shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
               America First Foreign Policy: Trump Ends Billions in Wasteful Aid to Focus on Americans
@@ -277,7 +277,7 @@ const NewsPress = () => {
 
       {/* Second Article Modal */}
       <Dialog open={isSecondModalOpen} onOpenChange={setIsSecondModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden">{/* Added overflow-x-hidden */}
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6 overflow-x-hidden relative [&>button]:fixed [&>button]:top-4 [&>button]:right-4 [&>button]:z-50 [&>button]:bg-background [&>button]:border [&>button]:border-border [&>button]:rounded-full [&>button]:w-8 [&>button]:h-8 [&>button]:shadow-lg">{/* Added overflow-x-hidden */}
           <DialogHeader>
             <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight break-words px-2">
               Border Crisis SOLVED: Six Months of Trump Enforcement Delivers Historic Results
@@ -769,7 +769,7 @@ const NewsPress = () => {
 
       {/* Third Article Modal - Religious Freedom */}
       <Dialog open={isThirdModalOpen} onOpenChange={setIsThirdModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto relative [&>button]:fixed [&>button]:top-4 [&>button]:right-4 [&>button]:z-50 [&>button]:bg-background [&>button]:border [&>button]:border-border [&>button]:rounded-full [&>button]:w-8 [&>button]:h-8 [&>button]:shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
               Supreme Court Delivers: Maryland Parents Win Huge Religious Liberty Victory
@@ -1041,7 +1041,7 @@ const NewsPress = () => {
 
       {/* Fourth Article Modal - Big Beautiful Bill */}
       <Dialog open={isFourthModalOpen} onOpenChange={setIsFourthModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto relative [&>button]:fixed [&>button]:top-4 [&>button]:right-4 [&>button]:z-50 [&>button]:bg-background [&>button]:border [&>button]:border-border [&>button]:rounded-full [&>button]:w-8 [&>button]:h-8 [&>button]:shadow-lg">
           <DialogHeader>
             <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
               America First Wins: Trump Signs Historic $170B Big Beautiful Bill
