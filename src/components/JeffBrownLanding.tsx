@@ -900,25 +900,42 @@ const JeffBrownLanding = () => {
       
       {/* Sticky Button Container */}
       <div className="fixed bottom-4 left-4 right-4 z-50 bg-background/95 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 shadow-2xl shadow-black/20 md:hidden">
-        <div className="flex flex-col md:flex-row gap-1 md:gap-4">
-          <button 
-            onClick={() => setIsDonateModalOpen(true)}
-            className="donate-button"
-            style={{
-              background: 'linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent)) 100%)',
-              boxShadow: '0 0 60px hsl(var(--accent) / 0.5)',
-              transform: 'translateY(-2px)',
-              margin: '0.25rem 0',
-              width: '100%'
-            }}
-          >
-            DONATE NOW
-          </button>
+        <div className="flex flex-col gap-2">
+          {/* Top Row - Donate and Book buttons side by side */}
+          <div className="flex gap-2">
+            <button 
+              onClick={() => setIsDonateModalOpen(true)}
+              className="donate-button flex-1 whitespace-nowrap"
+              style={{
+                background: 'linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent)) 100%)',
+                boxShadow: '0 0 60px hsl(var(--accent) / 0.5)',
+                transform: 'translateY(-2px)',
+                minHeight: '44px'
+              }}
+            >
+              DONATE NOW
+            </button>
+            <button 
+              className="donate-button flex-1 whitespace-nowrap" 
+              style={{
+                background: 'hsl(var(--destructive))', 
+                color: 'white', 
+                border: '2px solid hsl(var(--destructive))', 
+                boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)',
+                minHeight: '44px'
+              }}
+              onClick={() => document.getElementById('book-section')?.scrollIntoView({behavior: 'smooth'})}
+            >
+              READ JEFF'S BOOK
+            </button>
+          </div>
+          
+          {/* Bottom Row - One-on-one button full width */}
           <a 
             href="https://calendly.com/bhogan-revgenengines/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="donate-button"
+            className="donate-button whitespace-nowrap"
             style={{
               background: 'white', 
               color: 'black', 
@@ -928,8 +945,8 @@ const JeffBrownLanding = () => {
               display: 'inline-flex', 
               alignItems: 'center', 
               justifyContent: 'center',
-              margin: '0.25rem 0',
-              width: '100%'
+              width: '100%',
+              minHeight: '44px'
             }}
           >
             BOOK A ONE-ON-ONE
