@@ -36,7 +36,7 @@ const Navigation = () => {
       {/* Top red bar */}
       <div className="bg-primary border-b border-primary-foreground/10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="flex items-center h-20">
+          <div className="flex items-center h-20 md:justify-start justify-center relative">
             {/* Logo/Brand */}
             <a href="#" onClick={e => {
             e.preventDefault();
@@ -44,7 +44,7 @@ const Navigation = () => {
               top: 0,
               behavior: 'smooth'
             });
-          }} className="flex-shrink-0 cursor-pointer">
+          }} className="flex-shrink-0 cursor-pointer md:static absolute">
               <img src="/lovable-uploads/b76dd5c2-3af3-42e7-bd95-b1af7f688d5e.png" alt="JBJ6 - Jeff Brown for Congress" className="h-12 w-auto" />
             </a>
 
