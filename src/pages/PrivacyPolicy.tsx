@@ -8,9 +8,11 @@ const PrivacyPolicy = () => {
         {/* Header */}
         <div className="bg-gradient-to-r from-primary to-red-600 px-6 py-8 text-center">
           <div className="flex items-center justify-center mb-4">
-            <div className="bg-background p-3 rounded-full">
-              <div className="text-2xl font-bold text-primary">JB</div>
-            </div>
+            <img 
+              src="/lovable-uploads/b76dd5c2-3af3-42e7-bd95-b1af7f688d5e.png" 
+              alt="JBJ6 - Jeff Brown" 
+              className="h-16 w-auto" 
+            />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Privacy Policy</h1>
           <p className="text-blue-100 text-lg">Jeff Brown J6</p>
