@@ -109,7 +109,9 @@ const JeffBrownLanding = () => {
       {/* Campaign Banner */}
       <div className="campaign-banner">
         <div className="max-w-4xl mx-auto">
-          <span className="text-sm">STAND WITH JUSTICE • SUPPORT CONSTITUTIONAL RIGHTS</span>
+          <span className="text-sm">
+            <span className="max-md:hidden">STAND WITH JUSTICE • </span>SUPPORT CONSTITUTIONAL RIGHTS
+          </span>
         </div>
       </div>
 
