@@ -973,13 +973,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What This Means for Your Children</h2>
             
-            {/* Classroom Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>Elementary school classroom with traditional learning materials</p>
-                <p className="text-sm mt-2">Source needed - Education stock photo</p>
-              </div>
+            {/* Classroom Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/becbcb37-a11e-42ac-94de-113133641d3d.png" 
+                alt="Elementary school children studying together with learning materials" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">Parents across America now have clear Supreme Court precedent protecting their rights:</p>
