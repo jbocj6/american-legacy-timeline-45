@@ -920,7 +920,7 @@ const JeffBrownLanding = () => {
       />
       
       {/* Sticky Button Container */}
-      <div className="fixed bottom-4 left-4 right-4 z-50 bg-background/95 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 shadow-2xl shadow-black/20 md:hidden">
+      <div className="fixed bottom-4 left-4 right-4 z-50 bg-background/80 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 shadow-2xl shadow-black/20 md:hidden">
         <div className="flex flex-col gap-2">
           {/* Top Row - Donate and Book buttons side by side */}
           <div className="flex gap-2">
