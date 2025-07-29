@@ -1361,13 +1361,13 @@ const NewsPress = () => {
             
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Secretary Noem: "Make America Safe Again!"</h2>
             
-            {/* DHS Seal Image Placeholder */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
-              <div className="text-center text-muted-foreground p-8">
-                <p className="text-lg font-semibold mb-2">[IMAGE NEEDED]</p>
-                <p>DHS Secretary Kristi Noem at podium with DHS seal and American flag</p>
-                <p className="text-sm mt-2">Source needed - DHS Photo</p>
-              </div>
+            {/* DHS Secretary Noem Image */}
+            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+              <img 
+                src="/lovable-uploads/6d3dfc36-c7a3-4174-987b-0a5aeec7bb0f.png" 
+                alt="DHS Secretary Kristi Noem at podium with DHS seal and American flag" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             <p className="mb-4">
