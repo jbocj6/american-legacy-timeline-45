@@ -129,10 +129,10 @@ const JeffBrownLanding = () => {
         <div className="absolute bottom-[20%] left-[5%] z-40 
                         md:bottom-[20%] md:left-[5%]
                         max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
-          <h1 className="text-9xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
-                         md:text-9xl md:mb-4
-                         max-md:text-5xl max-md:mb-2 max-md:tracking-wider
-                         max-sm:text-4xl max-sm:mb-1 max-sm:tracking-wide">
+          <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
+                         md:text-8xl md:mb-4
+                         max-md:text-3xl max-md:mb-2 max-md:tracking-wider
+                         max-sm:text-2xl max-sm:mb-1 max-sm:tracking-wide">
             Jeff Brown
           </h1>
           <p className="subtitle font-mono uppercase tracking-widest text-white drop-shadow-lg
