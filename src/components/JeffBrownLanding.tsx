@@ -180,37 +180,6 @@ const JeffBrownLanding = () => {
             <div>PATRIOT • PROVEN LEADER</div>
             <div>AMERICA FIRST</div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8
-                          md:lg:flex-row md:lg:gap-3 md:lg:mt-6
-                          lg:flex-row lg:gap-4 lg:mt-8
-                          max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
-                          hero-buttons-mobile">
-            <button onClick={() => setIsDonateModalOpen(true)} className="donate-button max-md:w-64 max-md:py-2 max-md:text-sm max-md:-mb-2">
-              DONATE NOW
-            </button>
-            <a href="https://calendly.com/bhogan-revgenengines/30min" target="_blank" rel="noopener noreferrer" className="donate-button max-md:w-64 max-md:py-2 max-md:text-sm max-md:-mb-2" style={{
-            background: 'white',
-            color: 'black',
-            border: '2px solid white',
-            boxShadow: '0 0 20px rgba(255,255,255,0.2)',
-            textDecoration: 'none',
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-              BOOK A ONE-ON-ONE
-            </a>
-            <button className="donate-button max-md:w-64 max-md:py-2 max-md:text-sm" style={{
-            background: 'hsl(var(--destructive))',
-            color: 'white',
-            border: '2px solid hsl(var(--destructive))',
-            boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)'
-          }} onClick={() => document.getElementById('book-section')?.scrollIntoView({
-            behavior: 'smooth'
-          })}>
-              READ JEFF'S BOOK
-            </button>
-          </div>
         </div>
         
         {/* Social Media Icons - Lower Right Corner */}
