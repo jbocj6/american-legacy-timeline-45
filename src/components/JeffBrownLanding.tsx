@@ -438,7 +438,7 @@ const JeffBrownLanding = () => {
             <div 
               id="mobile-timeline-line" 
               className="absolute left-1/2 transform -translate-x-1/2 top-8 w-0.5 md:hidden border-l-2 border-dotted border-destructive opacity-0 transition-all duration-300 ease-out"
-              style={{ height: '0%', zIndex: 1 }}
+              style={{ height: '0%', zIndex: 5 }}
             ></div>
             
             {/* Timeline items */}
