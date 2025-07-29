@@ -144,7 +144,7 @@ const NewsPress = () => {
           
           <div className="prose prose-lg max-w-none text-foreground">
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Death of USAID: Taxpayers Finally Win</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Death of USAID: Taxpayers Finally Win</h2>
             
             {/* Hero Image */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
@@ -163,7 +163,7 @@ const NewsPress = () => {
               "President Trump stated clearly that the United States is no longer going to blindly dole out money with no return for the American people. Reviewing and realigning foreign assistance on behalf of hardworking taxpayers is not just the right thing to do, it is a moral imperative." - State Department Spokesperson Tammy Bruce
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Shocking Truth About Your Tax Dollars</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Shocking Truth About Your Tax Dollars</h2>
             
             {/* Foreign Aid Breakdown Infographic */}
             <div className="w-full mb-6 relative overflow-hidden rounded-xl" style={{
@@ -253,7 +253,7 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Secretary Rubio's America First Revolution</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Secretary Rubio's America First Revolution</h2>
             
             {/* Rubio Image */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
