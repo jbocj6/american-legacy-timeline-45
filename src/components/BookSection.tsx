@@ -55,7 +55,7 @@ const BookSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 max-md:mb-8">
           {/* Book Cover/Info */}
           <div className="relative">
             {/* Book Cover Image */}
