@@ -310,7 +310,7 @@ const JeffBrownLanding = () => {
                           max-sm:text-3xl max-sm:mb-3">
               Reforms Needed
             </h2>
-            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 max-md:mb-4
+            <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 max-md:!mb-4
                          max-md:text-lg max-md:leading-relaxed
                          max-sm:text-base max-sm:leading-normal">
               Restoring constitutional governance and ending political persecution
