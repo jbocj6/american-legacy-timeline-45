@@ -695,7 +695,7 @@ const JeffBrownLanding = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="donate-button max-sm:w-[280px]"
-              style={{background: 'hsl(var(--destructive))', color: 'white', border: '2px solid hsl(var(--destructive))', boxShadow: '0 0 20px hsl(var(--destructive) / 0.3)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
+              style={{background: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.3)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
             >
               BOOK A ONE-ON-ONE
             </a>
