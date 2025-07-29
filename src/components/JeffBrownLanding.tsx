@@ -337,7 +337,7 @@ const JeffBrownLanding = () => {
                 <AccordionItem 
                   key={index} 
                   value={`reform-${index}`}
-                  className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl px-4 data-[state=open]:bg-background/90 transition-all duration-300"
+                  className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl px-4 data-[state=open]:bg-background/90 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.3)]"
                 >
                   <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left max-md:!text-sm [&[data-state=open]>svg]:rotate-180">
                     <div className="flex items-center gap-3">
