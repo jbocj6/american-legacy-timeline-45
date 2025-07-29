@@ -86,8 +86,8 @@ const Navigation = () => {
                     {item.name}
                   </a>)}
               </div>
-              <div className="flex justify-end mt-6">
-                <button onClick={() => setIsDonateModalOpen(true)} className="bg-accent hover:bg-accent/90 text-accent-foreground py-4 px-8 rounded font-mono font-bold text-lg transition-all duration-200 uppercase tracking-widest">
+              <div className="mt-6">
+                <button onClick={() => setIsDonateModalOpen(true)} className="bg-accent hover:bg-accent/90 text-accent-foreground py-3 px-6 rounded font-inter font-bold text-lg transition-all duration-200 uppercase tracking-widest w-full text-right">
                   Donate
                 </button>
               </div>
