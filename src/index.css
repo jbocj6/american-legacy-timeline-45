@@ -363,6 +363,7 @@ All colors MUST be HSL.
       display: none !important;
     }
   }
+  }
 
   @media (max-width: 480px) {
     .donate-button {
