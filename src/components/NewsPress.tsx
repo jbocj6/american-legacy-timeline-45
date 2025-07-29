@@ -910,7 +910,7 @@ const NewsPress = () => {
             <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Why This Victory Matters for Every American Parent</h2>
             
             {/* Parental Rights Infographic */}
-            <div className="w-full max-w-6xl mx-auto h-[550px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
+            <div className="w-full max-w-6xl mx-auto min-h-[400px] sm:min-h-[500px] lg:h-[550px] bg-gradient-to-br from-blue-800 via-blue-500 via-red-500 to-red-600 rounded-3xl relative overflow-hidden shadow-2xl flex flex-col mb-6">
               {/* Background Stars Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="w-full h-full bg-repeat" style={{backgroundImage: "radial-gradient(circle at 50% 50%, white 1px, transparent 1px)", backgroundSize: "20px 20px"}}></div>
@@ -918,44 +918,44 @@ const NewsPress = () => {
               
               
               {/* Header */}
-              <div className="text-center p-8 pb-5 relative z-10">
-                <h1 className="text-5xl font-bold mb-3 text-white drop-shadow-lg">
+              <div className="text-center p-4 sm:p-6 lg:p-8 pb-3 sm:pb-4 lg:pb-5 relative z-10">
+                <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 sm:mb-3 text-white drop-shadow-lg leading-tight">
                   PARENTAL RIGHTS PROTECTED
                 </h1>
-                <p className="text-xl text-white/90">
+                <p className="text-sm sm:text-lg lg:text-xl text-white/90">
                   Constitutional Freedoms Reaffirmed by the Supreme Court
                 </p>
               </div>
 
               {/* Content Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 pb-16 flex-1 relative z-10">
-                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
-                  <div className="text-4xl mb-2 drop-shadow-md text-yellow-300">✝️</div>
-                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Religious Upbringing</div>
-                  <div className="text-base text-white/90 leading-snug">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-10 pb-8 sm:pb-12 lg:pb-16 flex-1 relative z-10">
+                <div className="bg-white/15 backdrop-blur-sm py-3 sm:py-4 px-3 sm:px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[140px] sm:min-h-[160px] lg:min-h-[180px]">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl mb-1 sm:mb-2 drop-shadow-md text-yellow-300">✝️</div>
+                  <div className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 drop-shadow-md">Religious Upbringing</div>
+                  <div className="text-sm sm:text-base text-white/90 leading-snug">
                     Parents have the fundamental right to direct their children's religious development without government interference
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
-                  <div className="text-4xl mb-2 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
-                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Moral Education</div>
-                  <div className="text-base text-white/90 leading-snug">
+                <div className="bg-white/15 backdrop-blur-sm py-3 sm:py-4 px-3 sm:px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[140px] sm:min-h-[160px] lg:min-h-[180px]">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl mb-1 sm:mb-2 drop-shadow-md text-green-400">👨‍👩‍👧‍👦</div>
+                  <div className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 drop-shadow-md">Moral Education</div>
+                  <div className="text-sm sm:text-base text-white/90 leading-snug">
                     Families, not bureaucrats, are the primary educators responsible for instilling values and moral principles
                   </div>
                 </div>
 
-                <div className="bg-white/15 backdrop-blur-sm py-2 px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[180px]">
-                  <div className="text-4xl mb-2 drop-shadow-md text-red-400">📚</div>
-                  <div className="text-xl font-bold text-white mb-2 drop-shadow-md">Curriculum Oversight</div>
-                  <div className="text-base text-white/90 leading-snug">
+                <div className="bg-white/15 backdrop-blur-sm py-3 sm:py-4 px-3 sm:px-4 rounded-2xl border-2 border-white/20 text-center flex flex-col justify-center hover:transform hover:-translate-y-3 transition-all duration-300 hover:shadow-xl min-h-[140px] sm:min-h-[160px] lg:min-h-[180px]">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl mb-1 sm:mb-2 drop-shadow-md text-red-400">📚</div>
+                  <div className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2 drop-shadow-md">Curriculum Oversight</div>
+                  <div className="text-sm sm:text-base text-white/90 leading-snug">
                     Parents must be notified and given opt-out rights when content conflicts with their religious beliefs
                   </div>
                 </div>
               </div>
 
               {/* Victory Banner */}
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-8 py-3 rounded-full text-xl font-bold drop-shadow-md border-2 border-white/30 animate-pulse">
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-green-500/90 text-white px-3 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg lg:text-xl font-bold drop-shadow-md border-2 border-white/30 animate-pulse">
                 CONSTITUTIONAL RIGHTS UPHELD
               </div>
             </div>
