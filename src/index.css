@@ -1050,8 +1050,8 @@ All colors MUST be HSL.
   }
 
   footer .qr-card img {
-    width: 120px !important;
-    height: 120px !important;
+    width: 240px !important;
+    height: 240px !important;
   }
 
   /* Social media mobile spacing */
@@ -1199,8 +1199,8 @@ All colors MUST be HSL.
 
   /* Footer QR codes extra small */
   footer .qr-card img {
-    width: 100px !important;
-    height: 100px !important;
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 
