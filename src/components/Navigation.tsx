@@ -75,7 +75,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 z-50 animate-fade-in">
+        {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 z-50 transition-all duration-300 ease-out animate-in slide-in-from-top-2">
             <div className="px-6 pt-4 pb-6" style={{backgroundColor: 'rgba(220, 38, 38, 0.6)'}} >
               <div className="space-y-3 text-right mx-0">
                 {navItems.map(item => <a key={item.name} href={item.href} onClick={e => {
