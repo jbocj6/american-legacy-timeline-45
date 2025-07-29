@@ -97,6 +97,36 @@ const JeffBrownLanding = () => {
     }
   ];
 
+  const policyData = [
+    {
+      title: "Constitutional Rights",
+      description: "Defending First and Second Amendment freedoms against government overreach and protecting individual liberties.",
+      icon: (
+        <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      )
+    },
+    {
+      title: "Election Integrity",
+      description: "Ensuring secure, transparent elections and restoring trust in our democratic process through accountability.",
+      icon: (
+        <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+    {
+      title: "Economic Freedom",
+      description: "Reducing government regulation and empowering American workers and businesses to thrive and prosper.",
+      icon: (
+        <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      )
+    }
+  ];
+
   const reformData = [
     {
       title: "Justice System Reform",
@@ -531,36 +561,42 @@ const JeffBrownLanding = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+          {/* Desktop version - Cards */}
+          <div className="hidden md:grid md:grid-cols-3 gap-6 mb-12">
+            {policyData.map((policy, index) => (
+              <div key={index} className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  {policy.icon}
+                </div>
+                <h3 className="text-xl font-space font-semibold text-foreground mb-4">{policy.title}</h3>
+                <p className="text-muted-foreground font-inter leading-relaxed">{policy.description}</p>
               </div>
-              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Constitutional Rights</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Defending First and Second Amendment freedoms against government overreach and protecting individual liberties.</p>
-            </div>
+            ))}
+          </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Election Integrity</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Ensuring secure, transparent elections and restoring trust in our democratic process through accountability.</p>
-            </div>
-
-            <div className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:border-primary/40 hover:bg-background/90 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-space font-semibold text-foreground mb-4">Economic Freedom</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Reducing government regulation and empowering American workers and businesses to thrive and prosper.</p>
-            </div>
+          {/* Mobile version - Accordion */}
+          <div className="md:hidden mb-12">
+            <Accordion type="multiple" className="space-y-4">
+              {policyData.map((policy, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`policy-${index}`}
+                  className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-xl px-4 data-[state=open]:bg-background/90 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                >
+                  <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left max-md:!text-sm [&[data-state=open]>svg]:rotate-180">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                        {policy.icon}
+                      </div>
+                      {policy.title}
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-4">
+                    <p className="text-muted-foreground font-inter leading-relaxed ml-11">{policy.description}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
 
           <div className="text-center">
