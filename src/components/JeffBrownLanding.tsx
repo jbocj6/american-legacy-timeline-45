@@ -6,6 +6,7 @@ import IssuesCards from './IssuesCards';
 import NewsPress from './NewsPress';
 import GetInvolvedHub from './GetInvolvedHub';
 import DonateModal from './DonateModal';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 
 const JeffBrownLanding = () => {
@@ -94,6 +95,54 @@ const JeffBrownLanding = () => {
       title: "The Victory",
       description: "America First policies for working families",
       image: "/lovable-uploads/b5330b6e-db80-432c-964c-db835cb95315.png",
+    }
+  ];
+
+  const reformData = [
+    {
+      title: "Justice System Reform",
+      description: "End weaponized prosecutions and restore impartial justice for all Americans",
+      icon: (
+        <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+        </svg>
+      )
+    },
+    {
+      title: "Media Accountability",
+      description: "Combat misinformation campaigns and restore honest journalism",
+      icon: (
+        <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+        </svg>
+      )
+    },
+    {
+      title: "Government Transparency",
+      description: "Release all suppressed January 6th evidence and government communications",
+      icon: (
+        <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      )
+    },
+    {
+      title: "Election Integrity",
+      description: "Address constitutional violations and ensure secure, transparent elections",
+      icon: (
+        <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+    {
+      title: "Federal Agency Reform",
+      description: "Prevent weaponization of federal agencies against American citizens and restore constitutional boundaries",
+      icon: (
+        <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      )
     }
   ];
 
@@ -268,63 +317,42 @@ const JeffBrownLanding = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 
-                          max-md:grid-cols-1 max-md:gap-4">
-            {/* Reform cards - Mobile optimized */}
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
-                           max-md:p-4">
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
+          {/* Desktop version - Cards */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {reformData.map((reform, index) => (
+              <div key={index} className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center">
+                <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  {reform.icon}
+                </div>
+                <h3 className="text-lg font-space font-semibold text-foreground mb-3">{reform.title}</h3>
+                <p className="text-muted-foreground font-inter leading-relaxed">{reform.description}</p>
               </div>
-              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Justice System Reform</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">End weaponized prosecutions and restore impartial justice for all Americans</p>
-            </div>
+            ))}
+          </div>
 
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
-                           max-md:p-4">
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Media Accountability</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Combat misinformation campaigns and restore honest journalism</p>
-            </div>
-
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
-                           max-md:p-4">
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Government Transparency</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Release all suppressed January 6th evidence and government communications</p>
-            </div>
-
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
-                           max-md:p-4">
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Election Integrity</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Address constitutional violations and ensure secure, transparent elections</p>
-            </div>
-
-            <div className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-destructive/40 hover:bg-background/90 text-center
-                           max-md:p-4">
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <svg className="w-6 h-6 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-space font-semibold text-foreground mb-3">Federal Agency Reform</h3>
-              <p className="text-muted-foreground font-inter leading-relaxed">Prevent weaponization of federal agencies against American citizens and restore constitutional boundaries</p>
-            </div>
+          {/* Mobile version - Accordion */}
+          <div className="md:hidden mb-8">
+            <Accordion type="multiple" className="space-y-4">
+              {reformData.map((reform, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`reform-${index}`}
+                  className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl px-4 data-[state=open]:bg-background/90 transition-all duration-300"
+                >
+                  <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left max-md:!text-base [&[data-state=open]>svg]:rotate-180">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-destructive/10 rounded-lg flex items-center justify-center">
+                        {reform.icon}
+                      </div>
+                      {reform.title}
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-4">
+                    <p className="text-muted-foreground font-inter leading-relaxed ml-11">{reform.description}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
 
         </div>
