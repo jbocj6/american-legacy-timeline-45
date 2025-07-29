@@ -783,7 +783,9 @@ const JeffBrownLanding = () => {
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm">
             <a 
-              href="#" 
+              href="/terms-conditions" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors duration-200 underline underline-offset-4"
             >
               Terms & Conditions
