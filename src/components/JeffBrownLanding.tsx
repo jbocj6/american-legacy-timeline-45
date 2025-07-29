@@ -339,7 +339,7 @@ const JeffBrownLanding = () => {
                   value={`reform-${index}`}
                   className="bg-background/80 backdrop-blur-sm border border-destructive/20 rounded-xl px-4 data-[state=open]:bg-background/90 transition-all duration-300"
                 >
-                  <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left max-md:!text-base [&[data-state=open]>svg]:rotate-180">
+                  <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left max-md:!text-sm [&[data-state=open]>svg]:rotate-180">
                     <div className="flex items-center gap-3">
                       <div className="w-8 h-8 bg-destructive/10 rounded-lg flex items-center justify-center">
                         {reform.icon}
