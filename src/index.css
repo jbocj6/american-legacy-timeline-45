@@ -357,6 +357,11 @@ All colors MUST be HSL.
       min-height: 44px; /* Touch-friendly minimum */
       letter-spacing: 0.05em;
     }
+    
+    /* Hide desktop hero buttons on mobile */
+    .desktop-hero-buttons {
+      display: none !important;
+    }
   }
 
   @media (max-width: 480px) {
