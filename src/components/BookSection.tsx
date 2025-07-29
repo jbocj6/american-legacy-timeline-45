@@ -118,7 +118,7 @@ const BookSection = () => {
                     value={`item-${index}`}
                     className="bg-white/5 backdrop-blur-sm border-l-4 border-l-accent rounded-lg px-4 data-[state=open]:bg-white/10 transition-all duration-300"
                   >
-                    <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left [&[data-state=open]>svg]:rotate-180">
+                    <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4 text-left text-base [&[data-state=open]>svg]:rotate-180">
                       {excerpt.title}
                     </AccordionTrigger>
                     <AccordionContent className="pb-4">
