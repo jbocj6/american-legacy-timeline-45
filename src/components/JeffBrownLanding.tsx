@@ -143,7 +143,7 @@ const JeffBrownLanding = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 
                           md:flex-row md:gap-4 md:mt-8
-                          max-md:flex-col max-md:gap-[2px] max-md:mt-1 max-md:items-center
+                          max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
