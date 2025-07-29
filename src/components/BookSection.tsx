@@ -58,7 +58,7 @@ const BookSection = () => {
           {/* Book Cover/Info */}
           <div className="relative">
             {/* Book Cover Image */}
-            <div className="mb-6 max-md:mb-3 text-center">
+            <div className="mb-6 text-center">
               <img 
                 src="/lovable-uploads/460c33af-a326-4ef8-9005-ce664b3eb18b.png" 
                 alt="The January 6th Truth Book Cover" 
