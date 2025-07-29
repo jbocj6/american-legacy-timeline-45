@@ -399,32 +399,38 @@ const JeffBrownLanding = () => {
             {/* Desktop: Central vertical line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
-            {/* Mobile: Animated red dotted line connecting first to last date */}
-            <div 
-              className="absolute left-1/2 transform -translate-x-1/2 w-1 md:hidden z-0"
-              style={{ 
-                top: '80px',
-                height: 'calc(100% - 160px)',
-                background: 'repeating-linear-gradient(to bottom, #ef4444 0px, #ef4444 4px, transparent 4px, transparent 8px)',
-                maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
-                animation: 'drawLine 3s ease-in-out forwards',
-                animationDelay: '2s'
-              }}
-            ></div>
+            {/* Mobile: Animated treasure trail line */}
+            <svg 
+              className="absolute inset-0 w-full h-full md:hidden z-[-1]"
+              viewBox="0 0 400 1000"
+              preserveAspectRatio="none"
+            >
+              <path
+                id="treasure-trail"
+                d="M200,60 Q180,120 200,180 Q220,240 200,300 Q180,360 200,420 Q220,480 200,540 Q180,600 200,660 Q220,720 200,780 Q180,840 200,900"
+                stroke="#dc2626"
+                strokeWidth="4"
+                fill="none"
+                strokeLinecap="round"
+                strokeDasharray="8 4"
+                strokeDashoffset="1000"
+                className="animate-drawTreasureTrail"
+                style={{ animationDelay: '2s' }}
+              />
+            </svg>
             
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
               {timelineEvents.map((event, index) => (
-                <div 
-                  key={event.year}
-                  className={`timeline-item relative animate-fade-in
-                    md:flex md:items-center
-                    ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}
-                    flex flex-col
-                  `}
-                  style={{animationDelay: `${index * 0.3 + 1.8}s`}}
-                >
+                 <div 
+                   key={event.year}
+                   className={`timeline-item relative animate-fade-in z-10
+                     md:flex md:items-center
+                     ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}
+                     flex flex-col
+                   `}
+                   style={{animationDelay: `${index * 0.3 + 1.8}s`}}
+                 >
                   {/* Desktop timeline dot */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-primary to-accent rounded-full border-4 border-background shadow-xl z-10 hidden md:block hover:scale-125 transition-transform duration-300">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-ping opacity-30"></div>
