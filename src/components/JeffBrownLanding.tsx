@@ -230,10 +230,10 @@ const JeffBrownLanding = () => {
             <div>PATRIOT • PROVEN LEADER</div>
             <div>AMERICA FIRST</div>
           </div>
-          <div className="md:flex md:flex-col md:sm:flex-row md:gap-4 md:mt-8
+          <div className="flex flex-col sm:flex-row gap-4 mt-8
                           md:lg:flex-row md:lg:gap-3 md:lg:mt-6
                           lg:flex-row lg:gap-4 lg:mt-8
-                          max-md:fixed max-md:bottom-5 max-md:left-4 max-md:right-4 max-md:z-[100] max-md:bg-background/90 max-md:backdrop-blur-sm max-md:border max-md:border-border/50 max-md:rounded-xl max-md:p-4 max-md:shadow-xl max-md:flex max-md:flex-col max-md:gap-2 max-md:h-auto
+                          max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
@@ -605,7 +605,7 @@ const JeffBrownLanding = () => {
         <section className="relative py-24 lg:py-6 px-8 overflow-hidden">
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-8 lg:mb-4 md:mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <div className="inline-flex items-center gap-3 mb-6">
               <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
