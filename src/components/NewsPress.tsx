@@ -277,9 +277,9 @@ const NewsPress = () => {
 
       {/* Second Article Modal */}
       <Dialog open={isSecondModalOpen} onOpenChange={setIsSecondModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto px-4 sm:px-6">{/* Added responsive padding */}
           <DialogHeader>
-            <DialogTitle className="text-3xl font-space font-bold text-foreground mb-2 text-center">
+            <DialogTitle className="text-2xl sm:text-3xl font-space font-bold text-foreground mb-2 text-center leading-tight">
               Border Crisis SOLVED: Six Months of Trump Enforcement Delivers Historic Results
             </DialogTitle>
             <div className="text-center text-muted-foreground font-inter mb-4">
@@ -290,18 +290,38 @@ const NewsPress = () => {
           <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
-            {/* Hero Images - Side by Side */}
-            <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex">
-              <img 
-                src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png" 
-                alt="People by river border area" 
-                className="w-1/2 h-full object-cover"
-              />
-              <img 
-                src="/lovable-uploads/cf66cf87-7033-496f-b442-053dc512ccbc.png" 
-                alt="Border wall with surveillance" 
-                className="w-1/2 h-full object-cover"
-              />
+            {/* Hero Images - Responsive Layout */}
+            <div className="w-full mb-6">
+              {/* Mobile: Stack vertically */}
+              <div className="sm:hidden space-y-3">
+                <div className="h-48 bg-muted rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png" 
+                    alt="People by river border area" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="h-48 bg-muted rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/cf66cf87-7033-496f-b442-053dc512ccbc.png" 
+                    alt="Border wall with surveillance" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              {/* Desktop: Side by side */}
+              <div className="hidden sm:flex h-80 bg-muted rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/822dda10-5afc-4653-af72-7ddeb4df6c96.png" 
+                  alt="People by river border area" 
+                  className="w-1/2 h-full object-cover"
+                />
+                <img 
+                  src="/lovable-uploads/cf66cf87-7033-496f-b442-053dc512ccbc.png" 
+                  alt="Border wall with surveillance" 
+                  className="w-1/2 h-full object-cover"
+                />
+              </div>
             </div>
             
             <p className="mb-4">
@@ -312,25 +332,49 @@ const NewsPress = () => {
               "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!" - DHS Secretary Kristi Noem
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">The Numbers That Prove Trump's Success</h2>
             
-            {/* Statistics Chart */}
-            <div className="w-full bg-gradient-to-br from-blue-900 via-blue-700 via-blue-500 to-red-400 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
+            {/* Statistics Chart - Mobile Optimized */}
+            <div className="w-full bg-gradient-to-br from-blue-900 via-blue-700 via-blue-500 to-red-400 p-4 sm:p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10" style={{
                 backgroundImage: `url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='stars' patternUnits='userSpaceOnUse' width='15' height='15'><circle cx='7.5' cy='7.5' r='0.8' fill='white' opacity='0.1'/></pattern></defs><rect width='100' height='100' fill='url(%23stars)'/></svg>")`
               }} />
               
               <div className="relative z-10">
-                <div className="text-center mb-10">
-                  <h1 className="text-5xl font-bold mb-3 drop-shadow-lg">BORDER CROSSINGS COMPARISON</h1>
-                  <p className="text-xl opacity-90 mb-4">Monthly Border Encounters: Biden Peak vs Trump Results</p>
-                  <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full inline-block border border-white/30">
+                <div className="text-center mb-6 sm:mb-10">
+                  <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-3 drop-shadow-lg">BORDER CROSSINGS COMPARISON</h1>
+                  <p className="text-sm sm:text-xl opacity-90 mb-2 sm:mb-4">Monthly Border Encounters: Biden Peak vs Trump Results</p>
+                  <div className="bg-white/20 backdrop-blur-md px-2 sm:px-4 py-1 sm:py-2 rounded-full inline-block border border-white/30 text-xs sm:text-base">
                     Source: DHS Data
                   </div>
                 </div>
 
-                <div className="flex justify-center items-end gap-16 my-10 h-80">
+                {/* Mobile: Stacked layout */}
+                <div className="sm:hidden space-y-6 my-6">
+                  <div className="flex flex-col items-center">
+                    <div className="text-center mb-3">
+                      <div className="text-lg font-bold text-yellow-300 drop-shadow animate-pulse">251,487</div>
+                      <div className="w-24 h-32 bg-gradient-to-t from-red-500 to-red-600 rounded-t-lg shadow-xl mx-auto mt-2"></div>
+                    </div>
+                    <div className="text-lg font-bold text-center">Biden Peak</div>
+                    <div className="text-sm opacity-80">December 2023</div>
+                  </div>
+                  
+                  <div className="text-center text-3xl text-yellow-300 drop-shadow-lg">↓</div>
+                  
+                  <div className="flex flex-col items-center">
+                    <div className="text-center mb-3">
+                      <div className="text-lg font-bold text-yellow-300 drop-shadow">6,000</div>
+                      <div className="w-24 h-2 bg-gradient-to-t from-green-500 to-green-400 rounded-t-lg shadow-xl mx-auto mt-2"></div>
+                    </div>
+                    <div className="text-lg font-bold text-center">Trump Result</div>
+                    <div className="text-sm opacity-80">July 2025</div>
+                  </div>
+                </div>
+
+                {/* Desktop: Side by side layout */}
+                <div className="hidden sm:flex justify-center items-end gap-16 my-10 h-80">
                   <div className="flex flex-col items-center relative">
                     <div className="w-32 h-64 bg-gradient-to-t from-red-500 to-red-600 rounded-t-lg relative shadow-xl hover:scale-105 transition-transform">
                       <div className="absolute -top-9 left-1/2 transform -translate-x-1/2 text-xl font-bold text-yellow-300 drop-shadow animate-pulse">
@@ -354,25 +398,25 @@ const NewsPress = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
-                  <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-                    <h2 className="text-2xl font-bold mb-5 text-center text-red-300">
+                <div className="grid grid-cols-1 gap-6 sm:gap-10 mt-8 sm:mt-12">
+                  <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/20">
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 text-center text-red-300">
                       Biden's Border Disaster
-                      <span className="bg-red-500/30 text-red-200 px-3 py-1 rounded-full text-sm ml-3">CRISIS</span>
+                      <span className="bg-red-500/30 text-red-200 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm ml-2 sm:ml-3">CRISIS</span>
                     </h2>
                     
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                    <div className="space-y-3 sm:space-y-4">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Monthly crossings at peak</span>
-                        <span className="text-xl font-bold text-yellow-300">251,487</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">251,487</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Released into American communities</span>
-                        <span className="text-xl font-bold text-yellow-300">85%</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">85%</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Cost to taxpayers annually</span>
-                        <span className="text-xl font-bold text-yellow-300">$72 billion</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">$72 billion</span>
                       </div>
                       <div className="flex justify-between items-center py-3">
                         <span>Miles of new wall built</span>
@@ -381,33 +425,33 @@ const NewsPress = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-                    <h2 className="text-2xl font-bold mb-5 text-center text-green-300">
+                  <div className="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/20">
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-5 text-center text-green-300">
                       Trump's Border Victory
                       <br />
-                      <span className="bg-green-500/30 text-green-200 px-3 py-1 rounded-full text-sm">6 MONTHS</span>
+                      <span className="bg-green-500/30 text-green-200 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">6 MONTHS</span>
                     </h2>
                     
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                    <div className="space-y-3 sm:space-y-4">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Monthly crossings in June 2025</span>
-                        <span className="text-xl font-bold text-yellow-300">6,000</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">6,000</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Illegal aliens arrested in 2025</span>
-                        <span className="text-xl font-bold text-yellow-300">300,000+</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">300,000+</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>Drop in Darien Gap migration</span>
-                        <span className="text-xl font-bold text-yellow-300">99%</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">99%</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 border-b border-white/10">
+                      <div className="flex justify-between items-center py-2 sm:py-3 border-b border-white/10 text-sm sm:text-base">
                         <span>New wall under construction</span>
-                        <span className="text-xl font-bold text-yellow-300">85+ miles</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300">85+ miles</span>
                       </div>
-                      <div className="flex justify-between items-center py-3">
+                      <div className="flex justify-between items-center py-2 sm:py-3 text-sm sm:text-base">
                         <span>Parole releases (May & June)</span>
-                        <span className="text-xl font-bold text-yellow-300 animate-pulse">ZERO</span>
+                        <span className="text-lg sm:text-xl font-bold text-yellow-300 animate-pulse">ZERO</span>
                       </div>
                     </div>
                   </div>
@@ -415,8 +459,8 @@ const NewsPress = () => {
               </div>
             </div>
 
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Biden's Border Disaster:</h3>
+            <div className="bg-accent/10 border border-accent p-4 sm:p-6 mb-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">Biden's Border Disaster:</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong className="text-primary">251,487</strong> - Monthly crossings at peak (December 2023)</li>
                 <li><strong className="text-primary">85%</strong> - Released into American communities</li>
@@ -424,7 +468,7 @@ const NewsPress = () => {
                 <li><strong className="text-primary">Zero</strong> - Miles of new wall built</li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-4">Trump's Border Victory (Six Months):</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">Trump's Border Victory (Six Months):</h3>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong className="text-primary">6,000</strong> - Monthly crossings in June 2025</li>
                 <li><strong className="text-primary">300,000+</strong> - Illegal aliens arrested in 2025</li>
@@ -434,10 +478,10 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Ending Catch-and-Release: Promise Kept</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Ending Catch-and-Release: Promise Kept</h2>
             
             {/* ICE Operations Image */}
-            <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
+            <div className="w-full h-48 sm:h-64 bg-muted rounded-lg overflow-hidden mb-6">
               <img 
                 src="/lovable-uploads/b917ca10-5b5f-42d5-899a-d65d5827782c.png" 
                 alt="ICE deportation operations - detained individuals being transported" 
@@ -453,7 +497,7 @@ const NewsPress = () => {
               "The Trump Administration empowered our brave men and women in law enforcement to use common sense to do their jobs effectively," Secretary Noem stated.
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Criminal Aliens Face Justice at Last</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Criminal Aliens Face Justice at Last</h2>
             
             {/* Criminal Statistics Infographic */}
             <div className="w-full bg-gradient-to-br from-slate-900 via-slate-700 via-blue-900 to-red-600 p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
