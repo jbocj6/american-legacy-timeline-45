@@ -442,13 +442,13 @@ const JeffBrownLanding = () => {
                     ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} 
                     text-center md:text-inherit mb-4 md:mb-0
                   `}>
-                    <div className="
-                      text-6xl md:text-8xl font-mono font-black leading-none mb-2
-                      md:text-destructive/70
-                      text-base md:text-6xl lg:text-8xl
-                    ">
-                      {event.year}
-                    </div>
+                     <div className="
+                       text-6xl md:text-8xl font-mono font-black leading-none mb-2
+                       text-destructive md:text-destructive/70
+                       text-base md:text-6xl lg:text-8xl
+                     ">
+                       {event.year}
+                     </div>
                   </div>
                   
                   {/* Content card */}
