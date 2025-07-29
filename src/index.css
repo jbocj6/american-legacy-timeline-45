@@ -167,10 +167,10 @@ All colors MUST be HSL.
     /* Mobile hero headshot positioning - back to normal size, no cropping */
     .hero-headshot-mobile {
       position: absolute !important;
-      top: 80px !important;
+      top: 140px !important;
       left: 50% !important;
       transform: translateX(-50%) !important;
-      height: 100vh !important;
+      height: calc(100vh - 140px) !important;
       width: auto !important;
       z-index: 10 !important;
       object-fit: contain !important;
