@@ -231,8 +231,8 @@ const JeffBrownLanding = () => {
             <div>AMERICA FIRST</div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-8
-                          md:lg:flex-row md:lg:gap-3 md:lg:mt-6
-                          lg:flex-row lg:gap-4 lg:mt-8
+                          md:lg:flex-col md:lg:gap-3 md:lg:mt-6 md:lg:items-center
+                          lg:flex-col lg:gap-4 lg:mt-8 lg:items-center
                           max-md:flex-col max-md:gap-2 max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             {/* Mobile: Top row with Donate and Book buttons side by side */}
@@ -254,7 +254,7 @@ const JeffBrownLanding = () => {
             
             
             {/* Desktop: Original layout */}
-            <div className="hidden md:flex gap-4">
+            <div className="hidden md:flex gap-4 justify-center">
               <button 
                 onClick={() => setIsDonateModalOpen(true)}
                 className="bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-10 py-4 rounded font-mono font-bold uppercase tracking-wider border-none cursor-pointer transition-all duration-300 shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl"
