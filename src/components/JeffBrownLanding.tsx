@@ -331,7 +331,7 @@ const JeffBrownLanding = () => {
           </div>
 
           {/* Mobile version - Accordion */}
-          <div className="md:hidden mb-8 max-md:mt-4">
+          <div className="md:hidden mb-8">
             <Accordion type="multiple" className="space-y-4 max-md:!mt-0">
               {reformData.map((reform, index) => (
                 <AccordionItem 
