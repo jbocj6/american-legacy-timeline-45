@@ -133,7 +133,7 @@ const JeffBrownLanding = () => {
                         max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
                          md:text-8xl md:mb-4
-                         max-md:!text-9xl max-md:mb-2 max-md:tracking-wider
+                         max-md:!text-9xl max-md:mb-2 max-md:tracking-wider max-md:[text-shadow:_2px_2px_0_#000,_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000]
                          max-sm:!text-8xl max-sm:mb-1 max-sm:tracking-wide">
             Jeff Brown
           </h1>
