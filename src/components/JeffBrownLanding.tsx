@@ -900,20 +900,39 @@ const JeffBrownLanding = () => {
       
       {/* Sticky Button Container */}
       <div className="fixed bottom-4 left-4 right-4 md:bottom-5 md:left-6 md:right-6 z-50 bg-background/95 backdrop-blur-md border-2 border-border/50 rounded-2xl p-3 md:p-5 shadow-2xl shadow-black/20">
-        <div className="flex flex-col md:flex-row gap-3 md:gap-4">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-4">
           <button 
             onClick={() => setIsDonateModalOpen(true)}
-            className="flex-1 bg-destructive text-destructive-foreground font-semibold py-3.5 px-4 rounded-lg hover:bg-destructive/90 transition-all duration-200 hover:scale-105 shadow-md min-h-[44px] flex items-center justify-center"
+            className="donate-button"
+            style={{
+              background: 'linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent)) 100%)',
+              boxShadow: '0 0 60px hsl(var(--accent) / 0.5)',
+              transform: 'translateY(-2px)',
+              margin: '0.25rem 0',
+              width: '100%'
+            }}
           >
-            Donate Now
+            DONATE NOW
           </button>
           <a 
             href="https://calendly.com/bhogan-revgenengines/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-primary text-primary-foreground font-semibold py-3.5 px-4 rounded-lg hover:bg-primary/90 transition-all duration-200 hover:scale-105 shadow-md text-center no-underline flex items-center justify-center min-h-[44px]"
+            className="donate-button"
+            style={{
+              background: 'white', 
+              color: 'black', 
+              border: '2px solid white', 
+              boxShadow: '0 0 20px rgba(255,255,255,0.2)', 
+              textDecoration: 'none', 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              margin: '0.25rem 0',
+              width: '100%'
+            }}
           >
-            Book a One on One
+            BOOK A ONE-ON-ONE
           </a>
         </div>
       </div>
