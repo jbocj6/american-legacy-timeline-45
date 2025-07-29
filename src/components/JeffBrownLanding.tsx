@@ -652,12 +652,18 @@ const JeffBrownLanding = () => {
                 <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
                   {/* Cash App - Red Envelope */}
                   <div className="qr-card group">
-                    <img 
-                      src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
-                      alt="Cash App QR Code" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-                      style={{ imageRendering: 'crisp-edges' }}
-                    />
+                    <a 
+                      href="https://cash.app/$JeffreyBrownJ6?qr=1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img 
+                        src="/lovable-uploads/420ff39e-62d5-4c12-9574-d84f02460858.png" 
+                        alt="Cash App QR Code" 
+                        className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30 cursor-pointer"
+                        style={{ imageRendering: 'crisp-edges' }}
+                      />
+                    </a>
                   </div>
 
                   {/* Venmo - White Envelope */}
