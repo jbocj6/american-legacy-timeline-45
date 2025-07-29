@@ -164,19 +164,20 @@ All colors MUST be HSL.
       background-size: cover;
     }
     
-    /* Mobile hero headshot positioning - FORCE OVERRIDE */
-    img.hero-headshot-mobile {
+    /* Mobile hero headshot positioning - using the working strategy */
+    .hero-headshot-mobile {
       position: absolute !important;
-      top: 140px !important;
+      top: 95px !important;
       left: 50% !important;
-      right: auto !important;
-      bottom: auto !important;
       transform: translateX(-50%) !important;
-      height: calc(100vh - 140px) !important;
+      height: calc(100vh - 95px) !important;
       width: auto !important;
       z-index: 10 !important;
-      object-fit: contain !important;
-      object-position: center !important;
+      object-fit: cover !important;
+      object-position: top center !important;
+      right: auto !important;
+      bottom: auto !important;
+      scale: 1 !important;
     }
     
     /* Mobile hero content positioning */

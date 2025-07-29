@@ -121,6 +121,7 @@ const JeffBrownLanding = () => {
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
                      md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
+                     max-md:!static max-md:!transform-none max-md:!scale-100
                      hero-headshot-mobile"
         />
         
