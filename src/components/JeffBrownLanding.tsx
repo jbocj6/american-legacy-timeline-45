@@ -52,10 +52,44 @@ const JeffBrownLanding = () => {
 
     timelineItems.forEach(item => timelineObserver.observe(item));
 
+    // Mobile timeline line scroll animation
+    const handleTimelineScroll = () => {
+      const timelineSection = timelineRef.current;
+      const timelineLine = document.getElementById('mobile-timeline-line');
+      
+      if (!timelineSection || !timelineLine || window.innerWidth >= 768) return;
+
+      const rect = timelineSection.getBoundingClientRect();
+      const sectionHeight = timelineSection.offsetHeight;
+      const viewportHeight = window.innerHeight;
+      
+      // Calculate how much of the timeline section is visible
+      const sectionTop = rect.top;
+      const sectionBottom = rect.bottom;
+      
+      // Start animation when section comes into view
+      if (sectionBottom > 0 && sectionTop < viewportHeight) {
+        const scrollProgress = Math.max(0, Math.min(1, 
+          (viewportHeight - sectionTop) / (sectionHeight + viewportHeight)
+        ));
+        
+        const lineHeight = scrollProgress * 100;
+        timelineLine.style.height = `${lineHeight}%`;
+        timelineLine.style.opacity = scrollProgress > 0 ? '1' : '0';
+      } else {
+        timelineLine.style.height = '0%';
+        timelineLine.style.opacity = '0';
+      }
+    };
+
+    window.addEventListener('scroll', handleTimelineScroll);
+    window.addEventListener('resize', handleTimelineScroll);
 
     return () => {
       observer.disconnect();
       timelineObserver.disconnect();
+      window.removeEventListener('scroll', handleTimelineScroll);
+      window.removeEventListener('resize', handleTimelineScroll);
     };
   }, []);
 
@@ -401,9 +435,11 @@ const JeffBrownLanding = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
             
             {/* Mobile: Animated red dotted line connecting first to last date */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-0.5 md:hidden overflow-hidden">
-              <div className="w-full h-full border-l-2 border-dotted border-destructive opacity-0 animate-draw-line"></div>
-            </div>
+            <div 
+              id="mobile-timeline-line" 
+              className="absolute left-1/2 transform -translate-x-1/2 top-8 w-0.5 md:hidden border-l-2 border-dotted border-destructive opacity-0 transition-all duration-300 ease-out"
+              style={{ height: '0%', zIndex: 1 }}
+            ></div>
             
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
@@ -475,7 +511,7 @@ const JeffBrownLanding = () => {
           </div>
         </div>
         
-        {/* Add custom keyframes for typewriter effect and timeline line */}
+        {/* Add custom keyframes for typewriter effect */}
         <style>{`
           @keyframes typewriter {
             from { width: 0; }
@@ -484,22 +520,6 @@ const JeffBrownLanding = () => {
           @keyframes blink-caret {
             from, to { border-color: transparent; }
             50% { border-color: hsl(var(--accent)); }
-          }
-          @keyframes draw-line {
-            0% { 
-              opacity: 0;
-              clip-path: inset(0 0 100% 0);
-            }
-            20% {
-              opacity: 1;
-            }
-            100% { 
-              opacity: 1;
-              clip-path: inset(0 0 0% 0);
-            }
-          }
-          .animate-draw-line {
-            animation: draw-line 4s ease-out 1s forwards;
           }
         `}</style>
       </section>
