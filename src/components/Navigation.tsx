@@ -1,10 +1,25 @@
-import { Menu, X, MoreVertical } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useState } from 'react';
 import DonateModal from './DonateModal';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
+
+  // Custom three stacked stars icon
+  const ThreeStars = ({ size = 28 }: { size?: number }) => (
+    <svg 
+      width={size} 
+      height={size} 
+      viewBox="0 0 24 24" 
+      fill="currentColor"
+      className="flex flex-col items-center"
+    >
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" transform="scale(0.3) translate(16, 8)" />
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" transform="scale(0.3) translate(16, 24)" />
+      <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" transform="scale(0.3) translate(16, 40)" />
+    </svg>
+  );
 
   const navItems = [
     { name: 'MEET JEFF', href: '#meet-jeff' },
@@ -83,7 +98,7 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-primary-foreground hover:text-accent-foreground p-3"
               >
-                {isMenuOpen ? <X size={28} /> : <MoreVertical size={28} />}
+                {isMenuOpen ? <X size={28} /> : <ThreeStars size={28} />}
               </button>
             </div>
           </div>
