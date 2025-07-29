@@ -684,12 +684,18 @@ const JeffBrownLanding = () => {
 
                   {/* Give Send Go - Blue Envelope */}
                   <div className="qr-card group">
-                    <img 
-                      src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
-                      alt="Give Send Go QR Code" 
-                      className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-                      style={{ imageRendering: 'crisp-edges' }}
-                    />
+                    <a 
+                      href="https://www.givesendgo.com/theroadforward"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img 
+                        src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
+                        alt="Give Send Go QR Code" 
+                        className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30 cursor-pointer"
+                        style={{ imageRendering: 'crisp-edges' }}
+                      />
+                    </a>
                   </div>
                 </div>
                 <div className="text-2xl md:text-4xl font-mono font-semibold uppercase tracking-widest text-white/80 mt-4">

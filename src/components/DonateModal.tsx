@@ -52,12 +52,18 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
 
           {/* Give Send Go - Blue Envelope (Right) */}
           <div className="qr-card group">
-            <img 
-              src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
-              alt="Give Send Go QR Code" 
-              className="w-40 h-40 sm:w-64 sm:h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-              style={{ imageRendering: 'crisp-edges' }}
-            />
+            <a 
+              href="https://www.givesendgo.com/theroadforward"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/lovable-uploads/abb6f57c-b8f2-4420-9f1c-ccb0b4d313a2.png" 
+                alt="Give Send Go QR Code" 
+                className="w-40 h-40 sm:w-64 sm:h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30 cursor-pointer"
+                style={{ imageRendering: 'crisp-edges' }}
+              />
+            </a>
           </div>
         </div>
       </DialogContent>
