@@ -121,7 +121,7 @@ const JeffBrownLanding = () => {
           alt="Jeff Brown Portrait" 
           className="absolute right-[-15%] bottom-[-2%] h-[87vh] w-auto object-contain z-30 scale-110 
                      md:right-[-5%] md:bottom-[-2%] md:h-[87vh] md:scale-110
-                     max-md:!static max-md:!transform-none max-md:!scale-100
+                     max-md:top-[95px] max-md:left-0 max-md:right-0 max-md:bottom-0 max-md:w-full max-md:h-[calc(100vh-95px)] max-md:object-cover max-md:scale-100
                      hero-headshot-mobile"
         />
         
@@ -143,6 +143,7 @@ const JeffBrownLanding = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8 
                           md:flex-row md:gap-4 md:mt-8
+                          max-md:gap-1
                           hero-buttons-mobile">
             <button 
               onClick={() => setIsDonateModalOpen(true)}
