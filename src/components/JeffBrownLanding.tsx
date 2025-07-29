@@ -429,21 +429,21 @@ const JeffBrownLanding = () => {
             </div>
           </div>
 
+          {/* TEST LINE OUTSIDE */}
+          <div 
+            id="mobile-timeline-line" 
+            className="fixed top-20 left-1/2 transform -translate-x-1/2 w-8 bg-red-500 z-50 border-4 border-yellow-400"
+            style={{ 
+              height: '300px'
+            }}
+          >
+            <div className="text-white text-xs">TEST LINE</div>
+          </div>
+
           {/* Responsive Timeline */}
           <div className="relative">
             {/* Desktop: Central vertical line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-primary hidden md:block"></div>
-            
-            {/* Mobile: Animated red dotted line connecting first to last date */}
-            <div 
-              id="mobile-timeline-line" 
-              className="absolute left-1/2 transform -translate-x-1/2 top-0 w-4 bg-pink-500 transition-all duration-300 ease-out z-50"
-              style={{ 
-                height: '200px'
-              }}
-            >
-              TEST LINE
-            </div>
             
             {/* Timeline items */}
             <div className="space-y-16 md:space-y-16 mt-8">
