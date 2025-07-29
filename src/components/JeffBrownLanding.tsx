@@ -153,7 +153,7 @@ const JeffBrownLanding = () => {
               href="https://calendly.com/bhogan-revgenengines/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="donate-button" 
+              className="donate-button book-button" 
               style={{background: 'transparent', border: '2px solid hsl(var(--accent))', boxShadow: '0 0 20px hsl(var(--accent) / 0.2)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}
             >
               BOOK A ONE-ON-ONE
