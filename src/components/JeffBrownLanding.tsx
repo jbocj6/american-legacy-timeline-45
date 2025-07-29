@@ -226,7 +226,7 @@ const JeffBrownLanding = () => {
             PATRIOT • PROVEN LEADER • AMERICA FIRST
           </p>
           {/* Mobile-only patriot text */}
-          <div className="font-mono uppercase tracking-widest text-white text-xl mb-2 pb-20 md:hidden font-bold hero-text-outline">
+          <div className="font-mono uppercase tracking-widest text-white text-xl mb-2 pb-40 md:hidden font-bold hero-text-outline">
             <div>PATRIOT • PROVEN LEADER</div>
             <div>AMERICA FIRST</div>
           </div>
