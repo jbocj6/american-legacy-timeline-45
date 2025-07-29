@@ -443,9 +443,8 @@ const JeffBrownLanding = () => {
                     text-center md:text-inherit mb-4 md:mb-0
                   `}>
                      <div className="
-                       text-6xl md:text-8xl font-mono font-black leading-none mb-2
+                       text-2xl md:text-6xl lg:text-8xl font-mono font-black leading-none mb-2
                        text-destructive md:text-destructive/70
-                       text-base md:text-6xl lg:text-8xl
                      ">
                        {event.year}
                      </div>
