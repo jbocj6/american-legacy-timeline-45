@@ -92,27 +92,31 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-6 pt-4 pb-6 space-y-3 bg-primary border-t border-primary-foreground/10">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.href);
-                    setIsMenuOpen(false);
-                  }}
-                  className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 cursor-pointer"
+            <div className="px-6 pt-4 pb-6 bg-primary border-t border-primary-foreground/10">
+              <div className="space-y-3 text-right">
+                {navItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                      setIsMenuOpen(false);
+                    }}
+                    className="text-primary-foreground hover:text-accent-foreground hover:bg-primary-foreground/10 block px-4 py-3 rounded-lg text-lg font-inter font-bold uppercase tracking-widest transition-all duration-200 cursor-pointer"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+              <div className="flex justify-center mt-6">
+                <button 
+                  onClick={() => setIsDonateModalOpen(true)}
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest"
                 >
-                  {item.name}
-                </a>
-              ))}
-              <button 
-                onClick={() => setIsDonateModalOpen(true)}
-                className="w-full mt-6 bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-3 rounded font-mono font-bold text-sm transition-all duration-200 uppercase tracking-widest"
-              >
-                Donate
-              </button>
+                  Donate
+                </button>
+              </div>
             </div>
           </div>
         )}
