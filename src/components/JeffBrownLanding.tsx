@@ -562,7 +562,7 @@ const JeffBrownLanding = () => {
               America First Agenda
             </h2>
             <p className="text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Constitutional principles and conservative values for a stronger America
+              Constitutional Principles and Conservative Values for a Stronger America
             </p>
           </div>
 
