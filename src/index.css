@@ -362,6 +362,7 @@ All colors MUST be HSL.
     .desktop-hero-buttons {
       display: none !important;
     }
+  }
 
   @media (max-width: 480px) {
     .donate-button {
