@@ -39,7 +39,7 @@ const BookSection = () => {
     <section id="book-section" className="relative py-24 max-md:pt-12 px-8 overflow-hidden">
       
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-md:mb-8">
           <div className="inline-flex items-center gap-3 mb-6">
             <Book className="w-8 h-8 text-accent" />
             <span className="text-sm font-space uppercase tracking-widest text-accent font-bold">
