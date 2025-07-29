@@ -687,7 +687,14 @@ const JeffBrownLanding = () => {
             </div>
           </div>
           
-          <p className="text-lg mb-8 font-mono uppercase tracking-widest">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</p>
+          <p className="text-lg mb-8 font-mono uppercase tracking-widest">
+            <span className="hidden sm:inline">DEFENDING CONSTITUTIONAL RIGHTS • RESTORING JUSTICE • SECURING FREEDOM</span>
+            <span className="sm:hidden flex flex-col gap-2 text-center">
+              <span>DEFENDING CONSTITUTIONAL RIGHTS</span>
+              <span>RESTORING JUSTICE</span>
+              <span>SECURING FREEDOM</span>
+            </span>
+          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
