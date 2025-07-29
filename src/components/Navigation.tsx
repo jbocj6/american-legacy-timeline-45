@@ -75,8 +75,8 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden">
-            <div className="px-6 pt-4 pb-6 bg-transparent backdrop-blur-md border-t border-white/20">
+        {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 z-50">
+            <div className="px-6 pt-4 pb-6" style={{backgroundColor: 'rgba(220, 38, 38, 0.3)'}} >
               <div className="space-y-3 text-right mx-0">
                 {navItems.map(item => <a key={item.name} href={item.href} onClick={e => {
               e.preventDefault();
