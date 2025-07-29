@@ -230,7 +230,7 @@ const JeffBrownLanding = () => {
             <div>PATRIOT • PROVEN LEADER</div>
             <div>AMERICA FIRST</div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8
+          <div className="sticky bottom-5 z-50 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-xl flex flex-col sm:flex-row gap-4 mt-8
                           md:lg:flex-row md:lg:gap-3 md:lg:mt-6
                           lg:flex-row lg:gap-4 lg:mt-8
                           max-md:flex-col max-md:gap-0 max-md:mt-1 max-md:items-center
