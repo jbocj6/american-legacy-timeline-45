@@ -236,7 +236,7 @@ const JeffBrownLanding = () => {
                           max-md:flex-col max-md:gap-2 max-md:mt-1 max-md:items-center
                           hero-buttons-mobile">
             {/* Mobile: Top row with Donate and Book buttons side by side */}
-            <div className="hidden max-md:flex max-md:gap-2 max-md:w-full max-md:max-w-sm">
+            <div className="hidden max-md:hidden">&nbsp;
               <button 
                 onClick={() => setIsDonateModalOpen(true)}
                 className="donate-button flex-1 whitespace-nowrap py-2 text-sm"
