@@ -1236,3 +1236,10 @@ All colors MUST be HSL.
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+/* Mobile text outline for hero */
+.hero-text-outline {
+  -webkit-text-stroke: 2px #000;
+  text-stroke: 2px #000;
+}
+}
