@@ -407,13 +407,13 @@ const JeffBrownLanding = () => {
             >
               <path
                 id="treasure-trail"
-                d="M200,60 Q180,120 200,180 Q220,240 200,300 Q180,360 200,420 Q220,480 200,540 Q180,600 200,660 Q220,720 200,780 Q180,840 200,900"
+                d="M200,80 L200,920"
                 stroke="#dc2626"
                 strokeWidth="4"
                 fill="none"
                 strokeLinecap="round"
                 strokeDasharray="8 4"
-                strokeDashoffset="1000"
+                strokeDashoffset="840"
                 className="animate-drawTreasureTrail"
                 style={{ animationDelay: '2s' }}
               />

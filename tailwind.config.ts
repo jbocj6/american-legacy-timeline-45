@@ -91,7 +91,7 @@ export default {
 				},
 				'drawTreasureTrail': {
 					'0%': {
-						strokeDashoffset: '1000'
+						strokeDashoffset: '840'
 					},
 					'100%': {
 						strokeDashoffset: '0'
