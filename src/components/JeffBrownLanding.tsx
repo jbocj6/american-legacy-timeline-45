@@ -790,7 +790,9 @@ const JeffBrownLanding = () => {
             </a>
             <span className="text-muted-foreground">•</span>
             <a 
-              href="#" 
+              href="/privacy-policy" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors duration-200 underline underline-offset-4"
             >
               Privacy Policy
