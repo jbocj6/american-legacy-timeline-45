@@ -1052,7 +1052,7 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="text-2xl font-semibold text-primary mb-4">Independence Day Victory: Promises Made, Promises Kept</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Independence Day Victory: Promises Made, Promises Kept</h2>
             
             {/* Hero Image Placeholder */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1071,7 +1071,7 @@ const NewsPress = () => {
               "Promises made, promises kept!" Vice President JD Vance posted on X. "At times I even doubted we'd get it done by July 4! But now we've delivered big tax cuts and the resources necessary to secure the border."
             </blockquote>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">What's Really in the Bill Liberal Media Won't Tell You</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What's Really in the Bill Liberal Media Won't Tell You</h2>
             
             {/* Infographic Placeholder */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1096,7 +1096,7 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Democrats' Eight-Hour Meltdown Fails to Stop Victory</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Democrats' Eight-Hour Meltdown Fails to Stop Victory</h2>
             
             {/* Jeffries Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1117,7 +1117,7 @@ const NewsPress = () => {
             
             <p className="mb-6">Reality check: Democrats are panicking because this bill delivers real results for real Americans instead of funding their radical agenda.</p>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Secretary Noem: "Make America Safe Again!"</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Secretary Noem: "Make America Safe Again!"</h2>
             
             {/* DHS Seal Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1140,7 +1140,7 @@ const NewsPress = () => {
               <li>$10,000 bonus for ICE and Border Patrol agents for the next four years</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Six Months of Winning: The Trump Effect</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Six Months of Winning: The Trump Effect</h2>
             
             {/* Statistics Chart Placeholder */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1163,7 +1163,7 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">Tax Relief for Working Americans</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">Tax Relief for Working Americans</h2>
             
             {/* Tax Relief Graphic Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1183,7 +1183,7 @@ const NewsPress = () => {
               <li><strong className="text-primary">Extension of Trump tax cuts</strong> – keeping more money in your pocket</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Real Story: Law and Order Returns</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Real Story: Law and Order Returns</h2>
             
             {/* ICE Operations Image Placeholder */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6 flex items-center justify-center">
@@ -1206,7 +1206,7 @@ const NewsPress = () => {
               <li>American communities become safer as criminals are removed</li>
             </ul>
             
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: America First Delivers</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Bottom Line: America First Delivers</h2>
             
             <p className="mb-4">
               On this Independence Day, President Trump has given America its independence back – from open borders, from criminal aliens, from the radical left's agenda to transform our nation.
