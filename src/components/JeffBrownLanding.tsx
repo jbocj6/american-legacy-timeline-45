@@ -233,7 +233,7 @@ const JeffBrownLanding = () => {
           <div className="flex flex-col sm:flex-row gap-4 mt-8
                           md:lg:flex-row md:lg:gap-3 md:lg:mt-6
                           lg:flex-row lg:gap-4 lg:mt-8
-                          max-md:flex-col max-md:gap-2 max-md:mt-1 max-md:items-center
+                          max-md:hidden
                           hero-buttons-mobile">
             {/* Mobile: Top row with Donate and Book buttons side by side */}
             <div className="hidden max-md:flex max-md:gap-2 max-md:w-full max-md:max-w-sm">
