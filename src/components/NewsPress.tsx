@@ -288,7 +288,7 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground overflow-x-hidden">{/* Added overflow-x-hidden */}
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">From Biden's Chaos to Trump's Control in Just Six Months</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
             {/* Hero Images - Responsive Layout */}
             <div className="w-full mb-6">
@@ -332,7 +332,7 @@ const NewsPress = () => {
               "This $165 billion in funding will help the Department of Homeland Security and our brave law enforcement further deliver on President Trump's mandate to arrest and deport criminal illegal aliens and MAKE AMERICA SAFE AGAIN!" - DHS Secretary Kristi Noem
             </blockquote>
             
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">The Numbers That Prove Trump's Success</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">The Numbers That Prove Trump's Success</h2>
 
             {/* Hide complex chart on mobile to prevent overflow */}
             <div className="hidden sm:block">{/* Desktop only */}
@@ -498,7 +498,7 @@ const NewsPress = () => {
               </ul>
             </div>
             
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words">Ending Catch-and-Release: Promise Kept</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 break-words text-center">Ending Catch-and-Release: Promise Kept</h2>
             
             {/* ICE Operations Image */}
             <div className="w-full h-48 sm:h-64 bg-muted rounded-lg overflow-hidden mb-6 max-w-full">{/* Added max-w-full */}
@@ -517,7 +517,7 @@ const NewsPress = () => {
               "The Trump Administration empowered our brave men and women in law enforcement to use common sense to do their jobs effectively," Secretary Noem stated.
             </blockquote>
             
-            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4">Criminal Aliens Face Justice at Last</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 text-center">Criminal Aliens Face Justice at Last</h2>
             
             {/* Criminal Statistics Infographic */}
             <div className="w-full bg-gradient-to-br from-slate-900 via-slate-700 via-blue-900 to-red-600 p-4 sm:p-10 rounded-2xl text-white font-sans relative overflow-hidden mb-6">
@@ -619,7 +619,7 @@ const NewsPress = () => {
               <li>Violent felons previously protected by sanctuary cities</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Darien Gap Miracle: 99% Drop</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Darien Gap Miracle: 99% Drop</h2>
             
             {/* Darien Gap Infographic */}
             <div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden mb-6">
@@ -699,7 +699,7 @@ const NewsPress = () => {
             
             <p className="mb-6">Why? Because the world knows: <strong>The free ride is over. America is closed to illegal entry.</strong></p>
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Wall Gets Built - Finally</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Wall Gets Built - Finally</h2>
             
             {/* Wall Construction Image */}
             <div className="w-full h-80 bg-muted rounded-lg overflow-hidden mb-6">
@@ -725,7 +725,7 @@ const NewsPress = () => {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">What This Means for American Communities</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">What This Means for American Communities</h2>
             
             {/* Safe Community Image */}
             <div className="w-full h-64 bg-muted rounded-lg overflow-hidden mb-6">
@@ -746,7 +746,7 @@ const NewsPress = () => {
               <li><strong className="text-primary">Reduced drug flow</strong> saving American lives</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-primary mb-4">The Bottom Line: Sovereignty Restored</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4 text-center">The Bottom Line: Sovereignty Restored</h2>
             
             <p className="mb-4">
               In just six months, President Trump has accomplished what the establishment said was impossible. The border is no longer a suggestion – it's a reality. The invasion has become a trickle. The cartels are on the run. Criminal aliens are being removed.
