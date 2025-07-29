@@ -288,15 +288,6 @@ const NewsPress = () => {
           </DialogHeader>
           
           <div className="prose prose-lg max-w-none text-foreground">
-            {/* Metadata Box */}
-            <div className="bg-accent/10 border border-accent p-6 mb-6 rounded-lg">
-              <div className="inline-block bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold mb-3">
-                BORDER SECURITY
-              </div>
-              <p><strong>Preview Title:</strong> Trump's Six-Month Border Miracle: From 251,487 to 6,000 Monthly Crossings</p>
-              <p><strong>Preview Summary:</strong> DHS reports historic enforcement success with 300,000 arrests, 99% drop in Darien Gap migration.</p>
-            </div>
-
             <h2 className="text-2xl font-semibold text-primary mb-4">From Biden's Chaos to Trump's Control in Just Six Months</h2>
             
             {/* Hero Images - Side by Side */}
