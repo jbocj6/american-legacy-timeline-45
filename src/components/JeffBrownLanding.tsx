@@ -206,7 +206,7 @@ const JeffBrownLanding = () => {
         />
         
         {/* Hero Content - Mobile responsive positioning */}
-        <div className="absolute bottom-[20%] left-[5%] z-40 
+        <div className="absolute bottom-[20%] left-[5%] z-40 translate-y-[10px]
                         md:bottom-[20%] md:left-[5%]
                         max-md:bottom-[5%] max-md:left-[50%] max-md:transform max-md:-translate-x-1/2 max-md:text-center max-md:w-full max-md:px-4">
           <h1 className="text-8xl font-mono font-900 tracking-widest mb-4 text-white drop-shadow-lg
