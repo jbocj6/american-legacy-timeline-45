@@ -1128,7 +1128,7 @@ All colors MUST be HSL.
 @media (max-width: 480px) {
   /* Even more compact mobile typography */
   .hero h1 {
-    font-size: clamp(4rem, 12vw, 5rem) !important;
+    font-size: clamp(1.5rem, 8vw, 2.25rem) !important;
   }
 
   .hero .subtitle {
