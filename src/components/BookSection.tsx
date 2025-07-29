@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Book, ExternalLink, Download, Quote } from 'lucide-react';
+import { Book, ExternalLink, Download, Quote, ChevronDown } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const BookSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,14 +97,37 @@ const BookSection = () => {
 
           {/* Excerpts */}
           <div className="space-y-6">
-            {bookExcerpts.map((excerpt, index) => (
-              <Card key={index} className="bg-white/5 backdrop-blur-sm border-l-4 border-l-accent hover:shadow-lg transition-all duration-300 hover:bg-white/10">
-                <CardContent className="p-6">
-                  <h4 className="font-space font-semibold text-foreground mb-3">{excerpt.title}</h4>
-                  <p className="text-muted-foreground italic leading-relaxed">&ldquo;{excerpt.excerpt}&rdquo;</p>
-                </CardContent>
-              </Card>
-            ))}
+            {/* Desktop version - Cards */}
+            <div className="hidden md:block space-y-6">
+              {bookExcerpts.map((excerpt, index) => (
+                <Card key={index} className="bg-white/5 backdrop-blur-sm border-l-4 border-l-accent hover:shadow-lg transition-all duration-300 hover:bg-white/10">
+                  <CardContent className="p-6">
+                    <h4 className="font-space font-semibold text-foreground mb-3">{excerpt.title}</h4>
+                    <p className="text-muted-foreground italic leading-relaxed">&ldquo;{excerpt.excerpt}&rdquo;</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Mobile version - Accordion */}
+            <div className="md:hidden">
+              <Accordion type="multiple" className="space-y-4">
+                {bookExcerpts.map((excerpt, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-white/5 backdrop-blur-sm border-l-4 border-l-accent rounded-lg px-4 data-[state=open]:bg-white/10 transition-all duration-300"
+                  >
+                    <AccordionTrigger className="font-space font-semibold text-foreground hover:no-underline py-4">
+                      {excerpt.title}
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-4">
+                      <p className="text-muted-foreground italic leading-relaxed">&ldquo;{excerpt.excerpt}&rdquo;</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </div>
 
