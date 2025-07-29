@@ -1084,10 +1084,9 @@ All colors MUST be HSL.
     scroll-padding-top: 120px;
   }
 
-  /* Scroll indicator mobile */
+  /* Scroll indicator mobile - hidden */
   .scroll-indicator {
-    bottom: 1rem !important;
-    transform: translateX(-50%) scale(0.8) !important;
+    display: none !important;
   }
 
   /* QR codes mobile stacking */
