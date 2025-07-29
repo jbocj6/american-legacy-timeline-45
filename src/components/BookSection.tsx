@@ -133,7 +133,7 @@ const BookSection = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 max-md:gap-2 justify-center items-center">
             <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
               <DialogTrigger asChild>
                 <Button className="donate-button min-w-[260px] h-14 px-10 text-lg">
