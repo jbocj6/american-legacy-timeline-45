@@ -36,12 +36,18 @@ const DonateModal = ({ isOpen, onOpenChange }: DonateModalProps) => {
 
           {/* Venmo - White Envelope (Center) */}
           <div className="qr-card group">
-            <img 
-              src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
-              alt="Venmo QR Code" 
-              className="w-40 h-40 sm:w-64 sm:h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30"
-              style={{ imageRendering: 'crisp-edges' }}
-            />
+            <a 
+              href="https://account.venmo.com/u/JeffreyBrownJ6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src="/lovable-uploads/47b0e0a6-ce08-4dfa-9fee-8c3770a6a8b9.png" 
+                alt="Venmo QR Code" 
+                className="w-40 h-40 sm:w-64 sm:h-64 object-contain rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-primary/30 cursor-pointer"
+                style={{ imageRendering: 'crisp-edges' }}
+              />
+            </a>
           </div>
 
           {/* Give Send Go - Blue Envelope (Right) */}
