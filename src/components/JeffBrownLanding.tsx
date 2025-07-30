@@ -262,7 +262,7 @@ const JeffBrownLanding = () => {
                 DONATE NOW
               </button>
               <a 
-                href="https://calendly.com/bhogan-revgenengines/30min"
+                href="https://calendly.com/jeff-jbj6/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-black px-10 py-4 rounded font-mono font-bold uppercase tracking-wider border-2 border-white cursor-pointer transition-all duration-300 shadow-lg hover:transform hover:-translate-y-0.5 hover:shadow-xl inline-flex items-center justify-center no-underline"
@@ -825,7 +825,7 @@ const JeffBrownLanding = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
-              href="https://calendly.com/bhogan-revgenengines/30min" 
+              href="https://calendly.com/jeff-jbj6/30min" 
               target="_blank"
               rel="noopener noreferrer"
               className="donate-button max-sm:w-[280px]"

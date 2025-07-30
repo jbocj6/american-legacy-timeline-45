@@ -102,7 +102,7 @@ const AboutBio = () => {
                   DONATE
                 </button>
                 <a 
-                  href="https://calendly.com/bhogan-revgenengines/30min"
+                  href="https://calendly.com/jeff-jbj6/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="donate-button" 
