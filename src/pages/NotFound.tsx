@@ -5,6 +5,15 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Check if this is a static file request that should be handled by the server
+    if (location.pathname.startsWith('/lovable-uploads/') || 
+        location.pathname.startsWith('/robots.txt') || 
+        location.pathname.startsWith('/favicon.ico')) {
+      // For static files, redirect to the actual file path
+      window.location.href = location.pathname;
+      return;
+    }
+    
     console.error(
       "404 Error: User attempted to access non-existent route:",
       location.pathname
