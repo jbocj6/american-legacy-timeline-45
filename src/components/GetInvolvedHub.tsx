@@ -216,7 +216,7 @@ const GetInvolvedHub = () => {
                   type="submit"
                   className="w-full donate-button"
                 >
-                  SUBSCRIBE TO NEWSLETTER
+                  Subscribe to the Newsletter
                 </button>
               </div>
             </form>
